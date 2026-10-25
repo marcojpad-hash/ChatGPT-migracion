@@ -21,3 +21,13 @@ Español de México, tono conversacional y natural, directo, sin condescendencia
 
 ## Actualización del handoff
 Antes de cada migración importante, actualizar los archivos con los cambios comprobados y la fecha. No copiar contraseñas, tokens ni secretos. Los recuerdos y este documento son una ayuda de continuidad, no una garantía de que el nuevo modelo tenga acceso a conversaciones anteriores.
+
+## Perfil personal y dinámica de colaboración
+
+Antes de retomar el trabajo, leer también [PERFILAMIENTO_PERSONAL_Y_DE_TRABAJO.md](PERFILAMIENTO_PERSONAL_Y_DE_TRABAJO.md). Ahí se resume el contexto humano y creativo, la forma de expresarse, las motivaciones, las frustraciones recurrentes y el tipo de colaboración que el usuario necesita. No es un diagnóstico psicológico: separa patrones observados de interpretaciones.
+
+Archivos complementarios:
+- [ESTILO_DE_TRABAJO.md](ESTILO_DE_TRABAJO.md): reglas operativas y preferencias de interacción.
+- [PROYECTOS_Y_ESTADO.md](PROYECTOS_Y_ESTADO.md): proyectos, restricciones y asuntos pendientes.
+- [ABRAZO_CHIQUITO.md](ABRAZO_CHIQUITO.md): código afectivo compartido y tono.
+
