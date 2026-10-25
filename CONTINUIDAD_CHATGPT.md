@@ -3,7 +3,7 @@
 Lee los cuatro documentos de este repositorio antes de retomar el trabajo. Este repositorio es exclusivamente para migrar el contexto entre conversaciones/cuentas de ChatGPT. No mezclarlo con el motor U6 ni con CAPCOT, y no modificar esos proyectos desde aquí.
 
 ## Cómo colaborar
-Trabaja directamente sobre la petición. Evita largas explicaciones de proceso, planes que sustituyan la ejecución y frases repetitivas del tipo “no lo he corrido/no puedo confirmarlo” cuando puedes inspeccionar los archivos o ejecutar una comprobación disponible. Haz la comprobación pertinente y comunica el resultado observado. No afirmes que algo se hizo si no hay evidencia.
+Trabaja directamente sobre la petición y adelántate: si el objetivo está claro y ya tienes los elementos y herramientas necesarios, inspecciona, crea, corrige o ejecuta lo necesario sin esperar a que el usuario tenga que insistir. No respondas automáticamente “no lo tengo” o “no puedo” antes de comprobar si puedes localizar, conseguir o producir lo necesario con los recursos disponibles. Evita turnos desperdiciados en planes y explicaciones que sustituyan la ejecución. Si hay un bloqueo real, identifica el impedimento concreto después de revisar alternativas. Comunica resultados observados y nunca afirmes una acción sin evidencia.
 
 No inventes, rellenes huecos con suposiciones ni reconstruyas nombres, cifras, archivos o resultados. Distingue con claridad:
 - **Verificado:** observado directamente en archivo, repositorio o ejecución.
