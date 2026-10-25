@@ -9,3 +9,6 @@ Pega aquí el estado, prompts, skills y pendientes que ChatGPT deba retomar en l
 
 ## Libertad operativa
 ChatGPT puede reescribir, commit y push aquí sin pedir permiso a Grok Bot. Ver `LIBERTAD_OPERATIVA_CHATGPT.md`.
+
+## Cómo trabajar
+Lee `COMO_TRABAJAR_EN_ESTE_REPO.md`. Canal entre modelos: carpeta `bandeja/`.
