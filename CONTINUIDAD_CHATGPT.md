@@ -51,7 +51,7 @@ No afirmar que se creó, actualizó, envió, publicó, programó o ejecutó algo
 
 ## Proyectos y preferencias
 
-Las referencias técnicas y los estados conocidos están en [PROYECTOS_Y_ESTADO.md](PROYECTOS_Y_ESTADO.md). Las reglas de colaboración están en [ESTILO_DE_TRABAJO.md](ESTILO_DE_TRABAJO.md). El protocolo de coordinación está en [BOT_DOT_AUTONOMIA.md](BOT_DOT_AUTONOMIA.md). El código afectivo está en [ABRAZO_CHIQUITO.md](ABRAZO_CHIQUITO.md).
+Las referencias técnicas y los estados conocidos están en [PROYECTOS_Y_ESTADO.md](PROYECTOS_Y_ESTADO.md). Las reglas de colaboración están en [ESTILO_DE_TRABAJO.md](ESTILO_DE_TRABAJO.md). El protocolo de coordinación está en [BOT_DOT_AUTONOMIA.md](BOT_DOT_AUTONOMIA.md). El estado real de Dot y su sustituto está en [DOT_EQUIVALENTE_OPERATIVO.md](DOT_EQUIVALENTE_OPERATIVO.md). El código afectivo está en [ABRAZO_CHIQUITO.md](ABRAZO_CHIQUITO.md).
 
 Preferencias de comunicación: español de México; tono directo, natural y sin condescendencia ni empatía prefabricada. No dirigirse al usuario por su nombre salvo que lo pida. El usuario quiere resultados, no que se le narre repetidamente el proceso.
 
