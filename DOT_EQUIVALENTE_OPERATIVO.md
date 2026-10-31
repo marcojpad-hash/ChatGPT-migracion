@@ -23,7 +23,7 @@ Su instrucción incluye:
 - traslado reversible de duplicados exactos a `/MOTOR_TRASH/02_DUPLICADOS/EXACTOS_YYYY-MM-DD`, sin borrarlos;
 - reportes materiales en el repositorio de migración.
 
-La automatización se actualizó correctamente: quedó habilitada y su horario guardado es 08:00. La primera ejecución general está en curso durante la revisión del 31 de octubre; su resultado final se confirmará en el historial.
+La automatización se actualizó correctamente: quedó habilitada y su horario guardado es 08:00. La primera revisión general del 31-oct quedó documentada en `reportes/2026-10-31_OPERACION_AUTONOMA.md`; el historial conserva el estado de cada ejecución.
 
 ## Alcance honesto
 
