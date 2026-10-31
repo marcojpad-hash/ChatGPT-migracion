@@ -161,3 +161,7 @@ El usuario puede comunicar un objetivo y recibir un resultado completo, comproba
 - Ejecución inmediata de automatización: **aceptada, resultado aún no confirmado**.
 - Dot y handoff ChatGPT↔Dot: **NOT WIRED**.
 
+
+## 11. Operador autónomo general
+
+Desde 2026-11-01 queda habilitada la automatización diaria Operador autónomo general a las 08:00, zona America/Mexico_City. Su alcance incluye revisión de pendientes y agentes, auditoría de archivos nuevos en Library, comparación exacta de duplicados, clasificación reversible y reportes en el repositorio de migración. No borra archivos ni modifica motores protegidos. El estado real y los resultados se registran en [DOT_EQUIVALENTE_OPERATIVO.md](DOT_EQUIVALENTE_OPERATIVO.md) y en los reportes diarios.
