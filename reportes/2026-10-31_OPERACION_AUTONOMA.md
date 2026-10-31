@@ -91,6 +91,21 @@ Por tanto, **no debe fabricarse un SHA** ni calcularse la huella de la plantilla
 
 El segundo faltante es distinto: `$.continuidad_corrida` está ausente en el resultado, mientras `cierre_memoria_operativa.status = EJECUTADO` y el índice cross-run figura como persistido. Esto apunta a un desajuste entre el contrato del recibo y el esquema del resultado. Se conserva como incidencia de contrato para inspeccionar el runner y corregirlo en una versión de trabajo; no se reescribieron el resultado ni el recibo originales.
 
+### Corrección candidata probada para el contrato del recibo
+
+Se inspeccionó el runner de la implementación TORTUGAS. Su SHA-256 coincide con el runner registrado en el recibo: `ee061fc4197c08d230dbc092b71e200ab0994c51d390835a64c06052879cdff8`.
+
+Hallazgo: cuando no se requiere pausa, el runner no asigna `continuidad_corrida`; al construir el recibo, el campo queda ausente y el saneador agrega otro gap. Se preparó un diff candidato que registra `NO_PAUSA_REQUERIDA` cuando la compuerta no solicita reanudación, preservando íntegramente el objeto cuando sí hay pausa.
+
+Pruebas en copia temporal del paquete:
+- Contrato del runner: **9 passed**.
+- Suite completa: **101 passed, 2 skipped, 0 failed**.
+- El diff no se aplicó al repositorio ni al paquete original; no modifica el motor canónico.
+- SHA-256 del diff: `bb9ea5461eb8f595f801ddeb7266ba1b7149f6e898e5ec03fd42a3cd3702efc5`.
+- SHA-256 del informe de pruebas: `4cc4f9d2d8819d3414578a6a2fea90e175acd2889e794685d0acbdb4793e91c8`.
+
+La corrección candidata elimina el faltante de continuidad en corridas sin pausa. **No elimina el gap de huella de mortalidad**, que debe permanecer explícito mientras no exista una tabla estadística verificada.
+
 ## Pendientes reales
 
 1. Continuar el backlog de Library más antiguo que la primera página revisada.
