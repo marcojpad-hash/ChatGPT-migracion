@@ -135,3 +135,29 @@ Si falla, solicita corrección al agente o la realiza directamente cuando esté 
 ## 9. Criterio de éxito
 
 El usuario puede comunicar un objetivo y recibir un resultado completo, comprobado y documentado sin dirigir cada paso intermedio. La intervención del usuario se reserva para decisiones que realmente le pertenecen.
+
+## 10. Smoke test de integración (2026-10-31)
+
+### GitHub: PASS
+- Se creó temporalmente `smoke/2026-10-31-autonomia-dot-bot.txt` en `main` usando la conexión autorizada.
+- Se leyó de vuelta y el contenido coincidió exactamente.
+- Se eliminó el archivo temporal y una lectura posterior devolvió HTTP 404, confirmando que ya no existe.
+- Commits de prueba: creación `b865109cb670f3afb3976bdc5a9beb49da12c12d`; eliminación `74e771681b87247e320346c149cf021fe0149ef3`.
+
+### Automatizaciones: conexión comprobada; ejecución inmediata pendiente de confirmación
+- Se consultaron por ID las automatizaciones `Agente de investigación CAPCOT` y `Tercera cápsula CAPCOT`. Ambas devuelven configuración y estado `is_enabled=true`.
+- La última ejecución registrada del agente de investigación figura `completed`, con salida y commits reportados. La última ejecución registrada de la tercera cápsula también figura `completed`, con entrega y limitaciones documentadas.
+- Se solicitó una ejecución inmediata de `Agente de investigación CAPCOT`; el servicio confirmó que la solicitud fue aceptada y que el horario guardado no cambió. La consulta posterior todavía devolvió el historial anterior, por lo que esta ejecución nueva no se marca como completada.
+
+### Dot: no integrado en esta sesión
+- No hay una acción/herramienta de Dot expuesta a esta sesión y el intento de notificación al padre devolvió `NOT_FOUND`; no se produjo un handoff verificable.
+- La documentación oficial consultada indica despliegue gradual de Dots para ChatGPT Pro (18+, fuera del EEE, Suiza y Reino Unido), Business Premium y Enterprise habilitado por administrador; Go no aparece entre los planes elegibles publicados. Por tanto, con el plan Go que figura en el contexto de esta sesión, no se puede dar por disponible ni activar Dot desde aquí.
+- Referencia oficial: https://help.openai.com/es-419/articles/20001530-getting-started-with-your-dot
+- Para que Dot participe orgánicamente hará falta que la función esté habilitada en la cuenta, crear el dot desde la app y conectar GitHub con los permisos necesarios. Después se debe probar lectura, escritura controlada y devolución de resultados desde el propio dot.
+
+### Resultado global
+- GitHub escritura/lectura/borrado: **PASS**.
+- Lectura de estado de automatizaciones: **PASS**.
+- Ejecución inmediata de automatización: **aceptada, resultado aún no confirmado**.
+- Dot y handoff ChatGPT↔Dot: **NOT WIRED**.
+
