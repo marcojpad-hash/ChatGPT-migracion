@@ -1,5 +1,13 @@
 # Proyectos, referencias y estado conocido
 
+## Actualización operativa: autonomía y coordinación (2026-10-31)
+
+- Se integró en `main` la regla transversal: ChatGPT debe ejecutar y cerrar tareas autorizadas de forma proactiva, sin esperar instrucciones intermedias.
+- Se actualizaron `README.md`, `CONTINUIDAD_CHATGPT.md` y `ESTILO_DE_TRABAJO.md`.
+- Se creó `BOT_DOT_AUTONOMIA.md`, que define responsabilidades de ChatGPT, bots, automatizaciones y Dot; flujo de delegación, verificación, reportes y límites de autorización.
+- La documentación establece explícitamente que Dot solo debe considerarse activo cuando su disponibilidad, conexión y ejecución estén comprobadas. La creación de este protocolo no activa Dot ni le concede permisos.
+- Los cuatro documentos modificados/creados se releen desde `main` y sus SHA de contenido fueron comprobados. No se modificaron los repositorios Motor U6 ni CAPCOT en esta operación.
+
 **Fecha de elaboración:** 2026-10-25  
 **Advertencia:** este documento recoge contexto de conversaciones anteriores. No equivale a una inspección actual de cada repositorio o archivo del motor. Verificar antes de actuar.
 
