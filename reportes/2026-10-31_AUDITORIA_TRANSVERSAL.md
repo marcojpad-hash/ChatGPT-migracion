@@ -43,3 +43,12 @@ Se revisaron los tres repositorios activos identificados, los flujos de automati
 
 ## Límites
 No se modificaron motores canónicos, patrones, candados, main CAPCOT ni data/*.json. No se publicaron cápsulas ni se generaron medios. No se almacenaron credenciales. Las pruebas Python nuevas se añadieron, pero no se ejecutaron en esta sesión.
+
+
+## Inventario de repositorios conectado
+
+Se consultaron ambos perfiles GitHub autorizados:
+- marcojpad-hash: 3 repositorios visibles — motor-u6-storage, capcot-capsulas-imaginantes y ChatGPT-migracion.
+- marcosabines-hash: 0 repositorios visibles.
+
+La búsqueda de Cangrejitos en Notion no devolvió páginas. No existe evidencia de un repositorio de ese proyecto en las cuentas conectadas; no se inventó ni se creó un repositorio.
