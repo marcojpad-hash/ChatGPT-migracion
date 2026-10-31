@@ -113,3 +113,14 @@ La corrección candidata elimina el faltante de continuidad en corridas sin paus
 3. Resolver los dos faltantes de metadata del recibo de reejecución, sin reescribir el resultado original.
 4. Confirmar el resultado de la primera ejecución del Operador autónomo en su historial posterior.
 5. Dot nativo sigue sin integración en esta sesión; el operador diario cubre parte del seguimiento, no actividad 24/7.
+
+
+## Verificación y correcciones posteriores — 2026-10-31
+
+1. **Fecha de publicaciones CAPCOT corregida.** El reporte inicial anotó 27-oct. La lectura directa de data/publicaciones.json en main y feature/capcot-video-discovery-continuity confirma que la fecha más reciente es 2026-10-26. El valor 27-oct no está respaldado por esas dos ramas; queda corregido.
+2. **Horarios sin colisión.** Operador autónomo general: 08:00 CDMX. Agente de investigación CAPCOT: 08:30 CDMX, hasta el 24-nov. Auditor CAPCOT — cola y rotación: 15:00 CDMX. El operador general y el investigador ya no arrancan a la misma hora.
+3. **Handoff Grok.** CAPCOT ahora tiene docs/GROK_STATUS_CONTRACT.md y templates/grok_status.template.json. Sin cola/estado/YYYY-MM-DD_slug.json, recepción no confirmada. El operador general solo lee el estado; no lo falsifica.
+4. **Continuidad de corrida U6.** El F006 original dejó continuidad_corrida ausente en el JSON principal, aunque el recibo ya declaraba NO_PAUSADA. Se corrigió motor/correr_estandar.py para serializar NO_PAUSADA o PAUSADA_REANUDABLE en el resultado principal. Se añadieron pruebas y un workflow CI separado. Primeras ejecuciones de CI: PASS para el contrato del runner; las pruebas ampliadas de mortalidad/importación están en ejecución.
+5. **Matriz de mortalidad.** Se detectó que el código descartaba los valores q_x/m_x aunque admitía esos tipos; ahora preserva y valida rate_value, mx y qx. El esquema se amplió a 1.1, el sidecar admite JSONL gzip en streaming y se añadió un normalizador para la plantilla externa. Se registró UN WPP 2024 como fuente pública CC BY 3.0 IGO sin token. INED Bonneuil 1806-1906 queda en revisión de licencia; no se redistribuye sin aclarar términos.
+6. **Importación WPP.** Se añadió importador y workflow de GitHub Actions para obtener la tabla oficial y generar mortality_statistics.jsonl.gz. Dos ejecuciones de bootstrap estaban en curso al corte; todavía no se declara que el dataset haya sido descargado o incorporado. Si el workflow falla, el log identificará el bloqueo y se corregirá la ruta sin inventar datos.
+7. **Organización de Library.** Se conserva el resultado de 69 movimientos reportados por el operador. La carpeta MOTOR_TRASH/02_DUPLICADOS/EXACTOS_2026-10-31 contiene 13 copias duplicadas; se comprobó su existencia. No se eliminó ningún original según el registro de la operación. La revisión inicial cubrió solo los primeros 100 elementos del raíz de Library, no toda la biblioteca.
