@@ -40,3 +40,12 @@
 
 ## Instrucción para la cuenta nueva
 Al retomar, lee los repositorios pertinentes, inspecciona el estado actual y confirma qué archivos y cambios existen antes de continuar. Actualiza este documento solo con resultados observados y marca la fecha de cada revisión.
+## Operación autónoma y estado de automatizaciones (2026-10-31)
+
+- **Operador autónomo general:** habilitado; horario actualizado a diario 08:00 America/Mexico_City desde 2026-11-01. La instrucción incluye auditoría de archivos Library, comparación byte a byte/SHA-256, diff de texto, clasificación reversible y reporte diario. Dot nativo sigue sin estar conectado; ver DOT_EQUIVALENTE_OPERATIVO.md.
+- **Agente de investigación CAPCOT:** habilitado; ejecución del 2026-10-31 completada. Entregables verificados en la rama `feature/capcot-video-discovery-continuity`: brief, storyboard de pardelas y registro de fuentes. El storyboard tiene 8 escenas, 218 palabras, 84 segundos, cuatro arcos narrativos y cero referencias de fuente rotas. No generó video ni publicó.
+- **Tercera cápsula CAPCOT:** habilitada; última ejecución registrada del 2026-10-30 completada. La siguiente ejecución diaria está programada a las 15:00; no se duplicó desde este operador.
+- **Datos CAPCOT:** `data/temas_del_dia.json` y `data/rotacion.json` contienen fechas hasta 2026-10-28; `data/publicaciones.json` llega hasta 2026-10-27 (no 2026-10-26 como indicaba el resumen del agente). No se modificaron `data/*.json`.
+- **Library:** revisión de los 100 elementos más recientes del directorio raíz, con contenido/metadata profundizados para los grupos identificables. El elemento más antiguo de esa página fue creado el 2026-10-20 01:39:55 UTC; queda backlog más antiguo por revisar. El archivo más reciente visible fue creado el 2026-10-28 21:31:56 UTC. El montaje Dropbox existe, pero `/Dropbox` devolvió cero elementos; el listado recursivo de Dropbox no está soportado por la herramienta.
+- **Clasificación:** se movieron de forma reversible 69 archivos a carpetas de CAPCOT, motor U6, reportes, configuración ChatGPT y evidencias de GitHub. Se crearon subcarpetas fechadas. No se alteró el contenido de los archivos ni los motores canónicos.
+- **Duplicados exactos:** se verificaron 10 grupos con SHA-256 y comparación binaria; se trasladaron 13 copias redundantes a `/MOTOR_TRASH/02_DUPLICADOS/EXACTOS_2026-10-31`. No se borró ningún archivo. Detalle en `reportes/2026-10-31_OPERACION_AUTONOMA.md`.
