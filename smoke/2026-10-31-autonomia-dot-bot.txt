@@ -1,0 +1,4 @@
+SMOKE TEST
+Timestamp: 2026-10-31
+Purpose: verify GitHub write/read/delete using the authorized marcojpad-hash connection.
+This file is temporary and must be deleted after successful read-back.
