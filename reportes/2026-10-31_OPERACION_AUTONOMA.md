@@ -79,7 +79,17 @@ Se compararon tamaños, SHA-256 y bytes. Se mantuvo una copia principal y se mov
 
 ## Hallazgo técnico relevante: recibo de reejecución
 
-El recibo `RESULT_CHATGPT_REEJECUCION_20261026_RECIBO_EJECUCION.json` reporta `COMPLETED_WITH_METADATA_GAP`, código de salida 5 y `ok=false`. El resultado JSON tiene cero null y cero valores no finitos, pero falta `$.matriz_mortalidad_z90.data_table_sha256`; el recibo también tiene `$.continuidad_corrida` ausente. No se corrigieron esos artefactos durante la clasificación. Queda como incidencia de procedencia para una revisión técnica separada.
+El recibo `RESULT_CHATGPT_REEJECUCION_20261026_RECIBO_EJECUCION.json` reporta `COMPLETED_WITH_METADATA_GAP`, código de salida 5 y `ok=false`. El resultado JSON tiene cero null y cero valores no finitos.
+
+La revisión del artefacto y del paquete de preparación de mortalidad aclara el primer faltante:
+- `matriz_mortalidad_z90.status = WIRED_WAITING_VERIFIED_MORTALITY_DATA`.
+- `accepted_statistical_rows = 0`, `feeds_H = false`.
+- `data_table_sha256 = HUELLA_ORIGEN_NO_DISPONIBLE`.
+- El ZIP `MATRIZ_MORTALIDAD_Z90_U6_PREPARACION_20261023.zip` contiene únicamente un manifiesto de fuentes y una plantilla CSV vacía; ninguna observación estadística descargada.
+
+Por tanto, **no debe fabricarse un SHA** ni calcularse la huella de la plantilla como si fuera la tabla de datos. La ausencia de la huella es coherente con el estado explícito de espera de datos verificados.
+
+El segundo faltante es distinto: `$.continuidad_corrida` está ausente en el resultado, mientras `cierre_memoria_operativa.status = EJECUTADO` y el índice cross-run figura como persistido. Esto apunta a un desajuste entre el contrato del recibo y el esquema del resultado. Se conserva como incidencia de contrato para inspeccionar el runner y corregirlo en una versión de trabajo; no se reescribieron el resultado ni el recibo originales.
 
 ## Pendientes reales
 
