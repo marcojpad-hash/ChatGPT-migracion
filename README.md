@@ -33,3 +33,8 @@ ChatGPT puede crear, corregir y registrar trabajo en este repositorio con la con
 ## Canal entre modelos
 
 Usar la carpeta `bandeja/` cuando exista y esté habilitada para intercambiar entregables entre modelos. Todo mensaje debe incluir objetivo, artefactos, estado, evidencia y siguiente acción. No asumir que otro agente recibió o ejecutó algo sin confirmación observable.
+
+
+## Auditoría transversal 2026-10-31
+
+[Informe de problemas, correcciones y pendientes](reportes/2026-10-31_AUDITORIA_TRANSVERSAL.md).
