@@ -112,7 +112,7 @@ Repositorio privado: [orquestador-central](https://github.com/marcojpad-hash/orq
 Estado verificado:
 - Rama `feature/core-mvp-l1`, HEAD `446d5277b9cc4896ee18d3d5216598835f9b274e`.
 - [PR draft #1](https://github.com/marcojpad-hash/orquestador-central/pull/1) abierto, 9 commits, no fusionado.
-- Dos checks de GitHub Actions terminaron en éxito: jobs `124676989696` y `124676976487`. Cada uno ejecutó 3 pruebas y terminó `OK`.
+- Dos checks de GitHub Actions terminaron en éxito: job `124676976487` sobre el HEAD `446d5277b9cc4896ee18d3d5216598835f9b274e` y job `124676989696` sobre el merge ref `aeed8e8d71ecbfc2e5b7c243b18d7ef249fb8023`. Cada uno ejecutó 3 pruebas y terminó `OK`.
 - Las tres pruebas cubren creación de instrucción/tarea, idempotencia y rechazo de prioridad inválida; no son pruebas HTTP de extremo a extremo.
 - El prototipo es HTTP/SQLite con Bearer de propietario, no un coordinador desplegado. No hay adaptadores de proveedores, worker persistente, entrada móvil universal ni retorno entre canales.
 
