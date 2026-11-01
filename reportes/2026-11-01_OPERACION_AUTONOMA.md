@@ -211,3 +211,14 @@ Se verificó que cada blob de destino conserva el SHA original y que no quedan s
 Motor U6: C01–C20 siguen pendientes; se releyeron protocolo de custodia y plan de 20 casos; no se ejecutaron casos ni se tocaron motores, patrones o candados. Orquestador Central permanece DESCUBIERTO_ADICIONAL y de solo lectura.
 
 El run del investigador CAPCOT sigue `in_progress`; no hay radar nuevo verificado. El run del auditor terminó antes de la actualización final del prompt y no escribió `narrative_qa`; el siguiente run debe usar la nueva versión. El run de este operador seguía `in_progress` al último peek. No hubo medios, publicación, programación, envío externo ni consumo de créditos.
+
+
+### Actualización final — cierre del investigador CAPCOT
+
+El run `eb74bc97-0478-832c-a823-25af9adab923` terminó a las 14:37:23 CDMX. Sus dos entregables fueron verificados de nuevo:
+- [Radar CAPCOT 1-nov](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-01_RADAR_CAPCOT.md), commit `089e55f6d837703c936eab50adfd541bb3ed94ea`.
+- [Borrador red eléctrica](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/proyectos/2026-11-01_red-electrica-pulso-minuto/storyboard.json), commit `bbd1b3d4efca889856bdbd2cad9dc1bcbe64cb7a`.
+
+El borrador actual tiene 8 escenas, 196 palabras, 84 segundos, `narrative_contract` completo, mapa y capas de datos; no tiene assets, render ni `narrative_qa`. Los cinco DOI del radar siguen pendientes de validación directa. El borrador permanece en `proyectos/`, fuera de cola; no está preparado ni aceptado por Grok. El auditor todavía debe hacer la lectura en frío y registrar los siete checks.
+
+La ejecución del investigador fue `scheduled_for=14:20`, aunque el horario guardado dice 08:00. Terminó 14:37. `next_run_time` sigue nulo. El run del auditor terminó 14:27, antes de que existiera este borrador; la próxima ejecución debe revisarlo con el prompt actualizado. El run de este operador sigue siendo el run actual y se cierra al terminar esta respuesta.
