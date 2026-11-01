@@ -222,3 +222,15 @@ El run `eb74bc97-0478-832c-a823-25af9adab923` terminó a las 14:37:23 CDMX. Sus 
 El borrador actual tiene 8 escenas, 196 palabras, 84 segundos, `narrative_contract` completo, mapa y capas de datos; no tiene assets, render ni `narrative_qa`. Los cinco DOI del radar siguen pendientes de validación directa. El borrador permanece en `proyectos/`, fuera de cola; no está preparado ni aceptado por Grok. El auditor todavía debe hacer la lectura en frío y registrar los siete checks.
 
 La ejecución del investigador fue `scheduled_for=14:20`, aunque el horario guardado dice 08:00. Terminó 14:37. `next_run_time` sigue nulo. El run del auditor terminó 14:27, antes de que existiera este borrador; la próxima ejecución debe revisarlo con el prompt actualizado. El run de este operador sigue siendo el run actual y se cierra al terminar esta respuesta.
+
+
+### Continuidad actualizada y verificación final
+
+Se actualizaron y releyeron los tres documentos de continuidad:
+- [CONTINUIDAD_CHATGPT.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/CONTINUIDAD_CHATGPT.md), commit `7d02285618bee18ed78a112bd34627779b47dd51`.
+- [BOT_DOT_AUTONOMIA.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/BOT_DOT_AUTONOMIA.md), commit `650e9aa88c8f1c59e47638b09fb49d837213c9ef`.
+- [PROYECTOS_Y_ESTADO.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/PROYECTOS_Y_ESTADO.md), commit `0aaa9d5266cfb67986f809eabb634691a4b9ff8b`.
+
+El [CONTROL_COLA actualizado](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-01_CONTROL_COLA.md) quedó en el commit `939ad5558b18564d4bbd4c72b0b925a1d2508a03`. La última consulta de árbol confirmó cero storyboard JSON en `cola/entrada/`, el README de cuarentena presente y el nuevo borrador únicamente en `proyectos/`.
+
+Estado final de automatizaciones al último peek: investigador completed; auditor completed; operador actual `in_progress` hasta cerrar esta ejecución. `next_run_time` sigue nulo en las tres. No se atribuye ninguna ejecución futura.
