@@ -19,6 +19,7 @@
 - Los storyboards anidados del 1-nov para cebolla y pulpo tienen 8 escenas, 231/228 palabras y 90 s incluyendo cortinilla; voz correcta y `approved_assets=[]`. Sin embargo, cada uno contiene ocho `asset_filename` apuntando a `frames/scene_00X.jpg`, y no hay archivos de frame correspondientes.
 - Esos dos paquetes viven en `cola/entrada/<project_id>/storyboard.json`. El workflow `.github/workflows/capcot-grok-dispatch.yml` solo escucha `cola/entrada/*.json` y el modo `all` busca archivos de primer nivel (`maxdepth 1`). Por tanto, los dos paquetes anidados no son seleccionados por el despacho actual.
 - El workflow fue reparado y ampliado para lote, pero la prueba real de entrega se detuvo antes del envío por falta de `GROK_WEBHOOK_URL`; no llegó a comprobar `GROK_WEBHOOK_TOKEN`. No hay ACK ni estado Grok confirmado.
+- `data/temas_del_dia.json` y `data/estilos_usados.json` llegan al 28-oct; `data/rotacion.json` y `data/publicaciones.json` llegan al 31-oct. En rotación, Pardelas conserva `cama: "None"` como texto y Kromdraai tiene `cama` vacío; no se normalizó.
 - No modificar `data/*.json`, no crear estados Grok, no inferir recepción desde cola/salidas/programación de plataforma y no generar medios desde el operador general.
 
 ## Motor U6 — estado empírico
