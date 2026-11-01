@@ -7,7 +7,7 @@ Se leyeron primero en `ChatGPT-migracion/main`:
 - `ESTILO_DE_TRABAJO.md`
 - `BOT_DOT_AUTONOMIA.md`
 - `PROYECTOS_Y_ESTADO.md`
-- `reportes/2026-10-31_AUDITORIA_IMPLEMENTACION.md`, incluido su contenido adicional hasta el corte del 1-nov.
+- `reportes/2026-10-31_AUDITORIA_TRANSVERSAL.md`, incluido su contenido adicional hasta el corte del 1-nov.
 
 También se consultaron los historiales de las tres automatizaciones, el contrato Grok, la cola y el workflow CAPCOT, y los documentos de custodia y plan ciego de Motor U6.
 
@@ -149,3 +149,65 @@ Los tres archivos se releyeron desde GitHub y sus SHA de contenido cambiaron con
 - No se gastaron créditos.
 - No se modificaron `data/*.json`, archivos de Motor U6, motores canónicos, patrones, secretos, permisos ni repositorios fuera de la continuidad documental.
 - Las verificaciones de CAPCOT y U6 fueron lecturas/parseo estático; no se ejecutaron sus validadores locales.
+
+
+---
+
+## Operación adicional — 1-nov-2026, corte 14:30 CDMX
+
+### Auditoría transversal y cuentas
+Se leyó el archivo correcto: [2026-10-31_AUDITORIA_TRANSVERSAL.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/reportes/2026-10-31_AUDITORIA_TRANSVERSAL.md). La referencia anterior a `AUDITORIA_IMPLEMENTACION.md` era incorrecta; ese path no existe.
+
+Se volvieron a consultar las dos conexiones GitHub:
+- `marcojpad-hash`: una instalación y cuatro repositorios: `ChatGPT-migracion`, `capcot-capsulas-imaginantes`, `motor-u6-storage`, `orquestador-central`.
+- `marcosabines-hash`: cero instalaciones y cero repositorios devueltos.
+- `orquestador-central`: DESCUBIERTO_ADICIONAL, privado. Se leyeron metadatos, README y PR draft #1; no se escribió, fusionó ni desplegó.
+
+### Automatizaciones — estado real
+| Automatización | Run | Estado al último peek |
+|---|---|---|
+| Operador general | `7dd18f1e-af70-8331-8d36-64854ab926b3`, iniciado 14:20 CDMX | `in_progress`; es este run |
+| Investigador CAPCOT | `eb74bc97-0478-832c-a823-25af9adab923`, iniciado 14:20 CDMX | `in_progress`; el último resultado completado sigue siendo 31-oct |
+| Auditor CAPCOT | `47f25beb-8e28-8324-b66b-c3923f3e90e3`, 14:20–14:27 CDMX | `completed`; produjo CONTROL_COLA |
+
+Las tres muestran `next_run_time=null`. El auditor está en `flexible_schedule` y su run fue programado 40 minutos antes de las 15:00 guardadas. Operador e investigador muestran `scheduled_for=14:20` aunque sus reglas guardadas dicen 08:00. No se infiere causa. Los prompts se actualizaron después de iniciar los runs, por lo que estos no prueban el cumplimiento de la nueva versión.
+
+### CAPCOT — auditoría y bloqueos
+El [CONTROL_COLA del 1-nov](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-01_CONTROL_COLA.md) quedó creado, releído y ampliado; commit final `e8bd58a9066c1709d3e51709b6330871143a538f`.
+
+Hallazgos:
+- Diez runs recientes de Actions fallaron; ocho logs inspeccionados muestran `Falta configurar GROK_WEBHOOK_URL.`. No hubo POST; no se llegó a comprobar `GROK_WEBHOOK_TOKEN`.
+- El workflow solo selecciona JSON de primer nivel; no existe `cola/estado/`. Recepción Grok: **RECEPCION_GROK_NO_CONFIRMADA**.
+- No existía `docs/briefs/2026-11-01_RADAR_CAPCOT.md` al último corte.
+- El auditor asignó lectura en frío: Xolo 85 PASS narrativo; pulpo 72 FAIL; cebolla 84 FAIL; Baffin 78 FAIL; tiburón 89 PASS narrativo. Ninguno tenía `narrative_contract` ni `narrative_qa`; esos dos PASS narrativos no eran PASS machine-readable ni PASS integral.
+- El slot de dato del día 23:30 seguía sin paquete.
+
+### Compuerta narrativa implementada
+Se estableció el staging:
+1. Investigador escribe brief y borrador en `proyectos/<project_id>/storyboard.json`; no crea entrada de cola ni `narrative_qa`.
+2. Auditor distinto del redactor oculta título, resumen, arco, notas y `narrative_contract`; lee solo la narración concatenada y registra siete checks, score, basis y flags.
+3. Solo PASS (>=85, siete checks true, flags vacíos) y validador estructural correcto permite promover a `cola/entrada/YYYY-MM-DD_slug.json`.
+4. FAIL o falta de revisor independiente queda fuera de cola; los paquetes heredados se conservan en `cola/bloqueados/`.
+
+Cambios CAPCOT:
+- Plantilla `storyboard_vertical.template.json` con los seis campos de `narrative_contract`: commit `4f13d5a3772a48bb7fabfb5ddbd976afb2469399`.
+- Contrato QA en frío y ejemplo corregido: `40f1f95b7e16ecae6ee047a5fd668ad21273ad86`, `399ca866dbf92190ee77625d1756c670817a604b`.
+- Receta: `ec9c780a8cc6c1b59f73c294ff60bc67bbdb15b0`; Plan Maestro: `18577b7ad634257cca489b3f8e5217cd1c965d6d`; contrato operativo: `0f65ccdffaf11cb0fa469d08e1754312d3db7e09`.
+- Validador `scripts/validar_storyboard.py`: commits `45b3a4fc0d99ee573b3b65acca7243bf71bb51ac` y `c5b0c2d4fb263f69bf47a89299a51b5409792531`. Exige los seis campos no vacíos de `narrative_contract` y `narrative_qa` PASS con score >=85, siete checks true, basis exacto, flags vacíos y rol del auditor.
+- Pruebas: commits `65fd93816724c9852d365cbcaef55891bd886f47` y `491113d7267c2278f9c7da8c0bbde16eeed94952`.
+
+Cuatro pruebas aisladas de los helpers pasaron (4/4). No se ejecutó la suite completa ni el validador del repo: no había checkout local y el intento de clonado falló por DNS. No se afirma CI verde.
+
+### Cuarentena reversible de la cola
+Se inspeccionaron todos los storyboard JSON restantes en `cola/entrada/`: 38 instancias en 29 project_id; todos carecían de `narrative_contract` y `narrative_qa`. Sumados a cuatro paquetes del 1-nov movidos antes, quedaron 33 project_id y 116 archivos conservados en `cola/bloqueados/`.
+
+- [Commit 057474c](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/commit/057474c747202e164c28d3cf2f54c3196d55ca9f): cuatro paquetes, 15 archivos.
+- [Commit 3795f40](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/commit/3795f40cd035a8293efed759a2af1b5d58ef1ef0): 29 project_id, 101 archivos; `[skip ci]` evitó disparar el workflow.
+- [README de cuarentena](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/cola/bloqueados/README.md), commit `6b9cf5285b19ba064d09fc843d741d69852f4d28`.
+
+Se verificó que cada blob de destino conserva el SHA original y que no quedan storyboard JSON en `cola/entrada/`. No se descartó contenido, no se modificó `data/*.json`, workflows, secretos, permisos ni estados Grok. Xolo permanece en `salidas/`, fuera de cola.
+
+### Motor U6 y límites
+Motor U6: C01–C20 siguen pendientes; se releyeron protocolo de custodia y plan de 20 casos; no se ejecutaron casos ni se tocaron motores, patrones o candados. Orquestador Central permanece DESCUBIERTO_ADICIONAL y de solo lectura.
+
+El run del investigador CAPCOT sigue `in_progress`; no hay radar nuevo verificado. El run del auditor terminó antes de la actualización final del prompt y no escribió `narrative_qa`; el siguiente run debe usar la nueva versión. El run de este operador seguía `in_progress` al último peek. No hubo medios, publicación, programación, envío externo ni consumo de créditos.
