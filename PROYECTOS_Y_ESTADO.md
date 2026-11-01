@@ -44,7 +44,7 @@
 | Automatización | Horario CDMX | Último estado observado |
 |---|---:|---|
 | Operador autónomo general | 08:00 | Run del 1-nov `in_progress`; no declarar completado. |
-| Agente de investigación CAPCOT | 08:00 | Último run completado 31-oct; el horario guardado se corrigió de 08:30 a 08:00 el 1-nov. Run del 1-nov no confirmado al corte. |
+| Agente de investigación CAPCOT | 08:00 | Último run completado 31-oct; el horario guardado se corrigió de 08:30 a 08:00 el 1-nov a las 08:01:44 CDMX, después del slot de las 08:00. Run del 1-nov no confirmado al corte. |
 | Auditor CAPCOT — cola y rotación | 15:00 | Último run completado 31-oct; su resultado fue CONTROL_COLA estático. El prompt se reforzó el 1-nov después de ese run; aún no hay ejecución de esa versión. |
 
 `next_run_time` aparece nulo en las tres consultas. Una programación habilitada no garantiza por sí sola que el siguiente run haya sido creado.
