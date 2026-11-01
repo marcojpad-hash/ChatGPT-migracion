@@ -20,7 +20,7 @@ Limitación: una ronda diaria no equivale a Dot 24/7. El run del 1-nov `7dd18f1e
 - **Auditor CAPCOT (15:00):** revisor distinto del redactor. Oculta título, resumen, arco, notas y `narrative_contract`; lee únicamente la narración concatenada. Registra `narrative_qa` con siete checks, score, basis y flags. Solo PASS (>=85, todos true, flags vacíos) y validador estructural correcto permite promover a `cola/entrada/YYYY-MM-DD_slug.json`; FAIL/no revisión va a `cola/bloqueados/`.
 - **Grok/Imaginantes:** conserva selección editorial, producción audiovisual, QA oficial y publicación. Recepción solo se confirma con `cola/estado/YYYY-MM-DD_slug.json`; no crear ni modificar ese archivo desde ChatGPT.
 
-Estado 1-nov: el investigador creó el radar y el borrador red-electrica en `proyectos/`, pero su run sigue `in_progress`; el DOI principal está pendiente y el storyboard no tiene QA. El auditor terminó antes de la actualización final del prompt y no revisó este borrador. La cola de entrada está vacía; 33 project_id heredados se conservan en bloqueados.
+Estado 1-nov: el investigador completó 14:37 y verificó radar y borrador red-electrica en `proyectos/`; el DOI principal está pendiente y el storyboard no tiene QA. El auditor terminó antes de la actualización final del prompt y no revisó este borrador. La cola de entrada está vacía; 33 project_id heredados se conservan en bloqueados.
 
 
 ## Orquestador Central — adicional descubierto
