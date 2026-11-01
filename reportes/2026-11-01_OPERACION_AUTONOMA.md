@@ -129,7 +129,7 @@ Actualizaciones ejecutadas y releídas en `ChatGPT-migracion/main`:
 |---|---|
 | [CONTINUIDAD_CHATGPT.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/CONTINUIDAD_CHATGPT.md) | `a3c3051f51565a7165eaf5d81dfb3e70f851752a` |
 | [BOT_DOT_AUTONOMIA.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/BOT_DOT_AUTONOMIA.md) | `dabd5dc242693d69f05983e052b0029d715f0ed1` |
-| [PROYECTOS_Y_ESTADO.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/PROYECTOS_Y_ESTADO.md) | `7cf68b61a203bc2308d0c0b5e5dcb5b23e96c691` |
+| [PROYECTOS_Y_ESTADO.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/PROYECTOS_Y_ESTADO.md) | `277ef87c4ee988ed35e54477cc0cfe3ec28aed5e` |
 
 Los tres archivos se releyeron desde GitHub y sus SHA de contenido cambiaron conforme a los commits.
 
