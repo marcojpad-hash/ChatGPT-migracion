@@ -86,7 +86,7 @@ Lectura actual de los JSON:
 - `data/rotacion.json`: contiene registros hasta 31-oct.
 - `data/publicaciones.json`: contiene registros hasta 31-oct.
 
-No se modificó ningún `data/*.json`. La auditoría de las 15:00 recibió una instrucción explícita para revisar rutas anidadas, dispatchabilidad, estado Grok y placeholders sin duplicar producción.
+En `data/rotacion.json`, el registro de Pardelas conserva `cama: "None"` como texto y Kromdraai mantiene `cama` vacío; no se normalizaron esos valores porque `data/*.json` está protegido. No se modificó ningún `data/*.json`. La auditoría de las 15:00 recibió una instrucción explícita para revisar rutas anidadas, dispatchabilidad, estado Grok y placeholders sin duplicar producción.
 
 ## 4. Motor U6 — revisión documental independiente
 
