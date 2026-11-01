@@ -25,7 +25,7 @@ Comprobación de las dos conexiones GitHub disponibles:
 |---|---|---|---|
 | Operador autónomo general | `178fd744-a9ac-8329-94e8-eaa81aaf8b76`, iniciado 1-nov 13:57:24Z | `in_progress` | No tiene `completed_at`; el resultado más reciente pertenece al run anterior del 31-oct. No declarar completado. |
 | Agente de investigación CAPCOT | `e0a3713c-7984-832d-a3a4-dfe62b674664`, 31-oct | `completed` | No se observó run del 1-nov después del cambio de horario. |
-| Auditor CAPCOT — cola y rotación | `9e484251-38e4-832f-beb6-b1cf21e50f52`, 31-oct 21:06–21:18Z | `completed` | Corrió bajo el mandato de auditoría; su informe fue estático y declaró que no ejecutó validadores porque no había runtime. |
+| Auditor CAPCOT — cola y rotación | `9e484251-38e4-832f-beb6-b1cf21e50f52`, 31-oct 21:06–21:18Z | `completed` | El resultado fue un CONTROL_COLA estático; no ejecutó validadores por falta de runtime. El prompt actual se actualizó 1 minuto después de terminar ese run, así que no se atribuye retrospectivamente a la versión actual. |
 
 Las tres están habilitadas. `next_run_time` aparece nulo en las tres consultas; la programación guardada no prueba por sí sola que el siguiente run esté creado.
 
@@ -35,7 +35,7 @@ Las tres están habilitadas. `next_run_time` aparece nulo en las tres consultas;
 - **Operador general:** prompt ampliado para comprobar las cuentas e instalaciones GitHub antes de declarar que no existen otros repositorios. Los repositorios adicionales se clasifican como descubiertos y permanecen de solo lectura hasta inclusión expresa del propietario.
 - **Auditor CAPCOT:** prompt ampliado para enumerar múltiples paquetes del día, comprobar la profundidad real de la cola frente al workflow, inspeccionar los logs de Actions, comprobar archivos `cola/estado` y detectar `asset_filename` no materializados. Se eliminó la suposición de que solo existe un storyboard diario.
 
-No se creó ninguna automatización nueva ni se duplicaron agentes.
+No se creó ninguna automatización nueva ni se duplicaron agentes. El prompt actual del auditor se volvió a reforzar el 1-nov 14:01Z; todavía no hay run posterior que pruebe esa versión.
 
 ## 3. CAPCOT — investigación separada de auditoría y producción
 
