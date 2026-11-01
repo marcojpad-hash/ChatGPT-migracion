@@ -31,7 +31,7 @@ Los tres repositorios principales de trabajo siguen siendo los enumerados en la 
 | Automatización | Horario CDMX | Estado observado al corte |
 |---|---:|---|
 | Operador autónomo general | Diario 08:00 | Habilitada. Run `178fd744-a9ac-8329-94e8-eaa81aaf8b76` del 1-nov en `in_progress`; no declarar completado. `next_run_time` nulo. |
-| Agente de investigación CAPCOT | Diario 08:00 hasta 24-nov | Habilitada. Último run observado: 31-oct, completado. El horario guardado se corrigió de 08:30 a 08:00 el 1-nov; no hay run del 1-nov confirmado al corte. `next_run_time` nulo. |
+| Agente de investigación CAPCOT | Diario 08:00 hasta 24-nov | Habilitada. Último run observado: 31-oct, completado. El horario guardado se corrigió de 08:30 a 08:00 el 1-nov a las 08:01:44 CDMX, después del slot de las 08:00; no hay run del 1-nov confirmado al corte. `next_run_time` nulo. |
 | Auditor CAPCOT — cola y rotación | Diario 15:00 | Habilitada. Último run del 31-oct completado; el resultado fue un CONTROL_COLA estático. El prompt actual se reforzó el 1-nov después de ese run; todavía no hay ejecución registrada bajo esa versión. `next_run_time` nulo. |
 
 Una programación guardada no equivale a una ejecución futura confirmada. Consultar el historial antes de atribuir trabajo.
