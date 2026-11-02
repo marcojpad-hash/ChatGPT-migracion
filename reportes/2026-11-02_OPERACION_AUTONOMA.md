@@ -149,3 +149,9 @@ Se actualizó el inventario de cuentas, la procedencia de los paquetes del 2-nov
 - Motor U6 se mantuvo en lectura; no se modificaron motores canónicos, patrones ni candados.
 - `orquestador-central` permaneció en solo lectura.
 - El run actual del operador seguía `in_progress` al corte; no se declara completado.
+
+
+
+## 8. Prevención de duplicación en el investigador CAPCOT
+
+Se actualizó el prompt del investigador `6ae5827ecc808191a36a8c773cc2990a` con una compuerta anti-duplicación: antes de crear storyboard debe enumerar proyectos/salidas/cola de la fecha actual y comprobar `fecha_objetivo` y `slot_local`; si el slot ya tiene storyboard, no crea otro; si solo falta el radar, crea únicamente el brief; si no hay slot libre/autorizado, registra NO_DUPLICAR. El prompt se releyó. No se lanzó `run_now`: no se generó un paquete duplicado ni se atribuyó trabajo al investigador sin un run completado.
