@@ -47,3 +47,7 @@ El prototipo HTTP/SQLite tiene dos checks de CI exitosos: uno sobre el HEAD de l
 - El auditor del 1-nov dejó red eléctrica PASS 89 sin slot, cambio horario FAIL 84, cebolla FAIL 79 y pulpo FAIL 72. Los valores deben cotejarse con los JSON; el resumen del run presentó una discrepancia respecto al storyboard cambio horario, cuyo archivo releído conserva FAIL 84.
 - Para los proyectos 2-nov no existe `cola/estado/<project_id>.json`: RECEPCION_GROK_NO_CONFIRMADA. No crear ni modificar esos archivos desde ChatGPT.
 - Dot nativo sigue sin conexión confirmada. No afirmar ejecución de Dot ni equivalencia 24/7.
+
+
+
+- **Guardia anti-duplicación del investigador:** prompt actualizado el 2-nov para comprobar proyectos, salidas y cola de la fecha actual; no crear un segundo storyboard para un slot ocupado; crear solo el radar faltante cuando corresponda. El cambio de prompt no equivale a ejecución; el último run sigue siendo el del 1-nov.
