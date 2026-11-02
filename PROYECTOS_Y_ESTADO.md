@@ -99,3 +99,7 @@ Esta actualización prevalece sobre el corte 2026-11-01 en lo relativo a estados
 | Auditor CAPCOT | `cf090c46-78d8-8331-9739-7f99d23abc1c` | Completado 1-nov 18:33 CDMX; modo flexible, no hay run 2-nov. |
 
 Las tres muestran `next_run_time=null`. No atribuir entregables del 2-nov a una automatización sin un run completado y un commit atribuible.
+
+
+
+- El prompt del investigador CAPCOT también tiene una compuerta anti-duplicación: consulta project_id del día en proyectos/salidas/cola y valida fecha_objetivo/slot_local; no genera otro storyboard para un slot ocupado; puede crear solo el radar faltante. No se lanzó un run adicional el 2-nov.
