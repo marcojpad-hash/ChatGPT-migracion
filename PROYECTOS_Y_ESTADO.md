@@ -59,3 +59,43 @@ Dot nativo no está disponible desde esta sesión. El operador diario es sustitu
 ## Regla de estado
 
 Cada hecho debe marcarse como verificado, ejecutado, inferido o pendiente. Un prompt actualizado no prueba que el bot haya ejecutado; un archivo en cola no prueba recepción; un artifact no equivale a un registro versionado hasta que se incorpore al repositorio.
+
+
+
+## Actualización operativa — 2026-11-02
+
+Esta actualización prevalece sobre el corte 2026-11-01 en lo relativo a estados actuales.
+
+### CAPCOT — proyectos 2-nov
+
+- Dos proyectos existentes: `proyectos/2026-11-02_camaron-mantis/` y `proyectos/2026-11-02_comida-pan-duro/`. El historial de GitHub atribuye la carga inicial a Grok Bot (commit `c83c35814499ae0a73443beb4d02d84e0e62c144`, mensaje de lote 2-nov); no atribuirlos al investigador CAPCOT, cuyo último run registrado es del 1-nov.
+- Ninguno de los dos storyboards tiene `narrative_contract` ni `narrative_qa`. Por tanto no hay PASS narrativo ni autorización para promoción. Sus `ESTADO_EJECUCION.md` se corrigieron de PREPARADO a `BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION`.
+- Ambos tienen carpetas en `salidas/` con storyboard, `qa.json`, `publicacion.json`, metadata y licencias. Los `qa.json` son QA audiovisual de 21 checks, no lectura narrativa en frío. Duraciones: camarón mantis 75.35 s; pan duro 74.33 s. El QA local admite 60–120 s; el segundo queda 0.67 s por debajo del mínimo editorial de 75 s.
+- El árbol GitHub no contiene los MP4 referenciados ni frames; no se afirma que estén versionados. Los dos proyectos también tienen snapshots en `cola/bloqueados/`; `cola/entrada/` solo tiene `.gitkeep`.
+- No existe `cola/estado/2026-11-02_camaron-mantis.json` ni `cola/estado/2026-11-02_comida-pan-duro.json`: RECEPCION_GROK_NO_CONFIRMADA por contrato. No se infiere recepción de commits o salidas.
+- `publicacion.json` registra YouTube `5sxxx0vuXFE` (privado, publishAt 07:00 CDMX) y `V9bO9EUN0JA` (privado, publishAt 13:30 CDMX), además de estados programados de TikTok/Facebook. En los dos historiales hay versiones antiguas que siguen descritas como programadas: camarón `tmxMkxA6nOw` y `d-tYvAM8hGE`; pan `TbZRvpiDjdk` y `sHjf4QF9QiM`. Riesgo de publicación duplicada; no se borró ni canceló nada.
+- `endscreens_rotacion.json` a las 07:52 CDMX registra 4 vistas para `5sxxx0vuXFE`, mientras el snapshot de publicación conserva `privacyStatus=private`. Discrepancia pendiente; no declarar PUBLICADO.
+- El auditor CAPCOT se actualizó para comprobar salidas/publicaciones preexistentes, no redispatchar, distinguir QA audiovisual de `narrative_qa` y cotejar valores con el JSON releído. No ha ejecutado todavía el 2-nov.
+- No hay radar `docs/briefs/2026-11-02_RADAR_CAPCOT.md`; el investigador no tiene run del 2-nov registrado. No se lanzó un run adicional para evitar duplicar trabajo de CAPCOT.
+
+### Motor U6 — snapshot 2-nov
+
+- Último commit observado en `main`: `9fb12bcf18eaf46ada5d05684470a0f23608f138`, creado por GitHub Actions. Cambió únicamente `avances/auditoria_corridas/ULTIMO_ESTADO.json` y `.md`.
+- Auditoría Actions: runs `41441459614` y `41427587700` en éxito; el snapshot también conserva varios fallos previos del 2-nov. Son auditorías/snapshots de Actions, no prueba de nuevas corridas empíricas del motor.
+- No se modificó motor, patrones, candados ni casos. C01–C20 continúan pendientes.
+
+### Descubrimiento GitHub — 2-nov
+
+- Cuenta `marcojpad-hash`: instalación 174841554, selección all; 4 repositorios visibles: ChatGPT-migracion, capcot-capsulas-imaginantes, motor-u6-storage y orquestador-central.
+- Cuenta `marcosabines-hash`: 0 instalaciones y 0 repositorios visibles.
+- `orquestador-central` continúa DESCUBIERTO_ADICIONAL y solo lectura; no recibió cambios.
+
+### Automatizaciones — 2-nov
+
+| Automatización | Último run | Estado al corte |
+|---|---|---|
+| Operador general | `1248bd49-8db4-832f-aa14-3791363a9486` | `in_progress`, iniciado 08:04 CDMX; sin finalización. |
+| Investigador CAPCOT | `eb74bc97-0478-832c-a823-25af9adab923` | Completado 1-nov; no hay run 2-nov. |
+| Auditor CAPCOT | `cf090c46-78d8-8331-9739-7f99d23abc1c` | Completado 1-nov 18:33 CDMX; modo flexible, no hay run 2-nov. |
+
+Las tres muestran `next_run_time=null`. No atribuir entregables del 2-nov a una automatización sin un run completado y un commit atribuible.
