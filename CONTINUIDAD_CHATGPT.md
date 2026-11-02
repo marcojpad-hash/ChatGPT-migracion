@@ -52,3 +52,16 @@ Las tres muestran `next_run_time=null`. Operador e investigador muestran `schedu
 - No inventar acceso, ejecución, datos, aceptación de Grok ni actividad en segundo plano.
 - No publicar, enviar mensajes externos, gastar créditos, modificar permisos ni alterar archivos canónicos sin autorización.
 - Separar evidencia verificada, ejecución, inferencia y pendiente.
+
+
+
+## Actualización operativa — 2026-11-02
+
+Esta sección prevalece sobre los estados del corte 2026-11-01 cuando haya diferencias. Registro detallado: [reportes/2026-11-02_OPERACION_AUTONOMA.md](reportes/2026-11-02_OPERACION_AUTONOMA.md).
+
+- **Cuentas GitHub:** `marcojpad-hash` tiene una instalación (ID 174841554, selección all) y cuatro repositorios visibles: `ChatGPT-migracion`, `capcot-capsulas-imaginantes`, `motor-u6-storage`, `orquestador-central`. `marcosabines-hash` tiene cero instalaciones y cero repositorios visibles. Los tres repositorios principales permanecen en alcance; `orquestador-central` es DESCUBIERTO_ADICIONAL, solo lectura.
+- **CAPCOT 2-nov:** existen dos proyectos cargados por Grok Bot el 31-oct: camarón mantis y pan duro. Tienen salidas y registros audiovisuales, pero sus storyboards en `proyectos/` no tienen `narrative_contract` ni `narrative_qa`. Los QA de `salidas/*/qa.json` son audiovisuales, no narrativos. Los dos estados de ejecución se corrigieron a BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION. No se redispatchará ninguno: ya hay salidas y registros de publicación.
+- Para ambos proyectos falta `cola/estado/<project_id>.json`: RECEPCION_GROK_NO_CONFIRMADA según el contrato, aunque existan commits y salidas. `cola/entrada/` solo contiene `.gitkeep`.
+- Los registros de YouTube conservan IDs anteriores descritos como todavía programados; existe riesgo de duplicado y no se canceló nada. El registro de rotación del camarón muestra 4 vistas mientras el snapshot de publicación conserva privacidad `private`; discrepancia abierta.
+- **Motor U6:** el commit más reciente solo actualizó snapshots de auditoría Actions; no hay cambio de motor. C01–C20 siguen pendientes y los candados permanecen intactos.
+- **Automatizaciones:** operador actual en `in_progress`; investigador sin run del 2-nov; auditor sin run del 2-nov y conserva `flexible_schedule`. `next_run_time=null` en las tres.
