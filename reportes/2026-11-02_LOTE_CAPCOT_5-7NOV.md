@@ -6,7 +6,7 @@ Commit de la instrucción: `ca29f89630292e5666ee1e02c86988563562ec8e`
 
 ## Resultado ejecutado
 
-Se crearon y relelleron 12 archivos canónicos en `proyectos/<project_id>/storyboard.json` en la rama `feature/capcot-video-discovery-continuity`.
+Se crearon y releyeron 12 archivos canónicos en `proyectos/<project_id>/storyboard.json` en la rama `feature/capcot-video-discovery-continuity`.
 
 Commit de staging: `7a415426f5907c2ab03687a47f3d160a595cb669`  
 [Ver commit de staging](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/commit/7a415426f5907c2ab03687a47f3d160a595cb669)
@@ -28,7 +28,7 @@ Commit de staging: `7a415426f5907c2ab03687a47f3d160a595cb669`
 
 ## Compuertas y verificación
 
-Los 12 JSON se relelleron desde GitHub y pasaron las comprobaciones mecánicas siguientes:
+Los 12 JSON se releyeron desde GitHub y pasaron las comprobaciones mecánicas siguientes:
 - `project_id`, `fecha_objetivo`, `slot_local` y `slot_cesta` corresponden a los 12 slots del horario.
 - Los seis campos de `narrative_contract` están presentes y no vacíos.
 - Siete escenas por storyboard.
@@ -60,4 +60,4 @@ Los 12 JSON se relelleron desde GitHub y pasaron las comprobaciones mecánicas s
 ## Estado final
 
 **12 copias canónicas staged; 11 esperan QA independiente; 1 bloqueada por desajuste tema-slot. 0 promovidas.**  
-La recepción de Grok no se afirma: no se consultó un acuse para estos IDs y ningún commit o archivo de cola equivale a recepción.
+**Handoff Grok:** se comprobaron las 12 rutas `cola/estado/<project_id>.json`; las 12 están ausentes. Resultado: `RECEPCION_GROK_NO_CONFIRMADA` para todos. Se leyó `docs/GROK_STATUS_CONTRACT.md`: Grok es el único responsable de crear/actualizar esos estados; ChatGPT solo los lee. No se creó ni modificó ningún archivo de estado. Ningún commit ni presencia en cola equivale a recepción.
