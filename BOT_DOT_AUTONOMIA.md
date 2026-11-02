@@ -36,3 +36,14 @@ El prototipo HTTP/SQLite tiene dos checks de CI exitosos: uno sobre el HEAD de l
 - Notion conserva contexto histórico; no prevalece sobre los repositorios vigentes.
 - No existe conexión directa confirmada con Dot.
 - Consultar `last_run`, `latest_result` y `next_run_time` antes de atribuir actividad. Un run `in_progress` no es un resultado completado.
+
+
+
+## Estado verificado — 2026-11-02
+
+- **Operador autónomo general:** run `1248bd49-8db4-832f-aa14-3791363a9486`, `in_progress`, iniciado 2026-11-02 08:04 CDMX. No tiene `completed_at`; el resultado publicado más reciente corresponde al run anterior del 1-nov. No atribuirle el contenido de ese resultado. `next_run_time=null`.
+- **Investigador CAPCOT:** último run `eb74bc97-0478-832c-a823-25af9adab923`, completado 1-nov 14:37 CDMX. No hay run del 2-nov en el registro. El horario guardado sigue diario 08:00 exacto hasta el 24-nov; `next_run_time=null`. Los proyectos 2-nov presentes en GitHub fueron cargados por Grok Bot en commit `c83c35814499ae0a73443beb4d02d84e0e62c144`, no deben atribuirse al investigador.
+- **Auditor CAPCOT:** último run `cf090c46-78d8-8331-9739-7f99d23abc1c`, completado 1-nov 18:33 CDMX; `timing_mode=flexible_schedule`, aunque la regla guardada marca 15:00. No hay run del 2-nov. El prompt se reforzó para no redispatchar proyectos con salidas/publicaciones preexistentes, separar QA audiovisual de narrative_qa y corregir estados PREPARADO sin PASS. `next_run_time=null`.
+- El auditor del 1-nov dejó red eléctrica PASS 89 sin slot, cambio horario FAIL 84, cebolla FAIL 79 y pulpo FAIL 72. Los valores deben cotejarse con los JSON; el resumen del run presentó una discrepancia respecto al storyboard cambio horario, cuyo archivo releído conserva FAIL 84.
+- Para los proyectos 2-nov no existe `cola/estado/<project_id>.json`: RECEPCION_GROK_NO_CONFIRMADA. No crear ni modificar esos archivos desde ChatGPT.
+- Dot nativo sigue sin conexión confirmada. No afirmar ejecución de Dot ni equivalencia 24/7.
