@@ -119,3 +119,21 @@ La continuidad transversal y el inventario de herramientas quedaron documentados
 **Infraestructura:** n8n-workflow-check está disponible como skill para crear y revisar workflows JSON, pero no se encontró conexión directa a la instancia n8n. Automations mantiene las tres tareas principales habilitadas; next_run_time aparece null en las consultas del 3-nov, por lo que su próxima ejecución requiere verificación.
 
 **Pendiente de migración:** probar un intercambio real con acuse de otro modelo; la bandeja y la plantilla ya existen. No confundir archivos preparados con un handoff recibido.
+
+## Actualización de estado CAPCOT — auditoría posterior del 2-nov
+
+El auditor completó una revisión posterior a la actualización de la mañana. Informe fuente: [CONTROL_COLA 2026-11-02](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-02_CONTROL_COLA.md), leído desde la rama vigente.
+
+- Resultado general: NO DISPATCHABLE; cola/entrada contiene solo .gitkeep y no existe cola/estado. Recepción Grok no confirmada.
+- Para el 2-nov se revisaron cuatro proyectos con producción/salidas/publicaciones preexistentes: camarón mantis, pan duro, murciélagos y sequías. Todos son PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR; no generar una segunda entrega.
+- QA narrativo independiente: camarón PASS 90 pero falla estructura y tiene producción previa; pan FAIL 84; murciélagos FAIL 72/80 según versiones; sequías FAIL 56/54 según versiones. No se promovió ninguno.
+- Las versiones larga y bloqueada de murciélagos/sequías difieren. No fusionar ni asumir equivalencia.
+- No hay medios verificados en el árbol GitHub para los cuatro; los QA audiovisuales y logs no demuestran que los medios referenciados estén versionados.
+- Hay IDs antiguos de YouTube descritos como programados, con riesgo de duplicación. No se canceló ni borró nada; no declarar publicaciones públicas a partir de los snapshots.
+- La última ejecución de dispatch visible seguía siendo run 41306776689 (1-nov), FAILURE por falta de GROK_WEBHOOK_URL; el paso de entrega fue omitido. No se modificaron secretos.
+- La agenda 5–7 nov tiene 12 slots de contenido; IDs de varios paquetes bloqueados no coinciden con IDs actuales y existen duplicaciones de carpeta/JSON, especialmente nubes. Reconciliar antes de QA o handoff; no renombrar ni duplicar por inferencia.
+- La auditoría fue estática: no se ejecutó el validador Python ni se enviaron paquetes.
+
+## Actualización de Motor U6 — snapshot de Actions observado el 3-nov
+
+El archivo motor-u6-storage/main/avances/auditoria_corridas/ULTIMO_ESTADO.md se releyó. Muestra auditorías programadas completadas en éxito hasta 2026-11-02 23:05 CDMX. Son ejecuciones del workflow de auditoría, no corridas empíricas nuevas del motor. No se modificó el motor ni se alteraron patrones/candados en esta preparación.
