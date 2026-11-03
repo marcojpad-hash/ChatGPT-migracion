@@ -42,3 +42,8 @@ No se modificó Motor U6 ni CAPCOT. No se tocó código canónico, data, secreto
 
 ## Siguiente acción obligatoria
 La siguiente sesión/modelo debe abrir bandeja/2026-11-03_RECUPERACION_MIGRACION.md, confirmar lectura, verificar los tres repositorios y dejar un reporte de recuperación con evidencia. Solo entonces se podrá marcar la prueba de handoff como completada.
+
+
+## Automatización de continuidad actualizada
+
+Se amplió el prompt de la automatización Operador autónomo general (ID 6ae59327d5fc8191b0c9a900ac86e028) para que lea el mapa de herramientas, el protocolo de memoria compartida y el checklist de migración; debe comprobar conectores reales y no declarar migración completa sin acuse de otra sesión. La actualización fue confirmada por Automations el 2026-11-03 06:54 UTC. La automatización sigue habilitada con horario diario guardado 08:00 America/Mexico_City, pero next_run_time continúa null; la próxima ejecución no se certifica desde esta lectura.
