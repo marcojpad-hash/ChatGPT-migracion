@@ -81,3 +81,9 @@ Esta actualización amplía el arranque para que una sesión nueva pueda continu
 **Conexiones comprobadas el 3-nov:** GitHub marcojpad-hash accesible; GitHub marcosabines-hash sin repositorios visibles; vidIQ autenticado en marcosabines@gmail.com y devuelve cero canales; Dropbox responde con marco.jp@live.com.mx; Notion responde; Floot sin proyectos; Canva sin Brand Kits; Runway sin workflows guardados; Undermind sin workspaces; n8n skill disponible pero sin conector directo localizado. Las tres automatizaciones principales están habilitadas, aunque next_run_time devolvió null. Ver mapa para límites y acciones.
 
 **No declarar migración terminada:** falta probar un handoff real entre dos modelos/cuentas, confirmar reconexión de GitHub en una sesión nueva y resolver las conexiones de vidIQ y automatizaciones.
+
+## Últimos cortes verificados — 2026-11-03
+
+- CAPCOT: la auditoría posterior del 2-nov está en [CONTROL_COLA 2026-11-02](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-02_CONTROL_COLA.md). Resultado NO DISPATCHABLE; cuatro proyectos con producción/publicación preexistente no deben redispatcharse; agenda 5–7 nov requiere reconciliar IDs/duplicados.
+- Motor U6: el snapshot [ULTIMO_ESTADO.md](https://github.com/marcojpad-hash/motor-u6-storage/blob/main/avances/auditoria_corridas/ULTIMO_ESTADO.md) muestra auditorías programadas exitosas hasta 2-nov 23:05 CDMX. Son auditorías Actions, no nuevas corridas empíricas.
+- Preparación de migración: [reporte 2026-11-03](reportes/2026-11-03_PREPARACION_MIGRACION.md). El handoff de recuperación permanece PENDIENTE hasta que otra sesión/modelo deje acuse observable.
