@@ -65,3 +65,19 @@ Esta sección prevalece sobre los estados del corte 2026-11-01 cuando haya difer
 - Los registros de YouTube conservan IDs anteriores descritos como todavía programados; existe riesgo de duplicado y no se canceló nada. El registro de rotación del camarón muestra 4 vistas mientras el snapshot de publicación conserva privacidad `private`; discrepancia abierta.
 - **Motor U6:** el commit más reciente solo actualizó snapshots de auditoría Actions; no hay cambio de motor. C01–C20 siguen pendientes y los candados permanecen intactos.
 - **Automatizaciones:** operador actual en `in_progress`; investigador sin run del 2-nov; auditor sin run del 2-nov y conserva `flexible_schedule`. `next_run_time=null` en las tres.
+
+
+## Actualización de continuidad y migración — 2026-11-03
+
+Esta actualización amplía el arranque para que una sesión nueva pueda continuar sin depender de la conversación actual.
+
+- Mapa de herramientas y estado de conectores: [docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md](docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md).
+- Memoria compartida y coordinación entre modelos: [docs/PROTOCOLO_MEMORIA_COMPARTIDA_ENTRE_MODELOS.md](docs/PROTOCOLO_MEMORIA_COMPARTIDA_ENTRE_MODELOS.md).
+- Pruebas pendientes antes del fin de la promoción: [docs/CHECKLIST_MIGRACION_FIN_DE_PROMOCION.md](docs/CHECKLIST_MIGRACION_FIN_DE_PROMOCION.md).
+- Bandeja: [bandeja/README.md](bandeja/README.md); usar [bandeja/PLANTILLA.md](bandeja/PLANTILLA.md) y dejar acuse observable. Un archivo no prueba que otro modelo lo haya leído.
+
+**Modelo de continuidad:** ChatGPT-migracion guarda reglas y estado transversal; motor-u6-storage conserva la autoridad U6; capcot-capsulas-imaginantes conserva la autoridad CAPCOT. GitHub es memoria operativa persistente y espacio de trabajo, pero no es un bus de mensajería en tiempo real. No asumir que una sesión nueva hereda las conexiones; comprobar cuenta, permisos y recursos.
+
+**Conexiones comprobadas el 3-nov:** GitHub marcojpad-hash accesible; GitHub marcosabines-hash sin repositorios visibles; vidIQ autenticado en marcosabines@gmail.com y devuelve cero canales; Dropbox responde con marco.jp@live.com.mx; Notion responde; Floot sin proyectos; Canva sin Brand Kits; Runway sin workflows guardados; Undermind sin workspaces; n8n skill disponible pero sin conector directo localizado. Las tres automatizaciones principales están habilitadas, aunque next_run_time devolvió null. Ver mapa para límites y acciones.
+
+**No declarar migración terminada:** falta probar un handoff real entre dos modelos/cuentas, confirmar reconexión de GitHub en una sesión nueva y resolver las conexiones de vidIQ y automatizaciones.
