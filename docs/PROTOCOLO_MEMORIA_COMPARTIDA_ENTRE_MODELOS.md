@@ -37,10 +37,10 @@ No duplicar código ni entregables de proyecto en el repo de migración. Guardar
 ## 5. Bandeja entre modelos
 La bandeja existente usa un archivo por asunto en bandeja/ y mueve los resueltos a bandeja/resueltos/. Es un protocolo de archivos, no mensajería instantánea. Usar bandeja/PLANTILLA.md como formato base; la plantilla ampliada está en plantillas/HANDOFF_ENTRE_MODELOS.md. Un modelo deja un handoff; el destinatario debe leerlo y confirmar recepción/ejecución.
 
-Estructura:
+Estructura real:
 - bandeja/<fecha>_<id>_<origen>_a_<destino>.md
-- acuse en el propio handoff o en un archivo de recibidos/
-- bandeja/resueltos/<fecha>_<id>.md
+- El acuse y la resolución se escriben dentro del mismo handoff usando bandeja/PLANTILLA.md.
+- Después de verificación, mover el aviso a bandeja/resueltos/<fecha>_<id>.md.
 
 Cada handoff incluye ID, proyecto, repo/branch, emisor/destinatario, objetivo, restricciones, fuentes/commits, entregable esperado, pruebas y estado.
 
