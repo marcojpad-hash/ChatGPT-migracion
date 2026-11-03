@@ -103,3 +103,19 @@ Las tres muestran `next_run_time=null`. No atribuir entregables del 2-nov a una 
 
 
 - El prompt del investigador CAPCOT también tiene una compuerta anti-duplicación: consulta project_id del día en proyectos/salidas/cola y valida fecha_objetivo/slot_local; no genera otro storyboard para un slot ocupado; puede crear solo el radar faltante. No se lanzó un run adicional el 2-nov.
+
+
+## Actualización de infraestructura compartida — 2026-11-03
+
+La continuidad transversal y el inventario de herramientas quedaron documentados en ChatGPT-migracion:
+- [Mapa de herramientas por proyecto](docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md).
+- [Protocolo de memoria compartida entre modelos](docs/PROTOCOLO_MEMORIA_COMPARTIDA_ENTRE_MODELOS.md).
+- [Checklist de migración](docs/CHECKLIST_MIGRACION_FIN_DE_PROMOCION.md).
+
+**Motor U6:** GitHub accesible; Floot no tiene proyectos configurados; investigación científica disponible mediante conectores, sin workspace Undermind. No se modificó el repositorio U6 en esta operación.
+
+**CAPCOT:** GitHub accesible en la rama feature/capcot-video-discovery-continuity. vidIQ no devolvió canales para la cuenta conectada. Canva no muestra Brand Kits; Runway no muestra workflows guardados. No se generaron medios ni se consumieron créditos.
+
+**Infraestructura:** n8n-workflow-check está disponible como skill para crear y revisar workflows JSON, pero no se encontró conexión directa a la instancia n8n. Automations mantiene las tres tareas principales habilitadas; next_run_time aparece null en las consultas del 3-nov, por lo que su próxima ejecución requiere verificación.
+
+**Pendiente de migración:** probar un intercambio real con acuse de otro modelo; la bandeja y la plantilla ya existen. No confundir archivos preparados con un handoff recibido.
