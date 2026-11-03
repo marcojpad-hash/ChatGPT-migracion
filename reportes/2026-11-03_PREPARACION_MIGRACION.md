@@ -9,15 +9,15 @@ Preparar ChatGPT-migracion para que otra sesión/modelo pueda retomar Motor U6 y
 - docs/CHECKLIST_MIGRACION_FIN_DE_PROMOCION.md — prueba de recuperación y conexiones que requieren reconexión.
 - bandeja/README.md y bandeja/PLANTILLA.md — protocolo y formato ampliado de acuse/entrega/verificación.
 - bandeja/2026-11-03_RECUPERACION_MIGRACION.md — handoff pendiente para que la siguiente sesión/modelo haga una prueba real de recuperación.
-- README.md, COMO_TRABAJAR_EN_ESTE_REPO.md, CONTINUIDAD_CHATGPT.md y PROYECTOS_Y_ESTADO.md — actualizados para incorporar la memoria compartida y las rutas de arranque.
+- README.md (3289c41de2ef03186d0557170b9693a3d707175a), COMO_TRABAJAR_EN_ESTE_REPO.md (85e088c3d7ed83bd789c37f35e53f6bfdf5df114), CONTINUIDAD_CHATGPT.md (3b96aa1708e3461b8ed5ebc18fa6bf2e3287c51e) y PROYECTOS_Y_ESTADO.md (3f5f9db96bba5da1ebeac828f3da650fe3d35f57) — actualizados para incorporar memoria compartida, rutas de arranque y estado CAPCOT más reciente.
 
 ## Commits
 - Mapa herramientas: cb11c31210571d1d7441f5b49dad7afaf2006de9
-- Protocolo memoria compartida: 15ddd178a9ca2b961265db58e9c8fcee239d2ded; ajuste posterior de estructura de bandeja: registrado en el historial del repo.
+- Protocolo memoria compartida: 1829cd5120a53331f23abac114ae4fd399fc59a1
 - Checklist migración: 82dbf5860fd2b3a4e6747fb49cef1c00790accd3
-- README: 845e28ebfcd032623a25c65eb5593e868e1ad8a1; ajuste posterior de inicio obligatorio: registrado en historial.
+- README: 3289c41de2ef03186d0557170b9693a3d707175a
 - Continuidad: 3b96aa1708e3461b8ed5ebc18fa6bf2e3287c51e
-- Estado de proyectos: 713f58d5491825a14532a37986ce32205a4bdc4f; actualización posterior de auditoría CAPCOT: registrada en historial.
+- Estado de proyectos: 3f5f9db96bba5da1ebeac828f3da650fe3d35f57
 - Bandeja: ec9bace50a1875333f360aca11b89973989a3427 y 9bce8e7fc4f6c4061fe1288f2f258340632371a9
 - Handoff de recuperación: e5bd18e7693b68a0d1dbde33a0221db51c0e43b0
 
