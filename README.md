@@ -38,3 +38,13 @@ Usar la carpeta `bandeja/` cuando exista y esté habilitada para intercambiar en
 ## Auditoría transversal 2026-10-31
 
 [Informe de problemas, correcciones y pendientes](reportes/2026-10-31_AUDITORIA_TRANSVERSAL.md).
+
+
+## Memoria compartida y operación de proyectos
+
+- [Mapa de herramientas por proyecto](docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md): capacidades y conexiones reales para Motor U6 y CAPCOT.
+- [Protocolo de memoria compartida entre modelos](docs/PROTOCOLO_MEMORIA_COMPARTIDA_ENTRE_MODELOS.md): arranque, colaboración, handoffs, autoridad y verificación.
+- [Checklist de migración antes del fin de la promoción](docs/CHECKLIST_MIGRACION_FIN_DE_PROMOCION.md): pruebas pendientes para una sesión nueva.
+- [Bandeja entre modelos](bandeja/README.md) y [plantilla base](bandeja/PLANTILLA.md): intercambio persistente con acuse y cierre verificables.
+
+GitHub es la memoria operativa compartida; no es mensajería instantánea ni ejecuta automáticamente al destinatario. Cada modelo debe leer la fuente de verdad y registrar sus entregables en el repositorio especializado.
