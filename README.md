@@ -10,7 +10,9 @@ Repositorio de continuidad operativa entre instancias de ChatGPT.
 2. Leer [ESTILO_DE_TRABAJO.md](ESTILO_DE_TRABAJO.md).
 3. Leer [BOT_DOT_AUTONOMIA.md](BOT_DOT_AUTONOMIA.md).
 4. Leer [DOT_EQUIVALENTE_OPERATIVO.md](DOT_EQUIVALENTE_OPERATIVO.md) para conocer el estado real de Dot y el sustituto activo.
-5. Revisar [PROYECTOS_Y_ESTADO.md](PROYECTOS_Y_ESTADO.md) y después los archivos del proyecto concreto antes de actuar.
+5. Revisar [PROYECTOS_Y_ESTADO.md](PROYECTOS_Y_ESTADO.md) y [docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md](docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md).
+6. Leer [docs/PROTOCOLO_MEMORIA_COMPARTIDA_ENTRE_MODELOS.md](docs/PROTOCOLO_MEMORIA_COMPARTIDA_ENTRE_MODELOS.md) y [docs/CHECKLIST_MIGRACION_FIN_DE_PROMOCION.md](docs/CHECKLIST_MIGRACION_FIN_DE_PROMOCION.md).
+7. Después abrir los documentos actuales del proyecto concreto antes de actuar.
 
 ## Regla central
 
