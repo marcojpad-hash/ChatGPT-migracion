@@ -71,3 +71,6 @@ Se actualizó el prompt guardado del Auditor CAPCOT para eliminar la instrucció
 - `marcojpad-hash`: instalación 174841554; cinco repositorios visibles: `motor-u6-storage`, `capcot-capsulas-imaginantes`, `ChatGPT-migracion`, `orquestador-central`, `red-teaming-safety-u6`.
 - `marcosabines-hash`: cero instalaciones y cero repositorios visibles.
 - Los dos repositorios adicionales permanecen solo lectura.
+
+
+**Verificación final del radar:** relectura desde CAPCOT confirma la corrección en el archivo; blob SHA `1c4dcf8cb79f014e6456759675ccd19837dad2d3`, commit `d5452fde92d2ea7ac46394c728a04db533dd6236`. La frase de desajuste temático ya no aparece. El prompt del auditor también fue releído vía Automations y contiene la corrección. La auditoría narrativa existente se conserva; no se promovió ningún paquete.
