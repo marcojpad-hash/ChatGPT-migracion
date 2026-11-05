@@ -137,3 +137,12 @@ El auditor completó una revisión posterior a la actualización de la mañana. 
 ## Actualización de Motor U6 — snapshot de Actions observado el 3-nov
 
 El archivo motor-u6-storage/main/avances/auditoria_corridas/ULTIMO_ESTADO.md se releyó. Muestra auditorías programadas completadas en éxito hasta 2026-11-02 23:05 CDMX. Son ejecuciones del workflow de auditoría, no corridas empíricas nuevas del motor. No se modificó el motor ni se alteraron patrones/candados en esta preparación.
+
+
+## Actualización operativa — 2026-11-05
+
+- **CAPCOT:** investigador completado 08:01:35 CDMX; commit del radar `1f1861afd5c76da18341253ce1d25c8ab016f8fd`. Auditor sin ejecución del 5-nov; último run completado 4-nov. El storyboard canónico de árboles sí corresponde a red micorrícica/Karst 2023; la variante de respiración nocturna es distinta y está bloqueada. No promover sin QA narrativo independiente PASS y validador estructural correcto. La ausencia de estado individual Grok significa `RECEPCION_GROK_NO_CONFIRMADA`.
+- **Motor U6:** solo revisión documental; no hay cambios canónicos ni nueva corrida predictiva declarada.
+- **Herramientas:** n8n no tiene skill verificada ni conector ejecutable en la sesión; mapa corregido.
+- **Migración:** acuse de segunda sesión pendiente; no declarar completada.
+- Reporte del corte: [2026-11-05_OPERACION_AUTONOMA.md](reportes/2026-11-05_OPERACION_AUTONOMA.md).
