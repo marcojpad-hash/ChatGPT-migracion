@@ -40,3 +40,34 @@ No hay acuse verificable de una segunda sesión en `bandeja/2026-11-03_RECUPERAC
 - **Verificado:** cambios releídos desde GitHub y commits identificados abajo.
 - **Pendiente:** auditoría narrativa independiente del lote CAPCOT; validación estructural; acuse de segunda sesión; conexión real a n8n si el propietario decide habilitarla.
 - **No ejecutado:** promoción/dispatch, producción audiovisual, publicación, acciones externas, cambios en U6 o repositorios adicionales.
+
+
+## Ampliación de auditoría — 2026-11-05, 12:10 CDMX
+
+Se recuperó y leyó la última auditoría transversal disponible: `reportes/2026-10-31_AUDITORIA_TRANSVERSAL.md` (blob SHA `d3c1c94aa143842f4f4ac90de310bdc85b0a6ef3`). Es histórica; no existe una auditoría transversal posterior en el repositorio.
+
+### Revisión CAPCOT del lote 5–7
+
+Se releyeron los doce `storyboard.json` canónicos y sus narraciones concatenadas, además de `templates/storyboard_vertical.template.json`, `scripts/validar_storyboard.py`, el workflow de dispatch, el horario semanal y `docs/GROK_STATUS_CONTRACT.md`.
+
+- Los doce JSON ya contienen `narrative_contract` y `narrative_qa` de una revisión independiente previa del auditor, con `review_basis=lectura_en_frio_solo_narracion` y siete checks.
+- Resultado conservado en los JSON: 2 PASS narrativos (Venus 88; arena cantante 94) y 10 FAIL. Los FAIL incluyen palomitas 82, árboles 78, rayo globular 81, ballena 80, aguacate 79, ranas 83, huesos 82, hielo caliente 81, pulpo 80 y nubes 78.
+- Los PASS narrativos no bastan para promoción: el validador requiere seis campos adicionales por escena (`dramatic_beat`, `scene_function`, `causal_bridge_from_previous`, `question_state`, `reason_to_continue`, `new_information`). Esos campos faltan en las escenas inspeccionadas; la validación estructural sigue bloqueando los doce. No se rellenaron con inferencias del auditor ni se alteraron narraciones.
+- El workflow `.github/workflows/capcot-grok-dispatch.yml` solo escucha `cola/entrada/*.json` de primer nivel; los borradores en `proyectos/` no son dispatchables desde esa ubicación. No se creó cola.
+- No se encontró estado Grok individual; no se declara recepción.
+
+### Corrección ejecutada en CAPCOT
+
+El radar del 5-nov tenía una afirmación falsa de desajuste temático en árboles. Se sustituyó por la clasificación correcta: el storyboard canónico sí trata redes micorrícicas/Karst 2023; su FAIL 78 corresponde a apertura genérica, no al tema. La variante de respiración nocturna es otro artefacto bloqueado.
+
+Commit CAPCOT: `d5452fde92d2ea7ac46394c728a04db533dd6236`. Se verificó la fuente antes de escribir; la relectura de verificación queda pendiente en el cierre inmediato.
+
+### Corrección ejecutada en automatización
+
+Se actualizó el prompt guardado del Auditor CAPCOT para eliminar la instrucción obsoleta que ordenaba marcar árboles como desajuste temático. La automatización confirmó `success=true` y el prompt devuelto contiene la corrección. No se cambió horario ni se modificó estado Grok.
+
+### Inventario GitHub actualizado
+
+- `marcojpad-hash`: instalación 174841554; cinco repositorios visibles: `motor-u6-storage`, `capcot-capsulas-imaginantes`, `ChatGPT-migracion`, `orquestador-central`, `red-teaming-safety-u6`.
+- `marcosabines-hash`: cero instalaciones y cero repositorios visibles.
+- Los dos repositorios adicionales permanecen solo lectura.
