@@ -22,7 +22,7 @@ Repositorio: https://github.com/marcojpad-hash/motor-u6-storage — rama main, p
 | Notion | Consultar decisiones históricas. | Workspace accesible; GitHub prevalece si hay contradicción con el contrato U6 vigente. |
 | Dropbox / Files | Recuperar informes y artefactos. | Dropbox autenticado; no se verificó aquí una carpeta U6. |
 | Automations | Auditoría y continuidad. | Operador autónomo general habilitado; next_run_time devolvió null en la consulta del 3-nov. No equivale a agente 24/7. |
-| n8n skill | Construir, revisar y validar JSON importable para flujos auxiliares. | Skill n8n-workflow-check disponible. No se detectó conector directo a una instancia n8n. |
+| n8n | Diseñar JSON importable para flujos auxiliares, si se solicita. | No hay skill n8n-workflow-check en el catálogo actual ni conector directo a una instancia n8n. JSON importable no equivale a importación o ejecución. |
 
 ### Restricciones U6
 1. No modificar Engine_V5_CANONICO_SOLO.py, patterns_final_v14.json, candados ni archivos canónicos sin autorización expresa.
@@ -66,7 +66,7 @@ Repositorio: https://github.com/marcojpad-hash/capcot-capsulas-imaginantes — r
 - Canva: cero Brand Kits.
 - vidIQ: autenticado como marcosabines@gmail.com; cero canales.
 - Undermind: cero workspaces.
-- n8n: skill disponible; conector directo no localizado.
+- n8n: sin skill n8n-workflow-check en el catálogo actual y sin conector directo localizado; no hay ejecución remota disponible.
 - Automations: las tres automatizaciones principales habilitadas; next_run_time null en la lectura. El prompt guardado no garantiza ejecución futura.
 
 ## Prioridades
@@ -75,3 +75,7 @@ Repositorio: https://github.com/marcojpad-hash/capcot-capsulas-imaginantes — r
 3. Conectar una instancia n8n si se requiere importación y ejecución remota. Mientras tanto, generar JSON importable y procedimiento de prueba.
 4. Crear un proyecto Floot solo cuando exista un caso de uso definido y un entorno aislado.
 5. Actualizar este mapa cuando cambie una conexión o capacidad real.
+
+## Corrección verificada — 2026-11-05
+
+La consulta actual del catálogo de skills devolvió cero skills y la lista de herramientas no contiene un conector n8n ejecutable. La mención anterior a `n8n-workflow-check` como skill disponible era incorrecta/desactualizada. No confundir generar JSON importable con importar o ejecutar un workflow en una instancia del usuario.
