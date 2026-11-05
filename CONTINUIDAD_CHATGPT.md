@@ -87,3 +87,17 @@ Esta actualización amplía el arranque para que una sesión nueva pueda continu
 - CAPCOT: la auditoría posterior del 2-nov está en [CONTROL_COLA 2026-11-02](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-02_CONTROL_COLA.md). Resultado NO DISPATCHABLE; cuatro proyectos con producción/publicación preexistente no deben redispatcharse; agenda 5–7 nov requiere reconciliar IDs/duplicados.
 - Motor U6: el snapshot [ULTIMO_ESTADO.md](https://github.com/marcojpad-hash/motor-u6-storage/blob/main/avances/auditoria_corridas/ULTIMO_ESTADO.md) muestra auditorías programadas exitosas hasta 2-nov 23:05 CDMX. Son auditorías Actions, no nuevas corridas empíricas.
 - Preparación de migración: [reporte 2026-11-03](reportes/2026-11-03_PREPARACION_MIGRACION.md). El handoff de recuperación permanece PENDIENTE hasta que otra sesión/modelo deje acuse observable.
+
+
+## Actualización operativa — 2026-11-05, 12:04 CDMX
+
+Esta actualización prevalece sobre cortes anteriores para automatizaciones y CAPCOT al momento indicado. Reporte: [reportes/2026-11-05_OPERACION_AUTONOMA.md](reportes/2026-11-05_OPERACION_AUTONOMA.md).
+
+- Operador autónomo: run `f9aff71c-1fac-832d-8436-7b07bd3516e4` completado 08:07:07 CDMX; el estado in_progress mostrado en una consulta anterior ya fue superado por el resultado final.
+- Investigador CAPCOT: run `85130fc3-cbf8-8329-85ad-c0f8c4812825` completado 08:01:35; commit `1f1861afd5c76da18341253ce1d25c8ab016f8fd`, radar NO_DUPLICAR.
+- Auditor CAPCOT: último run conocido `e38f5799-375c-832b-b07f-c9c367f5e0e5`, completado 4-nov; no hay auditoría del 5-nov.
+- Árboles 5-nov: el storyboard canónico `proyectos/2026-11-05_inter-arboles-se-comunican/storyboard.json` sí trata redes micorrícicas comunes y Karst et al. 2023 (blob SHA `854c12ed9b77f82f66ec736797dea4d700983d78`). La afirmación de que el canónico trataba respiración nocturna era errónea; esa variante es un artefacto distinto bloqueado. El canónico sigue sin autorización de promoción hasta QA narrativo independiente PASS y validación estructural correcta.
+- Para los proyectos del 5-nov sin `cola/estado/<project_id>.json`, mantener `RECEPCION_GROK_NO_CONFIRMADA`; no crear estados Grok.
+- n8n: la consulta actual devuelve cero skills y no hay conector ejecutable. El mapa fue corregido; no existe acceso operativo a una instancia n8n.
+- GitHub devuelve cinco repositorios en marcojpad-hash y cero en marcosabines-hash; `orquestador-central` y `red-teaming-safety-u6` son DESCUBIERTO_ADICIONAL, solo lectura.
+- La migración sigue pendiente del acuse verificable de una segunda sesión/modelo.
