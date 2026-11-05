@@ -101,3 +101,10 @@ Esta actualización prevalece sobre cortes anteriores para automatizaciones y CA
 - n8n: la consulta actual devuelve cero skills y no hay conector ejecutable. El mapa fue corregido; no existe acceso operativo a una instancia n8n.
 - GitHub devuelve cinco repositorios en marcojpad-hash y cero en marcosabines-hash; `orquestador-central` y `red-teaming-safety-u6` son DESCUBIERTO_ADICIONAL, solo lectura.
 - La migración sigue pendiente del acuse verificable de una segunda sesión/modelo.
+
+
+### Corrección verificada posterior — 2026-11-05
+
+- Se corrigió el radar CAPCOT: commit `d5452fde92d2ea7ac46394c728a04db533dd6236`; blob releído `1c4dcf8cb79f014e6456759675ccd19837dad2d3`. El storyboard canónico de árboles sí corresponde al tema asignado; su QA es FAIL 78 por apertura genérica, no por desajuste temático.
+- Se corrigió el prompt del Auditor CAPCOT y se verificó que el texto guardado ya no ordena marcar árboles como desajuste temático. El último run del auditor sigue siendo el del 4-nov; la corrección del prompt aún no ha sido ejercida por una ejecución programada completada.
+- El validador estructural exige seis campos narrativos por escena que faltan en los paquetes revisados. No se rellenaron automáticamente porque requieren decisiones narrativas, no una corrección mecánica.
