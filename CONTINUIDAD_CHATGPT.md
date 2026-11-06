@@ -108,3 +108,15 @@ Esta actualización prevalece sobre cortes anteriores para automatizaciones y CA
 - Se corrigió el radar CAPCOT: commit `d5452fde92d2ea7ac46394c728a04db533dd6236`; blob releído `1c4dcf8cb79f014e6456759675ccd19837dad2d3`. El storyboard canónico de árboles sí corresponde al tema asignado; su QA es FAIL 78 por apertura genérica, no por desajuste temático.
 - Se corrigió el prompt del Auditor CAPCOT y se verificó que el texto guardado ya no ordena marcar árboles como desajuste temático. El último run del auditor sigue siendo el del 4-nov; la corrección del prompt aún no ha sido ejercida por una ejecución programada completada.
 - El validador estructural exige seis campos narrativos por escena que faltan en los paquetes revisados. No se rellenaron automáticamente porque requieren decisiones narrativas, no una corrección mecánica.
+
+## Actualización operativa — 2026-11-06
+
+El corte detallado está en [reportes/2026-11-06_OPERACION_AUTONOMA.md](reportes/2026-11-06_OPERACION_AUTONOMA.md); el estado por proyecto quedó actualizado en [PROYECTOS_Y_ESTADO.md](PROYECTOS_Y_ESTADO.md).
+
+- **CAPCOT:** el investigador completó NO_DUPLICAR y solo actualizó el radar (7e989a5). Los cuatro storyboards del 6-nov ya tenían QA narrativo independiente del 5-nov: ballena FAIL 80, aguacate FAIL 79, ranas FAIL 83 y dunas PASS 94. Los cuatro fallan estructura por seis campos ausentes en cada escena; cola vacía y recepción Grok no confirmada en los cuatro. No se promovió ni redispatchó nada.
+- **Dispatch:** el último run (#147, 1-nov) falló en la versión antigua del workflow por Falta configurar GROK_WEBHOOK_URL. La versión actual hace webhook opcional y usa buzón interno como fallback, pero todavía no tiene una ejecución que verifique ese camino. Un marcador interno no es acuse de Grok.
+- **Agenda:** persiste el conflicto documental 19:00/17:45/23:30. No se cambió la política ni la agenda.
+- **Motor U6:** auditoría Actions exitosa a las 06:03 CDMX; no es una corrida predictiva. C01–C20 y las cinco comparaciones causales siguen pendientes; canónicos intactos.
+- **GitHub:** marcojpad-hash expone cinco repositorios. orquestador-central y red-teaming-safety-u6 son DESCUBIERTO_ADICIONAL, solo lectura. marcosabines-hash no devuelve instalaciones ni repositorios.
+- **Automatizaciones:** investigador completado; auditor con último run 5-nov; el operador de este corte estaba in_progress al último peek, sin resultado final registrado. Las tres siguen habilitadas y next_run_time=null.
+- **Migración:** el handoff bandeja/2026-11-03_RECUPERACION_MIGRACION.md continúa PENDIENTE; falta acuse verificable de otra sesión/modelo. Dot no está conectado a esta sesión.
