@@ -1,6 +1,6 @@
 # Operación autónoma — 6 de noviembre de 2026
 
-**Corte de automatizaciones:** 08:04 CDMX. Cambios documentales y de prompt verificados hasta 08:13:42 CDMX.  
+**Corte de automatizaciones:** 08:04 CDMX. Cambios documentales y de prompt verificados hasta 08:14:05 CDMX.  
 **Resultado:** revisión de continuidad y conexiones ejecutada; cuatro archivos de continuidad actualizados en ChatGPT-migracion/main y este reporte creado. No se modificaron CAPCOT ni Motor U6.
 
 ## 1. Cambios ejecutados en ChatGPT-migracion/main
@@ -24,7 +24,7 @@ Los cuatro documentos fueron releídos desde GitHub después de sus respectivas 
 
 Las tres siguen habilitadas y devuelven `next_run_time=null`. El registro `in_progress` del operador no demuestra por sí solo que el worker siga activo. Se conserva como estado observado, sin declararlo completado. No se deshabilitó ninguna automatización.
 
-A las 14:13:42Z del 6-nov se actualizó el prompt del investigador CAPCOT para que, antes de cerrar, relea cualquier `narrative_qa` preexistente y reporte status, score, review_basis, reviewed_at, siete checks y flags reales. La regla prohíbe escribir QA, promover o mover proyectos. El run del investigador del 6-nov había terminado a las 13:59:40Z; la corrección aplica a ejecuciones futuras. Se verificó que el prompt guardado contiene la nueva regla y no se cambió su horario.
+La solicitud de actualización del prompt del investigador CAPCOT se ejecutó a las 14:13:42Z y la lectura de vuelta confirmó el cambio a las 14:14:05Z del 6-nov para que, antes de cerrar, relea cualquier `narrative_qa` preexistente y reporte status, score, review_basis, reviewed_at, siete checks y flags reales. La regla prohíbe escribir QA, promover o mover proyectos. El run del investigador del 6-nov había terminado a las 13:59:40Z; la corrección aplica a ejecuciones futuras. Se verificó que el prompt guardado contiene la nueva regla y no se cambió su horario.
 
 ## 3. CAPCOT — handoff del 6 de noviembre
 
