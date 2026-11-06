@@ -51,3 +51,11 @@ El prototipo HTTP/SQLite tiene dos checks de CI exitosos: uno sobre el HEAD de l
 
 
 - **Guardia anti-duplicación del investigador:** prompt actualizado el 2-nov para comprobar proyectos, salidas y cola de la fecha actual; no crear un segundo storyboard para un slot ocupado; crear solo el radar faltante cuando corresponda. El cambio de prompt no equivale a ejecución; el último run sigue siendo el del 1-nov.
+
+## Estado verificado — 2026-11-06
+
+- **Operador autónomo general:** run 2ca94b58-8a38-8333-8b6a-e4111db09eec, programado 14:00Z e iniciado 14:04:16Z. Seguía in_progress, sin completed_at, al último peek de las 08:04 CDMX. El resultado completado más reciente pertenece al 5-nov; no se atribuye a este run.
+- **Investigador CAPCOT:** run eebd6c6b-a0cc-832f-bf43-0e8e3d6c0ac0 completado 13:59:40Z (07:59:40 CDMX), resultado NO_DUPLICAR. Commit 7e989a533e5e058c8e67258bbb0982fc29f635c1; solo cambió el radar del 6-nov.
+- **Auditor CAPCOT:** run d92c234e-1888-8331-ab77-098ab84c71bd completado 5-nov 21:35:39Z (15:35:39 CDMX). No hay run del auditor del 6-nov al corte. El run del 5-nov ya había revisado el lote 5–7 nov, incluidos los cuatro storyboards del 6-nov.
+- Las tres automatizaciones siguen habilitadas y devuelven next_run_time=null. No interpretar null como prueba de deshabilitación ni como ejecución futura garantizada.
+- **Dot:** no hay herramienta ni conexión directa de Dot visible en esta sesión. El operador diario sigue siendo un sustituto parcial, no un agente 24/7.
