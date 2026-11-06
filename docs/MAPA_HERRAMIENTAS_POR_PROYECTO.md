@@ -1,5 +1,5 @@
 # Mapa operativo de herramientas — Motor U6 y CAPCOT
-Fecha de comprobación: 2026-11-03
+Fecha de comprobación: 2026-11-06
 
 Este mapa no es un catálogo general. Define qué herramientas sirven a los dos proyectos principales, qué se comprobó y qué límites deben respetarse.
 
@@ -79,3 +79,20 @@ Repositorio: https://github.com/marcojpad-hash/capcot-capsulas-imaginantes — r
 ## Corrección verificada — 2026-11-05
 
 La consulta actual del catálogo de skills devolvió cero skills y la lista de herramientas no contiene un conector n8n ejecutable. La mención anterior a `n8n-workflow-check` como skill disponible era incorrecta/desactualizada. No confundir generar JSON importable con importar o ejecutar un workflow en una instancia del usuario.
+
+## Descubrimiento de cuentas y repositorios — 2026-11-06
+
+Consulta de las dos conexiones GitHub autorizadas:
+- **marcojpad-hash:** una instalación GitHub App (ID 174841554, selección all) y cinco repositorios visibles: ChatGPT-migracion, capcot-capsulas-imaginantes, motor-u6-storage, orquestador-central y red-teaming-safety-u6.
+- **marcosabines-hash:** cero instalaciones y cero repositorios visibles. La consulta no devolvió error; el resultado solo describe lo que expone esta conexión.
+
+Los tres repositorios principales no cambian. Los otros dos son **DESCUBIERTO_ADICIONAL** y permanecen fuera del alcance de escritura:
+
+| Repositorio adicional | Relación observada en documentación | Límite aplicado |
+|---|---|---|
+| [orquestador-central](https://github.com/marcojpad-hash/orquestador-central) | Prototipo documental de gateway, router, memoria y coordinación. PR #1 abierto, draft y sin merge; no hay despliegue verificado. | Solo metadatos y documentación; sin código, PR, merge ni despliegue. |
+| [red-teaming-safety-u6](https://github.com/marcojpad-hash/red-teaming-safety-u6) | Repositorio hermano de U6 para subcorridas adversariales white-hat aisladas y control de deriva semántica mediante ledger append-only. La SPEC figura ACTIVA desde 2026-11-03. | Solo README y SPEC; no se inspeccionó el ledger operativo ni se escribió en el repositorio. |
+
+**Notion — comprobación 2026-11-06:** las búsquedas Motor U6 y U6 devolvieron páginas V15 fechadas entre el 19 y el 22 de septiembre de 2026. No apareció una actualización posterior que contradiga el repositorio U6. Se mantienen como antecedentes históricos; motor-u6-storage/main conserva la autoridad técnica.
+
+La incorporación de un repositorio a este inventario no autoriza su modificación.
