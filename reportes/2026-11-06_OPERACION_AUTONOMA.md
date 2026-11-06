@@ -8,9 +8,9 @@
 | Archivo | Cambio | Commit |
 |---|---|---|
 | [docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md) | Actualizada fecha de comprobación e inventario GitHub; añadidos los dos repositorios adicionales y resultado de búsqueda Notion. | [3589aef](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/3589aef64b40b3069e9064b637bc7178b0e1c045) |
-| [PROYECTOS_Y_ESTADO.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/PROYECTOS_Y_ESTADO.md) | Añadido corte del 6-nov con estado real de automatizaciones, CAPCOT, U6, repositorios y migración. | [550e171](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/550e171abe1b7e632aa18f01d9e342b5918c5915) |
-| [CONTINUIDAD_CHATGPT.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/CONTINUIDAD_CHATGPT.md) | Añadida actualización de continuidad y enlace a este reporte. | [eb5a053](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/eb5a053d5f0e9844383fe7a4dbec75d452c6118d) |
-| [BOT_DOT_AUTONOMIA.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/BOT_DOT_AUTONOMIA.md) | Actualizados los últimos runs y el límite real de Dot. | [063ce41](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/063ce4187c80d59da17befa67caa57507905c3d9) |
+| [PROYECTOS_Y_ESTADO.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/PROYECTOS_Y_ESTADO.md) | Añadido corte del 6-nov con estado real de automatizaciones, CAPCOT, U6, repositorios y migración. | [9643cf8](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/9643cf83c8943c4d0b590b1aa84d5df6ef8a2055) |
+| [CONTINUIDAD_CHATGPT.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/CONTINUIDAD_CHATGPT.md) | Añadida actualización de continuidad y enlace a este reporte. | [c950802](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/c95080223fb3c2488b3dd125d1eab9de2545dcef) |
+| [BOT_DOT_AUTONOMIA.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/BOT_DOT_AUTONOMIA.md) | Actualizados los últimos runs y el límite real de Dot. | [90d5ca7](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/90d5ca7ccdcf26ffea255ee91913e43424dfa682) |
 
 Los cuatro cambios fueron releídos desde GitHub. HEAD observado de ChatGPT-migracion/main: `063ce4187c80d59da17befa67caa57507905c3d9`.
 
@@ -23,6 +23,8 @@ Los cuatro cambios fueron releídos desde GitHub. HEAD observado de ChatGPT-migr
 | Auditor CAPCOT — cola y rotación | `d92c234e-1888-8331-ab77-098ab84c71bd`; completado 21:35:39Z del 5-nov. | `completed`; no había run del auditor del 6-nov al corte de las 08:04 CDMX. |
 
 Las tres siguen habilitadas y devuelven `next_run_time=null`. El registro `in_progress` del operador no demuestra por sí solo que el worker siga activo. Se conserva como estado observado, sin declararlo completado. No se deshabilitó ninguna automatización.
+
+A las 14:13:42Z del 6-nov se actualizó el prompt del investigador CAPCOT para que, antes de cerrar, relea cualquier `narrative_qa` preexistente y reporte status, score, review_basis, reviewed_at, siete checks y flags reales. La regla prohíbe escribir QA, promover o mover proyectos. El run del investigador del 6-nov había terminado a las 13:59:40Z; la corrección aplica a ejecuciones futuras. Se verificó que el prompt guardado contiene la nueva regla y no se cambió su horario.
 
 ## 3. CAPCOT — handoff del 6 de noviembre
 
