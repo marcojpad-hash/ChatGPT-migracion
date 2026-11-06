@@ -165,6 +165,8 @@ Las tres siguen habilitadas y las consultas devuelven next_run_time=null. El ope
 
 El investigador terminó con NO_DUPLICAR: verificó los cuatro proyectos canónicos del día y no creó storyboards adicionales. El commit 7e989a5 cambió únicamente el radar; no se modificaron data/*.json, storyboards, estados Grok ni medios.
 
+A las 14:13:42Z (08:13:42 CDMX) se actualizó el prompt del investigador para releer narrative_qa existente y reportar sus valores reales, sin crearlo, editarlo ni promover proyectos. La corrección ocurrió después del run del 6-nov; se aplicará a ejecuciones posteriores.
+
 Los cuatro storyboards canónicos ya contienen narrative_qa escrito por el auditor independiente el 5-nov a las 15:18:57 CDMX. La frase del resultado del investigador «esperando al auditor» no describe el estado actual de esos JSON:
 
 | Proyecto / slot | QA narrativo releído | Estructura por escena | Estado Grok |
