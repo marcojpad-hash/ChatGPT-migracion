@@ -1,6 +1,6 @@
 # Operación autónoma — 6 de noviembre de 2026
 
-**Corte observado:** 08:04 CDMX.  
+**Corte de automatizaciones:** 08:04 CDMX. Cambios documentales y de prompt verificados hasta 08:13:42 CDMX.  
 **Resultado:** revisión de continuidad y conexiones ejecutada; cuatro archivos de continuidad actualizados en ChatGPT-migracion/main y este reporte creado. No se modificaron CAPCOT ni Motor U6.
 
 ## 1. Cambios ejecutados en ChatGPT-migracion/main
@@ -12,7 +12,7 @@
 | [CONTINUIDAD_CHATGPT.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/CONTINUIDAD_CHATGPT.md) | Añadida actualización de continuidad y enlace a este reporte. | [c950802](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/c95080223fb3c2488b3dd125d1eab9de2545dcef) |
 | [BOT_DOT_AUTONOMIA.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/BOT_DOT_AUTONOMIA.md) | Actualizados los últimos runs y el límite real de Dot. | [90d5ca7](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/90d5ca7ccdcf26ffea255ee91913e43424dfa682) |
 
-Los cuatro cambios fueron releídos desde GitHub. HEAD observado de ChatGPT-migracion/main: `063ce4187c80d59da17befa67caa57507905c3d9`.
+Los cuatro documentos fueron releídos desde GitHub después de sus respectivas escrituras; los commits finales están enlazados en la tabla.
 
 ## 2. Automatizaciones: estado consultado antes de atribuir trabajo
 
