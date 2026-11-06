@@ -146,3 +146,59 @@ El archivo motor-u6-storage/main/avances/auditoria_corridas/ULTIMO_ESTADO.md se 
 - **Herramientas:** n8n no tiene skill verificada ni conector ejecutable en la sesión; mapa corregido.
 - **Migración:** acuse de segunda sesión pendiente; no declarar completada.
 - Reporte del corte: [2026-11-05_OPERACION_AUTONOMA.md](reportes/2026-11-05_OPERACION_AUTONOMA.md).
+
+## Actualización operativa — 2026-11-06
+
+Estado observado a las 08:04 CDMX. Detalle y pruebas: [reportes/2026-11-06_OPERACION_AUTONOMA.md](reportes/2026-11-06_OPERACION_AUTONOMA.md).
+
+### Automatizaciones
+
+| Automatización | Última ejecución observada | Estado y atribución |
+|---|---|---|
+| Operador autónomo general | Run 2ca94b58-8a38-8333-8b6a-e4111db09eec; programado 14:00:00Z, iniciado 14:04:16Z. | in_progress, sin completed_at; el último resultado completado sigue siendo el del 5-nov. No atribuirle resultado final. |
+| Agente de investigación CAPCOT | Run eebd6c6b-a0cc-832f-bf43-0e8e3d6c0ac0; completado 13:59:40Z (07:59:40 CDMX). | completed, resultado NO_DUPLICAR; commit 7e989a533e5e058c8e67258bbb0982fc29f635c1, solo modificó docs/briefs/2026-11-06_RADAR_CAPCOT.md. |
+| Auditor CAPCOT — cola y rotación | Run d92c234e-1888-8331-ab77-098ab84c71bd; completado 21:35:39Z del 5-nov (15:35:39 CDMX). | completed; no hay ejecución del auditor del 6-nov en este corte. El run del 5-nov auditó también el lote 5–7 nov. |
+
+Las tres siguen habilitadas y las consultas devuelven next_run_time=null. El operador está en ejecución; no se declara terminado en este corte.
+
+### CAPCOT — 6 de noviembre
+
+El investigador terminó con NO_DUPLICAR: verificó los cuatro proyectos canónicos del día y no creó storyboards adicionales. El commit 7e989a5 cambió únicamente el radar; no se modificaron data/*.json, storyboards, estados Grok ni medios.
+
+Los cuatro storyboards canónicos ya contienen narrative_qa escrito por el auditor independiente el 5-nov a las 15:18:57 CDMX. La frase del resultado del investigador «esperando al auditor» no describe el estado actual de esos JSON:
+
+| Proyecto / slot | QA narrativo releído | Estructura por escena | Estado Grok |
+|---|---|---|---|
+| Ballena azul — 07:00 | FAIL 80; payoff_cierre_apertura=false; flag PAYOFF_SOBREAFIRMA_CASI_SE_DETIENE. | FAIL: faltan los seis campos narrativos obligatorios en las 7 escenas. | 404; RECEPCION_GROK_NO_CONFIRMADA. |
+| Aguacate — 13:30 | FAIL 79; progresión y transiciones causales false; flag REPETICION_ESCENAS_5_6_SIN_AVANCE_CAUSAL. | FAIL: faltan los seis campos narrativos obligatorios en las 7 escenas. | 404; RECEPCION_GROK_NO_CONFIRMADA. |
+| Ranas congeladas — 17:00 | FAIL 83; progresión y transiciones causales false; flag REPETICION_ESCENAS_5_6_LIMITES_DE_ESPECIE_Y_CONDICIONES. | FAIL: faltan los seis campos narrativos obligatorios en las 7 escenas. | 404; RECEPCION_GROK_NO_CONFIRMADA. |
+| Dunas cantantes — 17:45 | PASS 94; siete checks true y critical_flags vacío. | FAIL: faltan los seis campos narrativos obligatorios en las 7 escenas. | 404; RECEPCION_GROK_NO_CONFIRMADA. |
+
+Los cuatro permanecen en proyectos/. cola/entrada/ solo contiene .gitkeep; no hay salidas para esos cuatro IDs. Todos conservan approved_assets=[], export.render_status=NOT_GENERATED y publicación pendiente. Ninguno es despachable. El PASS narrativo de dunas no supera por sí solo la compuerta estructural. No se crearon ni modificaron estados Grok.
+
+### Dispatch y agenda CAPCOT
+
+- El último run de capcot-grok-dispatch.yml sigue siendo el #147, run 41306776689, del 1-nov. Falló en el commit antiguo c2791e806fbf44940f4dd87b64753ba48e04da6f con el error literal Falta configurar GROK_WEBHOOK_URL.; el paso de entrega quedó omitido.
+- El workflow actual usa webhook opcional y, sin webhook, escribe un marcador pendiente en handoffs/grok_inbox/. Esta versión no tiene una ejecución posterior que demuestre el nuevo camino. El marcador pendiente no equivale a recepción por Grok.
+- El workflow se dispara por archivos cola/entrada/*.json; los cuatro paquetes actuales están en proyectos/ y la cola está vacía. No se disparó ni se forzó un dispatch.
+- Inconsistencia de agenda: el horario semanal conserva un slot 23:30 dato-TBD-news; el prompt del investigador excluye explícitamente 23:30; el contrato y el Plan Maestro aún describen ventanas 19:00/23:30, mientras el horario 5–7 nov reubica intermedio_2 a 17:45 y marca 19:00 retirado. No se alteraron horarios, cupos ni prompts; requiere una decisión de autoridad antes de corregir documentos.
+
+### Motor U6 — corte 6 de noviembre
+
+- avances/auditoria_corridas/ULTIMO_ESTADO.md registra el run de auditoría Actions 42214636992 completado en éxito a las 06:03 CDMX. Es una auditoría/snapshot, no una corrida predictiva nueva.
+- F006 R7 sigue siendo reevaluación de Courbet; no aumenta el denominador independiente. La calibración histórica deduplicada conserva 40 casos biográficos independientes.
+- C01–C20 continúan PENDIENTE; B-01/N-02/C-03/H-01 son freezes históricos, no corridas U6.
+- Las cinco comparaciones causales (guardianes ON/OFF, compuerta ON/OFF, set abierto vs. salida única, memoria ON/OFF y pipeline fijo/adaptativo) siguen incompletas. MCT continúa como especificación conceptual, no capacidad implementada.
+- No se ejecutó el motor ni se modificó código, Engine V5 canónico, catálogo de 244 patrones, candados, casos o resultados.
+
+### Cuentas y repositorios adicionales
+
+marcojpad-hash devuelve una instalación y cinco repositorios visibles: los tres principales, orquestador-central y red-teaming-safety-u6. marcosabines-hash devuelve cero instalaciones y cero repositorios. Los dos repositorios adicionales son DESCUBIERTO_ADICIONAL; se revisó solo documentación/metadatos y no recibieron escrituras.
+
+orquestador-central mantiene el PR #1 abierto, draft y sin merge; no hay despliegue verificado. red-teaming-safety-u6 documenta un circuito hermano U6 de subcorridas white-hat aisladas y ledger append-only; no se inspeccionó ni modificó su ledger.
+
+### Notion y migración
+
+Las búsquedas de Notion Motor U6 y U6 solo devolvieron páginas V15 de septiembre (19–22-sep-2026). No se encontró una actualización posterior que desplace la autoridad de motor-u6-storage/main.
+
+bandeja/2026-11-03_RECUPERACION_MIGRACION.md sigue PENDIENTE: no hay acuse de una segunda sesión/modelo, prueba de recuperación ni verificación de entregables. La migración no está completa.
