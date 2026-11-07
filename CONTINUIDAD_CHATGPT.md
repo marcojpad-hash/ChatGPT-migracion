@@ -120,3 +120,14 @@ El corte detallado está en [reportes/2026-11-06_OPERACION_AUTONOMA.md](reportes
 - **GitHub:** marcojpad-hash expone cinco repositorios. orquestador-central y red-teaming-safety-u6 son DESCUBIERTO_ADICIONAL, solo lectura. marcosabines-hash no devuelve instalaciones ni repositorios.
 - **Automatizaciones:** investigador completado; auditor con último run 5-nov; el operador de este corte estaba in_progress al último peek, sin resultado final registrado. Las tres siguen habilitadas y next_run_time=null.
 - **Migración:** el handoff bandeja/2026-11-03_RECUPERACION_MIGRACION.md continúa PENDIENTE; falta acuse verificable de otra sesión/modelo. Dot no está conectado a esta sesión.
+
+## Actualización operativa — 2026-11-07
+
+Registro completo: [reportes/2026-11-07_OPERACION_AUTONOMA.md](reportes/2026-11-07_OPERACION_AUTONOMA.md).
+
+- **CAPCOT:** investigador completado 08:07 CDMX con `NO_DUPLICAR`; commit `5425b467c3750fe17c314f58d764d234bc2a8870`, solo radar. Los cuatro storyboards del 7-nov tienen QA narrativo FAIL (78–82) y fallan estructura por seis campos ausentes en cada una de sus siete escenas. Cola vacía, sin estados Grok; `RECEPCION_GROK_NO_CONFIRMADA`. El auditor aún no ha ejecutado el 7-nov.
+- **Dato 23:30:** el horario conserva `dato-TBD-news` pendiente y la instrucción permanente exige preparación del mismo día. El investigador excluyó 23:30 de su lote de cuatro proyectos; no hay paquete del 7-nov. Queda pendiente asignar/ejecutar esa tarea separada, sin duplicar los cuatro storyboards.
+- **Motor U6:** A5 de Pecas (Muse) llegó a [PR #2](https://github.com/marcojpad-hash/motor-u6-storage/pull/2) y se fusionó a main. Contents:write funcionó en Motor; falta Workflows y los tres tests nuevos no están en CI. La corrida F006 R7 `42359245993` terminó en éxito, pero reevalúa el mismo Courbet y no incrementa n. El resultado volvió a fallar H1/H2/destino; el artifact actual no sincronizó resumen/registro/manifiesto a GitHub.
+- **Automatizaciones:** investigador completado; auditor último run 6-nov; operador general de este corte `in_progress`, sin `completed_at`. Las tres siguen habilitadas; Dot no está conectado.
+- **Migración:** el handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue PENDIENTE. No hay acuse verificable de segunda sesión/modelo; migración no completa.
+- GitHub: `marcojpad-hash` devuelve cinco repositorios; `marcosabines-hash` devuelve cero. Notion solo devuelve páginas V15 de septiembre; GitHub sigue siendo la autoridad técnica.
