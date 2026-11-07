@@ -1,5 +1,5 @@
 # Mapa operativo de herramientas — Motor U6 y CAPCOT
-Fecha de comprobación: 2026-11-06
+Fecha de comprobación: 2026-11-07
 
 Este mapa no es un catálogo general. Define qué herramientas sirven a los dos proyectos principales, qué se comprobó y qué límites deben respetarse.
 
@@ -96,3 +96,12 @@ Los tres repositorios principales no cambian. Los otros dos son **DESCUBIERTO_AD
 **Notion — comprobación 2026-11-06:** las búsquedas Motor U6 y U6 devolvieron páginas V15 fechadas entre el 19 y el 22 de septiembre de 2026. No apareció una actualización posterior que contradiga el repositorio U6. Se mantienen como antecedentes históricos; motor-u6-storage/main conserva la autoridad técnica.
 
 La incorporación de un repositorio a este inventario no autoriza su modificación.
+
+## Estado de GitHub App/Muse — comprobación 2026-11-07
+
+- El conector GitHub de ChatGPT conserva lectura/escritura en los repositorios de la cuenta `marcojpad-hash`; ese permiso no se transfiere a Muse.
+- El trabajo atribuido en el repositorio a Pecas (Muse) sí llegó a `motor-u6-storage`: rama `a5-cableado-20261107`, [PR #2](https://github.com/marcojpad-hash/motor-u6-storage/pull/2) fusionado el 7-nov 03:19 CDMX, merge commit `d2a730c98f5abfdd54c52722b1ef80c28e79f08b`. Esto demuestra que Contents:write funcionó en Motor U6.
+- El cuerpo del PR declara pendiente `Workflows` para modificar `.github/workflows/test-motor-contracts.yml`. El archivo sigue con SHA `165bfdee43ec5e6275e2f159d52b86860cfa56ca`; los tres tests nuevos de A5 no están en el workflow actual.
+- En CAPCOT no existe la rama `a5-cableado-20261107` ni un PR con ese head. Contents:write de Muse en CAPCOT queda **no verificado**.
+- La instalación visible `174841554` tiene selección `all`, pero el conector no expone el nombre de la App; no se afirma que sea Muse ni se deducen sus permisos de esa selección.
+- No se cambiaron permisos ni credenciales en esta comprobación.
