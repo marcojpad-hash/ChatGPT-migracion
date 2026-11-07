@@ -204,3 +204,31 @@ orquestador-central mantiene el PR #1 abierto, draft y sin merge; no hay desplie
 Las búsquedas de Notion Motor U6 y U6 solo devolvieron páginas V15 de septiembre (19–22-sep-2026). No se encontró una actualización posterior que desplace la autoridad de motor-u6-storage/main.
 
 bandeja/2026-11-03_RECUPERACION_MIGRACION.md sigue PENDIENTE: no hay acuse de una segunda sesión/modelo, prueba de recuperación ni verificación de entregables. La migración no está completa.
+
+## Actualización operativa — 2026-11-07
+
+### CAPCOT — lote del 7-nov
+
+- El investigador completó `NO_DUPLICAR` en run `d3e9a290-2548-8321-ae11-719b50454afe`; commit `5425b467c3750fe17c314f58d764d234bc2a8870`, un solo archivo: `docs/briefs/2026-11-07_RADAR_CAPCOT.md`. No creó otro storyboard ni tocó cola, bloqueados, medios o publicación.
+- Los cuatro proyectos canónicos están en `proyectos/`: huesos 07:00, hielo caliente 13:30, pulpos 17:00 y nubes 17:45. El horario vigente retiró 19:00.
+- QA narrativo preexistente (lectura independiente del 6-nov): huesos FAIL 82; hielo caliente FAIL 81; pulpos FAIL 80; nubes FAIL 78. Cada storyboard tiene siete escenas y carece de los seis campos estructurales obligatorios en todas ellas (42 omisiones por archivo). Cero promociones.
+- `cola/entrada/` contiene solo `.gitkeep`; no existen estados Grok individuales. Estado: `RECEPCION_GROK_NO_CONFIRMADA`. Auditor sin run del 7-nov al corte; último run completado 6-nov.
+- La agenda conserva `dato-TBD-news` a las 23:30. La instrucción permanente `ajustes_entre_modelos/PARA_CHATGPT_dato_del_dia.md` exige un paquete del mismo día, pero el run investigador excluyó ese slot de sus cuatro proyectos. No se encontró paquete del 7-nov ni se creó desde el operador general; queda una brecha de asignación.
+- Reporte y radar: [RADAR_CAPCOT 2026-11-07](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-07_RADAR_CAPCOT.md).
+
+### Motor U6 — A5 y reevaluación F006
+
+- [PR #2](https://github.com/marcojpad-hash/motor-u6-storage/pull/2) desde `a5-cableado-20261107` fue fusionado el 7-nov 03:19 CDMX (merge `d2a730c98f5abfdd54c52722b1ef80c28e79f08b`). Contents:write funcionó en Motor U6. El PR deja pendiente Workflows; el workflow de tests no incluye los tres tests nuevos.
+- La corrida Actions `42359245993` ejecutó una reevaluación real de `CAL_F005_01_COURBET` en F006 R7: returncode 0, recibo COMPLETED, 6,310 simulaciones Monte Carlo y 9/9 observaciones convergidas. Engine V5 y patrones coincidieron con sus hashes; candados y compuertas CEB OK.
+- No incrementa n: mismo input Courbet, muestra calibrable n=1. H1/H2 y destino no acertaron; el set sí. El desenlace sellado fue ruptura y la apuesta de destino fue auge.
+- Caldero devolvió ocho fuentes sin fecha y el modo leniente conservó las ocho; no queda demostrada su anterioridad a Z. Filtro 017 solo se ejecutó en traza sin modificación; consulta dirigida sigue no configurada.
+- El artifact actual conserva salida/recibo, pero el resumen/registro/manifiesto versionados en main siguen en estado del 30-oct. El manifiesto del artifact también referencia un artifact anterior. La evidencia nueva no está sincronizada al registro Git versionado.
+- La última auditoría Actions `42375177549` terminó en éxito 07:04 CDMX; es auditoría automática, no corrida predictiva. C01–C20 siguen pendientes. Esta operación no modificó código ni documentos de U6.
+
+### GitHub/Muse y migración
+
+- `marcojpad-hash`: cinco repositorios visibles; `marcosabines-hash`: cero instalaciones/repositorios visibles. `orquestador-central` y `red-teaming-safety-u6` siguen `DESCUBIERTO_ADICIONAL`, sin escrituras.
+- En CAPCOT no existe rama A5 ni PR; Contents:write de Muse allí no está verificado. La instalación 174841554 devuelve selección `all`, pero no expone el nombre de la App.
+- Notion devolvió solo páginas V15 de 19–22-sep-2026; siguen históricas frente a Motor U6.
+- `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue PENDIENTE; no existe acuse de otra sesión/modelo. Migración no completa.
+- Reporte: [2026-11-07_OPERACION_AUTONOMA.md](reportes/2026-11-07_OPERACION_AUTONOMA.md).
