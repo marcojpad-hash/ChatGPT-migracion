@@ -1,4 +1,4 @@
-# Coordinación autónoma y Dot — vigente 2026-11-01
+# Coordinación autónoma y Dot — vigente 2026-11-07
 
 ## Dot nativo
 
@@ -60,3 +60,12 @@ El prototipo HTTP/SQLite tiene dos checks de CI exitosos: uno sobre el HEAD de l
 - **Auditor CAPCOT:** run d92c234e-1888-8331-ab77-098ab84c71bd completado 5-nov 21:35:39Z (15:35:39 CDMX). No hay run del auditor del 6-nov al corte. El run del 5-nov ya había revisado el lote 5–7 nov, incluidos los cuatro storyboards del 6-nov.
 - Las tres automatizaciones siguen habilitadas y devuelven next_run_time=null. No interpretar null como prueba de deshabilitación ni como ejecución futura garantizada.
 - **Dot:** no hay herramienta ni conexión directa de Dot visible en esta sesión. El operador diario sigue siendo un sustituto parcial, no un agente 24/7.
+
+## Estado verificado — 2026-11-07
+
+- **Operador autónomo general:** run `7d928133-fd44-8325-9c6e-83031661a0db`, programado 14:00Z e iniciado 14:02:15Z. Seguía `in_progress`, sin `completed_at`, al corte. El último resultado completado es el run del 6-nov `2ca94b58-8a38-8333-8b6a-e4111db09eec`; no se atribuye al run actual.
+- **Investigador CAPCOT:** run `d3e9a290-2548-8321-ae11-719b50454afe`, completado 14:07:18Z (08:07:18 CDMX), resultado `NO_DUPLICAR`. Commit `5425b467c3750fe17c314f58d764d234bc2a8870`; el diff contiene solo el radar del 7-nov. El investigador ahora relee QA preexistente, pero no lo crea ni lo modifica.
+- **Auditor CAPCOT:** último run `06261217-6da8-8323-9267-2e31663ac0e2`, completado 6-nov 21:22:09Z. No hay run del 7-nov al corte; el siguiente horario guardado es 15:00 CDMX.
+- Las tres automatizaciones siguen habilitadas; `next_run_time=null`. La consulta general devolvió 16 automatizaciones: estas tres habilitadas y trece deshabilitadas.
+- **Muse/GitHub:** PR #2 de Motor U6 ya está fusionado, por lo que Contents:write funcionó en ese repositorio. Workflows sigue faltando; en CAPCOT no hay rama A5 ni PR que demuestre escritura.
+- **Dot:** sigue sin conexión directa confirmada. No se atribuye trabajo al agente Dot ni se presenta el operador diario como servicio 24/7.
