@@ -112,3 +112,27 @@ No hay herramienta ni conexión directa de Dot visible en esta sesión. El opera
 6. Migración: falta el acuse de recuperación de una segunda sesión/modelo. Hasta entonces no se declara completa.
 
 **Decisión de esta operación:** actualizar continuidad y registro; conservar los bloqueos tal como están; no alterar CAPCOT ni Motor U6 y no atribuir a Grok, Dot ni a una automatización incompleta actividad no verificada.
+
+
+## 9. Integración evaluada: Pixlr + Floot — 6-nov-2026
+
+Se revisaron las páginas oficiales de Pixlr y Floot y se consultó el conector Floot de la cuenta.
+
+### Resultado
+- Pixlr: editor básico utilizable gratis con anuncios/límites. Las herramientas generativas consumen créditos; la página oficial no establece una cuota mensual Free clara. El generador anuncia texto-a-video e imagen-a-video, pero no se verificó saldo gratuito suficiente para producción recurrente. La respuesta del desarrollador en Google Play informa tres guardados diarios en Android Free. No se generó ningún medio.
+- Floot: plan Free ofrece 100 acciones de construcción diarias y 0 créditos de IA mensuales. La tabla de precios no asigna hosting mensual al plan Free; la documentación describe subdominio gratuito, por lo que se registró la discrepancia y no se asumió disponibilidad de hosting productivo. Las tareas programadas en apps publicadas requieren plan de pago.
+- Floot MCP: conector disponible. La consulta de proyectos devolvió “No projects yet”. No se creó un proyecto ni se invocó generación de imágenes/IA.
+- No se encontró conector Pixlr ni integración directa Pixlr↔GitHub/Floot en esta sesión. Pixlr queda como interfaz manual; Floot puede construir utilidades internas cuando se defina un alcance.
+
+### Cambios materiales en CAPCOT
+Repositorio: [capcot-capsulas-imaginantes](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/tree/feature/capcot-video-discovery-continuity), rama `feature/capcot-video-discovery-continuity`.
+
+| Archivo | Cambio | Commit |
+|---|---|---|
+| [docs/INTEGRACIONES_PIXLR_FLOOT.md](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/INTEGRACIONES_PIXLR_FLOOT.md) | Guía operativa, límites gratuitos, usos, transferencias manuales y cautelas de gasto. | `1f6879059913fd3facc9ba2c285d5c33720f57a2` |
+| [docs/integraciones_visuales.json](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/integraciones_visuales.json) | Registro machine-readable de herramientas, acceso, cuotas y políticas. JSON parseado correctamente en lectura de vuelta. | `ba384cb6b9e5ab641f537a7d9b47e57044de5790` |
+| [README.md](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/README.md) | Enlaces al registro y guía; aclaración de Pixlr manual y Floot conectado/sin proyectos. | `3286748f8e4c9b3346dd70f632e4f739478b8885` |
+
+Se relevaron de vuelta los tres archivos desde GitHub; los enlaces existen y el JSON es válido. No se modificó el contrato de producción ni se alteró el rol de Grok/Imaginantes. No se creó app Floot, no se gastaron créditos, no se generaron imágenes/vídeos y no se publicó nada.
+
+**Decisión:** Pixlr queda registrado como herramienta visual manual para edición y pruebas puntuales; Floot queda registrado como constructor conectado para futuras utilidades internas. Para crear una app Floot hace falta definir el primer flujo concreto; no se creó una app vacía.
