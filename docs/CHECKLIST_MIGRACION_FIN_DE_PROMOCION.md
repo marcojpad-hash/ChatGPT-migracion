@@ -46,3 +46,12 @@ Una sesión nueva debe poder:
 
 ## Criterio de cierre
 La migración está lista cuando una sesión nueva reconstruye el estado y continúa ambos proyectos desde GitHub y se comprueban las conexiones esenciales. Documentación no prueba transferencia de permisos ni ejecución de automatizaciones.
+
+## Actualización — 2026-11-07
+
+- [x] Verificado que Contents:write funcionó en `motor-u6-storage`: A5 desde `a5-cableado-20261107` llegó a PR #2 y quedó fusionado.
+- [ ] Confirmar Contents:write de Muse en `capcot-capsulas-imaginantes`; no hay rama A5 ni PR verificable.
+- [ ] Resolver permiso `Workflows` de Muse o una vía autorizada para actualizar `.github/workflows/test-motor-contracts.yml`; los tres tests nuevos de A5 aún no forman parte del CI.
+- [ ] Completar handoff real de segunda sesión/modelo: `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue PENDIENTE y no tiene acuse.
+- [ ] Confirmar que una segunda sesión puede leer los tres repositorios principales. El acceso de esta sesión no prueba el de otra.
+- Nota: la instalación GitHub ID `174841554` devuelve selección `all`, pero su nombre de App no se expone; no atribuirla a Muse sin evidencia adicional.
