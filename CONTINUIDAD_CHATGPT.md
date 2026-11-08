@@ -135,7 +135,7 @@ Registro completo: [reportes/2026-11-07_OPERACION_AUTONOMA.md](reportes/2026-11-
 
 ## Actualización operativa — 2026-11-08
 
-Esta actualización prevalece sobre los cortes anteriores. Registro completo y evidencia: [reportes/2026-11-08_OPERACION_AUTONOMA.md](reportes/2026-11-08_OPERACION_AUTONOMA.md), commit `51a22edb4a68dd75f6638cd7d9902eea6dcdcda1`.
+Esta actualización prevalece sobre los cortes anteriores. Registro completo y evidencia: [reportes/2026-11-08_OPERACION_AUTONOMA.md](reportes/2026-11-08_OPERACION_AUTONOMA.md).
 
 - **Repositorios/ramas:** `ChatGPT-migracion/main` HEAD previo `895b65749a882df5b20d46b8c87d024d43468236`; `capcot-capsulas-imaginantes/feature/capcot-video-discovery-continuity` HEAD `4451ccc27ed751295cea8f1566a4eb7fc973e8d9`; `motor-u6-storage/main` HEAD `9ba7ee07fe8fa7ce21da0e9defb0ada9ce952949`.
 - **Cuentas:** `marcojpad-hash` devuelve nueve repositorios y una instalación visible; `marcosabines-hash` devuelve cero instalaciones/repositorios. Seis repositorios adicionales quedaron clasificados `DESCUBIERTO_ADICIONAL` y en solo lectura.
