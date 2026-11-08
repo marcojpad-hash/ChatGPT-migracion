@@ -6,6 +6,8 @@ Repositorio de continuidad operativa entre instancias de ChatGPT.
 
 ## Inicio obligatorio
 
+0. Leer el [Contrato de trabajo multi-modelo](https://github.com/marcojpad-hash/orquestador-central/blob/main/docs/CONTRATO_TRABAJO_MULTI_MODELO.md) y revisar [capacidades verificadas](https://github.com/marcojpad-hash/orquestador-central/blob/main/docs/CAPACIDADES_MODELOS.md).
+
 1. Leer [CONTINUIDAD_CHATGPT.md](CONTINUIDAD_CHATGPT.md).
 2. Leer [ESTILO_DE_TRABAJO.md](ESTILO_DE_TRABAJO.md).
 3. Leer [BOT_DOT_AUTONOMIA.md](BOT_DOT_AUTONOMIA.md).
