@@ -1,5 +1,5 @@
 # Mapa operativo de herramientas — Motor U6 y CAPCOT
-Fecha de comprobación: 2026-11-07
+Fecha de comprobación: 2026-11-08
 
 Este mapa no es un catálogo general. Define qué herramientas sirven a los dos proyectos principales, qué se comprobó y qué límites deben respetarse.
 
@@ -105,3 +105,50 @@ La incorporación de un repositorio a este inventario no autoriza su modificaci�
 - En CAPCOT no existe la rama `a5-cableado-20261107` ni un PR con ese head. Contents:write de Muse en CAPCOT queda **no verificado**.
 - La instalación visible `174841554` tiene selección `all`, pero el conector no expone el nombre de la App; no se afirma que sea Muse ni se deducen sus permisos de esa selección.
 - No se cambiaron permisos ni credenciales en esta comprobación.
+
+
+## Corrección verificada — 2026-11-08
+
+### Cuentas e inventario GitHub
+
+Consulta de ambas conexiones autorizadas e instalaciones:
+- `marcojpad-hash`: una instalación visible (ID `174841554`; el conector no expone el nombre de la App) y nueve repositorios visibles: `ChatGPT-migracion`, `capcot-capsulas-imaginantes`, `motor-u6-storage`, `orquestador-central`, `red-teaming-safety-u6`, `agente-cero-costo`, `baterias-tokens`, `baterias-memoria` y `memoria-compartida`.
+- `marcosabines-hash`: cero instalaciones y cero repositorios visibles; la consulta no devolvió error.
+- Los seis repositorios distintos de los tres principales son `DESCUBIERTO_ADICIONAL`. Se revisaron únicamente metadatos y documentación para entender su relación; no se inspeccionó ni modificó código, no se abrieron PR y no se desplegó nada.
+
+| Repositorio adicional | Relación documental observada | Límite aplicado |
+|---|---|---|
+| `orquestador-central` | Contrato transversal multi-modelo, arquitectura de coordinación y registro de capacidades. | Solo README/contratos/capacidades; sin escrituras ni despliegues. |
+| `red-teaming-safety-u6` | Repo hermano de U6 para subcorridas adversariales white-hat y ledger de deriva. | Solo README; sin ledger ni escrituras. |
+| `agente-cero-costo` | Stack auxiliar con Groq bridge, DeepSeek Harness, memoria, conector y orquestador. | Solo README/documentación; sin código ni configuración local. |
+| `baterias-tokens` | Registro de proveedores, límites y rotación. | Solo README; sin credenciales ni escrituras. |
+| `baterias-memoria` | Registro de máquinas y requisitos de RAM/modelos. | Solo README; sin infraestructura ni escrituras. |
+| `memoria-compartida` | Gate universal, índice y hechos durables compartidos. | Lectura del protocolo/índice/hechos; sin escrituras por el límite de alcance a repos adicionales. |
+
+### Memoria compartida obligatoria
+
+- Se leyó `memoria-compartida/PROTOCOLO_MEMORIA_COMPARTIDA_OBLIGATORIA.md`, `INDICE.md` y los hechos pertinentes (`proyectos.md`, `decisiones.md`, `estado.md`, `correcciones.md`, `tokens.md`).
+- Se verificó el gate en `AGENTS.md` y `README.md` de los nueve repositorios visibles. En los tres repositorios principales también se verificaron los archivos de la rama autorizada: migración `main`, U6 `main` y CAPCOT `feature/capcot-video-discovery-continuity`.
+- El gate ordena leer memoria antes de cualquier tarea y sincronizar hechos durables al cerrar. No auto-inyecta los archivos en una conversación ordinaria ni demuestra que otra sesión los haya leído.
+- No se escribió en `memoria-compartida`: es un repositorio adicional fuera del alcance de escritura de este mandato. La sincronización del nuevo corte queda pendiente de inclusión expresa; la continuidad de este trabajo sí se registró en `ChatGPT-migracion/main`.
+
+### codebase-memory-mcp
+
+- **Motor U6/main:** existen `docs/CODEBASE_MEMORY_MCP.md` y `.mcp.json`. El documento registra binario local 0.12.1 en la máquina de Pecas y un índice del 7-nov de 13 531 nodos / 27 173 aristas, reconstruido desde un espejo de `main` archivo por archivo. `.mcp.json` apunta a `/home/hatch/workspace/codebase-memory-mcp/bin/codebase-memory-mcp`.
+- **CAPCOT/main:** también existen `docs/CODEBASE_MEMORY_MCP.md` y `.mcp.json`; el documento registra versión 0.12.1 e índice del 7-nov de 12 129 nodos / 13 879 aristas.
+- **CAPCOT/feature/capcot-video-discovery-continuity:** no existen `docs/CODEBASE_MEMORY_MCP.md` ni `.mcp.json` (ambos 404 en la rama activa). Por tanto, el MCP no está integrado en la rama de trabajo de CAPCOT aunque sí aparezca en `main`.
+- El índice de ambos proyectos es una fotografía del 7-nov. El propio documento exige reindexar cuando cambian los repositorios. U6 recibió cambios documentales el 8-nov; CAPCOT feature también cambió el 8-nov. La vigencia de ambos índices queda pendiente.
+- Esta sesión de ChatGPT no expone ninguna herramienta MCP `codebase-memory` ni `DeepSeek Harness`; la configuración local no equivale a conexión viva en esta interfaz.
+- `codebase-memory-mcp` es un servidor MCP de grafo/consulta estructural; complementa un agente de código, no sustituye por sí solo a Claude Code o a un harness.
+
+### DeepSeek Harness
+
+- `CAPCOT/main` contiene `docs/DSH_CERO_COSTO.md`, pero la rama activa `feature/capcot-video-discovery-continuity` no contiene ese documento ni configuración DSH. `motor-u6-storage/main` tampoco muestra integración DSH.
+- El repo adicional `agente-cero-costo` documenta dsh `0.2.2-rc.1`, proveedor Groq por puente y una prueba de humo. La prueba no completó una tarea: el primer llamado planeó correctamente, el segundo recibió 429 por el límite gratuito de 8 000 TPM y `hola.txt` no se creó. No es una prueba de agente funcional de punta a punta a costo cero.
+- La documentación de CAPCOT/main y del stack auxiliar no acredita que DSH esté conectado a la rama CAPCOT activa ni a U6.
+
+### Divergencia de ramas CAPCOT
+
+- Comparación `main...feature/capcot-video-discovery-continuity`: estado `diverged`, feature 650 commits por delante y 103 por detrás de `main`.
+- `ajustes_entre_modelos/DELEGACIONES.md`, `docs/CODEBASE_MEMORY_MCP.md`, `.mcp.json` y `docs/DSH_CERO_COSTO.md` están en `main`; esos archivos no están en la rama feature consultada.
+- El tablero de `main` contiene cinco pendientes, pero no se trató como tablero vigente de la rama feature. No se fusionó ni cambió ninguna rama.
