@@ -69,3 +69,16 @@ El prototipo HTTP/SQLite tiene dos checks de CI exitosos: uno sobre el HEAD de l
 - Las tres automatizaciones siguen habilitadas; `next_run_time=null`. La consulta general devolvió 16 automatizaciones: estas tres habilitadas y trece deshabilitadas.
 - **Muse/GitHub:** PR #2 de Motor U6 ya está fusionado, por lo que Contents:write funcionó en ese repositorio. Workflows sigue faltando; en CAPCOT no hay rama A5 ni PR que demuestre escritura.
 - **Dot:** sigue sin conexión directa confirmada. No se atribuye trabajo al agente Dot ni se presenta el operador diario como servicio 24/7.
+
+
+## Estado verificado de automatizaciones — 2026-11-08
+
+Consulta del inventario: 16 automatizaciones en total; 3 habilitadas y 13 deshabilitadas. Las tres habilitadas devuelven `next_run_time=null`; no interpretar ese valor como deshabilitación ni como garantía de próxima ejecución.
+
+| Automatización | Último run observado | Estado al corte |
+|---|---|---|
+| Agente de investigación CAPCOT | `5157ac9d-4c8c-8327-b7e0-1974d934f415`; programado 14:00Z, iniciado 14:00:50Z del 8-nov. | `in_progress`, sin `completed_at`. Último resultado completado: `d3e9a290-2548-8321-ae11-719b50454afe` del 7-nov (`NO_DUPLICAR`, solo radar). No atribuir trabajo al run actual. |
+| Auditor CAPCOT — cola y rotación | `8159484e-7a74-8329-b4f1-3c4c362d862a`; iniciado 21:45:20Z y completado 21:53:56Z del 7-nov. | `completed`. Último QA: 12 proyectos, 2 PASS narrativos, 10 FAIL, 0 estructuralmente aptos, 0 promociones. No hay run del 8-nov al corte. |
+| Operador autónomo general | `34d391e0-4918-832b-9fdb-6f3531295c37`; programado 14:00Z e iniciado 13:57:17Z del 8-nov. | `in_progress`, sin `completed_at`. Último resultado completado: `7d928133-fd44-8325-9c6e-83031661a0db` del 7-nov. No atribuirle el resultado anterior. |
+
+Los horarios 14:00Z corresponden a 08:00 CDMX. Dot no está conectado a esta sesión; el operador general es una automatización programada, no un agente 24/7 ni Dot.
