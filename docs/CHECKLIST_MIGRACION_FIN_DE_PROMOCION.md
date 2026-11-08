@@ -55,3 +55,18 @@ La migración está lista cuando una sesión nueva reconstruye el estado y conti
 - [ ] Completar handoff real de segunda sesión/modelo: `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue PENDIENTE y no tiene acuse.
 - [ ] Confirmar que una segunda sesión puede leer los tres repositorios principales. El acceso de esta sesión no prueba el de otra.
 - Nota: la instalación GitHub ID `174841554` devuelve selección `all`, pero su nombre de App no se expone; no atribuirla a Muse sin evidencia adicional.
+
+
+## Actualización verificada — 2026-11-08
+
+- [x] Gate de memoria compartida anclado y verificado en `AGENTS.md` y `README.md` de los nueve repositorios visibles.
+- [x] Cuentas e inventario GitHub reconsultados: `marcojpad-hash` devuelve nueve repositorios; `marcosabines-hash` devuelve cero instalaciones/repositorios.
+- [x] Acceso de esta sesión a las tres fuentes principales y sus ramas de autoridad comprobado.
+- [ ] Handoff real de segunda sesión/modelo: `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` continúa `PENDIENTE`, sin acuse. No declarar migración completa.
+- [ ] Verificar la conexión MCP viva desde otra sesión/cliente. U6 tiene `.mcp.json` y documentación; CAPCOT solo tiene esa configuración en `main`, no en la rama activa `feature/capcot-video-discovery-continuity`. La sesión actual no expone la herramienta MCP.
+- [ ] Reindexar codebase-memory-mcp después de cambios posteriores al snapshot del 7-nov y verificar la rama exacta indexada de CAPCOT.
+- [ ] DeepSeek Harness no completó la prueba de humo con Groq gratuito: segundo llamado 429 por 8 000 TPM. No contar DSH como agente de código funcional de punta a punta a costo cero.
+- [ ] Reconciliar `main` y `feature/capcot-video-discovery-continuity`: comparación `diverged`, feature 650 commits adelante y 103 detrás. No fusionar sin decisión del propietario.
+- [ ] Reconciliar el tablero `ajustes_entre_modelos/DELEGACIONES.md` de CAPCOT/main con la rama activa, donde ese archivo no existe.
+- [ ] Resolver el estado del paquete `2026-11-07_dato-clavo-te-cocina`: no tiene QA narrativo ni estado Grok; existe un registro de programación contradictorio con `ESTADO_EJECUCION.md`.
+- [ ] Revalidar el estado terminal de los runs de investigador y operador del 8-nov; ambos estaban `in_progress` al corte.
