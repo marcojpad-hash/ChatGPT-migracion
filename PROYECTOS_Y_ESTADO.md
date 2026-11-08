@@ -232,3 +232,31 @@ bandeja/2026-11-03_RECUPERACION_MIGRACION.md sigue PENDIENTE: no hay acuse de un
 - Notion devolvió solo páginas V15 de 19–22-sep-2026; siguen históricas frente a Motor U6.
 - `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue PENDIENTE; no existe acuse de otra sesión/modelo. Migración no completa.
 - Reporte: [2026-11-07_OPERACION_AUTONOMA.md](reportes/2026-11-07_OPERACION_AUTONOMA.md).
+
+
+## Actualización operativa — 2026-11-08
+
+Este corte prevalece sobre los estados anteriores cuando exista diferencia. Registro detallado: [reportes/2026-11-08_OPERACION_AUTONOMA.md](reportes/2026-11-08_OPERACION_AUTONOMA.md).
+
+### CAPCOT — rama `feature/capcot-video-discovery-continuity`
+
+- HEAD observado: `4451ccc27ed751295cea8f1566a4eb7fc973e8d9` (verificación de slots del 8-nov 07:53 CDMX).
+- El auditor terminó el 7-nov (`8159484e-7a74-8329-b4f1-3c4c362d862a`): 12 storyboards canónicos, 2 PASS narrativos, 10 FAIL, 0 estructuralmente aptos y 0 promociones. No hay auditoría del 8-nov al corte.
+- El registro del 8-nov muestra 07:00 palomitas como publicado en YT/TT/FB. El slot 23:30 referencia `2026-11-07_dato-clavo-te-cocina` como programado en las tres plataformas; es un registro interno, no una consulta directa de plataforma.
+- El storyboard de clavo está en `cola/entrada/2026-11-07_dato-clavo-te-cocina/storyboard.json`, dentro de una carpeta anidada. No tiene `narrative_qa` y carece de los seis campos narrativos obligatorios en sus ocho escenas. El workflow escucha únicamente `cola/entrada/*.json` de primer nivel, así que esta carpeta no es despachable por el workflow vigente.
+- `cola/estado/2026-11-07_dato-clavo-te-cocina.json` devuelve 404: `RECEPCION_GROK_NO_CONFIRMADA`. `ESTADO_EJECUCION.md` dice `publicación/programación: NO_REALIZADA`, mientras `data/horario_2026-11-08.json` y `ESTADO_SLOTS_2026-11-08.md` dicen que está programado. `data/publicaciones.json` y `data/rotacion.json` no contienen ese ID. Conflicto documental abierto; no se movió, canceló ni redispatchó el paquete por el registro de programación existente.
+- No se encontró un storyboard objetivo 8-nov en `proyectos/`; el investigador del 8-nov seguía `in_progress` al corte, por lo que no se atribuye resultado ni se declara que el día quedó sin paquete.
+- La rama feature no contiene `.mcp.json`, `docs/CODEBASE_MEMORY_MCP.md` ni `docs/DSH_CERO_COSTO.md`; sí contiene el gate de memoria compartida en `AGENTS.md` y `README.md`.
+
+### Motor U6 — rama `main`
+
+- HEAD observado: `9ba7ee07fe8fa7ce21da0e9defb0ada9ce952949`. El último commit inspeccionado modificó únicamente `AGENTS.md` para anclar el gate de memoria compartida; no modificó motores canónicos, patrones ni candados.
+- `docs/CODEBASE_MEMORY_MCP.md` y `.mcp.json` están presentes. El documento reporta índice del 7-nov; queda pendiente reindexar después de cambios posteriores.
+- `avances/auditoria_corridas/ULTIMO_ESTADO.md` muestra el contrato de arranque Actions `42485950750` en éxito (8-nov 07:38:52–07:39:02 CDMX) y auditorías programadas en éxito. Son comprobaciones/instantáneas, no nuevas corridas predictivas.
+- No se ejecutó ni modificó el motor en este corte. C01–C20 y los pendientes metodológicos previos no se declaran resueltos por las auditorías Actions.
+
+### Migración y continuidad
+
+- El handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue `PENDIENTE`; no existe acuse verificable de una segunda sesión/modelo. La migración no está completa.
+- La memoria compartida está anclada en `AGENTS.md` y `README.md` de los nueve repositorios visibles, pero el gate no sustituye una prueba real de recuperación por otra sesión.
+- Los repositorios adicionales se mantienen `DESCUBIERTO_ADICIONAL` y en solo lectura. No se modificó `memoria-compartida`, `orquestador-central`, `agente-cero-costo`, `baterias-tokens`, `baterias-memoria` ni `red-teaming-safety-u6`.
