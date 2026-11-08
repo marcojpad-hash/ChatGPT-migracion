@@ -131,3 +131,18 @@ Registro completo: [reportes/2026-11-07_OPERACION_AUTONOMA.md](reportes/2026-11-
 - **Automatizaciones:** investigador completado; auditor último run 6-nov; operador general de este corte `in_progress`, sin `completed_at`. Las tres siguen habilitadas; Dot no está conectado.
 - **Migración:** el handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue PENDIENTE. No hay acuse verificable de segunda sesión/modelo; migración no completa.
 - GitHub: `marcojpad-hash` devuelve cinco repositorios; `marcosabines-hash` devuelve cero. Notion solo devuelve páginas V15 de septiembre; GitHub sigue siendo la autoridad técnica.
+
+
+## Actualización operativa — 2026-11-08
+
+Esta actualización prevalece sobre los cortes anteriores. Registro completo y evidencia: [reportes/2026-11-08_OPERACION_AUTONOMA.md](reportes/2026-11-08_OPERACION_AUTONOMA.md), commit `51a22edb4a68dd75f6638cd7d9902eea6dcdcda1`.
+
+- **Repositorios/ramas:** `ChatGPT-migracion/main` HEAD previo `895b65749a882df5b20d46b8c87d024d43468236`; `capcot-capsulas-imaginantes/feature/capcot-video-discovery-continuity` HEAD `4451ccc27ed751295cea8f1566a4eb7fc973e8d9`; `motor-u6-storage/main` HEAD `9ba7ee07fe8fa7ce21da0e9defb0ada9ce952949`.
+- **Cuentas:** `marcojpad-hash` devuelve nueve repositorios y una instalación visible; `marcosabines-hash` devuelve cero instalaciones/repositorios. Seis repositorios adicionales quedaron clasificados `DESCUBIERTO_ADICIONAL` y en solo lectura.
+- **Memoria compartida:** gate verificado en `AGENTS.md` y `README.md` de los nueve repositorios. No es auto-inyección ni acuse de otra sesión. El handoff de recuperación sigue `PENDIENTE`; la migración no está completa.
+- **CAPCOT:** auditor del 7-nov completado: 12 storyboards, 2 PASS narrativos, 10 FAIL, 0 estructuralmente aptos y 0 promociones. El paquete clavo de 23:30 carece de `narrative_qa`, seis campos estructurales por escena y estado Grok; el registro de programación contradice `ESTADO_EJECUCION`. No se movió ni canceló por existir registro de programación. Investigador 8-nov `in_progress` al corte.
+- **CAPCOT branches:** `main` y `feature/capcot-video-discovery-continuity` están `diverged` (feature +650 / -103). MCP/DSH y `DELEGACIONES.md` aparecen en main, no en la rama activa. No se fusionó.
+- **Motor U6:** codebase-memory-mcp tiene documentación y `.mcp.json` en main; índice documentado del 7-nov pendiente de reindexación. El último commit solo cambió `AGENTS.md`; el workflow de contrato de arranque pasó. No se ejecutó ni modificó el motor.
+- **Herramientas:** DSH existe en documentación de CAPCOT/main y en `agente-cero-costo`, pero la prueba con Groq gratis falló por 429/8 000 TPM. No hay MCP de codebase-memory ni DSH expuesto en esta sesión.
+- **Automatizaciones:** investigador y operador del 8-nov estaban `in_progress`; auditor último run completado 7-nov. Las tres habilitadas devuelven `next_run_time=null`; no atribuir resultados a los runs en curso.
+- **Restricciones:** no se modificaron CAPCOT, Motor U6, `memoria-compartida` ni repositorios adicionales; no se cambiaron ramas, permisos, credenciales, canónicos, datos, medios o publicaciones.
