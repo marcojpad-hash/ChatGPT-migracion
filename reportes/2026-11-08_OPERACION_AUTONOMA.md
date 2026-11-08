@@ -86,6 +86,8 @@ Inventario general: 16 automatizaciones, 3 habilitadas y 13 deshabilitadas. Las 
 | `docs/CHECKLIST_MIGRACION_FIN_DE_PROMOCION.md` | Aceptaciones completadas y pendientes actualizadas. | `01476ec1a8f81467756fff004d00e01be9291ad0` |
 | `CONTINUIDAD_CHATGPT.md` | Corte operativo y enlace al reporte. | `aaae4443f13a1b88536bc97db5b5bb6cbc975e14` |
 
+Nota de historial: el commit intermedio `4b177f191435751741818d6fb4a3a972f1a8dbef` conservó el mismo blob del reporte y no cambió su contenido.
+
 Se releyeron desde GitHub los seis documentos actualizados. Blobs verificados: README `1172661c549e41b4b2ecb9eb40e5ef3ca92b02be`; mapa `4ba4729725dad6778696207f6ce2aba0650062d9`; estado `f0a1d45e5664c7fd04a8a10a372cfd350960e181`; automatizaciones `37337507ad26003f8dac1fbf27215eab49c51aea`; checklist `eddd8855c28f21ea8f0d56cc6a9e338766da2990`; continuidad `7a55a62a0b39b3b41da6cf46f9ad22d34d0114c1`. No hubo cambios en CAPCOT, Motor U6 ni repositorios adicionales. No se cambiaron permisos, credenciales, ramas, workflows, datos, medios ni publicaciones.
 
 ## 9. Bloqueos abiertos
