@@ -152,3 +152,38 @@ Consulta de ambas conexiones autorizadas e instalaciones:
 - Comparación `main...feature/capcot-video-discovery-continuity`: estado `diverged`, feature 650 commits por delante y 103 por detrás de `main`.
 - `ajustes_entre_modelos/DELEGACIONES.md`, `docs/CODEBASE_MEMORY_MCP.md`, `.mcp.json` y `docs/DSH_CERO_COSTO.md` están en `main`; esos archivos no están en la rama feature consultada.
 - El tablero de `main` contiene cinco pendientes, pero no se trató como tablero vigente de la rama feature. No se fusionó ni cambió ninguna rama.
+
+## Corte verificado — 2026-11-09
+
+### Cuentas GitHub e inventario
+
+Consulta de ambas conexiones:
+- `marcojpad-hash`: nueve repositorios visibles: `motor-u6-storage`, `capcot-capsulas-imaginantes`, `ChatGPT-migracion`, `orquestador-central`, `red-teaming-safety-u6`, `agente-cero-costo`, `baterias-tokens`, `baterias-memoria` y `memoria-compartida`.
+- `marcosabines-hash`: cero repositorios visibles; la llamada terminó sin error.
+- Los seis últimos son `DESCUBIERTO_ADICIONAL`. Se consultaron únicamente metadatos y README/documentación; no se escribieron ni alteraron.
+
+Relación documental observada:
+- `orquestador-central`: plano de control y coordinación transversal.
+- `red-teaming-safety-u6`: subcorridas white-hat aisladas y ledger append-only, separado del U6 de producción.
+- `agente-cero-costo`: stack auxiliar con DeepSeek Harness, puente Groq y orquestador.
+- `baterias-tokens` y `baterias-memoria`: documentación de proveedores/límites y capacidad de máquinas.
+- `memoria-compartida`: hechos verificados, decisiones y correcciones persistentes.
+
+### codebase-memory-mcp
+
+- **Motor U6/main:** `docs/CODEBASE_MEMORY_MCP.md` y `.mcp.json` presentes. El documento registra versión 0.12.1, binario local `/home/hatch/workspace/codebase-memory-mcp/bin/codebase-memory-mcp` e índice del 7-nov de 13 531 nodos / 27 173 aristas. El índice es anterior a los cambios documentales posteriores; reindexación pendiente.
+- **CAPCOT/main:** `docs/CODEBASE_MEMORY_MCP.md` y `.mcp.json` presentes. El documento registra índice del 7-nov de 12 129 nodos / 13 879 aristas.
+- **CAPCOT/feature/capcot-video-discovery-continuity:** ambas rutas devolvieron 404. La configuración de main no está integrada en la rama operativa.
+- La configuración apunta a una ruta absoluta de la máquina de Pecas; no prueba que el proceso esté activo en otra máquina. Esta sesión no expone herramientas MCP de codebase-memory ni acceso al índice local.
+- No se reindexó ni se instaló nada durante este corte.
+
+### DeepSeek Harness
+
+- **CAPCOT/main:** existe `docs/DSH_CERO_COSTO.md`; la rama feature activa no contiene ese documento. **Motor U6/main:** no se encontró integración DSH.
+- El README y `dsh/DSH_PRUEBA_HUMO.md` de `agente-cero-costo` documentan que dsh 0.2.2-rc.1 arranca y el modelo planea herramientas, pero la tarea mínima no termina: el segundo llamado falla con HTTP 429 por el límite de 8 000 TPM de Groq gratuito; `hola.txt` no se creó. Ollama local no se probó.
+- Por tanto, separar: configuración/arranque comprobados; ejecución de agente de punta a punta gratuita **NO VERIFICADA / FALLIDA con Groq gratis**. El dictamen afirmativo de configuración en CAPCOT/main no prevalece sobre el resultado de la prueba de humo.
+- Esta sesión tampoco expone un conector/herramienta DSH. No se usaron claves, créditos ni proveedores de pago.
+
+### Divergencia CAPCOT
+
+La comparación actual `main...feature/capcot-video-discovery-continuity` devuelve `diverged`: feature 671 commits adelante y 120 detrás. No se cambió de rama ni se fusionó. Los archivos MCP/DSH que están en main no deben considerarse disponibles en feature.
