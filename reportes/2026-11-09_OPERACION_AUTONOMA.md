@@ -103,3 +103,7 @@ Las cuatro actualizaciones se releerán desde GitHub junto con este reporte. La 
 8. `next_run_time=null` en las tres automatizaciones; causa no identificada.
 
 No se cambiaron permisos, credenciales, ramas, secretos, workflows, publicaciones ni datos operativos. No se gastaron créditos ni se borró información.
+
+## 9. Continuidad y verificación final
+
+La continuidad transversal quedó actualizada en `CONTINUIDAD_CHATGPT.md`, commit `ea7f3c96aba3071181ed65684a271a17f6bf6fe7`. Se releyeron desde GitHub los seis archivos modificados/creados: mapa, checklist, BOT_DOT, PROYECTOS_Y_ESTADO, CONTINUIDAD_CHATGPT y este reporte. La verificación final confirmó el corte del 9-nov, los enlaces y los estados descritos. El reporte quedó creado en `main`; no se creó una rama ni un PR.
