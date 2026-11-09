@@ -146,3 +146,16 @@ Esta actualización prevalece sobre los cortes anteriores. Registro completo y e
 - **Herramientas:** DSH existe en documentación de CAPCOT/main y en `agente-cero-costo`, pero la prueba con Groq gratis falló por 429/8 000 TPM. No hay MCP de codebase-memory ni DSH expuesto en esta sesión.
 - **Automatizaciones:** investigador y operador del 8-nov estaban `in_progress`; auditor último run completado 7-nov. Las tres habilitadas devuelven `next_run_time=null`; no atribuir resultados a los runs en curso.
 - **Restricciones:** no se modificaron CAPCOT, Motor U6, `memoria-compartida` ni repositorios adicionales; no se cambiaron ramas, permisos, credenciales, canónicos, datos, medios o publicaciones.
+
+## Actualización operativa — 2026-11-09
+
+Este corte prevalece sobre los estados anteriores. Registro detallado: [reportes/2026-11-09_OPERACION_AUTONOMA.md](reportes/2026-11-09_OPERACION_AUTONOMA.md).
+
+- **Cuentas GitHub:** `marcojpad-hash` devuelve nueve repositorios; `marcosabines-hash`, cero. Seis adicionales (`orquestador-central`, `red-teaming-safety-u6`, `agente-cero-costo`, `baterias-tokens`, `baterias-memoria`, `memoria-compartida`) quedaron como `DESCUBIERTO_ADICIONAL`; solo se revisaron metadatos/README y no recibieron escrituras.
+- **CAPCOT:** investigador 9-nov completado `NO_DUPLICAR`, commit de radar `e7c6e7eb652845c614f1b875348f8f0bd819647a`. No hay storyboard objetivo 9-nov; 07:00 usa ranas del lote anterior y 23:30 sigue sin paquete. El estado Grok individual de ranas devolvió 404: `RECEPCION_GROK_NO_CONFIRMADA`. El control de cola del 9-nov mantiene 12 storyboards, 2 PASS narrativos, 10 FAIL, cero aptos estructuralmente y cero promociones. CAPCOT main/feature está `diverged` (+671/-120); no se fusionó.
+- **Motor U6:** último commit `b89853486d924aac7b25a5f1ecd46424e92c202e` solo actualiza snapshots de auditoría Actions. Los cuatro runs auditados más recientes del 9-nov terminaron success; no son corridas predictivas. No se modificó ni ejecutó el motor.
+- **codebase-memory-mcp:** documentación/configuración en U6/main y CAPCOT/main; ausente en CAPCOT/feature. Índices documentados del 7-nov pendientes de revalidación; no hay herramienta MCP viva expuesta en esta sesión.
+- **DeepSeek Harness:** documentado en CAPCOT/main y stack auxiliar; ausente de CAPCOT/feature y U6/main. La prueba de humo con Groq gratuito falla al segundo llamado por 429/8 000 TPM; Ollama no probado. No declararlo agente gratuito E2E.
+- **Automatizaciones:** investigador completado; auditor último run completado 8-nov y sin run 9-nov al corte; operador 9-nov `in_progress`, sin `completed_at`. Las tres siguen habilitadas con `next_run_time=null`. Dot no está conectado.
+- **Migración:** `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue `PENDIENTE`, sin acuse de otra sesión/modelo. Migración no completa.
+- Reporte y commits de continuidad: ver [operación autónoma 9-nov](reportes/2026-11-09_OPERACION_AUTONOMA.md). No se modificaron CAPCOT, Motor U6 ni repositorios adicionales.
