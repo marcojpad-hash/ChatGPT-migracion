@@ -260,3 +260,27 @@ Este corte prevalece sobre los estados anteriores cuando exista diferencia. Regi
 - El handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue `PENDIENTE`; no existe acuse verificable de una segunda sesión/modelo. La migración no está completa.
 - La memoria compartida está anclada en `AGENTS.md` y `README.md` de los nueve repositorios visibles, pero el gate no sustituye una prueba real de recuperación por otra sesión.
 - Los repositorios adicionales se mantienen `DESCUBIERTO_ADICIONAL` y en solo lectura. No se modificó `memoria-compartida`, `orquestador-central`, `agente-cero-costo`, `baterias-tokens`, `baterias-memoria` ni `red-teaming-safety-u6`.
+
+## Actualización operativa — 2026-11-09
+
+### CAPCOT — rama `feature/capcot-video-discovery-continuity`
+
+- El investigador completó el 9-nov `NO_DUPLICAR` y guardó únicamente [RADAR_CAPCOT 2026-11-09](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-09_RADAR_CAPCOT.md), commit `e7c6e7eb652845c614f1b875348f8f0bd819647a`. No hay storyboard objetivo 9-nov en `proyectos/`, `salidas/`, `cola/entrada/` ni `cola/bloqueados/`.
+- `data/horario_2026-11-09.json`: 07:00 corresponde al proyecto existente `2026-11-06_inter-ranas-congeladas`, registrado como publicado en YouTube y TikTok; no se volvió a subir. Facebook figura programado desde el lote del 7-nov, sin URL capturada en esta corrida. El slot 23:30 está `sin_paquete`; el horario no asigna 13:30, 17:00 ni 19:00.
+- Se leyó `docs/GROK_STATUS_CONTRACT.md`. `cola/estado/2026-11-06_inter-ranas-congeladas.json` devolvió 404: `RECEPCION_GROK_NO_CONFIRMADA`. La evidencia de publicación en el horario no sustituye el acuse individual exigido por el contrato.
+- El control de cola del 9-nov conserva 12 storyboards canónicos del lote 5–7 nov: 2 PASS narrativos, 10 FAIL, 0 aptos estructuralmente y 0 promociones. Se reportan seis campos narrativos ausentes en 85 escenas (510 omisiones). No se reescribieron ni movieron paquetes.
+- El horario del 9-nov también registra el clavo de la noche anterior como publicado en YT/TT; sin embargo, `cola/entrada/2026-11-07_dato-clavo-te-cocina/ESTADO_EJECUCION.md` sigue diciendo `Publicación/programación: NO_REALIZADA`. Se conserva la discrepancia; no se alteró el paquete ni se creó un estado Grok.
+- El workflow de dispatch no tiene una ejecución posterior que demuestre el buzón nuevo; el control del 9-nov reporta el último dispatch run 41306776689 (1-nov, fallo de configuración en la versión anterior). No se disparó Actions.
+- Comparación actual de ramas: `main...feature/capcot-video-discovery-continuity` = `diverged`, feature +671 / -120. No se fusionó ni se cambió de rama.
+
+### Motor U6 — rama `main`
+
+- Último commit observado: `b89853486d924aac7b25a5f1ecd46424e92c202e` (9-nov, `audit: snapshot de corridas Actions`). Los cuatro registros más recientes de `avances/auditoria_corridas/ULTIMO_ESTADO.md` son auditorías programadas del 9-nov y terminaron `success` (runs 42614233378, 42606582903, 42593008593 y 42580689454). Son snapshots/auditorías de Actions, no corridas predictivas nuevas.
+- No se ejecutó ni modificó el motor en esta operación. `Engine_V5_CANONICO_SOLO.py`, `patterns_final_v14.json`, motores canónicos y candados permanecen fuera de alcance y sin cambios.
+- codebase-memory-mcp sigue documentado/configurado localmente en U6/main; índice 0.12.1 del 7-nov (13 531 nodos / 27 173 aristas), pendiente de reindexación. No hay servidor MCP vivo expuesto a esta sesión.
+- DeepSeek Harness no está integrado en U6/main.
+
+### Continuidad
+
+- `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue `PENDIENTE`, sin acuse de otra sesión/modelo. Migración incompleta.
+- Seis repositorios adicionales continúan `DESCUBIERTO_ADICIONAL` y en solo lectura.
