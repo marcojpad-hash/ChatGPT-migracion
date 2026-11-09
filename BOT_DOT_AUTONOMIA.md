@@ -82,3 +82,17 @@ Consulta del inventario: 16 automatizaciones en total; 3 habilitadas y 13 deshab
 | Operador autónomo general | `34d391e0-4918-832b-9fdb-6f3531295c37`; programado 14:00Z e iniciado 13:57:17Z del 8-nov. | `in_progress`, sin `completed_at`. Último resultado completado: `7d928133-fd44-8325-9c6e-83031661a0db` del 7-nov. No atribuirle el resultado anterior. |
 
 Los horarios 14:00Z corresponden a 08:00 CDMX. Dot no está conectado a esta sesión; el operador general es una automatización programada, no un agente 24/7 ni Dot.
+
+## Estado verificado — 2026-11-09
+
+Consulta directa de las tres automatizaciones principales (todas habilitadas; las tres devolvieron `next_run_time=null`):
+
+| Automatización | Último run | Estado observado | Resultado atribuible |
+|---|---|---|---|
+| Agente de investigación CAPCOT | `f107678a-f418-832d-ad4d-795b052aa428`; 9-nov, iniciado 08:10:04 y completado 08:22:50 CDMX. | `completed`. | Radar 9-nov `NO_DUPLICAR`, commit `e7c6e7eb652845c614f1b875348f8f0bd819647a`; un solo archivo, sin storyboard. |
+| Auditor CAPCOT — cola y rotación | `47358f19-38f0-832f-8978-fff1717beddf`; 8-nov, iniciado 15:25:08 y completado 15:35:49 CDMX. | `completed`; no hay run del 9-nov en esta consulta. | Control del 8-nov: 12 storyboards, 2 PASS narrativos, 10 FAIL, 0 estructuralmente aptos, 0 promociones. |
+| Operador autónomo general | `4dbcfe93-d5b0-8331-b40b-c9c2bed7fd92`; 9-nov, iniciado 08:35:35 CDMX. | `in_progress`, `completed_at=null` al último peek. | El último `latest_result` pertenece al run anterior del 8-nov (`34d391e0-4918-832b-9fdb-6f3531295c37)); no atribuirlo al run actual. |
+
+Los horarios guardados siguen: investigador 08:00 exacto (hasta 24-nov), auditor 15:00 flexible y operador 08:00 exacto. El inicio del investigador fue 10 minutos después del horario nominal y el operador 35 minutos después. No se atribuye la demora a una causa no observada. `next_run_time=null` persiste en las tres.
+
+Dot nativo continúa sin conexión directa confirmada. El operador diario es una automatización de una ronda, no Dot ni un agente 24/7.
