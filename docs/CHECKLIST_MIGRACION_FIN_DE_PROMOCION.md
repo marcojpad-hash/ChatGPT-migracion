@@ -70,3 +70,19 @@ La migración está lista cuando una sesión nueva reconstruye el estado y conti
 - [ ] Reconciliar el tablero `ajustes_entre_modelos/DELEGACIONES.md` de CAPCOT/main con la rama activa, donde ese archivo no existe.
 - [ ] Resolver el estado del paquete `2026-11-07_dato-clavo-te-cocina`: no tiene QA narrativo ni estado Grok; existe un registro de programación contradictorio con `ESTADO_EJECUCION.md`.
 - [ ] Revalidar el estado terminal de los runs de investigador y operador del 8-nov; ambos estaban `in_progress` al corte.
+
+## Actualización verificada — 2026-11-09
+
+- [x] Reconsultadas ambas cuentas GitHub: `marcojpad-hash` devuelve nueve repositorios; `marcosabines-hash` devuelve cero, sin error.
+- [x] Revisados metadatos/README de los seis repositorios `DESCUBIERTO_ADICIONAL`; sin escrituras.
+- [x] Confirmada autoridad de ramas: U6 `main`; CAPCOT `feature/capcot-video-discovery-continuity`; migración `main`.
+- [x] Confirmado que codebase-memory-mcp está documentado/configurado en U6/main y CAPCOT/main, pero ausente en CAPCOT/feature; los índices documentados son del 7-nov.
+- [ ] Verificar proceso MCP vivo en la máquina/cliente que lo consume y reindexar U6/CAPCOT tras los cambios posteriores al 7-nov.
+- [ ] Integrar codebase-memory-mcp en CAPCOT/feature mediante cambio autorizado; no copiar desde main mientras persista la divergencia.
+- [ ] DeepSeek Harness: prueba de humo con Groq gratuito falla al segundo llamado por 429/8 000 TPM; Ollama no se probó. No declararlo agente gratuito de extremo a extremo.
+- [ ] Handoff real de segunda sesión/modelo: `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue `PENDIENTE`, sin acuse.
+- [ ] Auditor CAPCOT del 9-nov: todavía no hay run del día en la última consulta; horario guardado 15:00 flexible y `next_run_time=null`.
+- [ ] Reconciliar el slot CAPCOT 23:30 y su responsable: el horario del 9-nov lo deja sin paquete; el investigador de las 08:00 lo excluye. No crear un paquete duplicado desde el operador general.
+- [ ] Investigar la causa de `next_run_time=null` en las tres automatizaciones; no interpretar null como deshabilitación ni como garantía de ejecución futura.
+
+La migración continúa **INCOMPLETA**: falta el acuse verificable de otra sesión/modelo y la comprobación de conexión MCP viva.
