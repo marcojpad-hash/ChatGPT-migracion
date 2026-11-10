@@ -34,7 +34,7 @@ Los ocho repositorios distintos de los tres principales se clasifican DESCUBIERT
 
 | Automatización | Último run | Estado observado | Atribución |
 |---|---|---|---|
-| Agente de investigación CAPCOT | 750011d4-cc00-8320-8809-c6d109638921 | IN_PROGRESS; iniciado 10-nov 08:03 CDMX; completed_at=null | No se atribuye ningún entregable del 10-nov. El último resultado completado sigue siendo el radar NO_DUPLICAR del 9-nov, commit e7c6e7eb652845c614f1b875348f8f0bd819647a. |
+| Agente de investigación CAPCOT | 750011d4-cc00-8320-8809-c6d109638921 | IN_PROGRESS; iniciado 10-nov 08:08 CDMX (último peek); completed_at=null | No se atribuye ningún entregable del 10-nov. El último resultado completado sigue siendo el radar NO_DUPLICAR del 9-nov, commit e7c6e7eb652845c614f1b875348f8f0bd819647a. |
 | Auditor CAPCOT — cola y rotación | 51709143-f4bc-8321-8053-bd614a6467fc | COMPLETED el 9-nov 16:33 CDMX | Último resultado: 12 storyboards del lote 5–7 nov, 2 PASS narrativos, 10 FAIL, 0 estructuralmente aptos, 0 promociones. No hay run del 10-nov en la consulta. |
 | Operador autónomo general | da2f816c-50fc-8324-a027-538854e8f5d0 | IN_PROGRESS; iniciado 10-nov 08:04 CDMX; completed_at=null | El último resultado completado pertenece al 9-nov; no se atribuye al run actual. |
 
