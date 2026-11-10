@@ -187,3 +187,24 @@ Relación documental observada:
 ### Divergencia CAPCOT
 
 La comparación actual `main...feature/capcot-video-discovery-continuity` devuelve `diverged`: feature 671 commits adelante y 120 detrás. No se cambió de rama ni se fusionó. Los archivos MCP/DSH que están en main no deben considerarse disponibles en feature.
+
+## Corte verificado — 2026-11-10
+
+### Inventario GitHub
+- marcojpad-hash: 1 instalación visible (ID 174841554, selección all; nombre de App no expuesto) y 11 repositorios: motor-u6-storage, capcot-capsulas-imaginantes, ChatGPT-migracion, orquestador-central, red-teaming-safety-u6, agente-cero-costo, baterias-tokens, baterias-memoria, memoria-compartida, microserie-heredera-sadtalker y microserie-heredera-voces.
+- marcosabines-hash: 0 instalaciones y 0 repositorios visibles, sin error.
+- Los ocho repositorios fuera de los tres principales son DESCUBIERTO_ADICIONAL y permanecen fuera de escritura. Los dos nuevos microserie se revisaron solo por README/metadatos.
+
+### Estado de herramientas
+| Proyecto | Herramienta | Estado actual |
+|---|---|---|
+| U6/main | codebase-memory-mcp | docs/CODEBASE_MEMORY_MCP.md y .mcp.json presentes; versión documentada 0.12.1, índice del 7-nov (13 531 nodos / 27 173 aristas), binario en ruta local de Pecas. Sin proceso vivo verificado en esta sesión; índice pendiente de reindexar. |
+| U6/main | DeepSeek Harness | Sin integración confirmada. Prueba previa con Groq gratuito falló con HTTP 429/8 000 TPM; Ollama no probado. |
+| CAPCOT/feature | codebase-memory-mcp | .mcp.json y docs/CODEBASE_MEMORY_MCP.md ausentes en la rama activa; no está integrado aquí. |
+| CAPCOT/feature | DeepSeek Harness | docs/DSH_CERO_COSTO.md/configuración ausentes en la rama activa; no está integrado aquí. |
+| Ambos | Conector MCP en esta sesión | No se expone herramienta codebase-memory ni DSH en ALL_TOOLS; documentación/configuración local no equivale a conexión viva. |
+
+### Estado operativo 10-nov
+- CAPCOT: 23:30 sin paquete; paquete robot 9-nov anidado en cola y sin estado Grok (404), por lo que RECEPCION_GROK_NO_CONFIRMADA. No se movió ni redispatchó.
+- Motor U6: HEAD d4af4d7629a79a24918325fdf9b89bc2f9c20821; último snapshot Actions 42811851624 success a las 06:00 CDMX; no es corrida predictiva.
+- Automatizaciones: investigador y operador IN_PROGRESS al corte; auditor último COMPLETED 9-nov 16:33. next_run_time=null en las tres.
