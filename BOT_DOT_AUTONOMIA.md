@@ -96,3 +96,15 @@ Consulta directa de las tres automatizaciones principales (todas habilitadas; la
 Los horarios guardados siguen: investigador 08:00 exacto (hasta 24-nov), auditor 15:00 flexible y operador 08:00 exacto. El inicio del investigador fue 10 minutos después del horario nominal y el operador 35 minutos después. No se atribuye la demora a una causa no observada. `next_run_time=null` persiste en las tres.
 
 Dot nativo continúa sin conexión directa confirmada. El operador diario es una automatización de una ronda, no Dot ni un agente 24/7.
+
+## Estado verificado — 2026-11-10
+
+Consulta directa de las tres automatizaciones principales:
+
+| Automatización | Run | Estado | Último resultado atribuible |
+|---|---|---|---|
+| Agente de investigación CAPCOT | 750011d4-cc00-8320-8809-c6d109638921 | IN_PROGRESS; iniciado 08:03 CDMX, completed_at=null | El último COMPLETED es 9-nov: radar NO_DUPLICAR, commit e7c6e7eb652845c614f1b875348f8f0bd819647a. No atribuir entregables del 10-nov al run actual. |
+| Auditor CAPCOT — cola y rotación | 51709143-f4bc-8321-8053-bd614a6467fc | COMPLETED 9-nov 16:33 CDMX | 12 storyboards: 2 PASS narrativos, 10 FAIL, 0 estructuralmente aptos, 0 promociones. No hay run del 10-nov al corte. |
+| Operador autónomo general | da2f816c-50fc-8324-a027-538854e8f5d0 | IN_PROGRESS; iniciado 08:04 CDMX, completed_at=null | El último resultado COMPLETED corresponde al 9-nov. No atribuirlo al run actual. |
+
+Las tres siguen habilitadas; las tres devolvieron next_run_time=null. Investigador y operador permanecen en progreso, no completados. El auditor conserva horario flexible de 15:00 CDMX y aún no había corrido el 10-nov. Dot nativo no está conectado a esta sesión ni se declara disponible.
