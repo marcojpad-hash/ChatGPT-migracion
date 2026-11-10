@@ -306,3 +306,17 @@ Detalle: [reportes/2026-11-10_OPERACION_AUTONOMA.md](reportes/2026-11-10_OPERACI
 ### Migración y cuentas
 - marcojpad-hash: once repositorios visibles; marcosabines-hash: cero. Ocho repositorios DESCUBIERTO_ADICIONAL, solo metadatos/documentación; dos adicionales nuevos son microserie-heredera-sadtalker y microserie-heredera-voces.
 - Handoff de recuperación sigue PENDIENTE, sin acuse verificable de segunda sesión/modelo. Migración incompleta.
+
+
+## Actualización de entrega — 2026-11-10, 16:16 CDMX
+
+Reporte: [ENTREGA_PENDIENTES 2026-11-10](reportes/2026-11-10_ENTREGA_PENDIENTES.md).
+
+### CAPCOT — ASTRA y dato 23:30
+- ASTRA: guion narrativo separado y releído en `capcot-capsulas-imaginantes/main/cola/entrada/2026-11-09_dato-robot-ensambla-orbita/GUION_NARRACION.md`. Nueve escenas, 210 palabras, 88 s total. No se regeneraron PNGs. El estado registra nueve frames generados por Grok y disponibles en el chat; no se afirma que los binarios estén subidos a `frames/`.
+- Dato 23:30 del 10-nov: `2026-11-10_dato-adn-sincroniza-flujo`, storyboard + fuentes + estado en CAPCOT/feature. QA narrativo PASS 91/100; 8 escenas, 195 palabras, 84 s; seis campos obligatorios presentes en las ocho escenas. Revisión estructural estática contra el validador: PASS; el script Python no se ejecutó por falta de runtime local.
+- El paquete permanece en `proyectos/`, no en `cola/entrada/`; no se disparó workflow ni se creó estado Grok. Recepción/selección/producción siguen sin confirmar.
+
+### Migración — segunda sesión
+- Reemitida solicitud en `bandeja/2026-11-10_SEGUNDA_SESION_RECUPERACION.md`.
+- El acuse de destinatario continúa PENDIENTE; no hay evidencia de una sesión independiente que haya leído los tres repositorios o verificado conectores. **Migración INCOMPLETA**.
