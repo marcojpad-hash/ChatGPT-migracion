@@ -86,3 +86,19 @@ La migración está lista cuando una sesión nueva reconstruye el estado y conti
 - [ ] Investigar la causa de `next_run_time=null` en las tres automatizaciones; no interpretar null como deshabilitación ni como garantía de ejecución futura.
 
 La migración continúa **INCOMPLETA**: falta el acuse verificable de otra sesión/modelo y la comprobación de conexión MCP viva.
+
+## Actualización verificada — 2026-11-10
+
+- [x] Reconsultadas ambas cuentas GitHub e instalaciones: marcojpad-hash devuelve 11 repositorios y una instalación visible (ID 174841554, selección all; nombre de App no expuesto); marcosabines-hash devuelve cero repositorios/instalaciones, sin error.
+- [x] Ocho repositorios adicionales clasificados DESCUBIERTO_ADICIONAL; los dos nuevos repositorios microserie fueron revisados solo por README/metadatos y no recibieron escrituras.
+- [x] Autoridad de ramas y HEAD actualizados: ChatGPT-migracion/main ff368057 previo al reporte, CAPCOT feature 91003f7c, Motor U6 main d4af4d7.
+- [ ] Handoff real de segunda sesión/modelo: bandeja/2026-11-03_RECUPERACION_MIGRACION.md sigue PENDIENTE, sin acuse ni reporte de recuperación.
+- [ ] Verificar proceso codebase-memory-mcp vivo en el cliente/máquina que lo consume; U6 conserva índice del 7-nov y CAPCOT/feature carece de configuración.
+- [ ] DeepSeek Harness no está integrado en U6/main ni CAPCOT/feature; prueba Groq gratuita previa falló 429/8 000 TPM; Ollama no probado.
+- [ ] Reconciliar el slot 23:30: instrucción permanente del dato del día exige paquete diario, pero el prompt del investigador lo excluye; 10-nov continúa sin paquete.
+- [ ] Handoff Grok del paquete robot 9-nov: QA almacenado PASS 90, pero estado individual 404 y ruta anidada no despachable por el workflow actual.
+- [ ] Revisar el resultado terminal de investigador y operador 10-nov; ambos seguían IN_PROGRESS al corte. Auditor 10-nov aún no había corrido.
+- [ ] Resolver next_run_time=null en las tres automatizaciones; la causa no está identificada.
+- [ ] Confirmar conexiones de una segunda sesión: el acceso de esta sesión no demuestra recuperación de permisos/conectores en otra.
+
+La migración continúa **INCOMPLETA**.
