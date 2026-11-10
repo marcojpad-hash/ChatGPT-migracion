@@ -103,14 +103,14 @@ Se actualizaron y releyeron desde GitHub estos documentos de continuidad:
 
 | Archivo | Commit |
 |---|---|
-| CONTINUIDAD_CHATGPT.md | 30b8718932725b0e22f26e3d76a887e0d1aaa735 |
-| BOT_DOT_AUTONOMIA.md | f410504a6b2c1d9738157d4f72f36de1727d039f |
+| CONTINUIDAD_CHATGPT.md | e4fc3ea71ab986e0b1dc6ee465eaf93b19a91306 |
+| BOT_DOT_AUTONOMIA.md | 51690f0d8332ddcf463b36f95b515c072396361b |
 | PROYECTOS_Y_ESTADO.md | f6b69c5d159c8d870c260273edc28b2c9e894b3b |
 | docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md | 605686087d2f519aa7e7949f8bbbbf26bc4ea68b |
 | docs/CHECKLIST_MIGRACION_FIN_DE_PROMOCION.md | d33b23373f6cc0cf7cdf10b82c5fa95267da7bed |
 
 Corrección de hora tras el último peek: el investigador seguía IN_PROGRESS y el inicio reportado por Automations fue 08:08 CDMX; el operador seguía IN_PROGRESS desde 08:04 CDMX. El último resultado completado del investigador sigue siendo el del 9-nov.
 
-HEAD final de ChatGPT-migracion/main: d33b23373f6cc0cf7cdf10b82c5fa95267da7bed. HEAD de CAPCOT/feature: 91003f7c551e4e60700b39b8f94451f1126fcaf3. HEAD de Motor U6/main: d4af4d7629a79a24918325fdf9b89bc2f9c20821.
+HEAD de ChatGPT-migracion/main tras actualizar los cinco documentos de continuidad y antes de este último cierre del reporte: d33b23373f6cc0cf7cdf10b82c5fa95267da7bed. HEAD de CAPCOT/feature: 91003f7c551e4e60700b39b8f94451f1126fcaf3. HEAD de Motor U6/main: d4af4d7629a79a24918325fdf9b89bc2f9c20821.
 
 La verificación de vuelta confirmó la presencia de las cinco actualizaciones y del reporte. No se hizo escritura fuera de ChatGPT-migracion/main.
