@@ -96,3 +96,21 @@ Se creó este reporte en ChatGPT-migracion/main. No se modificaron CAPCOT ni Mot
 **No ejecutado:** runtime Python local CAPCOT, servidor MCP, DeepSeek Harness, motor predictivo U6, QA narrativo adicional o dispatch. No se atribuye a este corte ninguna acción de los runs IN_PROGRESS.
 
 **Pendientes reales:** terminar los runs de investigador y operador y revisar sus resultados terminales; auditor CAPCOT del 10-nov a su horario; resolver la responsabilidad del slot 23:30; corregir la ruta/handshake del paquete robot mediante los responsables autorizados; acuse real de segunda sesión/modelo; reindexación MCP y verificación del cliente local; prueba DSH con un proveedor/runtime que pueda completar la tarea sin consumir créditos no autorizados.
+
+## 10. Actualizaciones de continuidad ejecutadas y verificación final
+
+Se actualizaron y releyeron desde GitHub estos documentos de continuidad:
+
+| Archivo | Commit |
+|---|---|
+| CONTINUIDAD_CHATGPT.md | 30b8718932725b0e22f26e3d76a887e0d1aaa735 |
+| BOT_DOT_AUTONOMIA.md | f410504a6b2c1d9738157d4f72f36de1727d039f |
+| PROYECTOS_Y_ESTADO.md | f6b69c5d159c8d870c260273edc28b2c9e894b3b |
+| docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md | 605686087d2f519aa7e7949f8bbbbf26bc4ea68b |
+| docs/CHECKLIST_MIGRACION_FIN_DE_PROMOCION.md | d33b23373f6cc0cf7cdf10b82c5fa95267da7bed |
+
+Corrección de hora tras el último peek: el investigador seguía IN_PROGRESS y el inicio reportado por Automations fue 08:08 CDMX; el operador seguía IN_PROGRESS desde 08:04 CDMX. El último resultado completado del investigador sigue siendo el del 9-nov.
+
+HEAD final de ChatGPT-migracion/main: d33b23373f6cc0cf7cdf10b82c5fa95267da7bed. HEAD de CAPCOT/feature: 91003f7c551e4e60700b39b8f94451f1126fcaf3. HEAD de Motor U6/main: d4af4d7629a79a24918325fdf9b89bc2f9c20821.
+
+La verificación de vuelta confirmó la presencia de las cinco actualizaciones y del reporte. No se hizo escritura fuera de ChatGPT-migracion/main.
