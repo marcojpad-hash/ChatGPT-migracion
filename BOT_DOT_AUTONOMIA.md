@@ -103,7 +103,7 @@ Consulta directa de las tres automatizaciones principales:
 
 | Automatización | Run | Estado | Último resultado atribuible |
 |---|---|---|---|
-| Agente de investigación CAPCOT | 750011d4-cc00-8320-8809-c6d109638921 | IN_PROGRESS; iniciado 08:03 CDMX, completed_at=null | El último COMPLETED es 9-nov: radar NO_DUPLICAR, commit e7c6e7eb652845c614f1b875348f8f0bd819647a. No atribuir entregables del 10-nov al run actual. |
+| Agente de investigación CAPCOT | 750011d4-cc00-8320-8809-c6d109638921 | IN_PROGRESS; iniciado 08:08 CDMX (último peek), completed_at=null | El último COMPLETED es 9-nov: radar NO_DUPLICAR, commit e7c6e7eb652845c614f1b875348f8f0bd819647a. No atribuir entregables del 10-nov al run actual. |
 | Auditor CAPCOT — cola y rotación | 51709143-f4bc-8321-8053-bd614a6467fc | COMPLETED 9-nov 16:33 CDMX | 12 storyboards: 2 PASS narrativos, 10 FAIL, 0 estructuralmente aptos, 0 promociones. No hay run del 10-nov al corte. |
 | Operador autónomo general | da2f816c-50fc-8324-a027-538854e8f5d0 | IN_PROGRESS; iniciado 08:04 CDMX, completed_at=null | El último resultado COMPLETED corresponde al 9-nov. No atribuirlo al run actual. |
 
