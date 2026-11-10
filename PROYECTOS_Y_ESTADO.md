@@ -284,3 +284,25 @@ Este corte prevalece sobre los estados anteriores cuando exista diferencia. Regi
 
 - `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue `PENDIENTE`, sin acuse de otra sesión/modelo. Migración incompleta.
 - Seis repositorios adicionales continúan `DESCUBIERTO_ADICIONAL` y en solo lectura.
+
+## Actualización operativa — 2026-11-10
+
+Detalle: [reportes/2026-11-10_OPERACION_AUTONOMA.md](reportes/2026-11-10_OPERACION_AUTONOMA.md).
+
+### CAPCOT — feature/capcot-video-discovery-continuity
+- HEAD 91003f7c551e4e60700b39b8f94451f1126fcaf3 (10-nov 07:47 CDMX); último commit cambia registro de pantallas finales, no storyboard.
+- Horario 10-nov: 07:00 aguacate publicado YT/TT; 17:00 capsaicina resub programado YT/TT; 23:30 dato del día sin paquete.
+- El paquete 2026-11-09_dato-robot-ensambla-orbita conserva narrative_qa PASS 90, pero la ruta anidada no coincide con el workflow que solo escucha JSON planos en cola/entrada/*.json. cola/estado/2026-11-09_dato-robot-ensambla-orbita.json devolvió 404: RECEPCION_GROK_NO_CONFIRMADA. Frames no generados; no mover ni redispatchar.
+- El clavo del 7-nov también carece de estado Grok. No se creó ni modificó ningún archivo cola/estado.
+- La orden permanente de preproducción del dato 23:30 contradice la exclusión de ese slot en el prompt del investigador; queda brecha de asignación. El operador no duplicó investigación/storyboard.
+- Investigador 10-nov IN_PROGRESS; auditor último run completado 9-nov 16:33, sin run del 10-nov al corte.
+
+### Motor U6 — main
+- HEAD d4af4d7629a79a24918325fdf9b89bc2f9c20821. Último commit actualiza solo snapshots de auditoría.
+- Run Actions 42811851624 terminó success a las 06:00 CDMX; es auditoría/snapshot, no corrida predictiva.
+- codebase-memory-mcp documentado/configurado localmente; índice del 7-nov pendiente de reindexación y proceso vivo no verificado. No hay integración DSH confirmada.
+- Solo lectura; motores canónicos, patterns_final_v14.json y candados no modificados.
+
+### Migración y cuentas
+- marcojpad-hash: once repositorios visibles; marcosabines-hash: cero. Ocho repositorios DESCUBIERTO_ADICIONAL, solo metadatos/documentación; dos adicionales nuevos son microserie-heredera-sadtalker y microserie-heredera-voces.
+- Handoff de recuperación sigue PENDIENTE, sin acuse verificable de segunda sesión/modelo. Migración incompleta.
