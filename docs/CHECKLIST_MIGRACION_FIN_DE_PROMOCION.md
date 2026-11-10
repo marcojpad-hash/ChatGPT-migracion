@@ -102,3 +102,13 @@ La migración continúa **INCOMPLETA**: falta el acuse verificable de otra sesi�
 - [ ] Confirmar conexiones de una segunda sesión: el acceso de esta sesión no demuestra recuperación de permisos/conectores en otra.
 
 La migración continúa **INCOMPLETA**.
+
+
+## Actualización verificada — 2026-11-10, entrega de pendientes
+
+- [x] ASTRA: guion textual separado en [GUION_NARRACION.md](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/main/cola/entrada/2026-11-09_dato-robot-ensambla-orbita/GUION_NARRACION.md). No se regeneraron PNGs. El estado conserva que los nueve frames fueron generados por Grok y están disponibles en el chat; no se afirma que estén subidos a `frames/`.
+- [x] Dato 23:30 del 10-nov: paquete textual en CAPCOT/feature, proyecto `2026-11-10_dato-adn-sincroniza-flujo`; 8 escenas, 195 palabras, 84 s, seis campos obligatorios en cada escena y narrative_qa PASS 91/100. Queda en `proyectos/`; no se disparó workflow ni se creó estado Grok. La revisión estructural fue estática contra el validador; el script Python no se ejecutó por falta de runtime del repositorio.
+- [ ] Handoff real de segunda sesión: reemitido en `bandeja/2026-11-10_SEGUNDA_SESION_RECUPERACION.md`; continúa PENDIENTE hasta que una sesión destinataria registre su acuse y reporte propios. Este archivo no es un acuse.
+- [ ] Cierre de migración: sigue bloqueado por falta de prueba de recuperación independiente y de verificación de conectores en la sesión destinataria.
+
+**Conclusión:** no declarar migración completa. El acceso de esta sesión emisora no demuestra que otra sesión haya recuperado contexto ni permisos.
