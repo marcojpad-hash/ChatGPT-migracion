@@ -30,7 +30,9 @@ No se modificaron los repositorios especializados ni sus archivos operativos. No
 - [Reporte completo de recuperación](../reportes/2026-11-11_RECUPERACION_CHATGPT.md) — se añadirá/confirmará con el commit del reporte.
 - [Contrato U6 — rama vigente](https://github.com/marcojpad-hash/motor-u6-storage/blob/alterno/cameo-pesos/CONTRATO_OPERATIVO_RAMA_VIGENTE.md).
 - [Informe CAMEO U6](https://github.com/marcojpad-hash/motor-u6-storage/blob/alterno/cameo-pesos/informes/2026-11-11_cameo-alterno.md).
+- [HEAD de CAPCOT — rama feature](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/commit/d1f447bcdcc48da5f4f125128b948c8704e9f74d).
 - [Radar CAPCOT 11-nov](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-11_RADAR_CAPCOT.md).
+- [Pendiente robot: estado de ejecución](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/cola/entrada/2026-11-09_dato-robot-ensambla-orbita/ESTADO_EJECUCION.md) y [marcador Grok pending](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/handoffs/grok_inbox/2026-11-09_dato-robot-ensambla-orbita.json).
 - [Horario CAPCOT 11-nov](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/data/horario_2026-11-11.json).
 - Handoff original del 3-nov, que permanece sin modificar: [bandeja/2026-11-03_RECUPERACION_MIGRACION.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/bandeja/2026-11-03_RECUPERACION_MIGRACION.md).
 
@@ -51,7 +53,7 @@ No se modificaron los repositorios especializados ni sus archivos operativos. No
 - **Fecha:** 2026-11-11
 - **Estado:** RECIBIDO
 - **Confirmación de lectura:** ChatGPT (sesión GPT-6) leyó los ocho documentos de arranque en el orden indicado, la plantilla, el gate de memoria y los documentos de inicio/contrato de U6 y CAPCOT en las ramas especificadas. Reporte con hashes, enlaces y pendientes: [reportes/2026-11-11_RECUPERACION_CHATGPT.md](../reportes/2026-11-11_RECUPERACION_CHATGPT.md).
-- **Dudas esenciales:** ninguna para registrar esta recuperación. La conexión de los pesos CAMEO a `cameo_activity` y la programación pendiente de TikTok/Facebook para el paquete de arroz quedan documentadas. La programación/publicación de esos canales corresponde a Imaginantes; esta sesión no ha ejecutado esas acciones.
+- **Dudas esenciales:** ninguna para registrar esta recuperación. La integración de pesos CAMEO a `cameo_activity` sigue pendiente. En CAPCOT, el paquete robot 9-nov espera frames de Imaginantes/Grok y el marcador continúa `pending`; el paquete clavo 7-nov carece de `narrative_qa` y requiere auditoría narrativa independiente. No se han marcado como recibidos.
 
 ## Resolución
 
