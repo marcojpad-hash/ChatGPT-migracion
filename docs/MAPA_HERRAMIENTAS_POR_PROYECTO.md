@@ -208,3 +208,21 @@ La comparación actual `main...feature/capcot-video-discovery-continuity` devuel
 - CAPCOT: 23:30 sin paquete; paquete robot 9-nov anidado en cola y sin estado Grok (404), por lo que RECEPCION_GROK_NO_CONFIRMADA. No se movió ni redispatchó.
 - Motor U6: HEAD d4af4d7629a79a24918325fdf9b89bc2f9c20821; último snapshot Actions 42811851624 success a las 06:00 CDMX; no es corrida predictiva.
 - Automatizaciones: investigador y operador IN_PROGRESS al corte; auditor último COMPLETED 9-nov 16:33. next_run_time=null en las tres.
+
+## Actualización de conectividad y autoridad — 2026-11-11
+
+### Cuentas GitHub consultadas
+- `marcojpad-hash`: instalación GitHub conectada; 11 repositorios visibles: `motor-u6-storage`, `capcot-capsulas-imaginantes`, `ChatGPT-migracion`, `orquestador-central`, `red-teaming-safety-u6`, `agente-cero-costo`, `baterias-tokens`, `baterias-memoria`, `memoria-compartida`, `microserie-heredera-sadtalker`, `microserie-heredera-voces`.
+- `marcosabines-hash`: no devolvió instalaciones ni repositorios visibles en esta consulta.
+- `orquestador-central` y los demás repositorios adicionales se mantienen como `DESCUBIERTO_ADICIONAL`; solo metadatos/documentación, sin escrituras.
+
+### Autoridad de ramas
+- Motor U6: contrato vigente declara `alterno/cameo-pesos` como rama de trabajo; `main` es `SOLO_CONSULTA`. No se cambió de rama ni se fusionó.
+- CAPCOT: `feature/capcot-video-discovery-continuity`.
+- ChatGPT-migracion: `main`.
+
+### MCP y agentes de código
+- U6/`alterno/cameo-pesos`: `.mcp.json` y `docs/CODEBASE_MEMORY_MCP.md` existen. La configuración usa un ejecutable y rutas locales `/home/hatch/workspace/...`; el índice documentado fue generado desde `main` el 7-nov. No prueba proceso vivo ni reindexación de la rama activa, y no es un conector disponible en esta sesión.
+- CAPCOT/feature: no existe `.mcp.json` ni `docs/CODEBASE_MEMORY_MCP.md`.
+- DeepSeek Harness: no hay configuración en U6/alterno ni CAPCOT/feature. El intento gratuito Groq anterior terminó en HTTP 429; Ollama no está probado de extremo a extremo.
+- Dot: no hay herramienta Dot expuesta en esta sesión. Las automatizaciones de ChatGPT se consultan por su propio conector, no son prueba de acceso a Dot.
