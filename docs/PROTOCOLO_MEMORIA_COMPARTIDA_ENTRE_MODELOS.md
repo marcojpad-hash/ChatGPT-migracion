@@ -68,3 +68,7 @@ La coordinación requiere emisor, mecanismo de notificación/revisión, destinat
 
 ## 9. Meta de migración
 Antes de que termine la promoción durante noviembre de 2026, verificar que una sesión nueva puede reconstruir estado y continuar ambos proyectos, que los permisos GitHub están disponibles, que existe al menos un handoff probado y que las conexiones que requieren reautenticación están documentadas. No declarar migración completa solo porque los documentos estén escritos.
+
+## Corrección de autoridad de ramas — 2026-11-11
+
+El contrato operativo vigente de `motor-u6-storage` establece `alterno/cameo-pesos` como rama de trabajo y `main` como `SOLO_CONSULTA`. Para nuevas revisiones/documentación de U6 se debe leer y respetar primero `CONTRATO_OPERATIVO_RAMA_VIGENTE.md`; no asumir que `main` sigue siendo la rama de trabajo por aparecer en handoffs históricos. La autoridad de Engine V5 y catálogo 244 no cambia. La actualización no autoriza cambios de código, ramas, permisos ni archivos canónicos.
