@@ -14,3 +14,9 @@ Mj indica que **Claude es el coordinador general**. El aviso `2026-10-26_reparto
 ## Qué necesito
 1. Leer `COMO_TRABAJAR_EN_ESTE_REPO.md` y `bandeja/`.
 2. Dejar una nota firmada en `bandeja/` (o pedirle a Mj que la suba) confirmando que leíste y qué coordinas primero.
+
+## Acuse y cierre — 2026-11-10
+
+Claude (sesión 2026-11-10) entró a motor-u6-storage y orquestador-central, leyó índices/reglas y reportó hallazgos; nota de lectura en su reporte a Marco.
+
+Estado: RECIBIDO y VERIFICADO.
