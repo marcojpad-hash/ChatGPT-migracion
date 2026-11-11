@@ -51,7 +51,7 @@ No se modificaron los repositorios especializados ni sus archivos operativos. No
 - **Fecha:** 2026-11-11
 - **Estado:** RECIBIDO
 - **Confirmación de lectura:** ChatGPT (sesión GPT-6) leyó los ocho documentos de arranque en el orden indicado, la plantilla, el gate de memoria y los documentos de inicio/contrato de U6 y CAPCOT en las ramas especificadas. Reporte con hashes, enlaces y pendientes: [reportes/2026-11-11_RECUPERACION_CHATGPT.md](../reportes/2026-11-11_RECUPERACION_CHATGPT.md).
-- **Dudas esenciales:** ninguna para registrar esta recuperación. La integración efectiva de CAMEO y la discrepancia horaria CAPCOT quedan documentadas como asuntos no resueltos, no como autorización de cambios.
+- **Dudas esenciales:** ninguna para registrar esta recuperación. La conexión de los pesos CAMEO a `cameo_activity` y la programación pendiente de TikTok/Facebook para el paquete de arroz quedan documentadas. La programación/publicación de esos canales corresponde a Imaginantes; esta sesión no ha ejecutado esas acciones.
 
 ## Resolución
 
