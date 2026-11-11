@@ -320,3 +320,24 @@ Reporte: [ENTREGA_PENDIENTES 2026-11-10](reportes/2026-11-10_ENTREGA_PENDIENTES.
 ### Migración — segunda sesión
 - Reemitida solicitud en `bandeja/2026-11-10_SEGUNDA_SESION_RECUPERACION.md`.
 - El acuse de destinatario continúa PENDIENTE; no hay evidencia de una sesión independiente que haya leído los tres repositorios o verificado conectores. **Migración INCOMPLETA**.
+
+## Actualización de estado — 2026-11-11
+
+### Motor U6
+- Rama de trabajo vigente por contrato: `alterno/cameo-pesos`; `main` queda `SOLO_CONSULTA`.
+- Hashes canónicos recalculados y coincidentes: Engine V5 `665c39a2861e58772522e91272563260d980908b1d4ab9f7092d3413d0c36082`; catálogo 244 `d827dcc3882634ec2d21b3a480d0fee811b28d8fa1b73bab04f0af2c2d6667a1`.
+- Puente Schrödinger V0_1/V0_2 revisado de forma estática. Informe: [REVISION_SCHRODINGER_V0_1](https://github.com/marcojpad-hash/motor-u6-storage/blob/alterno/cameo-pesos/informes/2026-11-11_REVISION_SCHRODINGER_V0_1.md). Dictamen `NO_APROBABLE`: bug p=0 en μ⁻, punto medio no equivalente al promedio de posiciones crudas, no se propaga no convergencia, lados vacíos y masa agregada mal caracterizados. El sensor está cableado, pero es lateral/diagnóstico y no decide H. Sin cambios de código ni ejecución de tests.
+- La rama activa no tiene runs de Actions para estos tests. Los tests Schrödinger existen, pero no están incluidos en `run_tests_unico.py`.
+- En `main`, el A/B Mozart del 10-nov tuvo dos intentos fallidos (SyntaxError y ModuleNotFoundError) y un run final exitoso que dejó resultados en `work/mozart-ab-20261110`; H1/H2 quedaron iguales con y sin Caldero. No se fusionó ese resultado a la rama activa. El snapshot Actions 43017260379 es auditoría, no corrida predictiva.
+
+### CAPCOT
+- No se produjo storyboard del 11-nov al último chequeo; investigador 08:00 seguía `in_progress`.
+- Último storyboard: 10-nov DNA, narrative_qa PASS/91, en `proyectos/`; no existe estado Grok individual: `RECEPCION_GROK_NO_CONFIRMADA`.
+- 10-nov comida/aprendizaje PASS/92 con campo `estado` obsoleto y sin slot oficial; 9-nov robot PASS/90 en entrada anidada sin estado Grok; 7-nov clavo en entrada anidada sin QA.
+- Workflow de Grok: trigger de entrada solo a nivel superior; los paquetes anidados no se despachan por el workflow actual.
+- Horario 11-nov: ballena publicada 07:00; Mpemba programado 13:30 YT/TT/FB; corneja programada 17:00 YT/TT; 23:30 sin paquete. El prompt investigador excluye 23:30. No se produjo duplicado.
+- No se generaron medios ni se publicaron contenidos. No se gastaron créditos.
+
+### Herramientas y migración
+- codebase-memory-mcp configurado localmente en U6/alterno, pero sin proceso vivo ni índice actualizado de esa rama; ausente en CAPCOT/feature. DeepSeek Harness ausente en ambos repositorios activos; no hay conector ejecutable en esta sesión.
+- La sesión Claude del 10-nov dejó acuse separado parcial (U6 + orquestador, no CAPCOT; cuenta/dudas pendientes). El acuse requerido en `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue pendiente; migración incompleta.
