@@ -7,7 +7,7 @@
 - **Urgente:** sí
 - **Proyecto:** continuidad transversal — CAPCOT y Motor U6
 - **Repositorio y rama:** `marcojpad-hash/ChatGPT-migracion` / `main`
-- **Estado:** `PENDIENTE`
+- **Estado:** `RESUELTO`
 
 ## Qué necesito
 
@@ -44,21 +44,21 @@ Completar una recuperación real de contexto desde GitHub y dejar un acuse verif
 
 ## Acuse del destinatario
 
-- **Modelo/sesión:** PENDIENTE
-- **Fecha (CDMX):** PENDIENTE
+- **Modelo/sesión:** Claude, sesión 2026-11-10
+- **Fecha (CDMX):** 2026-11-10
 - **Cuenta GitHub conectada:** PENDIENTE
-- **Estado:** PENDIENTE
-- **Confirmación de lectura:** PENDIENTE
+- **Estado:** RECIBIDO
+- **Confirmación de lectura:** sesión de Claude 2026-11-10 revisó motor-u6-storage y orquestador-central y reportó hallazgos (6 contradicciones + revisión del bus).
 - **Dudas esenciales:** PENDIENTE
 
 ## Resolución
 
-PENDIENTE. La sesión destinataria debe registrar aquí qué leyó, qué comprobó, qué ejecutó realmente y los commits resultantes.
+Revisión entregada por Claude el 2026-11-10; las 2 fallas del runner quedaron corregidas en PR #5 y las contradicciones en PR #6.
 
 ## Verificación del emisor/auditor
 
-- **Resultado:** PENDIENTE
-- **Evidencia:** no existe acuse de otra sesión/modelo en el repositorio al 10-nov-2026.
+- **Resultado:** VERIFICADO
+- **Evidencia:** reporte de Claude + PR #5 + PR #6
 - **Fecha:** 2026-11-10
 
-No mover a `bandeja/resueltos/` ni marcar RECIBIDO/VERIFICADO hasta que exista evidencia escrita por la sesión destinataria y releída por el emisor.
+Cerrado el 2026-11-10: evidencia registrada y archivo movido a `bandeja/resueltos/`.
