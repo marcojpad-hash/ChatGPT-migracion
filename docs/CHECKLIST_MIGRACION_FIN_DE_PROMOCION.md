@@ -112,3 +112,34 @@ La migración continúa **INCOMPLETA**.
 - [ ] Cierre de migración: sigue bloqueado por falta de prueba de recuperación independiente y de verificación de conectores en la sesión destinataria.
 
 **Conclusión:** no declarar migración completa. El acceso de esta sesión emisora no demuestra que otra sesión haya recuperado contexto ni permisos.
+
+## Corte de aceptación — 2026-11-11
+
+### Evidencia de segunda sesión
+- [x] Existe un acuse separado de sesión Claude en `bandeja/resueltos/2026-11-10_SEGUNDA_SESION_RECUPERACION.md`.
+- [ ] No satisface la aceptación completa: revisó Motor U6 y orquestador-central, pero CAPCOT no quedó confirmado; cuenta GitHub y dudas esenciales siguen `PENDIENTE`.
+- [ ] El acuse de la segunda sesión/modelo en el archivo requerido `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue ausente.
+- [ ] La migración permanece INCOMPLETA.
+
+### Autoridad y conexiones
+- [x] Contrato de U6 actualizado: `alterno/cameo-pesos` rama vigente; `main` SOLO_CONSULTA.
+- [x] GitHub `marcojpad-hash` consultado: 11 repositorios visibles; cuenta `marcosabines-hash` sin instalaciones/repositorios visibles.
+- [x] codebase-memory-mcp documentado/configurado en U6/alterno; binario y rutas locales, índice de 7-nov desde main, proceso vivo/reindexación activa no verificados.
+- [ ] codebase-memory-mcp en CAPCOT/feature: no hay configuración.
+- [ ] DeepSeek Harness en U6/alterno y CAPCOT/feature: no hay configuración; no existe conexión ejecutable en esta sesión.
+- [ ] Prueba gratuita DSH de extremo a extremo: Groq falló HTTP 429; Ollama pendiente.
+
+### CAPCOT handoff
+- [x] Leído `docs/GROK_STATUS_CONTRACT.md`.
+- [ ] Estado Grok del último storyboard 10-nov DNA: ausente; `RECEPCION_GROK_NO_CONFIRMADA`.
+- [ ] Estado Grok del robot 9-nov: ausente; paquete anidado.
+- [ ] Clavo 7-nov: sin narrative_qa; sigue en entrada anidada, pendiente de auditor.
+- [ ] Corregir dispatch: workflow solo escucha `cola/entrada/*.json`, aunque el procesador recorre anidados.
+- [ ] Slot 23:30: excluido por el prompt del investigador; sin paquete en horario 11-nov.
+- [x] No se creó ni modificó ningún archivo de estado de Grok, no se promovió ni se generó medio.
+
+### Motor U6 / Schrödinger
+- [x] Hashes canónicos recalculados y coincidentes en `alterno/cameo-pesos`.
+- [x] Informe de revisión documental creado; sin cambios de código/SPEC/Engine/patrones.
+- [ ] Aprobación de V0_1/V0_2: pendiente de corregir ceros, ponderación de masa, vacíos, convergencia, pruebas y evidencia reproducible.
+- [ ] Tests Schrödinger integrados al runner/CI y ejecutados en la rama activa.
