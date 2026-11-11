@@ -171,3 +171,37 @@ Registro del corte: [reportes/2026-11-10_OPERACION_AUTONOMA.md](reportes/2026-11
 - **Motor U6/main:** HEAD d4af4d7629a79a24918325fdf9b89bc2f9c20821. Último commit solo actualiza snapshots de auditoría Actions; run 42811851624 terminó success a las 06:00 CDMX. No es una corrida predictiva. Canónicos y candados sin cambios.
 - **codebase-memory-mcp/DSH:** U6 conserva documentación y .mcp.json local con índice del 7-nov, sin proceso vivo verificado. CAPCOT/feature carece de .mcp.json y docs de MCP/DSH. La prueba DSH con Groq gratuito sigue fallida por 429/8 000 TPM; Ollama no probado. No hay conectores MCP/DSH expuestos en esta sesión.
 - **Migración:** bandeja/2026-11-03_RECUPERACION_MIGRACION.md sigue PENDIENTE, sin acuse de otra sesión/modelo. Migración incompleta.
+
+## Corte operativo 2026-11-11
+
+### Autoridad de Motor U6
+- El contrato vigente del repositorio establece `alterno/cameo-pesos` como rama de trabajo y `main` como `SOLO_CONSULTA`. No se cambió de rama; se respetó la autoridad ya publicada.
+- Hashes canónicos recalculados en la rama activa y coincidentes: Engine V5 `665c39a2861e58772522e91272563260d980908b1d4ab9f7092d3413d0c36082`; catálogo 244 `d827dcc3882634ec2d21b3a480d0fee811b28d8fa1b73bab04f0af2c2d6667a1`.
+- Revisión independiente del puente Schrödinger V0_1/V0_2: [informe](https://github.com/marcojpad-hash/motor-u6-storage/blob/alterno/cameo-pesos/informes/2026-11-11_REVISION_SCHRODINGER_V0_1.md), commit documental `3ceff758c07bffb1d2353c2cae309adbda3675b3`; bitácora [avances](https://github.com/marcojpad-hash/motor-u6-storage/blob/alterno/cameo-pesos/avances/2026-11-11_ChatGPT_revision_schrodinger.md), commit `fea6b676eb286ebf7695df7619052ce2df7b6191`.
+- Dictamen: `NO_APROBABLE` todavía. El sensor está cableado como lateral, no decide H ni cambia el ranking. Se detectaron bug con p=0 en μ⁻, discrepancia de ponderación de punto medio, falta de propagación de no convergencia, manejo de lados vacíos y métricas de masa incompletas. No se modificó código, SPEC, Engine, patrones ni candados; no se ejecutaron tests.
+
+### CAPCOT — corte de cola y horario
+- Rama `feature/capcot-video-discovery-continuity`; último commit observado `d8baa970` (cambios de end screen, no acuse de Grok).
+- No había proyecto del 11-nov en `proyectos/` en el último chequeo; el run del investigador seguía `in_progress`.
+- Último storyboard por fecha: `2026-11-10_dato-adn-sincroniza-flujo`, QA narrativo PASS/91, todavía en `proyectos/`. Su `cola/estado/2026-11-10_dato-adn-sincroniza-flujo.json` devuelve 404: **RECEPCION_GROK_NO_CONFIRMADA**.
+- `2026-11-10_comida-aprendizaje-sabor-nutriente`: QA PASS/92, pero `estado` aún dice pendiente de QA y el slot 13:30 era de prueba; no se promovió.
+- `2026-11-09_dato-robot-ensambla-orbita`: QA PASS/90 en carpeta anidada de `cola/entrada`, sin estado individual de Grok. `2026-11-07_dato-clavo-te-cocina`: sigue en entrada anidada sin narrative_qa. No se movieron ni promovieron.
+- `cola/estado/` no está presente. El workflow dispara solo para `cola/entrada/*.json`; el procesador acepta rutas anidadas, pero el disparador no. Los paquetes anidados no quedan cubiertos por el dispatch actual.
+- El horario del 11-nov registra ballena 07:00 publicada; Mpemba 13:30 programado en YT/TT/FB; corneja 17:00 programada en YT/TT; 23:30 sin paquete en esa ventana. El prompt del investigador excluye explícitamente 23:30; no se generó un paquete alterno.
+- El informe de Orquestador dice que Imaginantes está pausado por créditos y menciona MP4 de Mpemba/Barreleye. El horario posterior ya registra Mpemba programado; no se gastaron créditos ni se pidió liberación. Barreleye no tiene proyecto/slot correspondiente en la rama revisada.
+
+### Conexiones y memoria de código
+- `codebase-memory-mcp`: `.mcp.json` y documentación existen en U6/`alterno/cameo-pesos`, pero apuntan a un binario/ruta local `/home/hatch/workspace/...`; el índice documentado fue generado desde `main` el 7-nov y no acredita reindexación de la rama activa ni proceso vivo en esta sesión.
+- CAPCOT/feature no tiene `.mcp.json` ni documentación de codebase-memory. DeepSeek Harness no tiene configuración en U6/alterno ni CAPCOT/feature. No hay herramienta MCP de codebase-memory ni DeepSeek Harness expuesta en esta sesión.
+- El intento gratuito de Groq documentado previamente terminó en HTTP 429; Ollama sigue sin prueba de extremo a extremo. No se atribuyó acceso a Dot.
+
+### Migración
+- Existe un acuse separado de una sesión Claude en `bandeja/resueltos/2026-11-10_SEGUNDA_SESION_RECUPERACION.md`, pero es parcial: revisó Motor U6 y orquestador-central; CAPCOT no quedó confirmado, cuenta GitHub y dudas esenciales siguen pendientes.
+- `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue sin acuse de esa segunda sesión. La migración **continúa incompleta**; no se acepta el acuse separado como cumplimiento de la ruta original.
+- El handoff Schrödinger del 11-nov fue recibido y entregado con informe; la verificación del emisor/auditor sigue pendiente.
+
+### Automatizaciones — último chequeo 2026-11-11
+- Investigador CAPCOT `5071a975-ac40-8326-9796-3fa1e185991e`: `in_progress`, iniciado 08:04:59 CDMX, sin `completed_at`. Último resultado completado: 10-nov, run `750011d4-cc00-8320-8809-c6d109638921`.
+- Auditor CAPCOT: último run `96caba21-af70-8328-af0c-dd3232f650a5`, completado 10-nov 16:05:55 CDMX; siguiente 15:00 CDMX.
+- Operador general `978b41d5-4a30-832a-abcf-72323699d005`: `in_progress`, iniciado 07:55:27 CDMX, sin `completed_at`. Último resultado completado: 10-nov, run `da2f816c-50fc-8324-a027-538854e8f5d0`.
+- Los runs en curso no se contabilizan como terminados.
