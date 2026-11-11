@@ -16,7 +16,8 @@ Mj indica que **Claude es el coordinador general**. El aviso `2026-10-26_reparto
 2. Dejar una nota firmada en `bandeja/` (o pedirle a Mj que la suba) confirmando que leíste y qué coordinas primero.
 
 ## Acuse y cierre — 2026-11-10
-
 Claude (sesión 2026-11-10) entró a motor-u6-storage y orquestador-central, leyó índices/reglas y reportó hallazgos; nota de lectura en su reporte a Marco.
 
-Estado: RECIBIDO y VERIFICADO.
+Estado: PENDIENTE.
+
+Corrección 2026-11-10: se había cerrado solo con el acuse; la implementación (nota firmada de lectura en el repo) no está hecha. Acuse registrado: sesión de Claude 2026-11-10 leyó los repos y reportó hallazgos. Falta la nota firmada en el repo.
