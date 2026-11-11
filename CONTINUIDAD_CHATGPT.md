@@ -205,3 +205,4 @@ Registro del corte: [reportes/2026-11-10_OPERACION_AUTONOMA.md](reportes/2026-11
 - Auditor CAPCOT: último run `96caba21-af70-8328-af0c-dd3232f650a5`, completado 10-nov 16:05:55 CDMX; siguiente 15:00 CDMX.
 - Operador general `978b41d5-4a30-832a-abcf-72323699d005`: `in_progress`, iniciado 07:55:27 CDMX, sin `completed_at`. Último resultado completado: 10-nov, run `da2f816c-50fc-8324-a027-538854e8f5d0`.
 - Los runs en curso no se contabilizan como terminados.
+- Reporte de operación 2026-11-11: [reportes/2026-11-11_OPERACION_AUTONOMA.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/reportes/2026-11-11_OPERACION_AUTONOMA.md) — revisión Schrödinger, CAPCOT, automatizaciones, conexiones y migración.
