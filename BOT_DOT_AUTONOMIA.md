@@ -118,3 +118,14 @@ Las tres siguen habilitadas; las tres devolvieron next_run_time=null. Investigad
 | Operador autónomo general | `978b41d5-4a30-832a-abcf-72323699d005` | `in_progress`, sin `completed_at`; último resultado completado 10-nov | 11-nov 08:00 CDMX |
 
 No atribuir trabajo de los dos runs `in_progress` hasta que exista estado terminal y resultado. Las automatizaciones están habilitadas. La herramienta de Dot no está expuesta en esta sesión; no se afirma acceso a Dot ni ejecución en segundo plano fuera de estos runs.
+
+
+
+## Estado de automatizaciones — 2026-11-12
+
+Consulta directa de las tres automatizaciones habilitadas:
+- Investigador CAPCOT: run `b2beb9a1-cf4c-832c-9bfe-263016e0708d`, IN_PROGRESS desde 07:59:30 CDMX, sin completed_at. Último resultado completo 11-nov: `5071a975-ac40-8326-9796-3fa1e185991e`.
+- Auditor CAPCOT: run `40b928d7-2318-832e-8004-967167b8fa8d`, COMPLETED 11-nov 15:33:58 CDMX. No revisó el paquete de ratas topo, incorporado después de esa hora. Próximo run guardado 12-nov 15:00.
+- Operador general: run `1b041e4c-40ec-8330-9b1c-2bcd677706a6`, IN_PROGRESS desde 08:01:12 CDMX, sin completed_at. Último resultado completo 11-nov: `978b41d5-4a30-832a-abcf-72323699d005`.
+
+Las tres siguen habilitadas. En esta consulta next_run_time devolvió 08:00 para investigador/operador y 15:00 para auditor. No equivale a ejecución garantizada. Dot nativo no está conectado a esta sesión.
