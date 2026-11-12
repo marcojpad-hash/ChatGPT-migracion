@@ -11,7 +11,7 @@ Este mapa no es un catálogo general. Define qué herramientas sirven a los dos 
 - Estados obligatorios: INSPECCIONADO, ESTRUCTURALMENTE_VALIDADO, EJECUTADO, VERIFICADO_EN_DESTINO, PENDIENTE o BLOQUEADO.
 
 ## Motor U6
-Repositorio: https://github.com/marcojpad-hash/motor-u6-storage — rama main, privado.
+Repositorio: https://github.com/marcojpad-hash/motor-u6-storage — rama activa `alterno/cameo-pesos`; `main` = `SOLO_CONSULTA` por contrato vigente.
 
 | Herramienta | Uso | Estado comprobado / límite |
 |---|---|---|
@@ -226,3 +226,12 @@ La comparación actual `main...feature/capcot-video-discovery-continuity` devuel
 - CAPCOT/feature: no existe `.mcp.json` ni `docs/CODEBASE_MEMORY_MCP.md`.
 - DeepSeek Harness: no hay configuración en U6/alterno ni CAPCOT/feature. El intento gratuito Groq anterior terminó en HTTP 429; Ollama no está probado de extremo a extremo.
 - Dot: no hay herramienta Dot expuesta en esta sesión. Las automatizaciones de ChatGPT se consultan por su propio conector, no son prueba de acceso a Dot.
+
+
+
+## Corte operativo — 2026-11-12
+
+- Motor U6: rama activa `alterno/cameo-pesos`; no usar `main` como base de trabajo. La entrega F003/F004 tiene 20 casos en el manifiesto, pero la revisión informa dos campos ausentes en los recibos y la evidencia LECTURA no coincide con cuatro documentos actuales. No se ejecutó el candado.
+- CAPCOT: `cola/estado/` no existe en la rama activa; no hay recepción Grok confirmada para los paquetes revisados. El paquete de ratas topo tiene ocho PNG, pero carece de QA narrativo y no es despachable por el workflow actual al estar anidado.
+- Esta sesión no expone servidor codebase-memory-mcp ni DeepSeek Harness ejecutable. Documentación/configuración local no equivale a proceso MCP vivo.
+- Inventario GitHub: marcojpad-hash 11 repositorios/1 instalación; marcosabines-hash 0 repositorios/0 instalaciones. Ocho repositorios adicionales permanecen sin escritura.
