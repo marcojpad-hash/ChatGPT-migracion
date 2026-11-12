@@ -341,3 +341,23 @@ Reporte: [ENTREGA_PENDIENTES 2026-11-10](reportes/2026-11-10_ENTREGA_PENDIENTES.
 ### Herramientas y migración
 - codebase-memory-mcp configurado localmente en U6/alterno, pero sin proceso vivo ni índice actualizado de esa rama; ausente en CAPCOT/feature. DeepSeek Harness ausente en ambos repositorios activos; no hay conector ejecutable en esta sesión.
 - La sesión Claude del 10-nov dejó acuse separado parcial (U6 + orquestador, no CAPCOT; cuenta/dudas pendientes). El acuse requerido en `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue pendiente; migración incompleta.
+
+
+
+## Actualización operativa — 2026-11-12
+
+### CAPCOT — feature/capcot-video-discovery-continuity
+- No había storyboard, radar ni horario fechado 12-nov al corte; el investigador del día seguía IN_PROGRESS, por lo que el chequeo es provisional.
+- El paquete `2026-11-11_dato-ratas-topo-damaraland` se incorporó a `cola/entrada/<project_id>/` después de la auditoría del 11-nov. Tiene 8 escenas/212 palabras, pero no `narrative_contract` ni `narrative_qa`; incluye `asset_filename` y `export.filename`. Hay ocho PNG en `frames/`.
+- No existe `salidas/<project_id>/` ni `cola/estado/<project_id>.json`. El ID `knAElNo4raI` aparece en endscreens del 12-nov con 220 vistas, pero no en `data/publicaciones.json` ni `data/rotacion.json`; publicación no confirmada. No se movió el paquete por la señal contradictoria de producción ya realizada.
+- El workflow de dispatch solo procesa `cola/entrada/*.json` en profundidad 1; la carpeta anidada no es dispatchable.
+- El slot 23:30 sigue en conflicto con la exclusión del prompt investigador. No se cambió agenda ni prompt.
+
+### Motor U6 — alterno/cameo-pesos
+- La rama activa contiene la entrega F003/F004 del 11-nov: manifiesto con 20 casos `ok:true` y recibos `COMPLETED`; la revisión reporta dos rutas faltantes en cada recibo, sin tabla de mortalidad y `NOT_CALIBRATED_NO_CASE_LEVEL_OUTCOMES`.
+- Los cuatro hashes de `motor/runs/F003_F004_20261111/LECTURA.json` no coinciden con los documentos actuales. No se ejecutó el candado; el paquete queda pendiente de revalidación.
+- La prueba del negativo con cinco hipótesis en Napoleón produjo 5→5 y cero descartes; el proxy Ricci no generó aristas negativas y ambos z quedaron bajo `Z_MIN=2.0`.
+- Sin cambios a código, Engine V5, catálogo 244, candados ni tests.
+
+### Migración
+- `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` continúa PENDIENTE. El acuse separado de Claude no cumple la aceptación completa. Migración INCOMPLETA.
