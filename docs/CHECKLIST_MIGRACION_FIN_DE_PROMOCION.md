@@ -143,3 +143,20 @@ La migración continúa **INCOMPLETA**.
 - [x] Informe de revisión documental creado; sin cambios de código/SPEC/Engine/patrones.
 - [ ] Aprobación de V0_1/V0_2: pendiente de corregir ceros, ponderación de masa, vacíos, convergencia, pruebas y evidencia reproducible.
 - [ ] Tests Schrödinger integrados al runner/CI y ejecutados en la rama activa.
+
+
+
+## Actualización verificada — 2026-11-12
+
+- [x] Reconsultadas las dos cuentas GitHub: marcojpad-hash = 1 instalación y 11 repositorios; marcosabines-hash = 0 instalaciones/repositorios, sin error.
+- [x] Reconfirmada autoridad de ramas: CAPCOT feature/capcot-video-discovery-continuity; Motor U6 alterno/cameo-pesos (main SOLO_CONSULTA); ChatGPT-migracion main.
+- [x] Consultados estados de automatizaciones: investigador y operador IN_PROGRESS sin completed_at; auditor COMPLETED 11-nov antes de la incorporación posterior de ratas topo.
+- [ ] CAPCOT: revisar narrativamente y estructuralmente el paquete ratas topo 11-nov en conversación independiente; no promover ni atribuir recepción. Falta cola/estado individual y el workflow no procesa la ruta anidada.
+- [ ] CAPCOT: reconciliar el ID de video knAElNo4raI (220 vistas en endscreens) con data/publicaciones.json, data/rotacion.json y evidencia de plataforma.
+- [ ] Resolver la contradicción del slot 23:30 entre instrucción permanente y prompt investigador; no generar duplicados.
+- [ ] U6: revalidar F003/F004. LECTURA.json tiene cuatro hashes que no coinciden con los documentos actuales; REVISION.md reporta dos rutas ausentes en 20 recibos y falta tabla de mortalidad. El candado no se ejecutó.
+- [ ] U6: actualizar la sección §6 obsoleta de CONTRATO_GUARDAR_CORRIDAS.md, que todavía dice que tres documentos siguen pendientes aunque ya fueron actualizados.
+- [ ] Migración: el handoff requerido bandeja/2026-11-03_RECUPERACION_MIGRACION.md sigue PENDIENTE; no hay acuse de segunda sesión/modelo que complete CAPCOT y conectores.
+- [ ] Verificar proceso codebase-memory-mcp vivo y reindexación en la rama exacta; no hay conector vivo expuesto en esta sesión. DeepSeek Harness no está probado de extremo a extremo.
+
+La migración permanece INCOMPLETA.
