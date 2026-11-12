@@ -50,3 +50,13 @@ de montaje no existe todavía: hay que cablearlo.
 ## 6. No más planeación tal cual
 
 Marco no quiere más documentos de planeación. Ejecución, no planes.
+
+
+## Aplicación verificada en CAPCOT — 2026-11-11
+
+- Copiada sin cambios la matriz `docs/VOCES_POR_TEMA.md` desde CAPCOT/main a la rama operativa `feature/capcot-video-discovery-continuity`. Commit: `7c50097d3cfda76cd8a62ae9f47bf21f219cbd43`. Lectura posterior confirma JorgeNeural, narrador_es, narradora_es, narrador_en y la exclusión de estas voces de la microserie.
+- Actualizado `README.md` de CAPCOT/feature para reflejar la división Grok → creación; Grok Bot → montaje/programación; Pecas → verificación en repo; ChatGPT → montador de respaldo por tres meses. Commit: `e6e8776f8dc3c3624adf2a7aa81f44a41f61b663`. Lectura posterior confirma el texto.
+- `scripts/montar_capsula.py` existe en CAPCOT/feature (blob `98dd105488ef322eeed25ff3818698784b537b10`) y contiene zoompan/paneo, subtítulos ASS/SRT, FFmpeg y ensamblaje MP4.
+- La carpeta `.github/workflows` en CAPCOT/feature contiene `capcot-descubrimiento.yml`, `capcot-grok-dispatch.yml` y `tts-tooling-smoke.yml`; no contiene workflow de montaje de respaldo.
+- Bloqueo técnico constatado: el montador actual sintetiza con Edge TTS y consume `scenes[].asset_filename`; no integra VoxCPM2 ni una entrada de audio pregrabado con alineación de palabras. No declarar cableado el workflow hasta cubrir la matriz de voces y validar un MP4 real con QA.
+- Estado: reglas sincronizadas en la rama operativa; workflow de respaldo aún NO_IMPLEMENTADO y NO_EJECUTADO. No se ha generado ni programado ninguna cápsula con este cambio.
