@@ -5,7 +5,7 @@
 Este repositorio conserva la continuidad transversal. Los datos y archivos de cada proyecto permanecen en su repositorio especializado:
 
 - CAPCOT: `capcot-capsulas-imaginantes`, rama `feature/capcot-video-discovery-continuity`.
-- Motor U6: `motor-u6-storage`, rama `main`.
+- Motor U6: `motor-u6-storage`, rama activa `alterno/cameo-pesos`; `main` es `SOLO_CONSULTA` por contrato vigente.
 - Migración: `ChatGPT-migracion`, rama `main`.
 - Orquestador Central: repositorio adicional descubierto en la cuenta GitHub conectada; no forma parte de los tres repositorios principales de este mandato y se mantiene en observación de solo lectura hasta inclusión expresa del propietario.
 
@@ -206,3 +206,16 @@ Registro del corte: [reportes/2026-11-10_OPERACION_AUTONOMA.md](reportes/2026-11
 - Operador general `978b41d5-4a30-832a-abcf-72323699d005`: `in_progress`, iniciado 07:55:27 CDMX, sin `completed_at`. Último resultado completado: 10-nov, run `da2f816c-50fc-8324-a027-538854e8f5d0`.
 - Los runs en curso no se contabilizan como terminados.
 - Reporte de operación 2026-11-11: [reportes/2026-11-11_OPERACION_AUTONOMA.md](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/reportes/2026-11-11_OPERACION_AUTONOMA.md) — revisión Schrödinger, CAPCOT, automatizaciones, conexiones y migración.
+
+
+
+## Actualización operativa — 2026-11-12
+
+Registro completo: [reportes/2026-11-12_OPERACION_AUTONOMA.md](reportes/2026-11-12_OPERACION_AUTONOMA.md).
+
+- GitHub: `marcojpad-hash` devuelve una instalación visible y 11 repositorios; `marcosabines-hash` devuelve cero instalaciones/repositorios, sin error. Los ocho repositorios adicionales siguen fuera de escritura.
+- Ramas: CAPCOT `feature/capcot-video-discovery-continuity`; Motor U6 `alterno/cameo-pesos` vigente y `main` SOLO_CONSULTA; migración `main`.
+- Automatizaciones: investigador `b2beb9a1…` y operador `1b041e4c…` estaban IN_PROGRESS sin `completed_at`; auditor `40b928d7…` completó el control del 11-nov antes de la incorporación posterior del paquete de ratas topo. Las tres siguen habilitadas; next_run_time devolvió 08:00/15:00 CDMX.
+- CAPCOT: no se encontró radar, horario ni storyboard del 12-nov al corte. El paquete ratas topo del 11-nov apareció en cola anidada después de la auditoría; carece de narrative_contract y narrative_qa, contiene rutas de assets y tiene ocho PNG. El ID `knAElNo4raI` aparece en el registro de pantallas como ratas topo con 220 vistas, pero no está reconciliado con publicaciones/rotación. No se movió ni se atribuyó recepción Grok; `cola/estado/` devuelve 404. Recepción no confirmada.
+- Motor U6: el manifiesto F003/F004 enumera 20 casos con ok/recibo COMPLETED, pero la revisión registra recibos incompletos, ausencia de tabla de mortalidad y motor NO_CALIBRADO. Los cuatro hashes de LECTURA no coinciden con los documentos actuales; no se ejecutó el candado. La prueba del negativo en Napoleón conservó 5/5 hipótesis y no produjo señal Ricci negativa.
+- Migración: el handoff original sigue PENDIENTE; no hay acuse completo de segunda sesión/modelo. Migración INCOMPLETA.
