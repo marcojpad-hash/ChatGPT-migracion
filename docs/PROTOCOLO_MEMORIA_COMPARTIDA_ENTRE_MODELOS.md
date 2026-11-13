@@ -10,7 +10,7 @@ La continuidad no depende de que ChatGPT conserve el historial, créditos o sesi
 | Repositorio | Función | Autoridad |
 |---|---|---|
 | ChatGPT-migracion / main | Continuidad transversal, reglas, mapa de herramientas y handoffs. | Contexto operativo común, no código de proyecto. |
-| motor-u6-storage / main | Motor U6, contratos, casos, pruebas, hashes, recibos y resultados. | Fuente de verdad exclusiva de U6. |
+| motor-u6-storage / alterno/cameo-pesos | Motor U6, contratos, casos, pruebas, hashes, recibos y resultados. | Fuente de verdad exclusiva de U6; `main` = `SOLO_CONSULTA` por contrato vigente. |
 | capcot-capsulas-imaginantes / feature/capcot-video-discovery-continuity | Línea editorial, investigación, storyboards, cola, producción, QA y publicación. | Fuente de verdad de CAPCOT en la rama vigente. |
 | orquestador-central | Prototipo adicional. | Fuera de alcance de escritura hasta autorización expresa; no está desplegado. |
 
