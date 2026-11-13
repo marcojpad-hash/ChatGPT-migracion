@@ -139,8 +139,8 @@ Consulta directa de las tres automatizaciones habilitadas:
 |---|---|---|
 | Agente de investigación CAPCOT | `da1861f5-beac-8332-8e94-88a13351ed3b`, `IN_PROGRESS`, iniciado 08:02:39 CDMX; `completed_at=null`. Último resultado completado: 12-nov, `b2beb9a1-cf4c-832c-9bfe-263016e0708d`. | 14-nov 08:00 CDMX |
 | Auditor CAPCOT — cola y rotación | `91d11256-c27c-8320-9274-7b24fe5662a9`, `COMPLETED` 12-nov 15:59:15 CDMX. | 13-nov 15:00 CDMX |
-| Operador autónomo general | `f4d5c766-dd78-8322-9b39-ed2281dc0980`, `IN_PROGRESS`, iniciado 07:59:58 CDMX; `completed_at=null`. Último resultado completado: 12-nov, `1b041e4c-40ec-8330-9b1c-2bcd677706a6`. | 14-nov 08:00 CDMX |
+| Operador autónomo general | `f4d5c766-dd78-8322-9b39-ed2281dc0980`, `IN_PROGRESS`, iniciado 07:59:58 CDMX; `completed_at=null`. Último resultado completado: 12-nov, `1b041e4c-40ec-8330-9b39-ed2281dc0980`. | 13-nov 08:00 CDMX (valor aún devuelto mientras el run sigue IN_PROGRESS) |
 
 El prompt del investigador se actualizó a las 08:03:28 CDMX para dejar de excluir globalmente el slot 23:30 y exigir un paquete separado, mismo día, fuente dentro de 48 h y ocupación comprobada por slot. El run actual había comenzado a las 08:02:39, antes del cambio; no se afirma que lo haya leído. La primera ejecución bajo el prompt corregido queda pendiente para el 14-nov. El auditor ya tiene una revisión distinta programada a las 15:00; no se creó una tercera tarea ni se duplicó su función.
 
-Los dos runs `IN_PROGRESS` siguen sin resultado terminal. Dot no está conectado ni expuesto como herramienta en esta sesión; estas automatizaciones no equivalen a Dot ni a un agente 24/7.
+Los dos runs `IN_PROGRESS` siguen sin resultado terminal. La herramienta conserva `next_run_time=2026-11-13T08:00:00-06:00` para el operador mientras su run sigue abierto; se registra como anomalía de estado. Dot no está conectado ni expuesto como herramienta en esta sesión; estas automatizaciones no equivalen a Dot ni a un agente 24/7.
