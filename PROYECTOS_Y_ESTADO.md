@@ -391,3 +391,30 @@ Reporte: [ENTREGA_PENDIENTES 2026-11-10](reportes/2026-11-10_ENTREGA_PENDIENTES.
 
 - El primer ZIP sigue siendo una copia de la Biblioteca de ChatGPT; el segundo `MOTOR_UNICO_ESTANDAR_20260928_FILTRO_ENTRADA.zip` no está en la Biblioteca. El conector de Google Drive aparece deshabilitado por administración; no se afirma acceso al Drive. El segundo archivo sigue pendiente de adjuntarse aquí.
 - Investigador CAPCOT y operador general siguen programados a las 08:00 CDMX; auditor CAPCOT a las 15:00 CDMX. Los últimos runs disponibles son del 12-nov; todavía no hay ejecución del 13-nov al corte de esta actualización.
+
+
+## Corrección operativa y continuidad — 2026-11-13, corte 08:05 CDMX
+
+Registro detallado: [reporte 2026-11-13](reportes/2026-11-13_OPERACION_AUTONOMA.md).
+
+### CAPCOT — rama `feature/capcot-video-discovery-continuity`
+- No hay storyboard ni radar del 13-nov al corte. Investigador `da1861f5-beac-8332-8e94-88a13351ed3b` permanece `IN_PROGRESS`; no atribuirle entregables.
+- El storyboard del 12-nov, chimpancés, conserva QA narrativo PASS/91, siete checks true y flags vacíos. El DOI PNAS sigue `PENDIENTE_RESOLVEDOR`; no se promovió. Su archivo individual de estado Grok devuelve 404: `RECEPCION_GROK_NO_CONFIRMADA`.
+- Ratas topo del 11-nov: paquete anidado, ocho escenas con `asset_filename`, sin `narrative_contract` ni `narrative_qa`; estado Grok 404. No redispatchar ni atribuir recepción.
+- El prompt del investigador se corrigió para el slot independiente 23:30 `dato_del_dia`: fuente publicada el mismo día CDMX y dentro de 48 h; no adelantar; revisar ocupación por slot. El run del 13-nov comenzó antes del cambio; primera ejecución efectiva de la regla pendiente el 14-nov 08:00. El auditor de las 15:00 ya revisa todos los storyboards del día, por lo que no se creó una automatización adicional.
+
+### Motor U6 — rama `alterno/cameo-pesos`
+- Revisión de los 20 recibos F003/F004: los 20 tienen `status=COMPLETED`; en los 20, `stages[8]` contiene `adaptador` y `verificacion_no_escribe_H`, ambos con `DATO_AUSENTE_REQUIERE_CLASIFICACION`. La frase anterior `receipt_missing_paths` era estructuralmente imprecisa; el problema es el valor sentinel no resuelto.
+- `LECTURA.json`: 3/4 hashes no coinciden (`casos/REGLAS.md`, `CONTRATO_CARPETAS.md`, `casos/fabrica/README.md`); el hash del protocolo de ejecución sí coincide. No se ejecutó el candado.
+- Se corrigieron documentalmente `CONTRATO_GUARDAR_CORRIDAS.md` §5–§6, el README del lote y la REVISION del lote. Avance: [2026-11-13_ChatGPT_normalizacion_contrato_corridas.md](https://github.com/marcojpad-hash/motor-u6-storage/blob/alterno/cameo-pesos/avances/2026-11-13_ChatGPT_normalizacion_contrato_corridas.md). No se modificó código, motor, patrones ni candados; no se ejecutaron tests ni motor.
+
+### Corrección de hashes del reporte previo
+El reporte del 12-nov decía que los cuatro hashes de LECTURA diferían. El recálculo actual confirma tres diferencias y una coincidencia: `PROTOCOLO_EJECUCION_Y_LECTURA_LLM.md` coincide exactamente. La evidencia de lectura del lote sigue obsoleta por los otros tres archivos y requiere renovación autorizada.
+
+### GitHub y alcance
+- `marcojpad-hash`: 11 repositorios visibles. `marcosabines-hash`: cero instalaciones y cero repositorios.
+- Ocho adicionales revisados solo por metadatos/README: `orquestador-central` público, `red-teaming-safety-u6` privado, `agente-cero-costo`, `baterias-tokens`, `baterias-memoria`, `memoria-compartida`, `microserie-heredera-sadtalker` y `microserie-heredera-voces` públicos. Ninguno recibió escrituras.
+- `agente-cero-costo` documenta DeepSeek Harness; eso no equivale a integración ejecutable en U6/alterno o CAPCOT/feature.
+
+### Migración
+`bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue sin acuse verificable de una segunda sesión que cubra CAPCOT y los conectores requeridos. Migración INCOMPLETA.
