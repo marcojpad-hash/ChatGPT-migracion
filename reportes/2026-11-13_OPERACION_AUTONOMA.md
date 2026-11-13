@@ -97,7 +97,7 @@ Se actualizaron y releyeron:
 | Archivo | Commit |
 |---|---|
 | `CONTINUIDAD_CHATGPT.md` | `2bfb7f18fb53991ff1c749dd55fa79b1d1a35855` |
-| `BOT_DOT_AUTONOMIA.md` | `4c75bcbba74d5904e8ac0f3bd519d942b5d9fe6f` |
+| `BOT_DOT_AUTONOMIA.md` | `dce45f60b3cf6e4e842ff3c3dac440f876066fc5` |
 | `PROYECTOS_Y_ESTADO.md` | `f70470be33d5ef50ab283d5af8e7403fe956bcc6` |
 | `docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md` | `252a15994b400f67b14adaac8db2b797ee76c0f7` |
 | `docs/CHECKLIST_MIGRACION_FIN_DE_PROMOCION.md` | `a866d0e7db1d68244e9888ebf17fdb5b2901f671` |
