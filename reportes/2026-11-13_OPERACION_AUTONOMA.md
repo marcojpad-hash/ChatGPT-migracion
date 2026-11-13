@@ -17,9 +17,9 @@
 |---|---|---|
 | Investigador CAPCOT | `da1861f5-beac-8332-8e94-88a13351ed3b`, IN_PROGRESS, iniciado 08:02:39 CDMX, sin `completed_at`. Último COMPLETED: 12-nov, `b2beb9a1-cf4c-832c-9bfe-263016e0708d`. | 14-nov 08:00 |
 | Auditor CAPCOT | `91d11256-c27c-8320-9274-7b24fe5662a9`, COMPLETED 12-nov 15:59:15 CDMX. | 13-nov 15:00 |
-| Operador general | `f4d5c766-dd78-8322-9b39-ed2281dc0980`, IN_PROGRESS desde 07:59:58 CDMX, sin `completed_at`. Último COMPLETED: 12-nov, `1b041e4c-40ec-8330-9b1c-2bcd677706a6`. | 14-nov 08:00 |
+| Operador general | `f4d5c766-dd78-8322-9b39-ed2281dc0980`, IN_PROGRESS desde 07:59:58 CDMX, sin `completed_at`. Último COMPLETED: 12-nov, `1b041e4c-40ec-8330-9b1c-2bcd677706a6`. | 13-nov 08:00 (valor aún devuelto mientras el run sigue IN_PROGRESS) |
 
-Los dos runs abiertos no se contabilizan como terminados. Dot no está conectado ni expuesto en esta sesión.
+Los dos runs abiertos no se contabilizan como terminados. La herramienta sigue devolviendo `next_run_time=2026-11-13T08:00:00-06:00` para el operador aunque el run permanece `IN_PROGRESS`; se registra como anomalía, sin inferir un nuevo horario. Dot no está conectado ni expuesto en esta sesión.
 
 ## 3. CAPCOT — lectura y handoff
 
