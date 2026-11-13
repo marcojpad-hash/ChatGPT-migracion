@@ -235,3 +235,25 @@ La comparación actual `main...feature/capcot-video-discovery-continuity` devuel
 - CAPCOT: `cola/estado/` no existe en la rama activa; no hay recepción Grok confirmada para los paquetes revisados. El paquete de ratas topo tiene ocho PNG, pero carece de QA narrativo y no es despachable por el workflow actual al estar anidado.
 - Esta sesión no expone servidor codebase-memory-mcp ni DeepSeek Harness ejecutable. Documentación/configuración local no equivale a proceso MCP vivo.
 - Inventario GitHub: marcojpad-hash 11 repositorios/1 instalación; marcosabines-hash 0 repositorios/0 instalaciones. Ocho repositorios adicionales permanecen sin escritura.
+
+
+## Corte verificado — 2026-11-13
+
+### Cuentas y repositorios GitHub
+- `marcojpad-hash`: 11 repositorios visibles: `motor-u6-storage`, `capcot-capsulas-imaginantes`, `ChatGPT-migracion`, `orquestador-central`, `red-teaming-safety-u6`, `agente-cero-costo`, `baterias-tokens`, `baterias-memoria`, `memoria-compartida`, `microserie-heredera-sadtalker`, `microserie-heredera-voces`.
+- `marcosabines-hash`: 0 instalaciones y 0 repositorios visibles, sin error.
+- Los ocho adicionales se revisaron solo por metadatos y README, sin escrituras. Visibilidad observada: `orquestador-central` público; `red-teaming-safety-u6` privado; los otros seis públicos.
+- Relación: `orquestador-central` documenta plano de control multi-modelo; `red-teaming-safety-u6` es repo hermano para subcorridas white-hat aisladas; `agente-cero-costo` documenta DeepSeek Harness y puente Groq; `baterias-tokens`/ `baterias-memoria` documentan proveedores y capacidad de máquina; `memoria-compartida` es el repositorio de hechos durables; los dos repositorios microserie son pipelines audiovisuales separados. Permanecen DESCUBIERTO_ADICIONAL y fuera de escritura.
+
+### CAPCOT
+- El contrato operativo autoriza cinco slots, incluido 23:30 `dato_del_dia`. El prompt del investigador ya no excluye ese slot: exige un storyboard separado solo con fuente del mismo día, dentro de 48 h, y ocupación libre. El run del 13-nov comenzó antes del cambio del prompt; primera ejecución efectiva pendiente.
+- Último storyboard al corte: chimpancés 12-nov, QA PASS/91, DOI pendiente de resolvedor, sin estado Grok (404). Ratas topo 11-nov: paquete anidado, sin narrative_contract/QA narrativo, sin estado Grok (404). No se promovió ni redispatchó.
+- Investigador del 13-nov `IN_PROGRESS`; auditor del 12-nov `COMPLETED`, siguiente 13-nov 15:00. El workflow sigue sin procesar rutas anidadas.
+
+### Motor U6
+- Rama activa `alterno/cameo-pesos`; `main` es `SOLO_CONSULTA`.
+- F003/F004: 20 recibos COMPLETED; los campos `adaptador` y `verificacion_no_escribe_H` existen en todos, pero tienen valor sentinel `DATO_AUSENTE_REQUIERE_CLASIFICACION`. La descripción `receipt_missing_paths` fue corregida en la REVISION.
+- `LECTURA.json`: tres hashes no coinciden y el hash de `PROTOCOLO_EJECUCION_Y_LECTURA_LLM.md` sí coincide. No se ejecutó candado, tests ni motor. La reconciliación documental quedó registrada en U6/avances.
+- `codebase-memory-mcp`: configuración local en U6/alterno, ruta absoluta de máquina e índice documentado desde main del 7-nov; no hay proceso vivo ni conector MCP disponible verificado.
+- CAPCOT/feature sigue sin configuración codebase-memory. DeepSeek Harness está documentado en el repo adicional `agente-cero-costo`, pero no está integrado de forma ejecutable en las dos ramas activas.
+- Dot no está conectado; no se confunde una automatización con Dot.
