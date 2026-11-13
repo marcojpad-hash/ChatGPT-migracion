@@ -160,3 +160,27 @@ La migración continúa **INCOMPLETA**.
 - [ ] Verificar proceso codebase-memory-mcp vivo y reindexación en la rama exacta; no hay conector vivo expuesto en esta sesión. DeepSeek Harness no está probado de extremo a extremo.
 
 La migración permanece INCOMPLETA.
+
+
+## Actualización verificada — 2026-11-13
+
+### Comprobaciones y correcciones ejecutadas
+- [x] Reconsultadas las cuentas GitHub: `marcojpad-hash` = 11 repositorios; `marcosabines-hash` = 0 instalaciones/repositorios. Ocho adicionales clasificados DESCUBIERTO_ADICIONAL y revisados solo en metadatos/README; sin escrituras.
+- [x] Corregido el prompt del investigador CAPCOT: el slot 23:30 `dato_del_dia` ya no está excluido globalmente; se exige fuente del mismo día CDMX, dentro de 48 h, slot libre y storyboard independiente. El run del 13-nov comenzó antes del cambio; la primera ejecución con el prompt nuevo sigue pendiente.
+- [x] Releídos los 20 recibos F003/F004: los campos cuestionados existen, pero ambos llevan `DATO_AUSENTE_REQUIERE_CLASIFICACION`; no se interpretan como verificación exitosa.
+- [x] Reconciliados `CONTRATO_GUARDAR_CORRIDAS.md` §5–§6 y el README del lote; añadida corrección en `REVISION.md` y entrada en `avances/`.
+- [x] Corregida la fila de autoridad de U6 en este protocolo: rama activa `alterno/cameo-pesos`, `main` SOLO_CONSULTA.
+
+### Pendientes que siguen abiertos
+- [ ] Renovar `motor/runs/F003_F004_20261111/LECTURA.json`: 3/4 SHA-256 no coinciden con documentos actuales; el hash del protocolo de ejecución sí coincide. No ejecutar el candado hasta renovar la evidencia por el procedimiento autorizado.
+- [ ] Clasificar/resolver los dos valores sentinel de `consulta_dirigida`; no se ejecutó motor ni tests.
+- [ ] Resolver ausencia de tabla de mortalidad y calibración predictiva; U6 continúa NO_CALIBRADO.
+- [ ] CAPCOT 12-nov: DOI pendiente de resolvedor y estado Grok ausente; RECEPCION_GROK_NO_CONFIRMADA.
+- [ ] CAPCOT 11-nov ratas topo: falta narrative_contract y QA narrativo independiente; estado Grok ausente; no redispatchar.
+- [ ] Confirmar resultado terminal del investigador CAPCOT del 13-nov y verificar primera ejecución con la nueva regla 23:30.
+- [ ] Auditor CAPCOT del 13-nov a las 15:00: pendiente al corte.
+- [ ] Handoff original `bandeja/2026-11-03_RECUPERACION_MIGRACION.md`: sin acuse verificable de segunda sesión que cubra CAPCOT y conectores. Migración INCOMPLETA.
+- [ ] Verificar proceso vivo y reindexación de codebase-memory-mcp en U6/alterno; CAPCOT/feature sin configuración. DeepSeek Harness sigue sin integración ejecutable en las ramas activas.
+- [ ] Dot nativo no conectado ni verificado en esta sesión.
+
+La migración permanece **INCOMPLETA**.
