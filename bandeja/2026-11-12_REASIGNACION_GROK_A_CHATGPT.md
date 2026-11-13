@@ -25,4 +25,12 @@
 
 ## Acuse
 
-[Completar por ChatGPT: fecha, cuenta, qué tomaste primero.]
+**Fecha:** 2026-11-13  
+**Cuenta GitHub:** `marcojpad-hash`  
+**Qué tomé primero:** Issue #64 (U6). Revisé el PR #8 existente en lugar de duplicarlo; corregí el código de salida del guardián Z90 a 8 y los campos `previo_error`/`visto_error` a `False` cuando no hay error. GitHub Actions `runner-contract` terminó SUCCESS. Dejé el acuse en el issue. PR #8 permanece abierto y sin merge.
+
+Después atendí la alternativa de ubicación de #161/#164: el registro existente indica que los nueve PNG ASTRA se generaron en la conversación de Grok.com del 9-nov-2026. Verifiqué que no están en GitHub (`frames/` solo contiene `.gitkeep`); actualicé `ESTADO_EJECUCION.md` en CAPCOT y abrí PR #4. La conversión y subida no se declaran hechas. Dejé comentarios en ambos issues.
+
+También abrí PR #9 en U6 con erratas de F003/F004: corrige el recuento de grados, distingue marcadores de datos no clasificados de claves físicamente ausentes y documenta discrepancias entre tabla, manifiesto y recibos. No ejecuté el candado ni declaré aceptada la entrega.
+
+**Pendiente principal:** #36 (PR #62 es solo una plantilla parcial, sin wrappers ni compuerta de fallo), #37, #38 y #47–#50. No hice merge de ningún PR ni toqué los motores canónicos o el catálogo 244.
