@@ -361,3 +361,33 @@ Reporte: [ENTREGA_PENDIENTES 2026-11-10](reportes/2026-11-10_ENTREGA_PENDIENTES.
 
 ### Migración
 - `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` continúa PENDIENTE. El acuse separado de Claude no cumple la aceptación completa. Migración INCOMPLETA.
+
+
+## Actualización operativa — 2026-11-13
+
+### Motor U6 — rama `alterno/cameo-pesos`
+
+- **Issue #64:** corrección en [PR #8](https://github.com/marcojpad-hash/motor-u6-storage/pull/8), abierto y sin merge. El runner incorpora el guardián Z90, rechaza post-Z con código 8 y deja `previo_error`/`visto_error` en `False` si no hay error. GitHub Actions `runner-contract` SUCCESS. No se modificaron `Engine_V5_CANONICO_SOLO.py` ni `patterns_final_v14.json`.
+- **F003/F004:** 20 recibos COMPLETED. Erratas y discrepancias registradas en [PR #9](https://github.com/marcojpad-hash/motor-u6-storage/pull/9), abierto y sin merge: el resumen omitía 3 FIRME; la tabla deja Monte Carlo en null aunque recibos consultados muestran ejecución; `H1_rank_fusion` es null en el manifiesto aunque la tabla tiene valores. `consulta_dirigida` está `NO_CONFIGURADO/off`, 0 preguntas y `required=false`, por lo que no cumple el Issue #50.
+- `LECTURA.json` conserva hashes de versiones anteriores de documentos. El candado compara SHA contra el árbol actual; no se ejecutó y no se declara aprobada la entrega. No se reescribió la evidencia histórica.
+- La prueba negativa de Napoleón sigue 5→5, cero descartes. Sin cambio de resultado.
+
+### CAPCOT — rama `feature/capcot-video-discovery-continuity`
+
+- **ASTRA robot, 9-nov:** el registro de `main` ubica nueve PNG generados en la conversación de Grok.com del 9-nov. En el repositorio, `frames/` solo contiene `.gitkeep`; no hay binarios para convertir. Se indicó esa ubicación en el estado de ejecución mediante [PR #4](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/pull/4), abierto y sin merge. La subida JPEG sigue pendiente de recuperar los PNG desde Grok. El marcador `grok_inbox` sigue pending; no hay recibo `grok_done`.
+- **Ratas topo Damaraland, 11-nov:** hay ocho PNG y dos publicaciones registradas (IDs `knAElNo4raI` y `WcTviUWqbes`). Marco autorizó conservar ambos videos publicados. La carpeta no tiene un estado individual/Grok receipt consistente; no se redispatcha ni se duplica.
+- **Chimpancés, 12-nov:** candidato con narrative QA PASS 91, 198 palabras y 84 s, todavía en `proyectos/`, sin slot oficial ni promoción a cola.
+- El workflow `capcot-grok-dispatch.yml` espera JSON plano en `cola/entrada/*.json`; no reconoce la estructura vigente `cola/entrada/<project_id>/storyboard.json`. Además, el workflow solo crea un handoff o llama un webhook opcional; no genera imágenes por sí mismo. No se ejecutó ni publicó nada.
+- La exclusión de 23:30 en el prompt del investigador sigue en conflicto con la instrucción editorial de dato del día a esa hora.
+
+### Integraciones y continuidad
+
+- `codebase-memory-mcp`: configuración local en U6 y en CAPCOT/main; ausente en CAPCOT/feature. El `.mcp.json` apunta a una ruta absoluta de la máquina de Pecas. No hay herramientas de ese servidor disponibles en esta sesión; índice de main del 7-nov no equivale a índice de rama activa.
+- DeepSeek Harness no está integrado de forma ejecutable en las ramas activas. FreeLLMAPI tiene 0 claves; la prueba Groq previa devolvió 429; Ollama no está verificado.
+- PR #62 de `agente-cero-costo` contiene solo la plantilla parcial del supervisor. No hay wrappers `supervisor.yml` en los seis repos; no están implementados guardia/config estricta, cinco estados, compuerta ni creación de issue de fallo. Issue #36 sigue abierto. #37, #38 y #47–#50 también siguen pendientes.
+- El handoff de recuperación `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` continúa PENDIENTE; no hay acuse verificable de una segunda sesión independiente.
+
+### Archivos y automatizaciones
+
+- El primer ZIP sigue siendo una copia de la Biblioteca de ChatGPT; el segundo `MOTOR_UNICO_ESTANDAR_20260928_FILTRO_ENTRADA.zip` no está en la Biblioteca. El conector de Google Drive aparece deshabilitado por administración; no se afirma acceso al Drive. El segundo archivo sigue pendiente de adjuntarse aquí.
+- Investigador CAPCOT y operador general siguen programados a las 08:00 CDMX; auditor CAPCOT a las 15:00 CDMX. Los últimos runs disponibles son del 12-nov; todavía no hay ejecución del 13-nov al corte de esta actualización.
