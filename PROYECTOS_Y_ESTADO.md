@@ -440,3 +440,8 @@ Registro detallado: [reporte 2026-11-14](https://github.com/marcojpad-hash/ChatG
 
 ### Migración
 - El handoff original 2026-11-03 sigue PENDIENTE y sin acuse verificable de segunda sesión que cubra CAPCOT y conectores. La migración continúa INCOMPLETA.
+
+### Reconsulta CAPCOT — 2026-11-14
+
+- El investigador del 14-nov está IN_PROGRESS desde 08:01:08 CDMX (run `0eef543a-9448-8324-a68e-a53655e07a92`), sin completed_at.
+- Al último chequeo no existe radar, storyboard, directorio de proyecto ni `data/horario_2026-11-14.json`. No crear un paquete paralelo; esperar el resultado terminal y la revisión del auditor.
