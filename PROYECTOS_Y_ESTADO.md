@@ -418,3 +418,25 @@ El reporte del 12-nov decía que los cuatro hashes de LECTURA diferían. El rec�
 
 ### Migración
 `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue sin acuse verificable de una segunda sesión que cubra CAPCOT y los conectores requeridos. Migración INCOMPLETA.
+
+## Actualización operativa — 2026-11-14
+
+Registro detallado: [reporte 2026-11-14](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/reportes/2026-11-14_OPERACION_AUTONOMA.md).
+
+### CAPCOT — feature/capcot-video-discovery-continuity
+- Storyboard 13-nov `2026-11-13_dato-caracol-16-embriones`: 8 escenas, 210 palabras, 84 s, QA narrativo PASS/91 con siete checks true y flags vacíos. Preflight estructural estático sin errores detectados; validador ejecutable y `--check-doi` no se ejecutaron.
+- DOI `10.1038/s42003-026-11188-7` sigue PENDIENTE_RESOLVEDOR. La página oficial Nature indexada confirma metadatos y fecha 10-nov; Crossref/doi.org no completaron resolución independiente.
+- El proyecto permanece en `proyectos/`, fuera de cola. `cola/estado/<project_id>.json` devuelve 404: RECEPCION_GROK_NO_CONFIRMADA. No promover ni disparar workflow.
+- Commit 7f4c65a corrigió la conciliación de publicaciones a 5/12 enlaces exactos por `project_id`; Venus y Arena no se atribuyen por IDs globales.
+- Lote 5–7: 2 PASS, 10 FAIL, 0/12 aptos estructuralmente. Clavo 7-nov y ratas topo 11-nov siguen anidados/no dispatchables y sin acuse individual.
+- No hay paquete del 14-nov ni horario diario de esa fecha al corte; no duplicar al investigador.
+
+### Motor U6 — alterno/cameo-pesos
+- Commit c630256 añadió BOLSITAS_TROPO A–F y lo cableó a guardianes; `can_decide_H=False`. El commit afirma verificación Mozart, pero no se encontró artefacto independiente de esa corrida en `motor/runs/` ni Actions de la rama activa.
+- Snapshot de auditoría en main: commit 8c3a757; run 43587385355 SUCCESS. Main sigue SOLO_CONSULTA.
+- Supervisor: run 43404246627 falló por falsa detección de dependencias del checkout `_guardia`; rerun 43404437760 SUCCESS y issue #10 cerrada como sustituida. PR central #62 sigue abierto, no fusionado.
+- Mozart A/B: run 42925925154 falló por SyntaxError (línea 130); run 42926338824 por `ModuleNotFoundError: motor` en variante B_SIN_CALDERO. Sin corrección verificada.
+- F003/F004: 20 recibos COMPLETED, valores sentinel sin clasificar y 3/4 hashes LECTURA obsoletos. No se ejecutaron tests/candado/motor; NO_CALIBRADO.
+
+### Migración
+- El handoff original 2026-11-03 sigue PENDIENTE y sin acuse verificable de segunda sesión que cubra CAPCOT y conectores. La migración continúa INCOMPLETA.
