@@ -156,3 +156,10 @@ Los dos runs `IN_PROGRESS` siguen sin resultado terminal. La herramienta conserv
 Las tres automatizaciones aparecen habilitadas. El `next_run_time` del operador aún devuelve 14-nov 08:00 mientras el run está abierto; se conserva como anomalía, no como garantía. No hay herramienta ni conexión de Dot expuesta en esta sesión; no atribuirle trabajo ni presentarlo como agente 24/7.
 
 Registro: [reporte operativo 2026-11-14](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/reportes/2026-11-14_OPERACION_AUTONOMA.md).
+
+## Reconsulta de automatizaciones — 2026-11-14
+
+- Investigador CAPCOT: `0eef543a-9448-8324-a68e-a53655e07a92`, IN_PROGRESS desde 08:01:08 CDMX, sin completed_at. No hay radar/storyboard/horario del 14-nov visible al último chequeo.
+- Auditor CAPCOT: `762d97aa-9fb4-8326-b3d4-ee8baee83820`, COMPLETED 13-nov 15:59:05 CDMX; siguiente 15:00 del 14-nov.
+- Operador general: `31576c4e-c538-8328-b7ea-4220296c6695`, IN_PROGRESS, sin completed_at.
+- No atribuir resultados a runs abiertos ni confundir next_run_time 08:00 con ejecución futura garantizada.
