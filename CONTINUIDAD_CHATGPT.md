@@ -232,3 +232,14 @@ Registro: [reporte 2026-11-13](reportes/2026-11-13_OPERACION_AUTONOMA.md).
 - **Motor U6:** la rama activa sigue siendo `alterno/cameo-pesos`; `main` permanece `SOLO_CONSULTA`. Se reconciliaron documentos de almacenamiento y se corrigió la lectura del lote F003/F004. Los 20 recibos están `COMPLETED`; los campos `adaptador` y `verificacion_no_escribe_H` existen, pero sus valores son `DATO_AUSENTE_REQUIERE_CLASIFICACION`. En `LECTURA.json`, 3/4 hashes no coinciden; el hash de `PROTOCOLO_EJECUCION_Y_LECTURA_LLM.md` sí coincide. No se ejecutó candado, tests ni motor; U6 sigue `NO_CALIBRADO`.
 - **Automatizaciones:** investigador run `da1861f5-beac-8332-8e94-88a13351ed3b` `IN_PROGRESS`, iniciado 08:02:39 CDMX; auditor último run `91d11256-c27c-8320-9274-7b24fe5662a9` `COMPLETED` el 12-nov, próximo 13-nov 15:00; operador run `f4d5c766-dd78-8322-9b39-ed2281dc0980` `IN_PROGRESS`, iniciado 07:59:58 CDMX. Los dos runs abiertos no tienen `completed_at`.
 - **Migración:** `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` continúa sin acuse de segunda sesión; el acuse separado de Claude sigue parcial. Migración INCOMPLETA.
+
+## Actualización operativa — 2026-11-14
+
+Registro completo: [reporte 2026-11-14](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/reportes/2026-11-14_OPERACION_AUTONOMA.md).
+
+- **Cuentas:** `marcojpad-hash` devuelve una instalación de usuario y 11 repositorios; `marcosabines-hash` devuelve cero instalaciones/repositorios. Los ocho adicionales siguen fuera de escritura.
+- **CAPCOT:** el storyboard 13-nov del caracol conserva PASS/91, pero no tiene validación ejecutable ni DOI resuelto; `cola/estado` 404 y recepción Grok no confirmada. El último commit corrigió la reconciliación de publicaciones a 5/12 vínculos exactos por `project_id`. Lote 5–7: 2 PASS, 10 FAIL, 0/12 estructuralmente aptos.
+- **Motor U6:** rama activa `alterno/cameo-pesos`, `main` SOLO_CONSULTA. Se detectó el commit `c630256` con BOLSITAS_TROPO A–F; su afirmación de corrida Mozart no tiene artefacto independiente en esta revisión. Snapshot main 14-nov: run de auditoría 43587385355 SUCCESS. El fallo del supervisor 43404246627 fue falsa alarma de dependencia y quedó sustituido por rerun 43404437760 SUCCESS; PR central #62 sigue abierto. Dos fallos Mozart A/B del 10-nov permanecen registrados: SyntaxError y ModuleNotFoundError.
+- **F003/F004:** 20 recibos COMPLETED con valores sentinel sin clasificar; 3/4 hashes de `LECTURA.json` obsoletos; no se ejecutaron motor, tests ni candado. U6 sigue NO_CALIBRADO.
+- **Automatizaciones:** investigador y auditor completaron sus runs del 13-nov; el operador del 14-nov `31576c4e-c538-8328-b7ea-4220296c6695` sigue IN_PROGRESS sin `completed_at`. No atribuirle entrega.
+- **Migración:** el handoff original del 3-nov sigue PENDIENTE y sin acuse; la revisión separada de Claude continúa parcial. codebase-memory-mcp vivo, DSH ejecutable y Dot no están verificados. Migración INCOMPLETA.
