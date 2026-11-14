@@ -141,3 +141,18 @@ Después de guardar el corte inicial se volvió a consultar el estado de las aut
 - Auditor CAPCOT: último run \`762d97aa-9fb4-8326-b3d4-ee8baee83820\`, COMPLETED 13-nov 15:59:05 CDMX; siguiente 14-nov 15:00.
 
 Se releyeron las rutas de CAPCOT para el 14-nov: radar, storyboard y \`data/horario_2026-11-14.json\` devuelven 404; no hay directorio de proyecto con prefijo \`2026-11-14\`. El investigador está en curso, pero todavía no hay entregable visible. No se creó un reemplazo ni se atribuyó resultado al run abierto.
+
+
+## 9. Commits de continuidad de esta operación
+
+Cada archivo se volvió a leer desde GitHub después de su actualización:
+
+| Archivo | Commit(s) |
+|---|---|
+| Este reporte | \`5f5d57026db0d6456404075625367e969b0b7eed\`; addendum de reconsulta \`0d1a56b2c28ac289c8b2f0e4622dcc918ec5790a\` |
+| \`CONTINUIDAD_CHATGPT.md\` | \`438df03af377326b9377314c44dc207f37095c93\`; reconsulta \`ee5e79f828f701c7aa33b73cbd0d76c0e00476aa\` |
+| \`BOT_DOT_AUTONOMIA.md\` | \`dbc754f8c9b29da4bc8edccb87ad261fe72176e9\`; reconsulta \`56c5d461d0b3fe3df3355de6dda6131380b28157\` |
+| \`PROYECTOS_Y_ESTADO.md\` | \`d44126347c9f0f58a2172903a1c1da7c31dbc67c\`; reconsulta \`f159cfa7107d8043cf031d8b9669498e1e21cd27\` |
+| \`docs/CHECKLIST_MIGRACION_FIN_DE_PROMOCION.md\` | \`fcca7a27bd36b80c488d419273079f503e04a09c\`; reconsulta \`dfbded05fd4feebf6bcdd6df49f8899a6888d570\` |
+
+No se actualizó \`docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md\` porque no se observó cambio de conexión; el corte confirmó los mismos límites de herramientas.
