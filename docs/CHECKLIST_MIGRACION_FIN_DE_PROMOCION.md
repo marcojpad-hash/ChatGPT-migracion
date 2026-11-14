@@ -197,3 +197,8 @@ La migración permanece **INCOMPLETA**.
 - [ ] Dot nativo: no conectado ni expuesto en esta sesión.
 
 Registro de evidencia: [reporte operativo 2026-11-14](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/reportes/2026-11-14_OPERACION_AUTONOMA.md).
+
+### Reconsulta de automatizaciones — 2026-11-14
+
+- [x] Reconsultado el estado terminal: investigador CAPCOT del 14-nov `0eef543a-9448-8324-a68e-a53655e07a92` sigue IN_PROGRESS sin completed_at; operador `31576c4e-c538-8328-b7ea-4220296c6695` también sigue IN_PROGRESS.
+- [ ] No atribuir entregables a ninguno hasta que haya estado terminal y archivos verificados.
