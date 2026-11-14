@@ -243,3 +243,10 @@ Registro completo: [reporte 2026-11-14](https://github.com/marcojpad-hash/ChatGP
 - **F003/F004:** 20 recibos COMPLETED con valores sentinel sin clasificar; 3/4 hashes de `LECTURA.json` obsoletos; no se ejecutaron motor, tests ni candado. U6 sigue NO_CALIBRADO.
 - **Automatizaciones:** investigador y auditor completaron sus runs del 13-nov; el operador del 14-nov `31576c4e-c538-8328-b7ea-4220296c6695` sigue IN_PROGRESS sin `completed_at`. No atribuirle entrega.
 - **Migración:** el handoff original del 3-nov sigue PENDIENTE y sin acuse; la revisión separada de Claude continúa parcial. codebase-memory-mcp vivo, DSH ejecutable y Dot no están verificados. Migración INCOMPLETA.
+
+## Reconsulta — automatizaciones CAPCOT y operador, 2026-11-14
+
+- Investigador CAPCOT: run `0eef543a-9448-8324-a68e-a53655e07a92`, IN_PROGRESS desde 08:01:08 CDMX, sin completed_at; no hay radar, storyboard ni horario 14-nov visible todavía.
+- Operador general: run `31576c4e-c538-8328-b7ea-4220296c6695`, IN_PROGRESS, sin completed_at.
+- Auditor: último COMPLETED 13-nov 15:59:05 CDMX; próximo 14-nov 15:00.
+- El último resultado completo del investigador sigue siendo 13-nov. No atribuir entregable al run abierto.
