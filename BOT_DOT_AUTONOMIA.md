@@ -144,3 +144,15 @@ Consulta directa de las tres automatizaciones habilitadas:
 El prompt del investigador se actualizó a las 08:03:28 CDMX para dejar de excluir globalmente el slot 23:30 y exigir un paquete separado, mismo día, fuente dentro de 48 h y ocupación comprobada por slot. El run actual había comenzado a las 08:02:39, antes del cambio; no se afirma que lo haya leído. La primera ejecución bajo el prompt corregido queda pendiente para el 14-nov. El auditor ya tiene una revisión distinta programada a las 15:00; no se creó una tercera tarea ni se duplicó su función.
 
 Los dos runs `IN_PROGRESS` siguen sin resultado terminal. La herramienta conserva `next_run_time=2026-11-13T08:00:00-06:00` para el operador mientras su run sigue abierto; se registra como anomalía de estado. Dot no está conectado ni expuesto como herramienta en esta sesión; estas automatizaciones no equivalen a Dot ni a un agente 24/7.
+
+## Estado verificado de automatizaciones — 2026-11-14
+
+| Automatización | Run | Estado | Resultado atribuible |
+|---|---|---|---|
+| Investigador CAPCOT | `da1861f5-beac-8332-8e94-88a13351ed3b` | COMPLETED 13-nov 08:16:01 CDMX | Radar y borrador caracol; no QA ni promoción. Próximo 14-nov 08:00. |
+| Auditor CAPCOT | `762d97aa-9fb4-8326-b3d4-ee8baee83820` | COMPLETED 13-nov 15:59:05 CDMX | QA PASS/91 del caracol y CONTROL_COLA. Próximo 14-nov 15:00. |
+| Operador general | `31576c4e-c538-8328-b7ea-4220296c6695` | IN_PROGRESS desde 14-nov 07:57:53 CDMX; `completed_at=null` | No atribuirle resultado. El último COMPLETED sigue siendo 13-nov, run `f4d5c766-dd78-8322-9b39-ed2281dc0980`. |
+
+Las tres automatizaciones aparecen habilitadas. El `next_run_time` del operador aún devuelve 14-nov 08:00 mientras el run está abierto; se conserva como anomalía, no como garantía. No hay herramienta ni conexión de Dot expuesta en esta sesión; no atribuirle trabajo ni presentarlo como agente 24/7.
+
+Registro: [reporte operativo 2026-11-14](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/reportes/2026-11-14_OPERACION_AUTONOMA.md).
