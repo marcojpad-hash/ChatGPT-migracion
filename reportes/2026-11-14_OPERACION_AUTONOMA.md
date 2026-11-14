@@ -131,3 +131,13 @@ El último snapshot de main es el commit [8c3a757](https://github.com/marcojpad-
 4. Obtener un archivo individual \`cola/estado/<project_id>.json\` creado por Grok; hasta entonces, recepción no confirmada.
 5. Resolver los dos fallos históricos Mozart A/B y renovar \`LECTURA.json\` F003/F004 por el procedimiento autorizado; no ejecutar el candado mientras la evidencia siga obsoleta.
 6. Obtener el acuse de segunda sesión en el handoff original y comprobar lectura de CAPCOT y conectores; migración sigue incompleta.
+
+
+## Addendum — reconsulta de automatizaciones y CAPCOT (14-nov)
+
+Después de guardar el corte inicial se volvió a consultar el estado de las automatizaciones:
+- Investigador CAPCOT: run \`0eef543a-9448-8324-a68e-a53655e07a92\`, iniciado 14-nov 08:01:08 CDMX, sigue \`IN_PROGRESS\`, sin \`completed_at\`. El último resultado completado sigue siendo el del 13-nov.
+- Operador general: run \`31576c4e-c538-8328-b7ea-4220296c6695\`, sigue \`IN_PROGRESS\`, sin \`completed_at\`.
+- Auditor CAPCOT: último run \`762d97aa-9fb4-8326-b3d4-ee8baee83820\`, COMPLETED 13-nov 15:59:05 CDMX; siguiente 14-nov 15:00.
+
+Se releyeron las rutas de CAPCOT para el 14-nov: radar, storyboard y \`data/horario_2026-11-14.json\` devuelven 404; no hay directorio de proyecto con prefijo \`2026-11-14\`. El investigador está en curso, pero todavía no hay entregable visible. No se creó un reemplazo ni se atribuyó resultado al run abierto.
