@@ -184,3 +184,16 @@ La migración permanece INCOMPLETA.
 - [ ] Dot nativo no conectado ni verificado en esta sesión.
 
 La migración permanece **INCOMPLETA**.
+
+## Actualización verificada — 2026-11-14
+
+- [x] Reconsultadas las dos cuentas GitHub: `marcojpad-hash` = 1 instalación de usuario y 11 repositorios; `marcosabines-hash` = 0 instalaciones y 0 repositorios, sin error.
+- [x] Reconfirmadas las ramas: migración/main, CAPCOT/feature/capcot-video-discovery-continuity y U6/alterno/cameo-pesos (main SOLO_CONSULTA).
+- [x] Revisados los estados de las tres automatizaciones: investigador y auditor completados el 13-nov; operador del 14-nov IN_PROGRESS sin completed_at. No atribuirle entrega.
+- [ ] Handoff original 2026-11-03: sigue sin acuse verificable de segunda sesión; el acuse separado de Claude no cubre CAPCOT ni conectores. Migración INCOMPLETA.
+- [ ] Verificar proceso codebase-memory-mcp vivo/reindexación de ramas activas; no hay servidor MCP expuesto en esta sesión.
+- [ ] Integración ejecutable de DeepSeek Harness en CAPCOT/feature y U6/alterno: no confirmada.
+- [ ] Confirmar conectores esenciales desde una segunda sesión/modelo. La cuenta GitHub y los permisos de esta sesión no prueban recuperación independiente.
+- [ ] Dot nativo: no conectado ni expuesto en esta sesión.
+
+Registro de evidencia: [reporte operativo 2026-11-14](https://github.com/marcojpad-hash/ChatGPT-migracion/blob/main/reportes/2026-11-14_OPERACION_AUTONOMA.md).
