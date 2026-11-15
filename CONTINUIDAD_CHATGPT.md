@@ -285,3 +285,8 @@ El corte inicial de esta fecha se actualiza con los runs terminales y el control
 ### Motor U6 y migración
 - Sin cambios ni ejecuciones nuevas en U6 durante esta reconsulta. Sigue NO_CALIBRADO; rama activa `alterno/cameo-pesos`, `main` SOLO_CONSULTA.
 - Migración sigue INCOMPLETA: handoff original sin acuse completo verificable de segunda sesión/modelo.
+
+
+## Entrega adicional — 2026-11-15
+
+CAPCOT Lestes sponsa: ficha oficial de Nature consultada; confirma publicación 15-nov-2026 y DOI 10.1038/s41598-026-80392-6. Se actualizaron notas editoriales y metadatos obsoletos del storyboard; QA narrativo PASS/90 preservado. Se revisaron manualmente los controles estáticos del validador: coinciden, pero el script no se ejecutó y el helper Crossref sigue pendiente. Estado: PENDIENTE_VALIDACION_ESTRUCTURAL; no promovido ni enviado a Grok. Commits CAPCOT: da1caa8 y 2306c0c. Migración sigue INCOMPLETA; no se falsifica acuse de segunda sesión independiente.
