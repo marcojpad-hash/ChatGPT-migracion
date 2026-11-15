@@ -506,3 +506,9 @@ U6 sin nuevas acciones: sigue NO_CALIBRADO, sin ejecución de motor/tests en est
 ### Migración y U6
 - Migración INCOMPLETA por falta de acuse independiente completo en el handoff del 3-nov.
 - Motor U6 sin cambios y sin ejecución de pruebas/motor/candados en esta operación.
+
+## Corrección de estado — Motor U6 / Mozart, 2026-11-15
+
+- **Mozart: RESUELTO Y FUSIONADO.** PR #14 «Corrección auditoría ChatGPT sobre Mozart: 5 hallazgos + re-corrida 2026-11-14»; rama `alterno/reconexion-2a1-correccion-auditoria-mozart`; commit final `a182c73`; 22/22 verificaciones; merge `f478d03` a `alterno/reconexion-2a1`, 14-nov-2026 19:48 CST. Enlace: https://github.com/marcojpad-hash/motor-u6-storage/pull/14.
+- Esta sesión no reejecutó motor ni pruebas Mozart. La nota previa «U6 sin cambios / no se ejecutaron motor, tests ni candados» no aplica al estado global de Mozart y queda sustituida por este resultado.
+- Único archivo pendiente con ese nombre exacto: `motor/REVISION_CHATGPT_MOZART_20261113.md`; asignado a otro chat. No duplicar.
