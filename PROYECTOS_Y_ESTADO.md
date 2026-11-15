@@ -445,3 +445,23 @@ Registro detallado: [reporte 2026-11-14](https://github.com/marcojpad-hash/ChatG
 
 - El investigador del 14-nov está IN_PROGRESS desde 08:01:08 CDMX (run `0eef543a-9448-8324-a68e-a53655e07a92`), sin completed_at.
 - Al último chequeo no existe radar, storyboard, directorio de proyecto ni `data/horario_2026-11-14.json`. No crear un paquete paralelo; esperar el resultado terminal y la revisión del auditor.
+
+
+## Actualización operativa — 2026-11-15
+
+### CAPCOT
+- Investigador 15-nov: run 7d402d84-29dc-832a-9ac0-e6c31b01f6a0 IN_PROGRESS, sin completed_at ni latest_result al corte. No existe storyboard del 15-nov.
+- Slot 07:00 cubierto con evergreen del colibrí (YouTube es6hWxPdt2A); TT/FB pendientes en el registro de slots. 13:30 agua-imanes y 19:00 autismo-microbioma aparecen en el estado de slots del día.
+- Storyboard 14-nov microplásticos: narrative_qa PASS/88, siete checks true; preflight estructural estático PASS, no seleccionado ni promovido. Sin cola/estado/<project_id>.json: RECEPCION_GROK_NO_CONFIRMADA.
+- cola/entrada mantiene tres carpetas heredadas anidadas (7, 9 y 11-nov), sin JSON plano del 14/15-nov. No se movieron para no duplicar al auditor de las 15:00.
+
+### Motor U6
+- Autoridad vigente: alterno/cameo-pesos; main SOLO_CONSULTA.
+- Commits bf55a3f y 135f3e8 incorporan traductor v2.8 y tres corridas con recibos COMPLETED (LIMBO_6C, MOZART_NINO_7C, CAL_F001_02_TESLA_7C). Engine V5 y catálogo 244 reportados con hashes canónicos coincidentes.
+- No elevar a calibración: gate_z90 RECHAZADO_DIAGNOSTICO en LIMBO y TESLA; etapa gate_z90 ausente en MOZART; cortes sin evidencia; 21 divergencias de manifiesto; dos campos de consulta_dirigida ausentes; Monte Carlo vacío en los interpretables aunque el recibo registra diagnósticos ejecutados. La afirmación “candado PASA 53/53” no tiene artefacto de salida visible en el commit.
+- U6 permanece NO_CALIBRADO. No se ejecutaron pruebas ni se modificó código en esta sesión.
+
+### Automatizaciones y migración
+- Investigador CAPCOT y operador general del 15-nov IN_PROGRESS al corte, sin completed_at. Auditor CAPCOT siguiente: 15:00 CDMX.
+- Handoff original 2026-11-03 sigue sin acuse completo de segunda sesión/modelo; migración INCOMPLETA.
+- Evidencia: [reporte operativo 2026-11-15](reportes/2026-11-15_OPERACION_AUTONOMA.md).
