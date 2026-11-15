@@ -296,7 +296,7 @@ CAPCOT Lestes sponsa: ficha oficial de Nature consultada; confirma publicación 
 - Quásares: commit CAPCOT `54c8ade46f00b7c5596e6798534ed4added30321` revisa escena 2 y el puente 2→3; conteo 184 palabras. QA independiente previo sigue FAIL/82 y requiere nueva lectura en frío. No promover ni redispatchar.
 - Lestes: comprobación equivalente en JS de reglas estructurales del validador, con catálogo de estilos actual, dio 0 errores; esto no es ejecución del script Python. DOI continúa PENDIENTE_RESOLVEDOR y `--check-doi` no ejecutado. QA independiente PASS/90. No promover hasta superar los controles reales.
 - No hay acción GitHub conectada para dispatch manual ni runtime disponible para ejecutar el validador del repo en esta sesión. No se alteraron workflows, cola ni estado Grok.
-- Migración INCOMPLETA hasta acuse verificable de un destinatario independiente en `bandeja/2026-11-03_RECUPERACION_MIGRACION.md`. U6 sin cambios.
+- Migración INCOMPLETA hasta acuse verificable de un destinatario independiente en `bandeja/2026-11-03_RECUPERACION_MIGRACION.md`. Mozart U6: resuelto y fusionado en PR #14 (22/22; merge `f478d03`). Esta sesión no reejecutó ni re-auditó ese caso.
 
 ## Corrección de continuidad — Motor U6 Mozart, 2026-11-15
 
