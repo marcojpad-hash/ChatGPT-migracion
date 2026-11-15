@@ -202,3 +202,17 @@ Registro de evidencia: [reporte operativo 2026-11-14](https://github.com/marcojp
 
 - [x] Reconsultado el estado terminal: investigador CAPCOT del 14-nov `0eef543a-9448-8324-a68e-a53655e07a92` sigue IN_PROGRESS sin completed_at; operador `31576c4e-c538-8328-b7ea-4220296c6695` también sigue IN_PROGRESS.
 - [ ] No atribuir entregables a ninguno hasta que haya estado terminal y archivos verificados.
+
+
+## Actualización verificada — 2026-11-15
+
+- [x] Reconsultadas instalaciones y repositorios: marcojpad-hash = 1 instalación/11 repositorios; marcosabines-hash = 0/0. Ocho repositorios adicionales re-clasificados DESCUBIERTO_ADICIONAL; solo lectura de metadatos/documentación.
+- [x] Verificado que GitHub y Automations están expuestos en esta sesión; no se encontró herramienta ejecutable de codebase-memory-mcp, DeepSeek Harness, n8n ni Dot nativo.
+- [x] Leídos el protocolo/índice/hechos de memoria compartida y los contratos de U6 exigidos por AGENTS. No se escribió en memoria-compartida por estar fuera del alcance autorizado.
+- [x] Reconfirmada autoridad U6: alterno/cameo-pesos activa; main SOLO_CONSULTA.
+- [ ] U6: tres recibos nuevos COMPLETED no equivalen a calibración. Gate Z90 rechazado en dos casos y ausente en uno; cortes sin evidencia; manifiesto DRIFT_WARNED con 21 divergencias; consulta_dirigida NO_CONFIGURADO y dos campos ausentes; Monte Carlo no persistido. U6 sigue NO_CALIBRADO.
+- [ ] U6: verificar salida real del candado de entrega 53/53 y agregar avance por los commits del traductor/lote; no se ejecutó candado ni se modificó U6 en esta sesión.
+- [ ] CAPCOT: investigador del 15-nov sigue IN_PROGRESS; no hay storyboard del día. Auditor de las 15:00 pendiente. El borrador 14-nov PASS/88 no fue seleccionado/promovido; falta estado individual Grok.
+- [ ] Migración: handoff original 2026-11-03 sigue sin acuse completo de segunda sesión/modelo que cubra CAPCOT y conectores. Migración INCOMPLETA.
+
+Registro: [reporte operativo 2026-11-15](../reportes/2026-11-15_OPERACION_AUTONOMA.md).
