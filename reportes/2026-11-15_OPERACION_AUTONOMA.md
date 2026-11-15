@@ -225,7 +225,7 @@ El handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue pendiente. Las c
 - El conector GitHub disponible permite leer y escribir archivos y consultar ejecuciones, pero no expone una acción para despachar un workflow manual ni un runtime para ejecutar el script del repositorio. No se modificaron workflows ni se dispararon Actions.
 - `capcot-grok-dispatch.yml` solo se activa por JSON plano nuevo/modificado bajo `cola/entrada/*.json` o `workflow_dispatch`; los dos proyectos revisados están bajo `proyectos/`. No se movieron ni duplicaron a cola y no se creó ningún estado Grok. Recepción Grok sigue NO_CONFIRMADA.
 - La migración sigue INCOMPLETA: el handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` requiere un acuse de un destinatario independiente. No se rellenó como si esta misma sesión fuera otro modelo.
-- Motor U6 permanece sin cambios; no se ejecutaron motor, tests ni candados.
+- Mozart en Motor U6: resuelto y fusionado en PR #14 (22/22; merge `f478d03`, 14-nov-2026 19:48 CST). Esta sesión no reejecutó ni re-auditó ese caso.
 
 ## Corrección de estado Motor U6 — Mozart, 2026-11-15
 
