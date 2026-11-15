@@ -72,7 +72,7 @@ Rama revisada: feature/capcot-video-discovery-continuity. Contratos de QA narrat
 - narrative_qa PASS/88, siete checks true y critical_flags vacío.
 - El informe [CONTROL_COLA_2026-11-14.md](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-14_CONTROL_COLA.md) registra preflight estructural estático PASS y DOI contrastado en la página oficial de Nature.
 - Sigue como propuesta no seleccionada. No se promovió a cola.
-- El radar del mismo día conserva una cifra anterior de 194 palabras y DOI pendiente; el control de cola posterior registra 193 palabras y verificación en la página editorial. Se toma el control posterior como el registro más reciente, sin afirmar que se ejecutó Crossref.
+- El radar de las 08:01 registra 194 palabras, DOI PENDING_RESOLVEDOR y QA pendiente. El control posterior y el storyboard releído corrigen el conteo a 193 y registran QA PASS/88. El DOI mantiene una contradicción interna: el campo verification_status dice VERIFICADO_RESOLVEDOR y el control afirma verificación en Nature, pero verification_note dice que doi.org y Crossref no completaron la resolución y que el DOI sigue pendiente. Se clasifica como PENDING_RESOLVEDOR hasta reconciliar esos campos; consultar la página editorial no equivale a resolución independiente.
 - Persiste una discrepancia entre política de voz por tema y validador.
 
 ### Cola y recepción
