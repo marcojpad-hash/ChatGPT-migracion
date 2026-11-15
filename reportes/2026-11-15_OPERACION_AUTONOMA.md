@@ -154,3 +154,40 @@ No se modificaron CAPCOT, U6 ni los repositorios adicionales.
 - docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md: [569d959](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/569d959b65251cce19e93ff118a84b57fb06947b); blob releído 05c8e863a919b2e3bf4ba5b52a27af3bfd7a0c2e.
 
 - docs/CHECKLIST_MIGRACION_FIN_DE_PROMOCION.md: [43f912a](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/43f912a471cef9e43fa06fbd0d6fbd158f5aff97), que incorpora la actualización del mapa; blob actual verificado f528c761717d1476bc5133e32ed1f350d9a2c921.
+
+
+## Addendum de verificación posterior — 2026-11-15, 16:08 CDMX
+
+Este addendum corrige el corte temporal de las secciones 3, 4 y 8; no borra el estado que era correcto a las 08:04.
+
+### Automatizaciones: estado terminal consultado de nuevo
+- Investigador CAPCOT: run `7d402d84-29dc-832a-9ac0-e6c31b01f6a0`, **COMPLETED**, iniciado 09:29:49 y terminado 09:39:22 CDMX. `latest_result=null`; por ello no se atribuye el contenido de archivos a ese run solo por coincidencia temporal. El inventario independiente del auditor confirma dos storyboards del 15-nov y el radar correspondiente.
+- Auditor CAPCOT: run `661e1488-b0e4-8332-b718-5ec32bcb9a96`, **COMPLETED**, 15:51:22–16:06:01 CDMX. Resultado terminal disponible y enlazado abajo.
+- Operador general: run `391a3c5a-5b20-832e-9a87-93c03b0cf159`, **COMPLETED**, 08:04:44–08:15:29 CDMX. Su resultado es este reporte y los cambios listados en §9.
+- Los tres próximos horarios siguen habilitados: investigador 16-nov 08:00, operador 16-nov 08:00 y auditor 16-nov 15:00 CDMX.
+
+### CAPCOT — entregables reales del 15-nov
+El radar y los dos borradores están en la rama `feature/capcot-video-discovery-continuity`:
+- [Radar 15-nov](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-15_RADAR_CAPCOT.md), blob `ad602a99453071ec3d7302d6e355a6a25dd7308c`.
+- [Diapausa de Lestes sponsa](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/proyectos/2026-11-15_dato-dia-diapausa-lestes-sponsa/storyboard.json), 8 escenas, 183 palabras, 84 s; QA independiente **PASS/90**, siete checks true y flags vacíos.
+- [Pareja de cuásares](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/proyectos/2026-11-15_dato-quasar-pareja-cosmic-dawn/storyboard.json), 8 escenas, 180 palabras, 84 s; QA independiente **FAIL/82** por repetición de Gemini North en escena 2 y transición 2→3 sin puente causal.
+- [Control de cola y auditoría 15-nov](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-15_CONTROL_COLA.md), corte 15:51 CDMX; commit de precisión estructural [8f89f503](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/commit/8f89f503ed42c3ff3ca1476a9c150654d4718b45).
+
+**Estado de entrega:** los dos storyboards siguen en `proyectos/`; no están en `cola/entrada/`. Ambos son `NOT_DISPATCHABLE` por el workflow actual y para ambos falta `cola/estado/<project_id>.json`: **RECEPCION_GROK_NO_CONFIRMADA**. Lestes no puede promoverse todavía: DOI `10.1038/s41598-026-80392-6` pendiente de resolución independiente y validador estructural ejecutable no corrido por falta de runtime. Su QA narrativo PASS no sustituye esos gates. Quasar permanece fuera por FAIL narrativo.
+
+El auditor también revisó el lote 5–7-nov: 2 PASS narrativos, 10 FAIL y **0/12 estructuralmente aptos**; 510 campos narrativos obligatorios faltantes en 85 escenas y 75 arrays SFX vacíos sin declaración de silencio. Cinco proyectos tienen procesamiento/publicación preexistente y quedan protegidos como `NO REDISPATCH`. El estado diario incluye un slot 19:00 que contradice la política vigente que lo declara retirado; el registro de cupo puede subcontar slots por no leer ese estado diario.
+
+### Límites y correcciones de atribución
+- La afirmación del corte inicial «investigador sigue IN_PROGRESS» ya no describe el estado actual; era cierta al corte de las 08:04 y fue superada por el run terminal.
+- No se ejecutó el validador Python ni el helper DOI, no se promovió ningún storyboard, no se disparó Actions, no se creó ni modificó estado Grok, no se publicaron medios ni se gastaron créditos.
+- El archivo del storyboard Lestes conserva en `validation_notes` una frase antigua que dice que no se añade `narrative_qa`, aunque el auditor ya lo añadió. Es metadato obsoleto; se registra aquí, sin editar el storyboard ni alterar el QA del auditor.
+- El campo `estado=PENDIENTE_AUDITOR` del mismo storyboard también es anterior a la revisión. No equivale a recepción Grok ni a autorización de promoción.
+
+### Pendientes que siguen abiertos
+1. Lestes: resolver DOI por doi.org/Crossref y ejecutar validador estructural en runtime autorizado; después requiere decisión editorial independiente. No promover antes.
+2. Quasar: corregir narración en nueva revisión del redactor y someterla a otra lectura en frío independiente; no basta cambiar etiquetas.
+3. Resolver el contrato de cupo/rotación: slots 19:00 retirado, estado diario ignorado por `registro_editorial.py`, y selección de cola que permite fechas históricas por `--fecha`.
+4. Mantener cinco proyectos con procesamiento previo en NO REDISPATCH; no tocar publicaciones ni programaciones.
+5. U6 permanece NO_CALIBRADO; el addendum no ejecutó motor/tests ni cambió su evidencia.
+6. Migración permanece INCOMPLETA por falta del acuse completo de segunda sesión/modelo en `bandeja/2026-11-03_RECUPERACION_MIGRACION.md`.
+
