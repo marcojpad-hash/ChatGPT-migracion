@@ -138,3 +138,15 @@ El estado U6 sigue **NO_CALIBRADO**. Las tres corridas son ejecuciones con recib
 5. Verificar el resultado real del candado de entrega y agregar la bitácora de avances correspondiente en la rama activa, mediante el agente autorizado para modificar U6.
 6. Obtener el acuse completo de segunda sesión/modelo en el handoff original y comprobar CAPCOT/conectores. La migración permanece INCOMPLETA.
 
+
+
+## 9. Commits y verificación de continuidad
+
+Cambios en ChatGPT-migracion/main, todos releídos desde GitHub:
+- Reporte: creado en [4deb780](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/4deb780553dcf1282675f0bd7e661fec982b561f), precisión DOI en [89a3b46](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/89a3b46407ba68e9b1eb39e825259b29793f2809) y conteo de candado en [527c7a0](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/527c7a081564af7cd281762b1ff386a16711b359).
+- CONTINUIDAD_CHATGPT.md: [2fdee84](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/2fdee8488d36d1a02faf55b10a405ad6e06e0469); blob releído 9dec5be147d756cf932cab8a682d797beb4d97ff.
+- PROYECTOS_Y_ESTADO.md: [be86af3](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/be86af3f4ed19b73df09b6e9672880cfe5f5242b); blob releído 3bb5a0aa7d64373bad394499bc99de688cf17caa.
+- BOT_DOT_AUTONOMIA.md: [da7af71](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/da7af71ffb54a2a42d5281987a9772f35d234d87); blob releído 175d6e96505e868d703b1a7327f3142ba5f06b83.
+- docs/CHECKLIST_MIGRACION_FIN_DE_PROMOCION.md: [7dd4ec7](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/7dd4ec7392e2f2adab31f82b07485c80fcb02b2f); blob releído b0fe2d369ddb60ce182e1954fc9578dd211c1887.
+
+No se modificaron CAPCOT, U6 ni los repositorios adicionales.
