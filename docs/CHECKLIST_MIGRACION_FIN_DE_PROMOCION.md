@@ -216,3 +216,7 @@ Registro de evidencia: [reporte operativo 2026-11-14](https://github.com/marcojp
 - [ ] Migración: handoff original 2026-11-03 sigue sin acuse completo de segunda sesión/modelo que cubra CAPCOT y conectores. Migración INCOMPLETA.
 
 Registro: [reporte operativo 2026-11-15](../reportes/2026-11-15_OPERACION_AUTONOMA.md).
+
+
+### Precisión CAPCOT — 2026-11-15
+- [ ] Reconciliar el DOI del storyboard 2026-11-14: verification_status=VERIFICADO_RESOLVEDOR contradice verification_note (doi.org/Crossref sin resolución, DOI pendiente) y el radar PENDING_RESOLVEDOR. No darlo por validado solo por consultar la página editorial.
