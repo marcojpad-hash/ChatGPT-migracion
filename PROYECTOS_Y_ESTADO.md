@@ -505,7 +505,7 @@ U6 sin nuevas acciones: sigue NO_CALIBRADO, sin ejecución de motor/tests en est
 
 ### Migración y U6
 - Migración INCOMPLETA por falta de acuse independiente completo en el handoff del 3-nov.
-- Motor U6 sin cambios y sin ejecución de pruebas/motor/candados en esta operación.
+- Mozart U6: resuelto y fusionado en PR #14 (22/22; merge `f478d03`). Esta sesión no reejecutó ni re-auditó ese caso.
 
 ## Corrección de estado — Motor U6 / Mozart, 2026-11-15
 
