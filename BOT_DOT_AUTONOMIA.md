@@ -163,3 +163,16 @@ Registro: [reporte operativo 2026-11-14](https://github.com/marcojpad-hash/ChatG
 - Auditor CAPCOT: `762d97aa-9fb4-8326-b3d4-ee8baee83820`, COMPLETED 13-nov 15:59:05 CDMX; siguiente 15:00 del 14-nov.
 - Operador general: `31576c4e-c538-8328-b7ea-4220296c6695`, IN_PROGRESS, sin completed_at.
 - No atribuir resultados a runs abiertos ni confundir next_run_time 08:00 con ejecución futura garantizada.
+
+
+## Reconsulta verificada — 2026-11-15
+
+| Automatización | Último run | Estado al corte | Próximo horario |
+|---|---|---|---|
+| Agente de investigación CAPCOT | 7d402d84-29dc-832a-9ac0-e6c31b01f6a0 | IN_PROGRESS; started 07:58:31 CDMX; completed_at=null; latest_result=null | 15-nov 08:00 CDMX |
+| Auditor CAPCOT — cola y rotación | 43166672-5e70-832c-8bee-8f1036cdd98a | COMPLETED 14-nov 15:18:54 CDMX | 15-nov 15:00 CDMX |
+| Operador autónomo general | 391a3c5a-5b20-832e-9a87-93c03b0cf159 | IN_PROGRESS; started 08:04:44 CDMX; completed_at=null al corte | 15-nov 08:00 CDMX |
+
+No atribuir entregables a runs IN_PROGRESS. El último informe del auditor disponible es CONTROL_COLA_2026-11-14.md. Dot nativo no está expuesto como herramienta/conector en esta sesión; las automatizaciones visibles no prueban conexión nativa de Dot.
+
+Reporte: [2026-11-15_OPERACION_AUTONOMA.md](reportes/2026-11-15_OPERACION_AUTONOMA.md).
