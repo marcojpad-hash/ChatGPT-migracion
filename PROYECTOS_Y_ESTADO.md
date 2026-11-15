@@ -469,3 +469,20 @@ Registro detallado: [reporte 2026-11-14](https://github.com/marcojpad-hash/ChatG
 
 ### Corrección de estado DOI — CAPCOT 14-nov (verificado 15-nov)
 El storyboard de microplásticos tiene word_count=193 y narrative_qa PASS/88. Su fuente presenta contradicción: verification_status=VERIFICADO_RESOLVEDOR, pero verification_note afirma que doi.org/Crossref no completaron la resolución y que el DOI sigue pendiente; el radar también registra PENDING_RESOLVEDOR. No clasificar el DOI como resuelto hasta corregir esa contradicción. No se modificó CAPCOT.
+
+
+## Reconciliación terminal — 2026-11-15, 16:08 CDMX
+
+La tabla de automatizaciones del corte de la mañana queda superada:
+- Investigador CAPCOT `7d402d84-29dc-832a-9ac0-e6c31b01f6a0`: COMPLETED 09:39:22 CDMX; latest_result null.
+- Auditor CAPCOT `661e1488-b0e4-8332-b718-5ec32bcb9a96`: COMPLETED 16:06:01 CDMX.
+- Operador general `391a3c5a-5b20-832e-9a87-93c03b0cf159`: COMPLETED 08:15:29 CDMX.
+
+CAPCOT 15-nov:
+- Radar entregado: [RADAR_CAPCOT_2026-11-15](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-15_RADAR_CAPCOT.md).
+- Lestes sponsa: [storyboard](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/proyectos/2026-11-15_dato-dia-diapausa-lestes-sponsa/storyboard.json), QA independiente PASS/90, pero DOI pendiente y validador estructural no ejecutado. No promovido.
+- Pareja de cuásares: [storyboard](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/proyectos/2026-11-15_dato-quasar-pareja-cosmic-dawn/storyboard.json), QA FAIL/82; requiere reescritura y nueva revisión en frío.
+- [Control de cola](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-15_CONTROL_COLA.md): ambos NOT_DISPATCHABLE; Grok receipt ausente para ambos. Lote 5–7: 2 PASS/10 FAIL, 0/12 aptos estructuralmente; cinco proyectos preexistentes protegidos contra redispatch.
+- Conflicto de rotación/cupo: registro 19:00 contradice política que lo retiró; registro_editorial no consume estado diario y puede subcontar ocupación.
+
+U6 sin nuevas acciones: sigue NO_CALIBRADO, sin ejecución de motor/tests en esta reconsulta. Migración sigue INCOMPLETA por falta de acuse completo de segunda sesión/modelo.
