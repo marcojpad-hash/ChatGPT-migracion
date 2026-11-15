@@ -486,3 +486,12 @@ CAPCOT 15-nov:
 - Conflicto de rotación/cupo: registro 19:00 contradice política que lo retiró; registro_editorial no consume estado diario y puede subcontar ocupación.
 
 U6 sin nuevas acciones: sigue NO_CALIBRADO, sin ejecución de motor/tests en esta reconsulta. Migración sigue INCOMPLETA por falta de acuse completo de segunda sesión/modelo.
+
+
+## Entrega adicional — 2026-11-15
+
+- Lestes sponsa: el editor oficial confirma DOI, título, autores y publicación 15-nov-2026. Las notas de fuente y cortinilla se actualizaron; el helper Crossref `--check-doi` no se ejecutó y `verification_status` permanece PENDIENTE_RESOLVEDOR.
+- Revisión manual de campos contra `scripts/validar_storyboard.py`: sin faltantes estáticos detectados en los controles inspeccionados. No se declara ejecución del validador.
+- Metadatos obsoletos corregidos: `estado=PENDIENTE_VALIDACION_ESTRUCTURAL`; nota de QA reemplazada por PASS/90 real. Narración y QA del auditor no se alteraron. No promoción ni handoff Grok.
+- Commits CAPCOT: da1caa8cfb553ac69f97d45dd67b517fa43ef1bb y 2306c0c8d6a06563a205b50fef058b867229d9f3.
+- Migración INCOMPLETA hasta acuse verificable de destinatario independiente en el handoff original.
