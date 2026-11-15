@@ -152,3 +152,5 @@ Cambios en ChatGPT-migracion/main, todos releídos desde GitHub:
 No se modificaron CAPCOT, U6 ni los repositorios adicionales.
 
 - docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md: [569d959](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/569d959b65251cce19e93ff118a84b57fb06947b); blob releído 05c8e863a919b2e3bf4ba5b52a27af3bfd7a0c2e.
+
+- docs/CHECKLIST_MIGRACION_FIN_DE_PROMOCION.md: [43f912a](https://github.com/marcojpad-hash/ChatGPT-migracion/commit/43f912a471cef9e43fa06fbd0d6fbd158f5aff97), que incorpora la actualización del mapa; blob actual verificado f528c761717d1476bc5133e32ed1f350d9a2c921.
