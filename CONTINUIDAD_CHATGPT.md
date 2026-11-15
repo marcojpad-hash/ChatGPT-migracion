@@ -264,3 +264,24 @@ Registro completo: [reporte 2026-11-14](https://github.com/marcojpad-hash/ChatGP
 
 ### Precisión adicional CAPCOT — 2026-11-15
 El storyboard de microplásticos del 14-nov tiene word_count=193 y QA PASS/88. El DOI no queda verificado: verification_status=VERIFICADO_RESOLVEDOR contradice verification_note, que dice que doi.org/Crossref no resolvieron y que el DOI permanece pendiente. El radar también lo deja PENDING_RESOLVEDOR. Mantener el DOI como pendiente hasta reconciliar los campos; el reporte de control no sustituye esa resolución. Ver reporte operativo 15-nov.
+
+
+## Reconciliación terminal — 2026-11-15, 16:08 CDMX
+
+El corte inicial de esta fecha se actualiza con los runs terminales y el control independiente del auditor:
+- Investigador CAPCOT run `7d402d84-29dc-832a-9ac0-e6c31b01f6a0`: COMPLETED 09:39:22 CDMX; `latest_result=null`. No atribuirle los archivos por coincidencia temporal.
+- Auditor CAPCOT run `661e1488-b0e4-8332-b718-5ec32bcb9a96`: COMPLETED 16:06:01 CDMX. [Control de cola 15-nov](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-15_CONTROL_COLA.md).
+- Operador general run `391a3c5a-5b20-832e-9a87-93c03b0cf159`: COMPLETED 08:15:29 CDMX.
+
+### CAPCOT — 15-nov
+- Radar: [2026-11-15_RADAR_CAPCOT.md](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-15_RADAR_CAPCOT.md).
+- Lestes sponsa: 8 escenas/183 palabras/84 s, QA narrativo independiente PASS/90; DOI PENDIENTE_RESOLVEDOR, validador ejecutable no corrido. Permanece en proyectos, no dispatchable y RECEPCION_GROK_NO_CONFIRMADA.
+- Pareja de cuásares: 8 escenas/180 palabras/84 s, QA FAIL/82 por repetición escena 2 y transición causal 2→3. Permanece en proyectos.
+- Ninguno fue promovido a cola ni enviado a Grok. Los 14 estados individuales revisados por el auditor devuelven 404.
+- Lote 5–7-nov: 2 PASS, 10 FAIL, 0/12 aptos estructuralmente; 510 campos narrativos ausentes y 75 SFX vacíos. Cinco proyectos con procesamiento previo quedan NO REDISPATCH.
+- Contradicción operativa: el estado diario registra 19:00, pero `data/horarios.json` lo declara retirado; `registro_editorial.py` no incorpora estado diario/slots previos y puede subcontar cupo.
+- Hay metadatos obsoletos en Lestes (`validation_notes` afirma que no tiene narrative_qa y `estado=PENDIENTE_AUDITOR` pese a QA ya registrado). No se editaron para no alterar el artefacto revisado.
+
+### Motor U6 y migración
+- Sin cambios ni ejecuciones nuevas en U6 durante esta reconsulta. Sigue NO_CALIBRADO; rama activa `alterno/cameo-pesos`, `main` SOLO_CONSULTA.
+- Migración sigue INCOMPLETA: handoff original sin acuse completo verificable de segunda sesión/modelo.
