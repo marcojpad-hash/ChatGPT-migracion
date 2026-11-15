@@ -238,3 +238,19 @@ La nota anterior «Motor U6 permanece sin cambios; no se ejecutaron motor, tests
 - Referencia: https://github.com/marcojpad-hash/motor-u6-storage/pull/14
 - Esta sesión no volvió a ejecutar el motor ni re-auditó Mozart. No se atribuye a esta sesión la ejecución anterior.
 - Único artefacto Mozart señalado como faltante: `motor/REVISION_CHATGPT_MOZART_20261113.md`; su creación está asignada a otro chat y no se duplica aquí.
+
+## Seguimiento de bloqueos y corrección de Mozart — 2026-11-15
+
+### Mozart / U6
+- Mozart queda RESUELTO Y FUSIONADO: PR #14, rama `alterno/reconexion-2a1-correccion-auditoria-mozart`, commit final `a182c73`, 22/22 verificaciones, merge `f478d03` a `alterno/reconexion-2a1` el 14-nov-2026 a las 19:48 CST. Referencia: https://github.com/marcojpad-hash/motor-u6-storage/pull/14.
+- Se corrigieron las tres referencias de continuidad que dejaban Mozart como pendiente/no ejecutado. Esta sesión no repitió la ejecución ni la auditoría. No crear aquí `motor/REVISION_CHATGPT_MOZART_20261113.md`: coordinadora lo asignó a otro chat.
+
+### Pendientes CAPCOT, en el orden solicitado
+1. **Cuásares — auditoría narrativa independiente:** la revisión de esta sesión confirmó que el QA previo sigue FAIL/82 y que los cambios de escena 2 / puente 2→3 están en el storyboard. Una relectura por el mismo agente no satisface independencia. No se falsificó PASS ni se alteró el registro FAIL/82. Sigue PENDIENTE_AUDITOR.
+2. **Lestes — validador Python y DOI:** la comprobación equivalente en JS (0 errores estructurales) es revisión auxiliar, no ejecución. No hay runtime de repositorio ni acción conectada para ejecutar `scripts/validar_storyboard.py --check-doi`; no se tocó el workflow para fabricar una ejecución. Sigue PENDIENTE_VALIDACION_ESTRUCTURAL / PENDIENTE_RESOLVEDOR.
+3. **Grok — recepción individual:** las rutas `cola/estado/<id>.json`, `handoffs/grok_inbox/<id>.json` y `cola/entrada/<id>.json` devolvieron 404 para ambos proyectos. No existe acuse individual verificable. No se creó cola ni se disparó workflow porque los gates previos no están cerrados.
+4. **Migración — acuse de otro modelo:** el handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` fue releído; el acuse del destinatario y la verificación del emisor siguen vacíos/PENDIENTE. No se rellenó suplantando a otro modelo. Migración sigue INCOMPLETA.
+
+### Límites de ejecución
+- El conector GitHub permite leer/escribir archivos, pero no expone dispatch manual de Actions ni ejecución arbitraria de Python del repositorio.
+- No se cambió ningún workflow, no se creó estado Grok y no se alteraron motores canónicos.
