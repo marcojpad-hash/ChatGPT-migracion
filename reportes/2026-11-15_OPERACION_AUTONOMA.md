@@ -206,3 +206,23 @@ Se continuó el trabajo después del control del auditor. No se dejó el resulta
 
 ### Límites de la recuperación entre modelos
 El handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue pendiente. Las conclusiones recuperadas de Claude ya están integradas en continuidad, pero esta sesión no puede fabricar un acuse de un destinatario independiente ni declararse segunda sesión. Migración continúa INCOMPLETA hasta recibir y verificar ese acuse.
+
+## Addendum de ejecución adicional — 2026-11-15, revisión posterior
+
+### CAPCOT — quásares
+- Se releyó el storyboard actual de `proyectos/2026-11-15_dato-quasar-pareja-cosmic-dawn/storyboard.json`; QA independiente registrado sigue siendo FAIL/82.
+- Se reescribió la escena 2 para quitar la repetición de Gemini North y avanzar la dificultad observacional (compañera débil; dos noches de condiciones excepcionalmente limpias en Maunakea). Se reconstruyó el puente 2→3 desde la resolución observacional hacia la época cósmica. Se actualizaron los campos narrativos derivados y el conteo quedó en 184 palabras.
+- Commit CAPCOT: https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/commit/54c8ade46f00b7c5596e6798534ed4added30321.
+- No se cambió el QA FAIL/82 ni sus flags: la nueva versión necesita una nueva lectura en frío por un auditor independiente. Sigue PENDIENTE_AUDITOR; no promover ni redispatchar.
+
+### CAPCOT — Lestes sponsa
+- Se releyó el storyboard vigente (blob `259f16309f8e10883453846f20ebce1a88015725`): 8 escenas, 183 palabras, 78 s de escenas + 6 s de cortinilla = 84 s; QA independiente PASS/90, siete checks true y flags vacíos.
+- Se ejecutó una comprobación equivalente en JavaScript de las reglas estructurales visibles de `scripts/validar_storyboard.py`, con `scripts/estilos.json` actual. Resultado: 0 errores estructurales y una advertencia por `SRC-001` con estado DOI pendiente.
+- Límite explícito: no se ejecutó el script Python real ni su opción `--check-doi`; la comprobación equivalente no sustituye ese control. La ficha oficial de Scientific Reports/Nature confirma el DOI en la página editorial, pero el estado automatizado del repositorio permanece `PENDIENTE_RESOLVEDOR`.
+- Lestes sigue PENDIENTE_VALIDACION_ESTRUCTURAL / no promovido hasta ejecutar el validador real y el control Crossref.
+
+### Bloqueos de cierre que no deben falsificarse
+- El conector GitHub disponible permite leer y escribir archivos y consultar ejecuciones, pero no expone una acción para despachar un workflow manual ni un runtime para ejecutar el script del repositorio. No se modificaron workflows ni se dispararon Actions.
+- `capcot-grok-dispatch.yml` solo se activa por JSON plano nuevo/modificado bajo `cola/entrada/*.json` o `workflow_dispatch`; los dos proyectos revisados están bajo `proyectos/`. No se movieron ni duplicaron a cola y no se creó ningún estado Grok. Recepción Grok sigue NO_CONFIRMADA.
+- La migración sigue INCOMPLETA: el handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` requiere un acuse de un destinatario independiente. No se rellenó como si esta misma sesión fuera otro modelo.
+- Motor U6 permanece sin cambios; no se ejecutaron motor, tests ni candados.
