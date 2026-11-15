@@ -226,3 +226,15 @@ El handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue pendiente. Las c
 - `capcot-grok-dispatch.yml` solo se activa por JSON plano nuevo/modificado bajo `cola/entrada/*.json` o `workflow_dispatch`; los dos proyectos revisados están bajo `proyectos/`. No se movieron ni duplicaron a cola y no se creó ningún estado Grok. Recepción Grok sigue NO_CONFIRMADA.
 - La migración sigue INCOMPLETA: el handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` requiere un acuse de un destinatario independiente. No se rellenó como si esta misma sesión fuera otro modelo.
 - Motor U6 permanece sin cambios; no se ejecutaron motor, tests ni candados.
+
+## Corrección de estado Motor U6 — Mozart, 2026-11-15
+
+La nota anterior «Motor U6 permanece sin cambios; no se ejecutaron motor, tests ni candados» queda corregida para el caso Mozart. La coordinadora informa que el trabajo fue completado en otro chat y fusionado:
+- PR #14: «Corrección auditoría ChatGPT sobre Mozart: 5 hallazgos + re-corrida 2026-11-14».
+- Rama: `alterno/reconexion-2a1-correccion-auditoria-mozart`.
+- Commit final de la rama: `a182c73`.
+- Resultado reportado: 22/22 verificaciones.
+- Merge a `alterno/reconexion-2a1`: `f478d03`, 14-nov-2026 19:48 CST.
+- Referencia: https://github.com/marcojpad-hash/motor-u6-storage/pull/14
+- Esta sesión no volvió a ejecutar el motor ni re-auditó Mozart. No se atribuye a esta sesión la ejecución anterior.
+- Único artefacto Mozart señalado como faltante: `motor/REVISION_CHATGPT_MOZART_20261113.md`; su creación está asignada a otro chat y no se duplica aquí.
