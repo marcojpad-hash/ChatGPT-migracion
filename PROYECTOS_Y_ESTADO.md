@@ -495,3 +495,14 @@ U6 sin nuevas acciones: sigue NO_CALIBRADO, sin ejecución de motor/tests en est
 - Metadatos obsoletos corregidos: `estado=PENDIENTE_VALIDACION_ESTRUCTURAL`; nota de QA reemplazada por PASS/90 real. Narración y QA del auditor no se alteraron. No promoción ni handoff Grok.
 - Commits CAPCOT: da1caa8cfb553ac69f97d45dd67b517fa43ef1bb y 2306c0c8d6a06563a205b50fef058b867229d9f3.
 - Migración INCOMPLETA hasta acuse verificable de destinatario independiente en el handoff original.
+
+## Actualización de estado — 2026-11-15, ejecución posterior
+
+### CAPCOT
+- Lestes sponsa: QA independiente PASS/90. Revisión equivalente de reglas estructurales en JS: 0 errores, una advertencia DOI pendiente. El validador Python real y `--check-doi` no se ejecutaron; estado no promovible hasta cerrar ambos controles.
+- Pareja de cuásares: storyboard actualizado en commit `54c8ade46f00b7c5596e6798534ed4added30321`; escena 2 y transición 2→3 reescritas, 184 palabras. QA histórico FAIL/82 conservado; requiere nueva auditoría independiente.
+- Ninguno de los dos proyectos se movió a `cola/entrada/`; no se creó estado Grok ni se declaró recepción.
+
+### Migración y U6
+- Migración INCOMPLETA por falta de acuse independiente completo en el handoff del 3-nov.
+- Motor U6 sin cambios y sin ejecución de pruebas/motor/candados en esta operación.
