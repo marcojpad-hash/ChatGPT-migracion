@@ -250,3 +250,13 @@ Registro completo: [reporte 2026-11-14](https://github.com/marcojpad-hash/ChatGP
 - Operador general: run `31576c4e-c538-8328-b7ea-4220296c6695`, IN_PROGRESS, sin completed_at.
 - Auditor: último COMPLETED 13-nov 15:59:05 CDMX; próximo 14-nov 15:00.
 - El último resultado completo del investigador sigue siendo 13-nov. No atribuir entregable al run abierto.
+
+
+## Operación verificada — 2026-11-15
+
+- Reporte: [2026-11-15_OPERACION_AUTONOMA.md](reportes/2026-11-15_OPERACION_AUTONOMA.md).
+- Reconsultadas las cuentas GitHub: marcojpad-hash = 1 instalación y 11 repositorios; marcosabines-hash = 0 instalaciones y 0 repositorios. Los ocho adicionales permanecen DESCUBIERTO_ADICIONAL y solo recibieron lectura de metadatos/documentación.
+- CAPCOT: investigador del 15-nov sigue IN_PROGRESS; no hay storyboard del día. El 14-nov microplásticos conserva PASS/88 y preflight estructural estático PASS, pero no fue seleccionado ni promovido. cola/estado no existe: RECEPCION_GROK_NO_CONFIRMADA. El slot 07:00 del 15-nov quedó cubierto con el evergreen del colibrí; no duplicar.
+- U6: commits bf55a3f y 135f3e8 en alterno/cameo-pesos dejan tres recibos COMPLETED. El lote no es evidencia limpia de calibración: Z90 rechazado en dos recibos, etapa ausente en el tercero, 21 divergencias de manifiesto, campos de consulta_dirigida ausentes y Monte Carlo no persistido. U6 sigue NO_CALIBRADO.
+- Automatizaciones: investigador y operador del 15-nov siguen IN_PROGRESS al corte; auditor siguiente 15:00 CDMX. No se atribuye entrega a runs abiertos.
+- Migración sigue INCOMPLETA: handoff original sin acuse completo de segunda sesión/modelo. Dot nativo y codebase-memory-mcp no están expuestos como conectores ejecutables en esta sesión.
