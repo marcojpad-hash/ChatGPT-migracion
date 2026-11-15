@@ -301,3 +301,11 @@ CAPCOT Lestes sponsa: ficha oficial de Nature consultada; confirma publicación 
 ## Corrección de continuidad — Motor U6 Mozart, 2026-11-15
 
 Mozart ya no está pendiente de ejecución ni auditoría. La coordinadora informa que PR #14 fue fusionado el 14-nov-2026 a las 19:48 CST en `alterno/reconexion-2a1`, merge commit `f478d03`; rama de corrección `alterno/reconexion-2a1-correccion-auditoria-mozart`, commit final `a182c73`; 22/22 verificaciones. Referencia: https://github.com/marcojpad-hash/motor-u6-storage/pull/14. Esta sesión no reejecutó el motor ni re-auditó Mozart. No duplicar la creación de `motor/REVISION_CHATGPT_MOZART_20261113.md`, asignada a otro chat.
+
+## Seguimiento de bloqueos — 2026-11-15
+
+- Mozart/U6: RESUELTO Y FUSIONADO por PR #14 (22/22; rama `alterno/reconexion-2a1-correccion-auditoria-mozart`, commit final `a182c73`, merge `f478d03` a `alterno/reconexion-2a1`, 14-nov 19:48 CST). No repetir ejecución ni auditoría. El archivo `motor/REVISION_CHATGPT_MOZART_20261113.md` está asignado a otro chat.
+- Cuásares: storyboard actualizado; QA independiente previo FAIL/82 permanece. La relectura de este mismo agente no cuenta como auditoría independiente; no hay PASS nuevo.
+- Lestes: comprobación JS equivalente 0 errores, pero no se ejecutó el Python real ni `--check-doi`; falta runtime.
+- Grok: 404 en cola/estado, handoffs/grok_inbox y cola/entrada para ambos IDs; no hay recepción individual. No se disparó workflow porque no se alcanzaron los gates previos.
+- Migración: handoff del 3-nov releído; acuse y verificación del emisor siguen pendientes. No suplantar destinatario.
