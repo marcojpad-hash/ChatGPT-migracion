@@ -260,3 +260,7 @@ Registro completo: [reporte 2026-11-14](https://github.com/marcojpad-hash/ChatGP
 - U6: commits bf55a3f y 135f3e8 en alterno/cameo-pesos dejan tres recibos COMPLETED. El lote no es evidencia limpia de calibración: Z90 rechazado en dos recibos, etapa ausente en el tercero, 21 divergencias de manifiesto, campos de consulta_dirigida ausentes y Monte Carlo no persistido. U6 sigue NO_CALIBRADO.
 - Automatizaciones: investigador y operador del 15-nov siguen IN_PROGRESS al corte; auditor siguiente 15:00 CDMX. No se atribuye entrega a runs abiertos.
 - Migración sigue INCOMPLETA: handoff original sin acuse completo de segunda sesión/modelo. Dot nativo y codebase-memory-mcp no están expuestos como conectores ejecutables en esta sesión.
+
+
+### Precisión adicional CAPCOT — 2026-11-15
+El storyboard de microplásticos del 14-nov tiene word_count=193 y QA PASS/88. El DOI no queda verificado: verification_status=VERIFICADO_RESOLVEDOR contradice verification_note, que dice que doi.org/Crossref no resolvieron y que el DOI permanece pendiente. El radar también lo deja PENDING_RESOLVEDOR. Mantener el DOI como pendiente hasta reconciliar los campos; el reporte de control no sustituye esa resolución. Ver reporte operativo 15-nov.
