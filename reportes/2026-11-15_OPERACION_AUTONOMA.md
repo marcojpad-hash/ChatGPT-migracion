@@ -191,3 +191,18 @@ El auditor también revisó el lote 5–7-nov: 2 PASS narrativos, 10 FAIL y **0/
 5. U6 permanece NO_CALIBRADO; el addendum no ejecutó motor/tests ni cambió su evidencia.
 6. Migración permanece INCOMPLETA por falta del acuse completo de segunda sesión/modelo en `bandeja/2026-11-03_RECUPERACION_MIGRACION.md`.
 
+
+
+## Entrega material adicional — CAPCOT Lestes sponsa, 15-nov-2026
+
+Se continuó el trabajo después del control del auditor. No se dejó el resultado solo como recomendación conversacional.
+
+- La ficha oficial de Scientific Reports/Nature fue consultada directamente: confirma título, autores Ulf Norling y Szymon Sniegula, publicación 15-nov-2026, volumen 16, artículo 37989 y DOI `10.1038/s41598-026-80392-6`. Fuente: https://www.nature.com/articles/s41598-026-80392-6.
+- Se actualizó `sources[0].verification_note`, la nota de `trend_source`, la nota de riesgo y la cortinilla para reflejar lo que confirma el editor. No se falseó el control Crossref: `verification_status` permanece `PENDIENTE_RESOLVEDOR` porque no se ejecutó el helper `--check-doi` del repositorio.
+- Se realizó una comprobación manual, campo por campo, contra las reglas actuales de `scripts/validar_storyboard.py`: campos raíz, contrato y QA narrativos, idioma, relación de aspecto, duración, voz, catálogo y prompt de estilo, fuentes, ocho escenas, campos narrativos, arcos, source_ids, mapa, capa de dato, conteo de palabras, cortinilla, cierre hablado, ausencia de assets y estado de publicación. Los controles estáticos inspeccionados coinciden. **Esto no se declara como ejecución del script** ni sustituye `--check-doi`.
+- Se corrigieron dos metadatos obsoletos del storyboard: `estado=PENDIENTE_AUDITOR` pasó a `PENDIENTE_VALIDACION_ESTRUCTURAL`; la nota que decía que no existía `narrative_qa` se reemplazó por el QA real del auditor PASS/90. No se alteró la narración ni el objeto `narrative_qa`.
+- Commits CAPCOT verificados mediante relectura: `da1caa8cfb553ac69f97d45dd67b517fa43ef1bb` (verificación editorial DOI) y `2306c0c8d6a06563a205b50fef058b867229d9f3` (reconciliación de metadatos).
+- Resultado: Lestes queda más completo, con QA narrativo PASS/90 y control estático manual revisado, pero **no se promueve ni se despacha**: falta ejecutar el validador real y su comprobación Crossref. Grok no tiene recibo individual.
+
+### Límites de la recuperación entre modelos
+El handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue pendiente. Las conclusiones recuperadas de Claude ya están integradas en continuidad, pero esta sesión no puede fabricar un acuse de un destinatario independiente ni declararse segunda sesión. Migración continúa INCOMPLETA hasta recibir y verificar ese acuse.
