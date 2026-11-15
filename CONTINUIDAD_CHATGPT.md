@@ -297,3 +297,7 @@ CAPCOT Lestes sponsa: ficha oficial de Nature consultada; confirma publicación 
 - Lestes: comprobación equivalente en JS de reglas estructurales del validador, con catálogo de estilos actual, dio 0 errores; esto no es ejecución del script Python. DOI continúa PENDIENTE_RESOLVEDOR y `--check-doi` no ejecutado. QA independiente PASS/90. No promover hasta superar los controles reales.
 - No hay acción GitHub conectada para dispatch manual ni runtime disponible para ejecutar el validador del repo en esta sesión. No se alteraron workflows, cola ni estado Grok.
 - Migración INCOMPLETA hasta acuse verificable de un destinatario independiente en `bandeja/2026-11-03_RECUPERACION_MIGRACION.md`. U6 sin cambios.
+
+## Corrección de continuidad — Motor U6 Mozart, 2026-11-15
+
+Mozart ya no está pendiente de ejecución ni auditoría. La coordinadora informa que PR #14 fue fusionado el 14-nov-2026 a las 19:48 CST en `alterno/reconexion-2a1`, merge commit `f478d03`; rama de corrección `alterno/reconexion-2a1-correccion-auditoria-mozart`, commit final `a182c73`; 22/22 verificaciones. Referencia: https://github.com/marcojpad-hash/motor-u6-storage/pull/14. Esta sesión no reejecutó el motor ni re-auditó Mozart. No duplicar la creación de `motor/REVISION_CHATGPT_MOZART_20261113.md`, asignada a otro chat.
