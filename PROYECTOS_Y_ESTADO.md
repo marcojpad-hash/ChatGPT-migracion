@@ -465,3 +465,7 @@ Registro detallado: [reporte 2026-11-14](https://github.com/marcojpad-hash/ChatG
 - Investigador CAPCOT y operador general del 15-nov IN_PROGRESS al corte, sin completed_at. Auditor CAPCOT siguiente: 15:00 CDMX.
 - Handoff original 2026-11-03 sigue sin acuse completo de segunda sesión/modelo; migración INCOMPLETA.
 - Evidencia: [reporte operativo 2026-11-15](reportes/2026-11-15_OPERACION_AUTONOMA.md).
+
+
+### Corrección de estado DOI — CAPCOT 14-nov (verificado 15-nov)
+El storyboard de microplásticos tiene word_count=193 y narrative_qa PASS/88. Su fuente presenta contradicción: verification_status=VERIFICADO_RESOLVEDOR, pero verification_note afirma que doi.org/Crossref no completaron la resolución y que el DOI sigue pendiente; el radar también registra PENDING_RESOLVEDOR. No clasificar el DOI como resuelto hasta corregir esa contradicción. No se modificó CAPCOT.
