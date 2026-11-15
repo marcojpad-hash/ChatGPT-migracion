@@ -1,5 +1,5 @@
 # Mapa operativo de herramientas — Motor U6 y CAPCOT
-Fecha de comprobación: 2026-11-08
+Fecha de última reconsulta: 2026-11-15 (las secciones históricas conservan su fecha de corte).
 
 Este mapa no es un catálogo general. Define qué herramientas sirven a los dos proyectos principales, qué se comprobó y qué límites deben respetarse.
 
@@ -257,3 +257,28 @@ La comparación actual `main...feature/capcot-video-discovery-continuity` devuel
 - `codebase-memory-mcp`: configuración local en U6/alterno, ruta absoluta de máquina e índice documentado desde main del 7-nov; no hay proceso vivo ni conector MCP disponible verificado.
 - CAPCOT/feature sigue sin configuración codebase-memory. DeepSeek Harness está documentado en el repo adicional `agente-cero-costo`, pero no está integrado de forma ejecutable en las dos ramas activas.
 - Dot no está conectado; no se confunde una automatización con Dot.
+
+
+## Reconsulta de conectividad — 2026-11-15
+
+### GitHub y automatizaciones
+- GitHub conectado a marcojpad-hash: una instalación de usuario, selección all, 11 repositorios visibles. Lectura y escritura por Contents API se verificaron en ChatGPT-migracion/main.
+- GitHub conectado a marcosabines-hash: cero instalaciones y cero repositorios visibles; la llamada no devolvió error.
+- Los ocho repositorios adicionales se reconfirmaron como DESCUBIERTO_ADICIONAL. Se revisaron metadatos/README; además, contrato y capacidades de orquestador-central, y protocolo/índice/política de memoria-compartida. Sin escrituras ni despliegues.
+- Automations está expuesto: investigador CAPCOT y operador general del 15-nov IN_PROGRESS al corte; auditor último COMPLETED 14-nov, siguiente 15-nov 15:00 CDMX. No atribuir entregables a runs abiertos.
+- La disponibilidad de Automations no demuestra conexión nativa de Dot. No hay herramienta/conector Dot expuesto en esta sesión.
+
+### MCP, DSH y n8n — comprobación de esta sesión
+- U6/alterno/cameo-pesos: .mcp.json existe, pero apunta al binario local /home/hatch/workspace/codebase-memory-mcp/bin/codebase-memory-mcp. La documentación describe versión 0.12.1 e índice de main del 7-nov; no se verificó proceso vivo ni reindexación de alterno. No se expone una herramienta codebase-memory en esta sesión.
+- CAPCOT/feature: .mcp.json, docs/CODEBASE_MEMORY_MCP.md y docs/DSH_CERO_COSTO.md devuelven 404. La configuración documentada en main no está en la rama activa.
+- DeepSeek Harness: no existe herramienta DSH en esta sesión. El repo adicional agente-cero-costo documenta DSH/Groq, pero eso no acredita integración ejecutable en U6/alterno o CAPCOT/feature.
+- n8n: no hay herramienta ni conector directo expuesto; JSON importable/skill no equivalen a acceso a una instancia.
+- Grok CAPCOT: no hay conector de recepción expuesto. El contrato exige cola/estado/<project_id>.json escrito por Grok; al 15-nov cola/estado no existe en CAPCOT/feature. Sin ese archivo, RECEPCION_GROK_NO_CONFIRMADA.
+
+### Límites y decisiones
+- Se conserva U6/alterno/cameo-pesos como rama activa y main como SOLO_CONSULTA. No se modificaron código, candados ni canónicos.
+- No se modificó CAPCOT ni se promovió/movió ningún paquete. No se crearon estados Grok.
+- No se modificó memoria-compartida ni ningún repositorio adicional; todos siguen fuera del alcance de escritura.
+- El mapa describe solo conexiones comprobadas en esta sesión. Las configuraciones locales y los README no prueban procesos vivos, ejecución remota ni recepción por otro agente.
+
+Evidencia de continuidad: [reporte operativo 2026-11-15](../reportes/2026-11-15_OPERACION_AUTONOMA.md).
