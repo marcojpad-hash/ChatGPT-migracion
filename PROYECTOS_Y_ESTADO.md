@@ -512,3 +512,11 @@ U6 sin nuevas acciones: sigue NO_CALIBRADO, sin ejecución de motor/tests en est
 - **Mozart: RESUELTO Y FUSIONADO.** PR #14 «Corrección auditoría ChatGPT sobre Mozart: 5 hallazgos + re-corrida 2026-11-14»; rama `alterno/reconexion-2a1-correccion-auditoria-mozart`; commit final `a182c73`; 22/22 verificaciones; merge `f478d03` a `alterno/reconexion-2a1`, 14-nov-2026 19:48 CST. Enlace: https://github.com/marcojpad-hash/motor-u6-storage/pull/14.
 - Esta sesión no reejecutó motor ni pruebas Mozart. La nota previa «U6 sin cambios / no se ejecutaron motor, tests ni candados» no aplica al estado global de Mozart y queda sustituida por este resultado.
 - Único archivo pendiente con ese nombre exacto: `motor/REVISION_CHATGPT_MOZART_20261113.md`; asignado a otro chat. No duplicar.
+
+## Estado operativo — seguimiento 2026-11-15
+
+- **U6 Mozart:** RESUELTO Y FUSIONADO: PR #14, 22/22, commit de corrección `a182c73`, merge `f478d03` a `alterno/reconexion-2a1` el 14-nov-2026 19:48 CST. No repetir. Archivo `motor/REVISION_CHATGPT_MOZART_20261113.md` asignado a otro chat.
+- **CAPCOT cuásares:** corrección narrativa ya guardada; FAIL/82 anterior sigue vigente hasta auditoría independiente. No promover.
+- **CAPCOT Lestes:** revisión JS auxiliar 0 errores; validador Python real y Crossref `--check-doi` no ejecutados por falta de runtime/acción conectada. No promover.
+- **Grok:** sin recepción individual; seis consultas de rutas de estado/acuse/cola dieron 404 para ambos proyectos. No crear recibos ni redispatchar antes de superar los gates.
+- **Migración:** INCOMPLETA; el handoff del 3-nov no tiene acuse de destinatario ni verificación del emisor.
