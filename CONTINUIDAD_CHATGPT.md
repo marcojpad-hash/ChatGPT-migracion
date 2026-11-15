@@ -290,3 +290,10 @@ El corte inicial de esta fecha se actualiza con los runs terminales y el control
 ## Entrega adicional — 2026-11-15
 
 CAPCOT Lestes sponsa: ficha oficial de Nature consultada; confirma publicación 15-nov-2026 y DOI 10.1038/s41598-026-80392-6. Se actualizaron notas editoriales y metadatos obsoletos del storyboard; QA narrativo PASS/90 preservado. Se revisaron manualmente los controles estáticos del validador: coinciden, pero el script no se ejecutó y el helper Crossref sigue pendiente. Estado: PENDIENTE_VALIDACION_ESTRUCTURAL; no promovido ni enviado a Grok. Commits CAPCOT: da1caa8 y 2306c0c. Migración sigue INCOMPLETA; no se falsifica acuse de segunda sesión independiente.
+
+## Continuidad — addendum de ejecución CAPCOT, 2026-11-15
+
+- Quásares: commit CAPCOT `54c8ade46f00b7c5596e6798534ed4added30321` revisa escena 2 y el puente 2→3; conteo 184 palabras. QA independiente previo sigue FAIL/82 y requiere nueva lectura en frío. No promover ni redispatchar.
+- Lestes: comprobación equivalente en JS de reglas estructurales del validador, con catálogo de estilos actual, dio 0 errores; esto no es ejecución del script Python. DOI continúa PENDIENTE_RESOLVEDOR y `--check-doi` no ejecutado. QA independiente PASS/90. No promover hasta superar los controles reales.
+- No hay acción GitHub conectada para dispatch manual ni runtime disponible para ejecutar el validador del repo en esta sesión. No se alteraron workflows, cola ni estado Grok.
+- Migración INCOMPLETA hasta acuse verificable de un destinatario independiente en `bandeja/2026-11-03_RECUPERACION_MIGRACION.md`. U6 sin cambios.
