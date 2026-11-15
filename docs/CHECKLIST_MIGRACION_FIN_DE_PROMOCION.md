@@ -220,3 +220,5 @@ Registro: [reporte operativo 2026-11-15](../reportes/2026-11-15_OPERACION_AUTONO
 
 ### Precisión CAPCOT — 2026-11-15
 - [ ] Reconciliar el DOI del storyboard 2026-11-14: verification_status=VERIFICADO_RESOLVEDOR contradice verification_note (doi.org/Crossref sin resolución, DOI pendiente) y el radar PENDING_RESOLVEDOR. No darlo por validado solo por consultar la página editorial.
+
+- [x] docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md actualizado con el corte real de GitHub, Automations, codebase-memory-mcp, DSH, n8n, Dot y estado Grok del 15-nov.
