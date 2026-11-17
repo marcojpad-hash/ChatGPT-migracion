@@ -819,30 +819,35 @@
       "repository": "motor-u6-storage",
       "item": "PR #8 Z90",
       "status": "open",
-      "mergeable": false
+      "merged": false,
+      "mergeable": true
     },
     {
       "repository": "motor-u6-storage",
       "item": "PR #11 supervisor",
       "status": "open",
-      "mergeable": false
+      "merged": false,
+      "mergeable": true
     },
     {
       "repository": "capcot-capsulas-imaginantes",
-      "item": "PR #13",
+      "item": "PR #13 cuásares audit",
       "status": "open",
-      "mergeable": false
+      "merged": false,
+      "mergeable": true
     },
     {
       "repository": "capcot-capsulas-imaginantes",
-      "item": "PR #14",
+      "item": "PR #14 cuásares corrections",
       "status": "open",
-      "mergeable": false
+      "merged": false,
+      "mergeable": true
     },
     {
       "repository": "orquestador-central",
       "item": "PR #9 acceptance runner",
       "status": "open",
+      "merged": false,
       "mergeable": true,
       "note": "adapters.json vacío; 15 casos BLOCKED_NO_ADAPTER"
     },
@@ -855,6 +860,7 @@
       "repository": "ChatGPT-migracion",
       "item": "PR #1",
       "status": "open",
+      "merged": false,
       "mergeable": false
     }
   ],
@@ -864,5 +870,6 @@
     "response_to_puta3": "7aa64d5b97d12d254a634fe85d0d11e49c98a57e",
     "operation_report_initial": "e4f01e610d6a3445277095afba356331512814c3",
     "continuity_addendum": "4f90a719a99e05e5801aa59a73bbf1b97b4896cb"
-  }
+  },
+  "pull_request_status_checked_at_local": "2026-11-17 09:xx America/Mexico_City"
 }
