@@ -196,3 +196,42 @@ El manifiesto inicial se corrigió después de verificar los SHA actuales de los
 - Recibir acuse verificable de segunda sesión/modelo para completar migración.
 
 No se deshabilitó ninguna automatización ni se creó otra. No se declararon completadas las tareas que siguen pendientes.
+## Reconsulta adicional de conexiones y automatizaciones — 2026-11-17
+
+Esta reconsulta amplía el corte inicial del informe. La frase inicial «no hubo cambio esencial de conexión» queda superada por la aparición de dos proyectos Floot y por una verificación más completa de los conectores. Se actualizaron el mapa y el checklist.
+
+### GitHub y repositorios
+- `marcojpad-hash`: instalación `174841554`, 11 repositorios visibles.
+- `marcosabines-hash`: 0 instalaciones y 0 repositorios devueltos, sin error. Esto describe la visibilidad de la conexión, no la inexistencia de repositorios.
+- Se relevaron los ocho adicionales —`orquestador-central`, `red-teaming-safety-u6`, `agente-cero-costo`, `baterias-tokens`, `baterias-memoria`, `memoria-compartida`, `microserie-heredera-sadtalker`, `microserie-heredera-voces`— mediante metadatos/README. Permanecen `DESCUBIERTO_ADICIONAL`; no hubo escrituras.
+
+### Conectores
+- **Notion:** conectado. Las páginas V15 devueltas están fechadas 20/22-sep-2026; se conservan como históricas frente al repo U6.
+- **Dropbox:** conectado como `marco.jp@live.com.mx`; no se escribieron archivos.
+- **Floot:** devuelve dos proyectos. `CAPCOT Visual Desk` (`4a26d671-0b07-490a-9aa1-59f3204e3cbe`) es un dashboard de muestra con datos estáticos; no devolvió recursos conectados, no se verificó sincronización GitHub, no está publicado y Pixlr figura pendiente. El nombre `FLOOT_DATABASE_URL` aparece en el entorno, pero no se verificó un camino de consulta/uso de base de datos. No es un pipeline CAPCOT operativo. El proyecto `Runtime multiagent — Orquestador` solo se registró en metadatos.
+- **Runway:** workspace personal autenticado, 500 créditos de plan, pero cero workflows y ningún modelo de vídeo disponible. No se generaron medios ni se gastaron créditos.
+- **Canva:** conectado; cero Brand Kits.
+- **vidIQ:** cuenta `marcosabines@gmail.com`; cero canales devueltos.
+- **Undermind:** cuenta `marcojpad@gmail.com`; cero workspaces.
+- **Exa, Consensus y SciSpace:** herramientas expuestas en esta sesión.
+- No se exponen herramientas ejecutables de codebase-memory-mcp, DSH, n8n, Dot nativo ni Google Drive. Skills, archivos de configuración y automatizaciones de ChatGPT no prueban esos conectores.
+
+### Automatizaciones
+La lista devolvió 16 tareas: 3 habilitadas y 13 deshabilitadas. No aparece una tarea de monitor del bus de trabajo a las 09:00.
+- Investigador CAPCOT: run `9832ba02-4954-8322-b8b2-2f5629fb5e20`, COMPLETED 08:21:19 CDMX. Dejó radar y storyboard del 17-nov; QA narrativo no escrito, no promovido.
+- Auditor CAPCOT: último run `1194dae9-4e94-8324-aa93-9422e489f568`, COMPLETED 16-nov 16:08:15 CDMX; siguiente 17-nov 15:00. No ha corrido hoy al corte.
+- Operador general: run `29d3cb8a-531c-8326-8222-3aed2965cd1f`, IN_PROGRESS desde 09:00:16 CDMX, `completed_at=null`. `Automations.list` no muestra el run actual en `last_run`; `Automations.peek` sí. No se declara terminado.
+
+### Estado de proyectos
+- **CAPCOT:** `2026-11-17_dato-suelo-dos-relojes` está en `proyectos/`, 214 palabras, ocho escenas, 84 segundos, compuerta estructural PASS. No tiene `narrative_qa`, no está en `cola/entrada/` y no existe `cola/estado/2026-11-17_dato-suelo-dos-relojes.json`. Estado: PENDIENTE_AUDITOR y `RECEPCION_GROK_NO_CONFIRMADA`. No se duplicó la revisión narrativa del auditor.
+- **Motor U6:** `main` HEAD `976b67a55bbd4a755896a18eaa1d28d506755ceb`, solo lectura. Actions run #44103126084 (`Auditoría de corridas Motor U6`) terminó SUCCESS; job `auditar` SUCCESS. Es una auditoría del historial de corridas, no ejecución del motor. El `ULTIMO_ESTADO.md` visible al corte todavía lista #44017530422 como último registro; el nuevo run aún no aparece en ese snapshot. Esta sesión no ejecutó motor ni tests.
+- **Migración:** `ChatGPT-migracion/main` HEAD `bedf70f8f3afcc72c2abf79890e3968cb0b71fa0`. El handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` continúa PENDIENTE, sin acuse verificable de segunda sesión/modelo. Migración INCOMPLETA.
+
+### Documentación de continuidad actualizada
+- [Mapa de herramientas](../docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md) — commit `218d034f8730b7949de5bba15f619db479d02c53`.
+- [Checklist de migración](../docs/CHECKLIST_MIGRACION_FIN_DE_PROMOCION.md) — commit `1df4f96637816a64baf41f6300328af7d025b24f`.
+- [Estado de automatizaciones/Dot](../BOT_DOT_AUTONOMIA.md) — commit `65d9eee93a44ddb6ec8ca4beea2e554325d023d2`.
+- [Proyectos y estado](../PROYECTOS_Y_ESTADO.md) — commit `3d7721ef4242b3ab5bd626f66421f906fba2ba23`.
+- [Continuidad ChatGPT](../CONTINUIDAD_CHATGPT.md) — commit `83b66abd7e99799711903972618b4542404dc884`.
+
+No se modificaron CAPCOT, Motor U6 ni Orquestador Central. No se ejecutó el motor, no se generaron medios, no se consumieron créditos, no se tocaron secretos/permisos y no se fusionó ningún PR. El run del operador permanece IN_PROGRESS al corte.
