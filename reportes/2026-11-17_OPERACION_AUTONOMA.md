@@ -56,13 +56,13 @@ Se consultaron estados y últimas ejecuciones antes de atribuirles trabajo.
 |---|---|---|
 | Agente de investigación CAPCOT | Run `9832ba02-4954-8322-b8b2-2f5629fb5e20`, programado 08:00, iniciado 08:04:41, completado 08:21:19 CDMX | COMPLETED. Dejó radar y storyboard en `proyectos/`; no hizo QA narrativa ni recepción Grok. |
 | Auditor CAPCOT — cola y rotación | Run `1194dae9-4e94-8324-aa93-9422e489f568`, programado 16-nov 15:00, iniciado 15:45:43, completado 16:08:15 CDMX | No hay corrida del 17-nov. No se atribuyó QA del día. |
-| Operador autónomo general | Run `29d3cb8a-531c-8326-8222-3aed2965cd1f`, programado 08:00, iniciado 09:00:16 CDMX | IN_PROGRESS al momento de inspección; esta entrega corresponde a esa corrida. El resultado previo de la automatización era del 15-nov y no se contó como trabajo de hoy. |
+| Operador autónomo general | Run `29d3cb8a-531c-8326-8222-3aed2965cd1f`, programado 08:00, iniciado 09:00:16 CDMX | IN_PROGRESS en la inspección y en la consulta final; `completed_at=null`. Esta entrega corresponde a esa corrida. El resultado previo del 15-nov no se contó como trabajo de hoy. No se declara completada la ejecución. |
 
 **Tarea ausente:** la lista de automatizaciones activas solo devolvió esas tres; no aparece el monitor de bus GitHub solicitado para las 09:00.
 
 **Dispatch Grok:** la última ejecución documentada del workflow falló por `GROK_WEBHOOK_URL` ausente. El código posterior permite el modo de inbox sin webhook, pero no se encontró una ejecución posterior que verifique ese cambio. No se inventó recepción.
 
-No se creó ni deshabilitó ninguna automatización.
+La consulta final volvió a devolver `recorded_status=in_progress` para Operador general; el trabajo material está guardado, pero el run no se marca como completado. No se creó ni deshabilitó ninguna automatización.
 
 ## CAPCOT — handoff del 17-nov
 
@@ -171,7 +171,7 @@ No se escribió ni fusionó nada en Orquestador; queda fuera del alcance de escr
 Se crearon y verificaron en `ChatGPT-migracion/main`:
 
 1. [Manifiesto de checkpoints](../bandeja/checkpoints/2026-11-17_MANIFEST_CHECKPOINTS.json) — IDs de Biblioteca, rutas, tamaños, SHA-256, integridad ZIP, referencias de código y límites.
-   - Commit final del manifiesto: `d1a683d740ee9eebc126bea475231aec383bc3cf`.
+   - Commit final del manifiesto: `223b256dba30a59ecdf5829d268458421cda7a31`.
 2. [Resumen comparativo Motor/Sombrero Blanco](../bandeja/checkpoints/2026-11-17_RESUMEN_COMPARATIVO_MOTOR.md).
    - Commit: `8c53e65606164c99b78cc0fe077c12a76b11aca6`.
 3. [Respuesta a Puta3](../bandeja/2026-11-17_RESPUESTA_PUTA3_CHECKPOINTS.md).
