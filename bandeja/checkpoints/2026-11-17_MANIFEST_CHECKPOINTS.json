@@ -48,7 +48,7 @@
       "branch": "main",
       "head_before_write": "1af461540aea4337d5974b12c1f10871f64c6e49",
       "head_before_final_manifest_update": "4f90a719a99e05e5801aa59a73bbf1b97b4896cb",
-      "head_before_latest_manifest_update": "460ed92aa3f54e05385cbad36c50c58bf6a499a6"
+      "head_before_latest_manifest_update": "fd9727ac2e6fdf9e0ac9d700296884c8cd7df306"
     }
   },
   "canonical_reference": {
@@ -709,11 +709,13 @@
         {
           "title": "Operador autónomo general",
           "run_id": "29d3cb8a-531c-8326-8222-3aed2965cd1f",
-          "status": "in_progress_at_inspection",
+          "status": "in_progress_at_final_check",
           "scheduled_for_utc": "2026-11-17T14:00:00Z",
           "started_at_utc": "2026-11-17T15:00:16Z",
           "started_local": "2026-11-17 09:00:16",
-          "note": "Esta corrida generó el handoff; no se usó el resultado anterior del 15Nov como trabajo de hoy."
+          "note": "La consulta final volvió a devolver recorded_status=in_progress y completed_at=null; no se declara completada la ejecución.",
+          "completed_at_utc": null,
+          "final_check_status": "in_progress"
         }
       ],
       "missing_task": "No aparece la tarea solicitada de monitor de bus de GitHub a las 09:00 entre las automatizaciones activas consultadas.",
@@ -765,7 +767,10 @@
     "motor_tests": "NOT_RERUN",
     "code_changes_outside_migration": 0,
     "original_archives_copied_to_repo": false,
-    "handoff_mode": "manifest + summary; original archives remain in personal Library"
+    "handoff_mode": "manifest + summary; original archives remain in personal Library",
+    "automation_run_final_status": "in_progress",
+    "automation_run_completed_at_utc": null,
+    "note": "El trabajo material se guardó y verificó, pero la automatización seguía reportando in_progress al cierre; no se declara run completado."
   },
   "deliverables": {
     "manifest": "bandeja/checkpoints/2026-11-17_MANIFEST_CHECKPOINTS.json",
@@ -872,7 +877,9 @@
     "operation_report_initial": "e4f01e610d6a3445277095afba356331512814c3",
     "operation_report_revision": "ac164b5d63b3b4b3e178bfbeb85867f3f9aebb2d",
     "continuity_initial_addendum": "4f90a719a99e05e5801aa59a73bbf1b97b4896cb",
-    "continuity_revision": "460ed92aa3f54e05385cbad36c50c58bf6a499a6"
+    "continuity_revision": "460ed92aa3f54e05385cbad36c50c58bf6a499a6",
+    "operation_report_previous_final": "fee2da738e95292e42545b45ff67d31051129aaa",
+    "continuity_previous_final": "fd9727ac2e6fdf9e0ac9d700296884c8cd7df306"
   },
   "pull_request_status_checked_at_local": "2026-11-17 during this run; exact minute not captured"
 }
