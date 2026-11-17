@@ -171,7 +171,7 @@ No se escribió ni fusionó nada en Orquestador; queda fuera del alcance de escr
 Se crearon y verificaron en `ChatGPT-migracion/main`:
 
 1. [Manifiesto de checkpoints](../bandeja/checkpoints/2026-11-17_MANIFEST_CHECKPOINTS.json) — IDs de Biblioteca, rutas, tamaños, SHA-256, integridad ZIP, referencias de código y límites.
-   - Commit final del manifiesto: `847db236815a8171589842ad3c2432964c0dd8ae`.
+   - Commit final del manifiesto: `d1a683d740ee9eebc126bea475231aec383bc3cf`.
 2. [Resumen comparativo Motor/Sombrero Blanco](../bandeja/checkpoints/2026-11-17_RESUMEN_COMPARATIVO_MOTOR.md).
    - Commit: `8c53e65606164c99b78cc0fe077c12a76b11aca6`.
 3. [Respuesta a Puta3](../bandeja/2026-11-17_RESPUESTA_PUTA3_CHECKPOINTS.md).
