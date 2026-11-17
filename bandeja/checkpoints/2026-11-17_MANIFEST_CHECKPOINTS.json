@@ -43,6 +43,11 @@
       "branch": "main",
       "head": "70c31631667a66b3d0c5e6a48a0b63ece1a84ce3",
       "classification": "DESCUBIERTO_ADICIONAL_READ_ONLY"
+    },
+    "ChatGPT-migracion": {
+      "branch": "main",
+      "head_before_write": "1af461540aea4337d5974b12c1f10871f64c6e49",
+      "head_before_final_manifest_update": "4f90a719a99e05e5801aa59a73bbf1b97b4896cb"
     }
   },
   "canonical_reference": {
@@ -680,25 +685,38 @@
       "active_tasks_seen": [
         {
           "title": "Agente de investigación CAPCOT",
+          "run_id": "9832ba02-4954-8322-b8b2-2f5629fb5e20",
           "status": "completed",
-          "last_run_local": "2026-11-17 08:21",
-          "note": "Dejó brief y storyboard en proyectos; no QA narrativa ni recepción Grok."
+          "scheduled_for_utc": "2026-11-17T14:00:00Z",
+          "started_at_utc": "2026-11-17T14:04:41Z",
+          "completed_at_utc": "2026-11-17T14:21:19Z",
+          "started_local": "2026-11-17 08:04:41",
+          "completed_local": "2026-11-17 08:21:19",
+          "note": "Dejó radar y storyboard en proyectos; 8 escenas, 214 palabras, 84 s; compuerta estructural PASS; narrative_qa no escrito, PENDIENTE_AUDITOR; no recepción Grok."
         },
         {
           "title": "Auditor CAPCOT — cola y rotación",
+          "run_id": "1194dae9-4e94-8324-aa93-9422e489f568",
           "status": "no_run_today",
-          "last_run_local": "2026-11-16 16:08",
-          "note": "Última corrida retrasada ~45 min; no atribuir auditoría del 17Nov."
+          "scheduled_for_utc": "2026-11-16T21:00:00Z",
+          "started_at_utc": "2026-11-16T21:45:43Z",
+          "completed_at_utc": "2026-11-16T22:08:15Z",
+          "started_local": "2026-11-16 15:45:43",
+          "completed_local": "2026-11-16 16:08:15",
+          "note": "Última corrida retrasada ~45 min; no atribuir QA del 17Nov."
         },
         {
           "title": "Operador autónomo general",
+          "run_id": "29d3cb8a-531c-8326-8222-3aed2965cd1f",
           "status": "in_progress_at_inspection",
-          "started_local": "2026-11-17 08:30",
-          "note": "Esta corrida es la que genera este handoff."
+          "scheduled_for_utc": "2026-11-17T14:00:00Z",
+          "started_at_utc": "2026-11-17T15:00:16Z",
+          "started_local": "2026-11-17 09:00:16",
+          "note": "Esta corrida generó el handoff; no se usó el resultado anterior del 15Nov como trabajo de hoy."
         }
       ],
-      "missing_task": "No aparece la tarea solicitada de monitor de bus de GitHub a las 09:00.",
-      "grok_dispatch": "Última ejecución documentada con fallo por GROK_WEBHOOK_URL ausente; no se encontró ejecución posterior que verifique el cambio."
+      "missing_task": "No aparece la tarea solicitada de monitor de bus de GitHub a las 09:00 entre las automatizaciones activas consultadas.",
+      "grok_dispatch": "El último run documentado del workflow fue el #147 y falló por GROK_WEBHOOK_URL ausente. El código posterior admite inbox sin webhook, pero no se encontró ejecución posterior que verifique el cambio."
     },
     "capcot_current": {
       "branch": "feature/capcot-video-discovery-continuity",
@@ -714,10 +732,20 @@
         "23:30 Lobesia botrana: PENDING_SOURCE, sin storyboard.",
         "Slots 07:00 del 18–21Nov: vacíos.",
         "ESTADO_SLOTS conserva LDL 19:00 como programado, pero data/horarios.json marca 19:00 retirado; tratar ESTADO_SLOTS como stale en ese punto.",
-        "07:00 backup ornitorrinco: YouTube privado programado; TT/FB pendientes.",
+        "07:00 backup ornitorrinco: YouTube privado programado; TikTok/Facebook pendientes.",
         "13:30 Baffin: aparece como programado.",
         "data/publicaciones.json llega solo hasta 2026-10-31; no confirma publicaciones de noviembre."
-      ]
+      ],
+      "radar_commit": "c47a7ceab2cf75570943942570ec7afbd8ecc466",
+      "storyboard_commit": "ab468652710743bfc2012e15474c38a966c2bb03",
+      "storyboard_metrics": {
+        "scenes": 8,
+        "words": 214,
+        "duration_seconds": 84,
+        "structural_gate": "PASS",
+        "narrative_qa": "NOT_WRITTEN_PENDING_AUDITOR",
+        "main_doi": "PENDIENTE_RESOLVEDOR"
+      }
     },
     "migration": {
       "repository": "marcojpad-hash/ChatGPT-migracion",
@@ -785,5 +813,56 @@
       "library_path": "/INFORME_MOTOR_TRABAJO_HIPOTESIS_ABIERTAS_20261020.md",
       "file_id": "file_0000000058d881f5aae928ec43a39f71"
     }
-  ]
+  ],
+  "open_work_items": [
+    {
+      "repository": "motor-u6-storage",
+      "item": "PR #8 Z90",
+      "status": "open",
+      "mergeable": false
+    },
+    {
+      "repository": "motor-u6-storage",
+      "item": "PR #11 supervisor",
+      "status": "open",
+      "mergeable": false
+    },
+    {
+      "repository": "capcot-capsulas-imaginantes",
+      "item": "PR #13",
+      "status": "open",
+      "mergeable": false
+    },
+    {
+      "repository": "capcot-capsulas-imaginantes",
+      "item": "PR #14",
+      "status": "open",
+      "mergeable": false
+    },
+    {
+      "repository": "orquestador-central",
+      "item": "PR #9 acceptance runner",
+      "status": "open",
+      "mergeable": true,
+      "note": "adapters.json vacío; 15 casos BLOCKED_NO_ADAPTER"
+    },
+    {
+      "repository": "orquestador-central",
+      "item": "Issue #8",
+      "status": "open"
+    },
+    {
+      "repository": "ChatGPT-migracion",
+      "item": "PR #1",
+      "status": "open",
+      "mergeable": false
+    }
+  ],
+  "deliverable_commits": {
+    "manifest_prior_verified": "341eef36a0aa88944077c81242247dec991e984e",
+    "comparative_summary": "8c53e65606164c99b78cc0fe077c12a76b11aca6",
+    "response_to_puta3": "7aa64d5b97d12d254a634fe85d0d11e49c98a57e",
+    "operation_report_initial": "e4f01e610d6a3445277095afba356331512814c3",
+    "continuity_addendum": "4f90a719a99e05e5801aa59a73bbf1b97b4896cb"
+  }
 }
