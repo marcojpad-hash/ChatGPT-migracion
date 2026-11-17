@@ -176,3 +176,18 @@ Registro: [reporte operativo 2026-11-14](https://github.com/marcojpad-hash/ChatG
 No atribuir entregables a runs IN_PROGRESS. El último informe del auditor disponible es CONTROL_COLA_2026-11-14.md. Dot nativo no está expuesto como herramienta/conector en esta sesión; las automatizaciones visibles no prueban conexión nativa de Dot.
 
 Reporte: [2026-11-15_OPERACION_AUTONOMA.md](reportes/2026-11-15_OPERACION_AUTONOMA.md).
+## Estado verificado de automatizaciones — 2026-11-17
+
+Consulta directa de Automations: 16 tareas en total, 3 habilitadas y 13 deshabilitadas. No aparece una tarea de monitor del bus de trabajo a las 09:00.
+
+| Automatización | Último run / estado | Siguiente horario | Resultado atribuible |
+|---|---|---|---|
+| Agente de investigación CAPCOT | `9832ba02-4954-8322-b8b2-2f5629fb5e20`, COMPLETED 08:21:19 CDMX | 18-nov 08:00 | Radar y storyboard 17-nov en GitHub; QA narrativo no escrito; fuera de cola y sin recepción Grok confirmada. |
+| Auditor CAPCOT — cola y rotación | `1194dae9-4e94-8324-aa93-9422e489f568`, COMPLETED 16-nov 16:08:15 CDMX | 17-nov 15:00 | CONTROL_COLA del 16-nov; no ha corrido hoy al corte. |
+| Operador autónomo general | `29d3cb8a-531c-8326-8222-3aed2965cd1f`, IN_PROGRESS desde 09:00:16 CDMX; `completed_at=null` | El listado conserva 17-nov 08:00 mientras el run está abierto | No atribuirle resultado terminal. El último resultado COMPLETED sigue siendo el del 15-nov. |
+
+La llamada `Automations.list` no mostró el run actual del operador en su campo `last_run`; `Automations.peek` sí lo mostró como `IN_PROGRESS`. Se registra la diferencia y se toma el estado detallado de `peek` para no declarar éxito prematuro.
+
+Dot nativo no está expuesto como herramienta/conector en esta sesión. Estas tres automatizaciones son tareas de ChatGPT y no demuestran conexión ni actividad de Dot. No se creó otra automatización durante esta ejecución.
+
+Registro: [reporte operativo 2026-11-17](reportes/2026-11-17_OPERACION_AUTONOMA.md).
