@@ -41,7 +41,7 @@
     },
     "memoria-compartida": {
       "branch": "main",
-      "head": "70c3163a7c6b7cbbab4f4b0c8f3a5d72f3b7d9e1",
+      "head": "70c31631667a66b3d0c5e6a48a0b63ece1a84ce3",
       "classification": "DESCUBIERTO_ADICIONAL_READ_ONLY"
     }
   },
@@ -480,13 +480,26 @@
       "zip_integrity": "PASS",
       "entries": 577,
       "uncompressed_bytes": 208597021
+    },
+    {
+      "period": "2026-09-24",
+      "name": "V15_3_UNIFICADO_ALTERNO_V0_7_COMPLETO.zip",
+      "library_path": "/V15_3_UNIFICADO_ALTERNO_V0_7_COMPLETO.zip",
+      "file_id": "file_00000000688881f7a2f949af8a06675e",
+      "created_at_utc": "2026-09-24T17:54:03Z",
+      "size_bytes": 270510,
+      "materialized": false,
+      "sha256": null,
+      "notes": [
+        "Se localizó por metadatos; no se materializó ni se verificó su contenido."
+      ]
     }
   ],
   "code_references": {
     "motor_u6_active_branch": "alterno/cameo-pesos",
     "current_entrypoint": {
       "path": "motor/correr_estandar.py",
-      "git_blob_sha": "60b07a5cdb1e87ce12212cf61bc6c67a7a5c65a1"
+      "git_blob_sha": "60b07a5a878d10f0b5b8378cf1cc7acb5f19a1fa"
     },
     "motor_v15_3": {
       "path": "motor/motor/MOTOR_V15_3_UNICO_20260927.py",
@@ -494,36 +507,40 @@
     },
     "sidecar_sombrero_blanco_filter": {
       "path": "motor/motor/sidecar_sombrero_blanco_filtro_v1.py",
-      "git_blob_sha": "36fea466e5c61b8bb6ec0b0eabcf7b7d"
+      "git_blob_sha": "36fea466b4fa5db469385cb9d1bbd197b291c3a1"
     },
     "token_store": {
       "path": "motor/motor/plugin_sombrero_blanco_token.py",
-      "git_blob_sha": "c5fd2b5c3c94b72fb8f2f2f2d8d9d6d9"
+      "git_blob_sha": "c5fd2b5ec9309fcf493340b0cb80ae91c84081f1"
     },
     "narrator_sensor": {
       "path": "motor/motor/sensor_perfil_narrador_v0_1.py",
-      "git_blob_sha": "e18b8e2e8b8e2b2f6a2e5e5f4b1b9c0d"
+      "git_blob_sha": "e18b1f2859772d543a2a94a9b2dce0b4ccf2ce13"
     },
     "method_rigor": {
       "path": "motor/motor/plugin_metodo_rigor.py",
-      "git_blob_sha": "8183c9e6a6d4c3f6b8b4e5e6f4d1a9b3"
+      "git_blob_sha": "81833ae25d4b2e27cb24e4540eef77489007bf31"
     },
     "question_behind": {
       "path": "motor/motor/plugin_pregunta_detras_v2.py",
-      "git_blob_sha": "fed39c0d8e7f6b5a4c3d2e1f0a9b8c7d"
+      "git_blob_sha": "fed39cd0fae633efb47e1f523b4309a1e38333fb"
     },
     "guardian_control": {
       "path": "motor/motor/guardianes_control_v1.py",
-      "git_blob_sha": "733488d7c0d2f2d1a8c7e5f6b4a3d2c1"
+      "git_blob_sha": "7334885617e4577a29051e647423f97a87268586"
     },
     "laterals_hub": {
       "path": "motor/motor/laterales_unico_v1.py",
-      "git_blob_sha": "e156a8b3c2d1e0f9a8b7c6d5e4f3a2b1"
+      "git_blob_sha": "e156bbe331a3fc7570fd0e79a88cc2dd8fa23ab0"
     },
     "current_active_branch_does_not_contain": [
       "capa_llm/sombrero_blanco_foto_temporal_v1.py",
       "correr_u6_sombrero_espectro_v2.py"
-    ]
+    ],
+    "guardian_map": {
+      "path": "docs/MAPA_GUARDIANES.md",
+      "git_blob_sha": "38741ab626979481aca3f768e4042f973f377302"
+    }
   },
   "original_contract": {
     "source_documents": [
@@ -726,5 +743,47 @@
     "comparative_summary": "bandeja/checkpoints/2026-11-17_RESUMEN_COMPARATIVO_MOTOR.md",
     "response_to_puta3": "bandeja/2026-11-17_RESPUESTA_PUTA3_CHECKPOINTS.md",
     "operation_report": "reportes/2026-11-17_OPERACION_AUTONOMA.md"
-  }
+  },
+  "supporting_documents": [
+    {
+      "name": "PATCH19_REPAIR_REPORT.md",
+      "library_path": "/MOTOR_ACTUAL/08_AUDITORIAS/PATCH19_REPAIR_REPORT.md",
+      "file_id": "file_00000000f6a481f6b54d08ca2a988103"
+    },
+    {
+      "name": "AUDITORIA_UNIFICACION_20261011.md",
+      "library_path": "/MOTOR_ACTUAL/07_AUDITORIA/AUDITORIA_UNIFICACION_20261011.md",
+      "file_id": "file_000000001b8481f583231dcb46fded5e"
+    },
+    {
+      "name": "INFORME_UNIFICADO_20261020.md",
+      "library_path": "/INFORME_UNIFICADO_20261020.md",
+      "file_id": "file_00000000f8c481f5950d313462eb978f"
+    },
+    {
+      "name": "INFORME_REVISION_U6_UNIFICADO_20261020.md",
+      "library_path": "/INFORME_REVISION_U6_UNIFICADO_20261020.md",
+      "file_id": "file_00000000336c81f582e1a61e4b2f8dc9"
+    },
+    {
+      "name": "INFORME_COMPACTACION_U6_20261020.md",
+      "library_path": "/INFORME_COMPACTACION_U6_20261020.md",
+      "file_id": "file_000000003ca481f5a82975675423f130"
+    },
+    {
+      "name": "INFORME_INTEGRACION_STINKBOX_20261020.md",
+      "library_path": "/INFORME_INTEGRACION_STINKBOX_20261020.md",
+      "file_id": "file_00000000041c81f58c495ef0c2580a93"
+    },
+    {
+      "name": "INFORME_CALIBRABLE_20261020.md",
+      "library_path": "/INFORME_CALIBRABLE_20261020.md",
+      "file_id": "file_00000000ffd481f5982dd07f2999ce6a"
+    },
+    {
+      "name": "INFORME_MOTOR_TRABAJO_HIPOTESIS_ABIERTAS_20261020.md",
+      "library_path": "/INFORME_MOTOR_TRABAJO_HIPOTESIS_ABIERTAS_20261020.md",
+      "file_id": "file_0000000058d881f5aae928ec43a39f71"
+    }
+  ]
 }
