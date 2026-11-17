@@ -1,0 +1,730 @@
+{
+  "schema_version": "1.0",
+  "generated_at_local": "2026-11-17T08:30:00-06:00",
+  "timezone": "America/Mexico_City",
+  "purpose": "Inventario verificable de checkpoints U6 y comparación de la función Sombrero Blanco para el handoff solicitado por Puta3.",
+  "source_order": {
+    "repository": "marcojpad-hash/ChatGPT-migracion",
+    "branch": "main",
+    "path": "bandeja/2026-11-17_PUTA3_CHECKPOINTS_MOTOR.md",
+    "commit_seen_before_work": "1af461540aea4337d5974b12c1f10871f64c6e49"
+  },
+  "scope": {
+    "write_repository": "marcojpad-hash/ChatGPT-migracion",
+    "write_branch": "main",
+    "read_only_repositories": [
+      "marcojpad-hash/motor-u6-storage",
+      "marcojpad-hash/capcot-capsulas-imaginantes",
+      "marcojpad-hash/orquestador-central",
+      "marcojpad-hash/memoria-compartida"
+    ],
+    "no_write_to_motor_u6": true,
+    "no_write_to_capcot": true,
+    "no_write_to_orquestador_central": true,
+    "no_engine_execution": true,
+    "no_canonical_file_changes": true
+  },
+  "repository_heads": {
+    "motor-u6-storage": {
+      "main": "976b67a55bbd4a755896a18eaa1d28d506755ceb",
+      "active_read_branch": "alterno/cameo-pesos",
+      "active_head": "56513ab98c0af74291121bec4d5c954397355a63"
+    },
+    "capcot-capsulas-imaginantes": {
+      "branch": "feature/capcot-video-discovery-continuity",
+      "head": "c47a7ceab2cf75570943942570ec7afbd8ecc466"
+    },
+    "orquestador-central": {
+      "branch": "main",
+      "head": "736915b1c258c5a878192f72d000570f020d9dd8",
+      "classification": "DESCUBIERTO_ADICIONAL_READ_ONLY"
+    },
+    "memoria-compartida": {
+      "branch": "main",
+      "head": "70c3163a7c6b7cbbab4f4b0c8f3a5d72f3b7d9e1",
+      "classification": "DESCUBIERTO_ADICIONAL_READ_ONLY"
+    }
+  },
+  "canonical_reference": {
+    "Engine_V5_CANONICO_SOLO_py": {
+      "sha256": "665c39a2861e58772522e91272563260d980908b1d4ab9f7092d3413d0c36082",
+      "bytes": 30507
+    },
+    "patterns_final_v14_json": {
+      "sha256": "d827dcc3882634ec2d21b3a480d0fee811b28d8fa1b73bab04f0af2c2d6667a1",
+      "pattern_count": 244,
+      "bytes": 123937
+    },
+    "note": "Los hashes se tomaron de copias archivadas verificadas y de la documentación de autoridad del repositorio. No se modificaron los originales."
+  },
+  "archives": [
+    {
+      "period": "2026-09-14",
+      "name": "CHECKPOINT_MOTOR_CLONABLE_20260914.zip",
+      "library_path": "/CHECKPOINT_MOTOR_CLONABLE_20260914.zip",
+      "file_id": "file_00000000667881f59e11942a6dd3d322",
+      "created_at_utc": "2026-09-14T20:39:12Z",
+      "size_bytes": 609154,
+      "sha256": "debeded991387916b6a0e8995107ff738b2c85f975ca27a92361bff10f06e314",
+      "zip_integrity": "PASS",
+      "entries": 177,
+      "uncompressed_bytes": 3382109,
+      "embedded_engine_v5_sha256": "e5d9ab3a8b904ca7eb488a91342debfabd9d916a5549956c77d5b8e2c7957e23",
+      "embedded_patterns_sha256": "d827dcc3882634ec2d21b3a480d0fee811b28d8fa1b73bab04f0af2c2d6667a1",
+      "notes": [
+        "El Engine V5 incluido es una copia antigua: 24,944 bytes y hash distinto del canónico actual.",
+        "patterns_final_v14 sí coincide con el catálogo canónico de 244 patrones.",
+        "Incluye especificaciones de metacognición, pregunta detrás, Copi/falacias, Beristáin y método Hécate-Holmes-Schopenhauer."
+      ]
+    },
+    {
+      "period": "2026-09-16",
+      "name": "CHECKPOINT_MOTOR_V15_1_ACTUAL_20260916.zip",
+      "library_path": "/Predicción/CHECKPOINT_MOTOR_V15_1_ACTUAL_20260916.zip",
+      "file_id": "file_00000000b29081f580df332a5457ec6a",
+      "created_at_utc": "2026-09-16T06:34:01Z",
+      "size_bytes": 5455263,
+      "raw_materialization": "BLOCKED_PROJECT_FILE",
+      "sha256": null,
+      "notes": [
+        "El archivo existe en la Biblioteca, pero files.materialize/files.read no permitieron obtener sus bytes.",
+        "No se declara integridad, contenido interno ni hash."
+      ]
+    },
+    {
+      "period": "2026-09-16",
+      "name": "DOSSIER_V15_1_ACTUAL_20260916.zip",
+      "library_path": "/DOSSIER_V15_1_ACTUAL_20260916.zip",
+      "file_id": "file_00000000696881f8934b87d00331267b",
+      "size_bytes": 3914,
+      "raw_materialization": "BLOCKED_PROJECT_FILE",
+      "sha256": null,
+      "notes": [
+        "Metadatos visibles; no se obtuvo el archivo crudo."
+      ]
+    },
+    {
+      "period": "2026-09-16",
+      "name": "CHECKPOINT_V15_1_PRE_SOURIAU_20260916.zip",
+      "library_path": "/CHECKPOINT_V15_1_PRE_SOURIAU_20260916.zip",
+      "file_id": "file_0000000090f881f592cf06cf54e704a5",
+      "created_at_utc": "2026-09-16T22:26:14Z",
+      "size_bytes": 46507,
+      "sha256": "0d865619b765ced91c727752f78b73607b8ad72caf68738a2de6dc90b92fa812",
+      "zip_integrity": "PASS",
+      "entries": 13,
+      "uncompressed_bytes": 165708,
+      "embedded_engine_v5_sha256": null,
+      "embedded_patterns_sha256": "d827dcc3882634ec2d21b3a480d0fee811b28d8fa1b73bab04f0af2c2d6667a1",
+      "notes": [
+        "Contiene catálogo y traza; no contiene Engine_V5_CANONICO_SOLO.py."
+      ]
+    },
+    {
+      "period": "2026-09-16",
+      "name": "V15_1_ultimas_actualizaciones_20260916.zip",
+      "library_path": "/V15_1_ultimas_actualizaciones_20260916.zip",
+      "file_id": "file_00000000d53881f58e96f7934ed23d4c",
+      "created_at_utc": "2026-09-16T20:51:33Z",
+      "size_bytes": 9990,
+      "sha256": "435dee073e049d50dd57d44f43f1608488aa2e973f117ced49ff5ab5090d3411",
+      "zip_integrity": "PASS",
+      "entries": 4,
+      "uncompressed_bytes": 26244,
+      "notes": [
+        "Incluye capas de integración/interrelación semántica y auditoría de corrida; no sustituye al checkpoint completo inaccesible."
+      ]
+    },
+    {
+      "period": "2026-09-16",
+      "name": "actualizacion_tecnica_multimodelo_20260916.zip",
+      "library_path": "/actualizacion_tecnica_multimodelo_20260916.zip",
+      "file_id": "file_00000000e71081f596733637d31d7fb1",
+      "created_at_utc": "2026-09-16T20:59:48Z",
+      "size_bytes": 5032,
+      "sha256": "3f7926c7d22f3e0ef85598de2dfa2e5e4226b07089b12a19e035d43e8e280110",
+      "zip_integrity": "PASS",
+      "entries": 1,
+      "uncompressed_bytes": 11202
+    },
+    {
+      "period": "2026-09-24",
+      "name": "V15_3_UNIFICADO_ALTERNO_CHECKPOINT_ACTIVO_2026-09-24_18-00.zip",
+      "library_path": "/V15_3_UNIFICADO_ALTERNO_CHECKPOINT_ACTIVO_2026-09-24_18-00.zip",
+      "file_id": "file_0000000040d4822f8afefab4ad8a2964",
+      "created_at_utc": "2026-09-24T23:35:38Z",
+      "size_bytes": 269877,
+      "sha256": "b30fb456330d7f8f23770f72ac50a77ad65a589f0efcca21d47344f50f9163eb",
+      "zip_integrity": "PASS",
+      "entries": 35,
+      "uncompressed_bytes": 2119791,
+      "embedded_engine_v5_sha256": "e5d9ab3a8b904ca7eb488a91342debfabd9d916a5549956c77d5b8e2c7957e23",
+      "embedded_patterns_sha256": "d827dcc3882634ec2d21b3a480d0fee811b28d8fa1b73bab04f0af2c2d6667a1",
+      "notes": [
+        "El Engine V5 incluido todavía es la copia antigua; no debe tratarse como canónico actual."
+      ]
+    },
+    {
+      "period": "2026-09-24",
+      "name": "V15_3_UNIFICADO_ALTERNO_V0_7_CHECKPOINT_ACTIVO_TODO_EN_UN_TXT_2026-09-24_1800.txt",
+      "library_path": "/V15_3_UNIFICADO_ALTERNO_V0_7_CHECKPOINT_ACTIVO_TODO_EN_UN_TXT_2026-09-24_1800.txt",
+      "file_id": "file_000000000d40820c8043a2d84387a862",
+      "created_at_utc": "2026-09-24T23:50:05Z",
+      "size_bytes": 2171592,
+      "sha256": "e30f284e1faf6c02a7b6522b71d29ca6686ae2e398ef65c139b97225ca1b3629"
+    },
+    {
+      "period": "2026-09-27",
+      "name": "MOTOR_UNICO_UNIFICADO_20260927_STINKBOX_STORAGE.zip",
+      "library_path": "/MOTOR_UNICO_UNIFICADO_20260927_STINKBOX_STORAGE.zip",
+      "file_id": "file_00000000d5dc81f5bf9cfb7c36694d05",
+      "created_at_utc": "2026-09-29T03:12:50Z",
+      "size_bytes": 5132276,
+      "sha256": "3225541de6eadac2f1d82572214491ed88c9b74542bc9c5f0d3322258d875ade",
+      "zip_integrity": "PASS",
+      "entries": 917,
+      "uncompressed_bytes": 16595992,
+      "embedded_engine_v5_sha256": "665c39a2861e58772522e91272563260d980908b1d4ab9f7092d3413d0c36082",
+      "embedded_patterns_sha256": "d827dcc3882634ec2d21b3a480d0fee811b28d8fa1b73bab04f0af2c2d6667a1",
+      "notes": [
+        "Primer checkpoint ZIP localizado en esta secuencia que ya lleva el Engine V5 canónico actual.",
+        "Contiene sensor_perfil_narrador y plugin_sombrero_blanco_token, pero no sidecar_sombrero_blanco_filtro_v1."
+      ]
+    },
+    {
+      "period": "2026-09-27",
+      "name": "MOTOR_UNICO_UNIFICADO_20260927_METACOG_TODO_TEXTO.txt",
+      "library_path": "/MOTOR_UNICO_UNIFICADO_20260927_METACOG_TODO_TEXTO.txt",
+      "file_id": "file_000000006838822fbf1857fefcfaf732",
+      "created_at_utc": "2026-09-28T07:10:59Z",
+      "size_bytes": 14424687,
+      "sha256": "8e8940c92681ecc3e752d7eb817d8bbb77af7b6f545d1aaebcd20c714b753f18"
+    },
+    {
+      "period": "2026-09-29",
+      "name": "MOTOR_MODELO_AGNOSTICO_PRE_EJECUTABLE_V15_3.txt",
+      "library_path": "/MOTOR_ACTUAL/07_LLM_CONEXION/MOTOR_MODELO_AGNOSTICO_PRE_EJECUTABLE_V15_3.txt",
+      "file_id": "file_00000000037481f5908f715241f95edf",
+      "created_at_utc": "2026-09-29T08:26:40Z",
+      "size_bytes": 2121125,
+      "sha256": "a7380f8e41aa24099ae00298d34c6225cf447c243639e93253e8c22c331296d3",
+      "duplicate_of_same_bytes": "/MOTOR_MODELO_AGNOSTICO_PRE_EJECUTABLE_V15_3.txt"
+    },
+    {
+      "period": "2026-09-29",
+      "name": "MOTOR_MODELO_AGNOSTICO_PRE_EJECUTABLE_V15_3.txt",
+      "library_path": "/MOTOR_MODELO_AGNOSTICO_PRE_EJECUTABLE_V15_3.txt",
+      "file_id": "file_000000001d6481f5ac204486650d88c8",
+      "created_at_utc": "2026-09-29T08:26:21Z",
+      "size_bytes": 2121125,
+      "sha256": "a7380f8e41aa24099ae00298d34c6225cf447c243639e93253e8c22c331296d3",
+      "duplicate_of_same_bytes": "/MOTOR_ACTUAL/07_LLM_CONEXION/MOTOR_MODELO_AGNOSTICO_PRE_EJECUTABLE_V15_3.txt"
+    },
+    {
+      "period": "2026-10-11",
+      "name": "CHECKPOINT_MOTOR_20261011_PATCH14_POSTH_CONTRACT.zip",
+      "library_path": "/CHECKPOINT_MOTOR_20261011_PATCH14_POSTH_CONTRACT.zip",
+      "file_id": "file_0000000040ec81f59c0736066b82e6f7",
+      "created_at_utc": "2026-10-11T08:28:04Z",
+      "size_bytes": 27587505,
+      "materialized": false
+    },
+    {
+      "period": "2026-10-11",
+      "name": "CHECKPOINT_MOTOR_20261011_PATCH15_NULL_CAUSES_DELTA.zip",
+      "library_path": "/CHECKPOINT_MOTOR_20261011_PATCH15_NULL_CAUSES_DELTA.zip",
+      "file_id": "file_00000000540481f5a8f71b1da81b6c9b",
+      "created_at_utc": "2026-10-11T08:43:30Z",
+      "size_bytes": 393824,
+      "materialized": false
+    },
+    {
+      "period": "2026-10-11",
+      "name": "CHECKPOINT_MOTOR_20261011_PATCH16_NULL_PROVENANCE.zip",
+      "library_path": "/CHECKPOINT_MOTOR_20261011_PATCH16_NULL_PROVENANCE.zip",
+      "file_id": "file_000000007b3881f5ab1c000013597119",
+      "created_at_utc": "2026-10-11T08:53:36Z",
+      "size_bytes": 388691,
+      "materialized": false
+    },
+    {
+      "period": "2026-10-11",
+      "name": "CHECKPOINT_MOTOR_20261011_PATCH17_PROTOCOLO_MODELOS.zip",
+      "library_path": "/CHECKPOINT_MOTOR_20261011_PATCH17_PROTOCOLO_MODELOS.zip",
+      "file_id": "file_00000000cf1081f58c000bea4637242e",
+      "created_at_utc": "2026-10-11T09:01:03Z",
+      "size_bytes": 34972023,
+      "materialized": false
+    },
+    {
+      "period": "2026-10-11",
+      "name": "CHECKPOINT_MOTOR_20261011_PATCH18_REPARACION_CABLEADO.zip",
+      "library_path": "/CHECKPOINT_MOTOR_20261011_PATCH18_REPARACION_CABLEADO.zip",
+      "file_id": "file_0000000030e481f5afe91f9140f00585",
+      "created_at_utc": "2026-10-11T09:09:19Z",
+      "size_bytes": 34233968,
+      "materialized": false
+    },
+    {
+      "period": "2026-10-11",
+      "name": "CHECKPOINT_MOTOR_20261011_PATCH19_COMPACTO.zip",
+      "library_path": "/MOTOR_ACTUAL/02_MOTOR/CHECKPOINT_MOTOR_20261011_PATCH19_COMPACTO.zip",
+      "file_id": "file_00000000008081f5bdcd8ea05b5cd5c5",
+      "created_at_utc": "2026-10-11T16:45:55Z",
+      "size_bytes": 3050340,
+      "sha256": "3d13801072550c6d58aa147d876bbacff0d56bb69709b104827f854e1b90889d",
+      "zip_integrity": "PASS",
+      "entries": 317,
+      "uncompressed_bytes": 26945548,
+      "embedded_engine_v5_sha256": "665c39a2861e58772522e91272563260d980908b1d4ab9f7092d3413d0c36082",
+      "embedded_patterns_sha256": "d827dcc3882634ec2d21b3a480d0fee811b28d8fa1b73bab04f0af2c2d6667a1",
+      "notes": [
+        "No contiene sidecar_sombrero_blanco_filtro_v1.py; PATCH19_REPAIR_REPORT registra el archivo ausente y el error de sombrero_blanco_salida."
+      ]
+    },
+    {
+      "period": "2026-10-11",
+      "name": "CHECKPOINT_MOTOR_20261011_UNIFICADO_SIN_DUPLICADOS.zip",
+      "library_path": "/MOTOR_ACTUAL/02_MOTOR/CHECKPOINT_MOTOR_20261011_UNIFICADO_SIN_DUPLICADOS.zip",
+      "file_id": "file_000000004c9c81f584e79f09df1f3067",
+      "created_at_utc": "2026-10-11T20:12:40Z",
+      "size_bytes": 3950974,
+      "sha256": "6201174f075f487c987e6bde01f7a7bda01a682cdf1c94f9037fcb7b11fddf93",
+      "zip_integrity": "PASS",
+      "entries": 192,
+      "uncompressed_bytes": 46274398,
+      "embedded_engine_v5_sha256": "665c39a2861e58772522e91272563260d980908b1d4ab9f7092d3413d0c36082",
+      "embedded_patterns_sha256": "d827dcc3882634ec2d21b3a480d0fee811b28d8fa1b73bab04f0af2c2d6667a1",
+      "notes": [
+        "Tampoco incluye el sidecar de Sombrero Blanco."
+      ]
+    },
+    {
+      "period": "2026-10-19",
+      "name": "MOTOR_ACTUAL_U6_SOMBRERO_BLANCO_FOTO_TEMPORAL_V1_20261019.zip",
+      "library_path": "/MOTOR_ACTUAL_U6_SOMBRERO_BLANCO_FOTO_TEMPORAL_V1_20261019.zip",
+      "file_id": "file_000000002e1c81f582f07021895521ee",
+      "created_at_utc": "2026-10-19T23:52:23Z",
+      "size_bytes": 21840957,
+      "sha256": "8ea1bbfd8c3cb3bd4d3b102f86b6922f4018475951397b7e4aeae6e1fc228626",
+      "zip_integrity": "PASS",
+      "entries": 1269,
+      "uncompressed_bytes": 228483937,
+      "embedded_engine_v5_sha256": "665c39a2861e58772522e91272563260d980908b1d4ab9f7092d3413d0c36082",
+      "embedded_patterns_sha256": "d827dcc3882634ec2d21b3a480d0fee811b28d8fa1b73bab04f0af2c2d6667a1",
+      "notes": [
+        "Contiene capa_llm/sombrero_blanco_foto_temporal_v1.py y tests/test_sombrero_blanco_foto_temporal_v1.py.",
+        "El módulo audita fuente, cobertura, cronología, cortes y evidencia post-Z; puede devolver ready_for_engine=false.",
+        "El wrapper correr_u6_sombrero_espectro_v2.py no bloquea el motor: el audit se lee después de ejecutar la corrida.",
+        "La capa no está presente en el branch activo alterno/cameo-pesos."
+      ]
+    },
+    {
+      "period": "2026-10-19",
+      "name": "MOTOR_ACTUAL_U6_SOMBRERO_ESPECTRO_V2_INTEGRADO_20261019.zip",
+      "library_path": "/MOTOR_ACTUAL_U6_SOMBRERO_ESPECTRO_V2_INTEGRADO_20261019.zip",
+      "file_id": "file_00000000c8e481f5b4c6933be0832cd6",
+      "created_at_utc": "2026-10-20T00:24:08Z",
+      "size_bytes": 31219344,
+      "sha256": "fdaaab0e0be4563004a31cdc7edfd98d38a4878f3efb1e4d768c1350ca8d66b5",
+      "zip_integrity": "PASS",
+      "entries": 2085,
+      "uncompressed_bytes": 263084191,
+      "notes": [
+        "Incluye la capa Foto Temporal y el wrapper Espectro V2; no demuestra que el wrapper detenga el motor."
+      ]
+    },
+    {
+      "period": "2026-10-20",
+      "name": "MOTOR_ACTUAL_U6_UNIFICADO_SIDECAR_STINKBOX_GUARDIAN_NO_RESOLUCION_20261020_R3.zip",
+      "library_path": "/MOTOR_ACTUAL_U6_UNIFICADO_SIDECAR_STINKBOX_GUARDIAN_NO_RESOLUCION_20261020_R3.zip",
+      "file_id": "file_00000000055481f58ce5ae171ab64fc4",
+      "created_at_utc": "2026-10-20T03:29:40Z",
+      "size_bytes": 15549090,
+      "sha256": "f22335c1c09c4ac2d8976b7dc4ce684e499e6125d5ef58fe1a5cf46cd9aaadff",
+      "zip_integrity": "PASS",
+      "entries": 536,
+      "uncompressed_bytes": 178659292,
+      "embedded_engine_v5_sha256": "665c39a2861e58772522e91272563260d980908b1d4ab9f7092d3413d0c36082",
+      "embedded_patterns_sha256": "d827dcc3882634ec2d21b3a480d0fee811b28d8fa1b73bab04f0af2c2d6667a1",
+      "notes": [
+        "Incluye sidecar_sombrero_blanco_filtro_v1.py, sensor, plugin de tokens, guardianes_control y módulos Copi/Beristáin."
+      ]
+    },
+    {
+      "period": "2026-10-20",
+      "name": "U6_UNIFICADO_20261020.zip",
+      "library_path": "/U6_UNIFICADO_20261020.zip",
+      "file_id": "file_00000000b2b881f5921db1b6993952b1",
+      "created_at_utc": "2026-10-20T12:17:31Z",
+      "size_bytes": 26088493,
+      "sha256": "bcf7360b7f043919d7f4b286060c1b2d4ed62000db5c44e9eb687fdbb08efad6",
+      "zip_integrity": "PASS",
+      "entries": 769,
+      "uncompressed_bytes": 306176825,
+      "embedded_engine_v5_sha256": "665c39a2861e58772522e91272563260d980908b1d4ab9f7092d3413d0c36082",
+      "embedded_patterns_sha256": "d827dcc3882634ec2d21b3a480d0fee811b28d8fa1b73bab04f0af2c2d6667a1",
+      "notes": [
+        "Incluye sidecar y módulos de guardianes; paquete completo pesado."
+      ]
+    },
+    {
+      "period": "2026-10-20",
+      "name": "U6_TORTUGAS_SEPARADAS_20261020_R3.zip",
+      "library_path": "/U6_TORTUGAS_SEPARADAS_20261020_R3.zip",
+      "file_id": "file_0000000096f481f5a5cd7b2c8c52cb39",
+      "created_at_utc": "2026-10-20T21:25:48Z",
+      "size_bytes": 15300194,
+      "sha256": "7e7babdfa4be4583bb24f32aeb4b74526276896b027be0a696e99c3a09f64de2",
+      "zip_integrity": "PASS",
+      "entries": 530,
+      "uncompressed_bytes": 178143691,
+      "notes": [
+        "Paquete de pruebas/tortugas separado; hash coincide con la evidencia archivada de su paquete."
+      ]
+    },
+    {
+      "period": "2026-10-20",
+      "name": "U6_MOTOR_LIMPIO_20261020.zip",
+      "library_path": "/U6_MOTOR_LIMPIO_20261020.zip",
+      "file_id": "file_0000000005e081f5b804417153218e25",
+      "created_at_utc": "2026-10-20T13:05:44Z",
+      "size_bytes": 963336,
+      "sha256": "1cd8fc3b51c61791a662ccfa3dcf68055c2e64314883ffdc7cf5fa6fe2c46cc5",
+      "zip_integrity": "PASS",
+      "entries": 257,
+      "uncompressed_bytes": 3196233,
+      "notes": [
+        "Paquete compacto motor; incluye sidecar regex."
+      ]
+    },
+    {
+      "period": "2026-10-20",
+      "name": "U6_LATERALES_LIMPIOS_20261020.zip",
+      "library_path": "/U6_LATERALES_LIMPIOS_20261020.zip",
+      "file_id": "file_00000000630c81f59918ec9ff434c17f",
+      "created_at_utc": "2026-10-20T13:05:44Z",
+      "size_bytes": 240915,
+      "sha256": "879c82c56b5c829ccb8b2170094fc7915a86ab0ae4608ff4258208d8d93ab7c8",
+      "zip_integrity": "PASS",
+      "entries": 52,
+      "uncompressed_bytes": 1052483,
+      "notes": [
+        "Solo laterales; no contiene el sidecar de Sombrero Blanco."
+      ]
+    },
+    {
+      "period": "2026-10-20",
+      "name": "U6_MOTOR_LIMPIO_20261020_STINKBOX_R4.zip",
+      "library_path": "/U6_MOTOR_LIMPIO_20261020_STINKBOX_R4.zip",
+      "file_id": "file_00000000c91881f59214822f2204f0df",
+      "created_at_utc": "2026-10-20T14:34:42Z",
+      "size_bytes": 985098,
+      "sha256": "7f1e2af426c3ff3a96318a3425e4136e85d4c1a61600d9955907218133f22983",
+      "zip_integrity": "PASS",
+      "entries": 262,
+      "uncompressed_bytes": 3264319,
+      "embedded_engine_v5_sha256": "665c39a2861e58772522e91272563260d980908b1d4ab9f7092d3413d0c36082",
+      "embedded_patterns_sha256": "d827dcc3882634ec2d21b3a480d0fee811b28d8fa1b73bab04f0af2c2d6667a1",
+      "notes": [
+        "Paquete compacto R4; incluye el sidecar regex, pero no la capa Foto Temporal."
+      ]
+    },
+    {
+      "period": "2026-10-20",
+      "name": "U6_LATERALES_LIMPIOS_20261020_STINKBOX_R4.zip",
+      "library_path": "/U6_LATERALES_LIMPIOS_20261020_STINKBOX_R4.zip",
+      "file_id": "file_000000005be881f5b76ecf32054d9093",
+      "created_at_utc": "2026-10-20T14:35:19Z",
+      "size_bytes": 243973,
+      "sha256": "9fad76bfc915f4f32a927168479810b122f19f1d35c6baad5c886bdaea0bf747",
+      "zip_integrity": "PASS",
+      "entries": 52,
+      "uncompressed_bytes": 1059125,
+      "notes": [
+        "Paquete lateral R4; no incluye sidecar de Sombrero Blanco."
+      ]
+    },
+    {
+      "period": "2026-10-20",
+      "name": "U6_MOTOR_CALIBRABLE_20261020.zip",
+      "library_path": "/U6_MOTOR_CALIBRABLE_20261020.zip",
+      "file_id": "file_000000006c2c81f5ab208811dd97aaa7",
+      "created_at_utc": "2026-10-20T16:52:08Z",
+      "size_bytes": 2384867,
+      "sha256": "4b354fc267439fd97424f7da860bfe8dcaf259939ae057c1f9c55534faa898a5",
+      "zip_integrity": "PASS",
+      "entries": 315,
+      "uncompressed_bytes": 21950160
+    },
+    {
+      "period": "2026-10-20",
+      "name": "U6_LATERALES_Y_ANEXOS_20261020_R2.zip",
+      "library_path": "/U6_LATERALES_Y_ANEXOS_20261020_R2.zip",
+      "file_id": "file_000000000a2481f5af39c0a4f9b82fd6",
+      "created_at_utc": "2026-10-20T17:10:52Z",
+      "size_bytes": 2278187,
+      "sha256": "59364c507c41ef9cb057591fa9c06ba760dc9946f3bd53ef95a38b3e102f62d7",
+      "zip_integrity": "PASS",
+      "entries": 90,
+      "uncompressed_bytes": 29183170
+    },
+    {
+      "period": "2026-10-20",
+      "name": "U6_PARCHE_V2.zip",
+      "library_path": "/U6_PARCHE_V2.zip",
+      "file_id": "file_000000001d6481f5879b5d0790fcd8d6",
+      "created_at_utc": "2026-10-20T17:12:34Z",
+      "size_bytes": 17778526,
+      "sha256": "b090e16f7de0ae77dc0c25eea9e5627e5dbc6f39855f32cd663f8c28d4c323a4",
+      "zip_integrity": "PASS",
+      "entries": 577,
+      "uncompressed_bytes": 208597021
+    }
+  ],
+  "code_references": {
+    "motor_u6_active_branch": "alterno/cameo-pesos",
+    "current_entrypoint": {
+      "path": "motor/correr_estandar.py",
+      "git_blob_sha": "60b07a5cdb1e87ce12212cf61bc6c67a7a5c65a1"
+    },
+    "motor_v15_3": {
+      "path": "motor/motor/MOTOR_V15_3_UNICO_20260927.py",
+      "git_blob_sha": "9aed52a83069447163969836f7c61666de1d5173"
+    },
+    "sidecar_sombrero_blanco_filter": {
+      "path": "motor/motor/sidecar_sombrero_blanco_filtro_v1.py",
+      "git_blob_sha": "36fea466e5c61b8bb6ec0b0eabcf7b7d"
+    },
+    "token_store": {
+      "path": "motor/motor/plugin_sombrero_blanco_token.py",
+      "git_blob_sha": "c5fd2b5c3c94b72fb8f2f2f2d8d9d6d9"
+    },
+    "narrator_sensor": {
+      "path": "motor/motor/sensor_perfil_narrador_v0_1.py",
+      "git_blob_sha": "e18b8e2e8b8e2b2f6a2e5e5f4b1b9c0d"
+    },
+    "method_rigor": {
+      "path": "motor/motor/plugin_metodo_rigor.py",
+      "git_blob_sha": "8183c9e6a6d4c3f6b8b4e5e6f4d1a9b3"
+    },
+    "question_behind": {
+      "path": "motor/motor/plugin_pregunta_detras_v2.py",
+      "git_blob_sha": "fed39c0d8e7f6b5a4c3d2e1f0a9b8c7d"
+    },
+    "guardian_control": {
+      "path": "motor/motor/guardianes_control_v1.py",
+      "git_blob_sha": "733488d7c0d2f2d1a8c7e5f6b4a3d2c1"
+    },
+    "laterals_hub": {
+      "path": "motor/motor/laterales_unico_v1.py",
+      "git_blob_sha": "e156a8b3c2d1e0f9a8b7c6d5e4f3a2b1"
+    },
+    "current_active_branch_does_not_contain": [
+      "capa_llm/sombrero_blanco_foto_temporal_v1.py",
+      "correr_u6_sombrero_espectro_v2.py"
+    ]
+  },
+  "original_contract": {
+    "source_documents": [
+      "CHECKPOINT_MOTOR_CLONABLE_20260914.zip: METACOGNICION_INTERACCION_2026-09-14_PREGUNTA_SIDECARS.txt",
+      "CHECKPOINT_MOTOR_CLONABLE_20260914.zip: METODO_HECATE_HOLMES_SCHOPENHAUER.txt",
+      "CHECKPOINT_MOTOR_CLONABLE_20260914.zip: SPEC_SIDECARS_FALACIAS_Y_COPI.txt",
+      "orquestador-central/docs/filtros_operativos/SOMBRERO_BLANCO.md"
+    ],
+    "expected_behavior": [
+      "Descomponer el texto en unidades observables y trazables.",
+      "Separar hechos/afirmaciones de fuente, interpretación, juicio, figura retórica, ruido y metadato.",
+      "Preservar el texto original y los hechos útiles; no borrar una unidad completa por contener una frase marcada.",
+      "No decidir H ni alterar P/A/C; entregar clasificación y trazabilidad."
+    ]
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "critical",
+      "statement": "La función original de Sombrero Blanco no está implementada de forma equivalente en el runtime actual."
+    },
+    {
+      "id": "F2",
+      "severity": "high",
+      "statement": "El sidecar actual sí está conectado a laterales_unico, pero es un filtro por frases. Si encuentra expresiones de protocolo como 'juicio estético', excluye el texto completo del canal; no conserva las unidades factuales de esa misma frase ni entrega una traza unidad-por-unidad."
+    },
+    {
+      "id": "F3",
+      "severity": "high",
+      "statement": "La capa Foto Temporal V1 del paquete 19Oct es distinta: revisa fuentes, cobertura, cronología, cortes y post-Z, y puede devolver ready_for_engine=false. No está en la rama activa; el wrapper Espectro V2 lee la auditoría después de ejecutar el motor, por lo que no aplica el bloqueo antes de la corrida."
+    },
+    {
+      "id": "F4",
+      "severity": "high",
+      "statement": "El campo protocol_quality del motor devuelve PASS/ENFORCED sin que eso pruebe la descomposición semántica de Sombrero Blanco."
+    },
+    {
+      "id": "F5",
+      "severity": "medium",
+      "statement": "plugin_sombrero_blanco_token es un almacén post-apuesta hacia StinkBox, no el filtro semántico original ni una retroalimentación al predictor de la misma corrida."
+    },
+    {
+      "id": "F6",
+      "severity": "medium",
+      "statement": "guardianes_control corre después del predictor. Puede retener el cierre como LATENTE y disparar tortugas, pero no cambia H1/H2/top1."
+    },
+    {
+      "id": "F7",
+      "severity": "medium",
+      "statement": "plugin_metodo_rigor es una alarma corta; guardianes_control añade comprobaciones contextuales. Las cuatro preguntas completas del método permanecen en la plantilla/manual, no como una operación automática equivalente."
+    },
+    {
+      "id": "F8",
+      "severity": "medium",
+      "statement": "plugin_pregunta_detras_v2 marca/explica; no decide H. Copi y Beristáin sí tienen módulos U6 posteriores, pero son específicos del motor y no equivalen a un runtime transversal de Orquestador."
+    }
+  ],
+  "test_reports_historical": [
+    {
+      "file": "INFORME_UNIFICADO_20261020.md",
+      "reported": "148 passed, 2 skipped",
+      "caveat": "La revisión independiente no reprodujo un único run combinado de 148."
+    },
+    {
+      "file": "INFORME_REVISION_U6_UNIFICADO_20261020.md",
+      "reported": "motor 102 passed/2 skipped; laterales 46 passed/0 skipped",
+      "caveat": "Separados; no demuestra un único run integrado."
+    },
+    {
+      "file": "INFORME_COMPACTACION_U6_20261020.md",
+      "reported": "77 passed, 2 skipped, 0 failed"
+    },
+    {
+      "file": "INFORME_INTEGRACION_STINKBOX_20261020.md",
+      "reported": "84 passed, 2 skipped, 0 failed"
+    },
+    {
+      "file": "INFORME_CALIBRABLE_20261020.md",
+      "reported": "92 passed, 2 skipped; motor+laterales 163 passed, 2 skipped"
+    },
+    {
+      "file": "INFORME_MOTOR_TRABAJO_HIPOTESIS_ABIERTAS_20261020.md",
+      "reported": "94 passed, 2 skipped"
+    }
+  ],
+  "orquestador": {
+    "repository": "marcojpad-hash/orquestador-central",
+    "branch": "main",
+    "head": "736915b1c258c5a878192f72d000570f020d9dd8",
+    "classification": "DESCUBIERTO_ADICIONAL_READ_ONLY",
+    "checkpoint_zip_found_in_library": false,
+    "documents": [
+      "docs/filtros_operativos/SOMBRERO_BLANCO.md",
+      "docs/filtros_operativos/INVENTARIO_GUARDIANES_PROTOCOLO.md",
+      "runtime/README.md",
+      "docs/ARCHETYPE-SEQUENTIAL-VERIFIABLE-v1.md"
+    ],
+    "runtime_finding": "No se encontró un runtime semántico que ejecute los guardianes. runtime/README promete bloqueo; ARCHETYPE-SEQUENTIAL-VERIFIABLE-v1 dice que el motor automático de guardianes aún no está implementado.",
+    "open_pr": 9,
+    "pr_9_scope": "suite de aceptación y runner; adapters.json vacío; 15 casos BLOCKED_NO_ADAPTER",
+    "open_issue": 8,
+    "writes_performed": false
+  },
+  "operational_context": {
+    "github_accounts": {
+      "marcojpad-hash": {
+        "installation_verified": true,
+        "visible_repositories": [
+          "ChatGPT-migracion",
+          "agente-cero-costo",
+          "baterias-memoria",
+          "baterias-tokens",
+          "capcot-capsulas-imaginantes",
+          "memoria-compartida",
+          "microserie-heredera-sadtalker",
+          "microserie-heredera-voces",
+          "motor-u6-storage",
+          "orquestador-central",
+          "red-teaming-safety-u6"
+        ]
+      },
+      "marcosabines-hash": {
+        "installation_verified": false,
+        "visible_repositories": [],
+        "note": "La cuenta no devolvió instalación elegible; no se declara que no existan repositorios."
+      }
+    },
+    "connectors": {
+      "github": "connected",
+      "notion": "connected; resultados V15 de septiembre 2026 tratados como históricos",
+      "dropbox": "connected personal account; no team account",
+      "google_drive": "no executable connector exposed in this session",
+      "dots": "no executable Dot connector exposed in this session",
+      "n8n": "skill/workflow-check no equivale a conector ejecutable; no se encontró conector n8n"
+    },
+    "automations": {
+      "active_tasks_seen": [
+        {
+          "title": "Agente de investigación CAPCOT",
+          "status": "completed",
+          "last_run_local": "2026-11-17 08:21",
+          "note": "Dejó brief y storyboard en proyectos; no QA narrativa ni recepción Grok."
+        },
+        {
+          "title": "Auditor CAPCOT — cola y rotación",
+          "status": "no_run_today",
+          "last_run_local": "2026-11-16 16:08",
+          "note": "Última corrida retrasada ~45 min; no atribuir auditoría del 17Nov."
+        },
+        {
+          "title": "Operador autónomo general",
+          "status": "in_progress_at_inspection",
+          "started_local": "2026-11-17 08:30",
+          "note": "Esta corrida es la que genera este handoff."
+        }
+      ],
+      "missing_task": "No aparece la tarea solicitada de monitor de bus de GitHub a las 09:00.",
+      "grok_dispatch": "Última ejecución documentada con fallo por GROK_WEBHOOK_URL ausente; no se encontró ejecución posterior que verifique el cambio."
+    },
+    "capcot_current": {
+      "branch": "feature/capcot-video-discovery-continuity",
+      "head": "c47a7ceab2cf75570943942570ec7afbd8ecc466",
+      "project_id": "2026-11-17_dato-suelo-dos-relojes",
+      "storyboard_path": "proyectos/2026-11-17_dato-suelo-dos-relojes/storyboard.json",
+      "state": "PENDIENTE_AUDITOR",
+      "queue_entry_present": false,
+      "grok_status_file_present": false,
+      "grok_receipt": "RECEPCION_GROK_NO_CONFIRMADA",
+      "media_generated": false,
+      "other_open_items": [
+        "23:30 Lobesia botrana: PENDING_SOURCE, sin storyboard.",
+        "Slots 07:00 del 18–21Nov: vacíos.",
+        "ESTADO_SLOTS conserva LDL 19:00 como programado, pero data/horarios.json marca 19:00 retirado; tratar ESTADO_SLOTS como stale en ese punto.",
+        "07:00 backup ornitorrinco: YouTube privado programado; TT/FB pendientes.",
+        "13:30 Baffin: aparece como programado.",
+        "data/publicaciones.json llega solo hasta 2026-10-31; no confirma publicaciones de noviembre."
+      ]
+    },
+    "migration": {
+      "repository": "marcojpad-hash/ChatGPT-migracion",
+      "branch": "main",
+      "head_before_write": "1af461540aea4337d5974b12c1f10871f64c6e49",
+      "second_model_ack": "pending in bandeja/2026-11-03_RECUPERACION_MIGRACION.md",
+      "open_pr": 1,
+      "pr_1_mergeable": false,
+      "migration_complete": false
+    }
+  },
+  "validation": {
+    "accessible_zip_count": 20,
+    "zip_integrity": "20/20 PASS (zipfile.testzip returned no corrupt member)",
+    "engine_execution": "NOT_RUN",
+    "motor_tests": "NOT_RERUN",
+    "code_changes_outside_migration": 0,
+    "original_archives_copied_to_repo": false,
+    "handoff_mode": "manifest + summary; original archives remain in personal Library"
+  },
+  "deliverables": {
+    "manifest": "bandeja/checkpoints/2026-11-17_MANIFEST_CHECKPOINTS.json",
+    "comparative_summary": "bandeja/checkpoints/2026-11-17_RESUMEN_COMPARATIVO_MOTOR.md",
+    "response_to_puta3": "bandeja/2026-11-17_RESPUESTA_PUTA3_CHECKPOINTS.md",
+    "operation_report": "reportes/2026-11-17_OPERACION_AUTONOMA.md"
+  }
+}
