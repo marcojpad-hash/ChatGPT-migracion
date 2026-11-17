@@ -520,3 +520,13 @@ U6 sin nuevas acciones: sigue NO_CALIBRADO, sin ejecución de motor/tests en est
 - **CAPCOT Lestes:** revisión JS auxiliar 0 errores; validador Python real y Crossref `--check-doi` no ejecutados por falta de runtime/acción conectada. No promover.
 - **Grok:** sin recepción individual; seis consultas de rutas de estado/acuse/cola dieron 404 para ambos proyectos. No crear recibos ni redispatchar antes de superar los gates.
 - **Migración:** INCOMPLETA; el handoff del 3-nov no tiene acuse de destinatario ni verificación del emisor.
+## Reconsulta de estado y conectores — 2026-11-17
+
+- **GitHub:** `marcojpad-hash` mantiene 1 instalación y 11 repositorios visibles; `marcosabines-hash` devuelve 0 instalaciones/0 repositorios. Los ocho adicionales siguen fuera de escritura.
+- **CAPCOT:** investigador run `9832ba02-4954-8322-b8b2-2f5629fb5e20` COMPLETED 08:21:19 CDMX. `2026-11-17_dato-suelo-dos-relojes` quedó en `proyectos/`, 214 palabras, 8 escenas, 84 s, compuerta estructural PASS, pero sin `narrative_qa`, sin promoción a `cola/entrada/` y sin `cola/estado/`; `RECEPCION_GROK_NO_CONFIRMADA`. Auditor run siguiente 17-nov 15:00; último COMPLETED 16-nov 16:08:15. No duplicar la revisión narrativa.
+- **Motor U6:** `main` sigue como fuente de solo lectura; HEAD `976b67a55bbd4a755896a18eaa1d28d506755ceb`. La auditoría programada de Actions #44103126084 terminó SUCCESS (job `auditar`); es una auditoría de corridas, no ejecución del motor. `ULTIMO_ESTADO.md` al corte todavía muestra como último registro #44017530422. Esta ejecución no corrió motor ni tests.
+- **Automatizaciones:** 16 tareas listadas, 3 habilitadas, 13 deshabilitadas. No aparece el monitor del bus de las 09:00. Operador run `29d3cb8a-531c-8326-8222-3aed2965cd1f` sigue IN_PROGRESS sin `completed_at`; no atribuirle cierre.
+- **Conectores:** Floot devuelve dos proyectos. `CAPCOT Visual Desk` es un dashboard estático sin recursos conectados ni sincronización GitHub verificada; Runway no expone modelos de vídeo/workflows; Canva no tiene Brand Kits; vidIQ devuelve cero canales; Undermind cero workspaces. Dropbox responde como `marco.jp@live.com.mx`. Notion solo devolvió páginas V15 antiguas de septiembre.
+- **Migración:** HEAD de ChatGPT-migracion/main al corte `bedf70f8f3afcc72c2abf79890e3968cb0b71fa0`. El handoff del 3-nov sigue PENDIENTE; no hay acuse de segunda sesión/modelo. Migración INCOMPLETA.
+
+Evidencia: [reporte operativo 2026-11-17](reportes/2026-11-17_OPERACION_AUTONOMA.md).
