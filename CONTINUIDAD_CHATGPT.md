@@ -325,3 +325,13 @@ Hallazgo funcional: la función semántica original de Sombrero Blanco no está 
 CAPCOT 17-nov: el agente de 08:00 terminó y dejó storyboard en `proyectos/`; estado PENDIENTE_AUDITOR, fuera de cola. No existe `cola/estado/2026-11-17_dato-suelo-dos-relojes.json`; recepción Grok NO_CONFIRMADA. El auditor no ha corrido hoy; su última corrida es 16-nov. No aparece la automatización de monitor de bus de las 09:00. El run de Operador general seguía IN_PROGRESS en la consulta final; no se declara completado.
 
 No se modificaron U6, CAPCOT ni Orquestador; no se ejecutó el motor, no se reejecutaron pruebas y no se fusionó ningún PR. Solo se escribieron estos artefactos en ChatGPT-migracion/main. La migración continúa INCOMPLETA hasta el acuse verificable de una segunda sesión/modelo.
+## Addendum de conectividad y automatizaciones — 2026-11-17
+
+- El reporte del 17-nov fue ampliado con una reconsulta de conexiones y estados terminales. Ver [reporte operativo](reportes/2026-11-17_OPERACION_AUTONOMA.md).
+- GitHub: `marcojpad-hash` = 1 instalación/11 repositorios; `marcosabines-hash` = 0/0 visibles. Los ocho repositorios adicionales siguen solo lectura.
+- Floot ahora devuelve dos proyectos. `CAPCOT Visual Desk` es un scaffold de dashboard estático, sin recursos conectados ni sincronización GitHub verificada; no es pipeline de producción. Runway está autenticado pero sin modelos de vídeo ni workflows; Canva sin Brand Kits; vidIQ sin canales; Undermind sin workspaces. Dropbox está conectado como `marco.jp@live.com.mx`. Las páginas V15 de Notion encontradas son históricas.
+- No hay herramientas ejecutables de codebase-memory-mcp, DSH, n8n, Dot nativo ni Google Drive expuestas en esta sesión.
+- CAPCOT 17-nov: el investigador terminó; el storyboard sigue en `proyectos/`, pendiente de auditor independiente, fuera de cola y sin recepción Grok confirmada. Auditor siguiente 15:00 CDMX.
+- Motor U6: `main` HEAD `976b67a`; la auditoría de corridas #44103126084 terminó SUCCESS, sin ejecutar el motor. No se alteró U6.
+- El operador general seguía `IN_PROGRESS` (run `29d3cb8a-531c-8326-8222-3aed2965cd1f`); no se declara completado. La tarea de monitor del bus a las 09:00 no aparece en la lista de 16 automatizaciones.
+- El handoff original del 3-nov continúa sin acuse independiente. Migración INCOMPLETA.
