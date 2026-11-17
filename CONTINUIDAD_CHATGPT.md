@@ -313,8 +313,8 @@ Mozart ya no está pendiente de ejecución ni auditoría. La coordinadora inform
 
 ## Operación autónoma — checkpoints Motor U6 / handoff Puta3, 2026-11-17
 
-- Reporte operativo: [reportes/2026-11-17_OPERACION_AUTONOMA.md](reportes/2026-11-17_OPERACION_AUTONOMA.md), commit `fee2da738e95292e42545b45ff67d31051129aaa`.
-- Manifiesto verificable de checkpoints: [bandeja/checkpoints/2026-11-17_MANIFEST_CHECKPOINTS.json](bandeja/checkpoints/2026-11-17_MANIFEST_CHECKPOINTS.json), commit final `d1a683d740ee9eebc126bea475231aec383bc3cf`.
+- Reporte operativo: [reportes/2026-11-17_OPERACION_AUTONOMA.md](reportes/2026-11-17_OPERACION_AUTONOMA.md), commit `27ec0f7a4292bc1b07d71443a89f4c0c994a961f`.
+- Manifiesto verificable de checkpoints: [bandeja/checkpoints/2026-11-17_MANIFEST_CHECKPOINTS.json](bandeja/checkpoints/2026-11-17_MANIFEST_CHECKPOINTS.json), commit final `223b256dba30a59ecdf5829d268458421cda7a31`.
 - Comparación funcional: [bandeja/checkpoints/2026-11-17_RESUMEN_COMPARATIVO_MOTOR.md](bandeja/checkpoints/2026-11-17_RESUMEN_COMPARATIVO_MOTOR.md), commit `8c53e65606164c99b78cc0fe077c12a76b11aca6`.
 - Respuesta para Puta3: [bandeja/2026-11-17_RESPUESTA_PUTA3_CHECKPOINTS.md](bandeja/2026-11-17_RESPUESTA_PUTA3_CHECKPOINTS.md), commit `7aa64d5b97d12d254a634fe85d0d11e49c98a57e`.
 
@@ -322,6 +322,6 @@ Se inspeccionaron 20 ZIPs accesibles; todos pasaron integridad. El checkpoint co
 
 Hallazgo funcional: la función semántica original de Sombrero Blanco no está implementada de forma equivalente. El sidecar actual sí está conectado a laterales, pero es un filtro por frases que puede excluir el texto completo; no hace separación y trazabilidad unidad-por-unidad. La capa Foto Temporal del 19-oct es otro prototipo, no está en la rama activa y su wrapper no bloquea antes de ejecutar el motor. Orquestador Central fue descubierto como repo adicional, se mantuvo de solo lectura y su runtime semántico sigue sin conexión.
 
-CAPCOT 17-nov: el agente de 08:00 terminó y dejó storyboard en `proyectos/`; estado PENDIENTE_AUDITOR, fuera de cola. No existe `cola/estado/2026-11-17_dato-suelo-dos-relojes.json`; recepción Grok NO_CONFIRMADA. El auditor no ha corrido hoy; su última corrida es 16-nov. No aparece la automatización de monitor de bus de las 09:00.
+CAPCOT 17-nov: el agente de 08:00 terminó y dejó storyboard en `proyectos/`; estado PENDIENTE_AUDITOR, fuera de cola. No existe `cola/estado/2026-11-17_dato-suelo-dos-relojes.json`; recepción Grok NO_CONFIRMADA. El auditor no ha corrido hoy; su última corrida es 16-nov. No aparece la automatización de monitor de bus de las 09:00. El run de Operador general seguía IN_PROGRESS en la consulta final; no se declara completado.
 
 No se modificaron U6, CAPCOT ni Orquestador; no se ejecutó el motor, no se reejecutaron pruebas y no se fusionó ningún PR. Solo se escribieron estos artefactos en ChatGPT-migracion/main. La migración continúa INCOMPLETA hasta el acuse verificable de una segunda sesión/modelo.
