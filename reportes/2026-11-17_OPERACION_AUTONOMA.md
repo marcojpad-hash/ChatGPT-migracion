@@ -160,10 +160,10 @@ No se escribió ni fusionó nada en Orquestador; queda fuera del alcance de escr
 
 ## Estado de PRs y migración
 
-- Motor U6: PR #8 (Z90) y PR #11 (supervisor) abiertos, no fusionados; no se tocó la rama.
-- CAPCOT: PR #13 y PR #14 abiertos, no fusionados; no se modificaron.
-- Orquestador: PR #9 abierto (suite/runner), Issue #8 abierto; sin cambios.
-- ChatGPT-migracion: PR #1 abierto y no mergeable.
+- Motor U6: PR #8 (Z90) y PR #11 (supervisor) abiertos, ambos mergeable=true y no fusionados; no se tocó la rama.
+- CAPCOT: PR #13 y PR #14 abiertos, ambos mergeable=true y no fusionados; no se modificaron.
+- Orquestador: PR #9 abierto y mergeable=true (suite/runner), Issue #8 abierto; sin cambios.
+- ChatGPT-migracion: PR #1 abierto y mergeable=false.
 - El acuse de segunda sesión/modelo en `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue pendiente; migración **NO COMPLETA**.
 
 ## Trabajo material realizado en esta corrida
@@ -171,7 +171,7 @@ No se escribió ni fusionó nada en Orquestador; queda fuera del alcance de escr
 Se crearon y verificaron en `ChatGPT-migracion/main`:
 
 1. [Manifiesto de checkpoints](../bandeja/checkpoints/2026-11-17_MANIFEST_CHECKPOINTS.json) — IDs de Biblioteca, rutas, tamaños, SHA-256, integridad ZIP, referencias de código y límites.
-   - Commit final del manifiesto: `1b9c53bbdd0d9f28fa93dbe7266d42a2bccaae01`.
+   - Commit final del manifiesto: `847db236815a8171589842ad3c2432964c0dd8ae`.
 2. [Resumen comparativo Motor/Sombrero Blanco](../bandeja/checkpoints/2026-11-17_RESUMEN_COMPARATIVO_MOTOR.md).
    - Commit: `8c53e65606164c99b78cc0fe077c12a76b11aca6`.
 3. [Respuesta a Puta3](../bandeja/2026-11-17_RESPUESTA_PUTA3_CHECKPOINTS.md).
