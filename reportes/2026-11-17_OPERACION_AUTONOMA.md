@@ -176,6 +176,7 @@ Se crearon y verificaron en `ChatGPT-migracion/main`:
    - Commit: `8c53e65606164c99b78cc0fe077c12a76b11aca6`.
 3. [Respuesta a Puta3](../bandeja/2026-11-17_RESPUESTA_PUTA3_CHECKPOINTS.md).
    - Commit: `7aa64d5b97d12d254a634fe85d0d11e49c98a57e`.
+4. `CONTINUIDAD_CHATGPT.md` recibió un addendum con el estado, hallazgos y enlaces; el archivo quedó enlazado a la versión final de este reporte y del manifiesto.
 
 El manifiesto inicial se corrigió después de verificar los SHA actuales de los archivos de código y el HEAD de `memoria-compartida`; la versión final contiene esos valores corregidos.
 
