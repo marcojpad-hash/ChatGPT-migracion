@@ -282,3 +282,30 @@ La comparación actual `main...feature/capcot-video-discovery-continuity` devuel
 - El mapa describe solo conexiones comprobadas en esta sesión. Las configuraciones locales y los README no prueban procesos vivos, ejecución remota ni recepción por otro agente.
 
 Evidencia de continuidad: [reporte operativo 2026-11-15](../reportes/2026-11-15_OPERACION_AUTONOMA.md).
+## Reconsulta de conexiones — 2026-11-17
+
+Esta reconsulta amplía el corte del 15-nov. La afirmación anterior de que Floot tenía cero proyectos queda como dato histórico: la consulta actual devuelve dos.
+
+### GitHub y repositorios
+- Cuenta `marcojpad-hash`: instalación de usuario `174841554`; 11 repositorios visibles: `motor-u6-storage`, `capcot-capsulas-imaginantes`, `ChatGPT-migracion`, `orquestador-central`, `red-teaming-safety-u6`, `agente-cero-costo`, `baterias-tokens`, `baterias-memoria`, `memoria-compartida`, `microserie-heredera-sadtalker` y `microserie-heredera-voces`.
+- Cuenta `marcosabines-hash`: cero instalaciones y cero repositorios devueltos, sin error. Esto describe la visibilidad de esta conexión, no la inexistencia de repositorios.
+- Los ocho repositorios adicionales siguen `DESCUBIERTO_ADICIONAL`; en esta reconsulta solo se leyeron metadatos y README. No hubo escrituras ni cambios de permisos.
+
+### Conectores y proyectos
+| Conector | Estado verificado | Límite operativo |
+|---|---|---|
+| Notion | Conectado. La búsqueda de Motor devuelve páginas V15 fechadas 20/22-sep-2026. | Históricas; no desplazan el repo Motor U6 actual. |
+| Dropbox | Conectado como `marco.jp@live.com.mx`. | Identidad comprobada; no se usó para escribir. |
+| Floot | Dos proyectos visibles: `CAPCOT Visual Desk` y `Runtime multiagent — Orquestador`. | El segundo se dejó en metadatos. `CAPCOT Visual Desk` (`4a26d671-0b07-490a-9aa1-59f3204e3cbe`) es un dashboard de muestra con datos estáticos: no devolvió recursos conectados, no tiene sincronización GitHub verificada, no está publicado y Pixlr figura pendiente. Existe el nombre de variable `FLOOT_DATABASE_URL`, pero no se verificó un camino de consulta/uso de base de datos. No es un pipeline CAPCOT operativo. |
+| Runway | Workspace personal autenticado; 500 créditos de plan; lista de workflows vacía. | No hay modelos de vídeo disponibles en este workspace. No generar ni gastar créditos: no es una ruta de vídeo operativa al corte. |
+| Canva | Conectado; lista de Brand Kits vacía. | No hay kit de marca disponible para automatizar identidad visual. |
+| vidIQ | Cuenta `marcosabines@gmail.com`; cero canales devueltos. | No hay canal visible para analítica de Datos y ociosidades. |
+| Undermind | Cuenta `marcojpad@gmail.com`; cero workspaces devueltos. | Sin espacio de trabajo activo que pueda usarse como base de investigación. |
+| Exa / Consensus / SciSpace | Herramientas expuestas en esta sesión. | Disponibilidad de búsqueda no equivale a un workspace persistente. |
+
+### Herramientas no expuestas como conectores ejecutables
+- No hay herramientas de codebase-memory-mcp, DeepSeek Harness (DSH), n8n ni Dot nativo en el inventario de esta sesión.
+- La presencia de la namespace `skills` o de documentación/JSON de n8n no acredita una instancia n8n ejecutable.
+- No hay conector Google Drive expuesto en esta sesión. Files Library y Dropbox no se deben presentar como Google Drive.
+
+Evidencia: reconsulta de instalaciones/repositorios GitHub, Notion search/fetch, Dropbox identity, Floot project/resource listing, Runway workspace/workflows, Canva Brand Kits, vidIQ channels y Undermind workspaces, 2026-11-17.
