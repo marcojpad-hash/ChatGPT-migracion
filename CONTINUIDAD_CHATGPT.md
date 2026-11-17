@@ -313,8 +313,8 @@ Mozart ya no está pendiente de ejecución ni auditoría. La coordinadora inform
 
 ## Operación autónoma — checkpoints Motor U6 / handoff Puta3, 2026-11-17
 
-- Reporte operativo: [reportes/2026-11-17_OPERACION_AUTONOMA.md](reportes/2026-11-17_OPERACION_AUTONOMA.md), commit `e4f01e610d6a3445277095afba356331512814c3`.
-- Manifiesto verificable de checkpoints: [bandeja/checkpoints/2026-11-17_MANIFEST_CHECKPOINTS.json](bandeja/checkpoints/2026-11-17_MANIFEST_CHECKPOINTS.json), commit de corrección final `341eef36a0aa88944077c81242247dec991e984e`.
+- Reporte operativo: [reportes/2026-11-17_OPERACION_AUTONOMA.md](reportes/2026-11-17_OPERACION_AUTONOMA.md), commit `b683186f86e5f0558facaad4bd0dda35b239137f`.
+- Manifiesto verificable de checkpoints: [bandeja/checkpoints/2026-11-17_MANIFEST_CHECKPOINTS.json](bandeja/checkpoints/2026-11-17_MANIFEST_CHECKPOINTS.json), commit final `1b9c53bbdd0d9f28fa93dbe7266d42a2bccaae01`.
 - Comparación funcional: [bandeja/checkpoints/2026-11-17_RESUMEN_COMPARATIVO_MOTOR.md](bandeja/checkpoints/2026-11-17_RESUMEN_COMPARATIVO_MOTOR.md), commit `8c53e65606164c99b78cc0fe077c12a76b11aca6`.
 - Respuesta para Puta3: [bandeja/2026-11-17_RESPUESTA_PUTA3_CHECKPOINTS.md](bandeja/2026-11-17_RESPUESTA_PUTA3_CHECKPOINTS.md), commit `7aa64d5b97d12d254a634fe85d0d11e49c98a57e`.
 
