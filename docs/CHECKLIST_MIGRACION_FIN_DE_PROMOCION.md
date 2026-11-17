@@ -222,3 +222,24 @@ Registro: [reporte operativo 2026-11-15](../reportes/2026-11-15_OPERACION_AUTONO
 - [ ] Reconciliar el DOI del storyboard 2026-11-14: verification_status=VERIFICADO_RESOLVEDOR contradice verification_note (doi.org/Crossref sin resolución, DOI pendiente) y el radar PENDING_RESOLVEDOR. No darlo por validado solo por consultar la página editorial.
 
 - [x] docs/MAPA_HERRAMIENTAS_POR_PROYECTO.md actualizado con el corte real de GitHub, Automations, codebase-memory-mcp, DSH, n8n, Dot y estado Grok del 15-nov.
+## Reconsulta de conectividad — 2026-11-17
+
+### Verificaciones completadas
+- [x] Consultadas las dos cuentas/instalaciones GitHub: `marcojpad-hash` = 1 instalación y 11 repositorios visibles; `marcosabines-hash` = 0 instalaciones y 0 repositorios devueltos, sin error.
+- [x] Revisados metadatos/README de los ocho repositorios adicionales; permanecen `DESCUBIERTO_ADICIONAL`, sin escrituras.
+- [x] Reconsultado Notion: las páginas V15 visibles son de 20/22-sep-2026; tratarlas como históricas frente a Motor U6.
+- [x] Reconsultados Dropbox, Floot, Runway, Canva, vidIQ y Undermind. Dropbox responde como `marco.jp@live.com.mx`; Floot devuelve dos proyectos; Runway no ofrece modelos de vídeo ni workflows; Canva no tiene Brand Kits; vidIQ devuelve cero canales; Undermind devuelve cero workspaces.
+- [x] Inspeccionado solo el scaffold `CAPCOT Visual Desk`: dashboard de muestra, sin recursos conectados ni sincronización GitHub verificada; no está publicado y Pixlr sigue pendiente. No se modificó.
+- [x] Confirmado que esta sesión no expone herramientas ejecutables de codebase-memory-mcp, DSH, n8n ni Dot nativo; tampoco Google Drive.
+- [x] Reconsultada la lista de automatizaciones: 16 tareas totales, 3 habilitadas y 13 deshabilitadas. No aparece la tarea solicitada de monitor del bus a las 09:00.
+
+### Pendientes reales
+- [ ] Recuperar acceso de vidIQ a un canal: la cuenta conectada devuelve cero canales.
+- [ ] Si se pretende usar CAPCOT Visual Desk, cablear una fuente real (GitHub/datos), backend y Pixlr; hoy es solo un dashboard estático. No se hizo ningún cambio sin autorización.
+- [ ] Resolver disponibilidad real de generación de vídeo: Runway autentica, pero no expone modelos de vídeo ni workflows. No consumir créditos.
+- [ ] Reconciliar la ausencia de la automatización de monitor del bus de las 09:00; no se recreó durante esta ejecución.
+- [ ] Esperar el estado terminal del operador general: run `29d3cb8a-531c-8326-8222-3aed2965cd1f` seguía `IN_PROGRESS`, sin `completed_at`.
+- [ ] Auditor CAPCOT del 17-nov: siguiente ejecución 15:00 CDMX; no atribuir QA antes de ese run.
+- [ ] Handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md`: sigue sin acuse de segunda sesión/modelo. Migración INCOMPLETA.
+
+Registro de evidencia: [reporte operativo 2026-11-17](../reportes/2026-11-17_OPERACION_AUTONOMA.md).
