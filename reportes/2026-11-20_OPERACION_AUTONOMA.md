@@ -37,3 +37,10 @@ Se solicitó actualizar la ficha de Operador único para que lea y ejecute la or
 - Dos storyboards del 19-nov preservados fuera de cola por bloqueos reales.
 - La orden #465 y el lote F007 contrastados con el estado del repositorio; no se inventaron corridas ni custodia.
 - La ficha programada todavía necesita que su prompt incorpore el alcance U6 correcto; el intento de actualización falló y no se presenta como resuelto.
+
+
+## Avance U6 adicional — 2026-11-20
+
+Se ejecutó una parte autorizada de la orden #465: preparación de comparación para el unblinding de C01–C20, sin abrir custodia. Se leyeron `SALIDA_CONGELADA.json` de los 20 slots y `RESUMEN_LOTE_20.json`; se creó `casos/ciegos/lote_20/PREPARACION_UNBLINDING_CHATGPT.md` en `motor-u6-storage/alterno/cameo-pesos`, commit `2668a0b9fd8419cbc6c8c3b9a0199dae61afd6a3`, releído con blob `4366c717fd340112eadd52a343152fa3ae0dbc55`. Se registran 20/20 slots con H1/H2, escenario y destino predicho; custodia no leída, desenlaces no consultados, HIT/MISS no calculado, corridas nuevas 0. Se actualizó `motor-u6-storage/alterno/cameo-pesos/DELEGACIONES.md` con commit `9af444f3aee2edb2f1656706425190779207ecc2`, releído blob `cdd503cb631bebb605ec897683137aee0deaef25`.
+
+La orden de corridas nuevas sigue pendiente: F007 actual es un ensayo del mismo actor, ocho semillas, dos cortes por sujeto, fuentes secundarias Wikipedia y sin cola preparada. No se ejecutó como cohorte independiente. El siguiente paso válido es preparar nuevos casos con fuentes primarias y obtener sello de custodio independiente antes del runner.
