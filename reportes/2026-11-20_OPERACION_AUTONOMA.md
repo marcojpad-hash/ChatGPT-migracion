@@ -44,3 +44,18 @@ Se solicitó actualizar la ficha de Operador único para que lea y ejecute la or
 Se ejecutó una parte autorizada de la orden #465: preparación de comparación para el unblinding de C01–C20, sin abrir custodia. Se leyeron `SALIDA_CONGELADA.json` de los 20 slots y `RESUMEN_LOTE_20.json`; se creó `casos/ciegos/lote_20/PREPARACION_UNBLINDING_CHATGPT.md` en `motor-u6-storage/alterno/cameo-pesos`, commit `2668a0b9fd8419cbc6c8c3b9a0199dae61afd6a3`, releído con blob `4366c717fd340112eadd52a343152fa3ae0dbc55`. Se registran 20/20 slots con H1/H2, escenario y destino predicho; custodia no leída, desenlaces no consultados, HIT/MISS no calculado, corridas nuevas 0. Se actualizó `motor-u6-storage/alterno/cameo-pesos/DELEGACIONES.md` con commit `9af444f3aee2edb2f1656706425190779207ecc2`, releído blob `cdd503cb631bebb605ec897683137aee0deaef25`.
 
 La orden de corridas nuevas sigue pendiente: F007 actual es un ensayo del mismo actor, ocho semillas, dos cortes por sujeto, fuentes secundarias Wikipedia y sin cola preparada. No se ejecutó como cohorte independiente. El siguiente paso válido es preparar nuevos casos con fuentes primarias y obtener sello de custodio independiente antes del runner.
+
+
+---
+
+## Actualización — run 8 (20-nov-2026, corte 12:14 CDMX)
+
+- CAPCOT: cuatro storyboards tuvieron cambios de metadatos/QA verificados y el control de cola quedó actualizado en la rama feature. Se corrigió la falsa discrepancia de edad de Marea, se retiró una afirmación de resolución DOI no demostrada en Sapropeles y Microplásticos, y se repitió la lectura en frío de cuásares después de un cambio de narración (FAIL 82).
+- CAPCOT: se confirmaron dos conflictos exactos de slot entre feature y main (17-nov 17:00 y 18-nov 23:30). No se promovió ni redispatchó contenido. No hay estado Grok confirmado para los proyectos auditados.
+- U6: solo lectura. El runner estándar existe, pero la rama activa no invoca Gate Z90; PR #8 sigue abierto y la gate continúa incompleta. F007 sigue sin fuentes primarias ni custodia independiente. No se ejecutaron corridas.
+- U6: se verificó que una automatización de auditoría continúa escribiendo snapshots en main, pese a la autoridad de rama que declara main como solo consulta. No se modificó ni deshabilitó.
+- Descubrimiento GitHub: instalación visible en `marcojpad-hash` con 11 repositorios; `marcosabines-hash` no tiene instalación ni repositorios visibles. Los adicionales permanecen en solo lectura.
+- Migración: el archivo de recuperación del 03-nov sigue sin acuse de segunda sesión. No se declara completada.
+- Automatizaciones: investigador CAPCOT completado 20-nov 08:40; auditor con último run completado 19-nov 15:28 y próxima ejecución prevista 20-nov 15:00; operador run 8 `in_progress`, sin `completed_at`.
+
+Detalle y evidencia: [OPERACION_AUTONOMA_RUN8.md](2026-11-20_OPERACION_AUTONOMA_RUN8.md). El control CAPCOT está en [2026-11-20_CONTROL_COLA.md](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-20_CONTROL_COLA.md).
