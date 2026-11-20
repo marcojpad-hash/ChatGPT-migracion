@@ -352,3 +352,12 @@ Esta sección prevalece sobre los cortes anteriores cuando haya contradicción. 
 Se ejecutó una parte autorizada de la orden #465: preparación de comparación para el unblinding de C01–C20, sin abrir custodia. Se leyeron `SALIDA_CONGELADA.json` de los 20 slots y `RESUMEN_LOTE_20.json`; se creó `casos/ciegos/lote_20/PREPARACION_UNBLINDING_CHATGPT.md` en `motor-u6-storage/alterno/cameo-pesos`, commit `2668a0b9fd8419cbc6c8c3b9a0199dae61afd6a3`, releído con blob `4366c717fd340112eadd52a343152fa3ae0dbc55`. Se registran 20/20 slots con H1/H2, escenario y destino predicho; custodia no leída, desenlaces no consultados, HIT/MISS no calculado, corridas nuevas 0. Se actualizó `motor-u6-storage/alterno/cameo-pesos/DELEGACIONES.md` con commit `9af444f3aee2edb2f1656706425190779207ecc2`, releído blob `cdd503cb631bebb605ec897683137aee0deaef25`.
 
 La orden de corridas nuevas sigue pendiente: F007 actual es un ensayo del mismo actor, ocho semillas, dos cortes por sujeto, fuentes secundarias Wikipedia y sin cola preparada. No se ejecutó como cohorte independiente. El siguiente paso válido es preparar nuevos casos con fuentes primarias y obtener sello de custodio independiente antes del runner.
+
+
+## Registro transversal más reciente — 20-nov-2026, run 8
+
+- Bitácora verificada: [reportes/2026-11-20_OPERACION_AUTONOMA_RUN8.md](reportes/2026-11-20_OPERACION_AUTONOMA_RUN8.md), commit `434b42f1fbecff4c6aa27ca2d23328adcaf465a7`.
+- CAPCOT: control actualizado en [2026-11-20_CONTROL_COLA.md](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-20_CONTROL_COLA.md), commit `7d77b42dae7dc531b8731747215a1ebd19ff4467`. Se corrigieron estados de verificación de fuente, se releyó cuásares tras cambio narrativo y se documentaron dos colisiones exactas de slot. No hubo promoción ni medios.
+- Motor U6: auditoría solo lectura; sin corridas nuevas, sin abrir custodia y sin cambios en main. La visibilidad pública contradice la declaración de privacidad del README; no se escribió en U6.
+- Migración: `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue sin acuse verificable de segunda sesión. La migración no está completa.
+- Automatizaciones: investigador CAPCOT completado el 20-nov; auditor pendiente de su ventana de las 15:00; operador run 8 continúa `in_progress`, sin `completed_at`. Dot nativo sin conexión ejecutable verificada.
