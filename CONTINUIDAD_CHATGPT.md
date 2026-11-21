@@ -378,7 +378,7 @@ La orden de corridas nuevas sigue pendiente: F007 actual es un ensayo del mismo 
 
 ### CAPCOT — continuidad verificada
 - El investigador terminó el 21-nov a las 08:05 CDMX y actualizó el radar existente en commit `0516a346538a61f5a0ecd960c980fb1b64d8459c`.
-- El control de cola del 21-nov recibió una adenda de auditoría y fue releído en la rama `feature/capcot-video-discovery-continuity`, commit `1cd186e5e1bef7dcdfa425d6375f1996f44e258a`.
+- El control de cola del 21-nov recibió una adenda de auditoría y compuertas estructurales, y fue releído en la rama `feature/capcot-video-discovery-continuity`, último commit `49db1df246b241e431683f7eb501911dcae72ec9` (actualiza la adenda previa `1cd186e5e1bef7dcdfa425d6375f1996f44e258a`).
 - No se crearon storyboards, no se promovió contenido y no se disparó el workflow de Grok.
 
 ### Estado de automatizaciones al corte
