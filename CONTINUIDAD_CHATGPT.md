@@ -403,3 +403,12 @@ La orden de corridas nuevas sigue pendiente: F007 actual es un ensayo del mismo 
   - `orquestador-central` aparece **public**, mientras `BOT_DOT_AUTONOMIA.md` lo describe como privado; el README de ese repositorio no declara privacidad, por lo que también hay inconsistencia documental.
   - `red-teaming-safety-u6` aparece **private**; los dos repositorios de microserie aparecen **public** y sus README los presentan como públicos.
 - No se cambiaron permisos, instalaciones ni secretos. Se evita escribir datos operativos sensibles en los repositorios con expectativa documental de privacidad hasta que el propietario resuelva las discrepancias.
+
+## Actualización CAPCOT — 2026-11-21, run 11
+
+- En capcot-capsulas-imaginantes/feature/capcot-video-discovery-continuity, scripts/registro_editorial.py ahora incorpora snapshots diarios data/horario_*.json, evidencia de medios y la fecha de corte de la política horaria. Commit final: 0306cf7e46b0af826ebbdb6a4d7d50bd1ccffe57.
+- Se añadieron tres pruebas a tests/test_registro_editorial.py, commit e7e2fa36c57a8d799045aaf6f6d96a733e31f19. Los archivos fueron leídos de vuelta y la rama coincide con el commit de código.
+- Smoke aislado de la lógica de ventanas y snapshots: correcto. Pytest/CI no ejecutados; los estados de commit consultados estaban vacíos. No se declara PASS de la suite.
+- Registro de ejecución en docs/briefs/2026-11-21_CONTROL_COLA.md, commit 25eb1d8b9711a4cd06025a858c2fb10c68c979de.
+- data/*.json, cola, estados Grok, workflows, medios y publicaciones no fueron modificados. No se promovió ni despachó contenido.
+- La política de horarios de feature conserva corte 2026-11-09, mientras main tiene corte 2026-11-16. El script señala el corte anterior y no copia datos entre ramas.
