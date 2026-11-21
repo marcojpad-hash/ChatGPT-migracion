@@ -547,3 +547,12 @@ Esta sección prevalece sobre los cortes anteriores cuando haya contradicción. 
 Se ejecutó una parte autorizada de la orden #465: preparación de comparación para el unblinding de C01–C20, sin abrir custodia. Se leyeron `SALIDA_CONGELADA.json` de los 20 slots y `RESUMEN_LOTE_20.json`; se creó `casos/ciegos/lote_20/PREPARACION_UNBLINDING_CHATGPT.md` en `motor-u6-storage/alterno/cameo-pesos`, commit `2668a0b9fd8419cbc6c8c3b9a0199dae61afd6a3`, releído con blob `4366c717fd340112eadd52a343152fa3ae0dbc55`. Se registran 20/20 slots con H1/H2, escenario y destino predicho; custodia no leída, desenlaces no consultados, HIT/MISS no calculado, corridas nuevas 0. Se actualizó `motor-u6-storage/alterno/cameo-pesos/DELEGACIONES.md` con commit `9af444f3aee2edb2f1656706425190779207ecc2`, releído blob `cdd503cb631bebb605ec897683137aee0deaef25`.
 
 La orden de corridas nuevas sigue pendiente: F007 actual es un ensayo del mismo actor, ocho semillas, dos cortes por sujeto, fuentes secundarias Wikipedia y sin cola preparada. No se ejecutó como cohorte independiente. El siguiente paso válido es preparar nuevos casos con fuentes primarias y obtener sello de custodio independiente antes del runner.
+
+
+## Corte operativo — 2026-11-21
+
+- CAPCOT: radar del día actualizado por el investigador, commit `0516a346538a61f5a0ecd960c980fb1b64d8459c`; control de cola ampliado y releído, commit `1cd186e5e1bef7dcdfa425d6375f1996f44e258a`. No se crearon storyboards ni se promovió/redispatchó contenido.
+- Motor U6: no se ejecutaron corridas nuevas ni se escribieron archivos. Se conserva la autoridad `alterno/cameo-pesos` / `main=SOLO_CONSULTA`; la discrepancia de visibilidad pública frente a documentación privada se registra en [CONTINUIDAD_CHATGPT.md](CONTINUIDAD_CHATGPT.md). No se publicaron detalles operativos adicionales en U6.
+- GitHub: se revalidaron 1 instalación/11 repositorios para `marcojpad-hash` y 0/0 para `marcosabines-hash`. Los ocho repositorios adicionales permanecen en solo lectura. Las discrepancias de visibilidad verificadas y los límites de escritura quedan en el addendum de continuidad del 21-nov.
+- Migración: el handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue PENDIENTE, sin acuse de segunda sesión ni verificación del emisor.
+- Automatizaciones al corte: investigador COMPLETED; auditor último run FAILED, siguiente ventana 21-nov 15:00 CDMX; operador seguía IN_PROGRESS, sin estado terminal. No atribuirle cierre antes de la consulta final.
