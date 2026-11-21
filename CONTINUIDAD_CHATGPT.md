@@ -373,7 +373,7 @@ La orden de corridas nuevas sigue pendiente: F007 actual es un ensayo del mismo 
 ### Discrepancias de visibilidad
 - La API de GitHub devuelve `visibility=public` para `motor-u6-storage`, `orquestador-central`, `baterias-tokens` y `baterias-memoria`.
 - Sus documentos consultados describen esos repositorios como privados. Se registra la discrepancia; no se cambiaron permisos y no se escribieron datos operativos en ellos.
-- `ChatGPT-migracion` también es público, pero su README no declara que deba ser privado. `memoria-compartida` es público; sus documentos consultados prohíben secretos y datos sensibles, pero no establecen que el repositorio deba ser privado. No se infiere una discrepancia adicional en esos dos casos.
+- `ChatGPT-migracion` también es público. Aunque su README no declara privacidad, `memoria-compartida/hechos/proyectos.md` lo clasifica como privado; por tanto, se registra también discrepancia documental. `memoria-compartida` es público; sus documentos consultados prohíben secretos y datos sensibles, pero no establecen que el repositorio deba ser privado.
 - CAPCOT permanece público como repositorio de trabajo. Esta sesión solo actualizó su control de cola en la rama autorizada.
 
 ### CAPCOT — continuidad verificada
