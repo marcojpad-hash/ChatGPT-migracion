@@ -409,6 +409,10 @@ La orden de corridas nuevas sigue pendiente: F007 actual es un ensayo del mismo 
 - En capcot-capsulas-imaginantes/feature/capcot-video-discovery-continuity, scripts/registro_editorial.py ahora incorpora snapshots diarios data/horario_*.json, evidencia de medios y la fecha de corte de la política horaria. Commit final: 0306cf7e46b0af826ebbdb6a4d7d50bd1ccffe57.
 - Se añadieron tres pruebas a tests/test_registro_editorial.py, commit e7e2fa36c57a8d799045aaf6f6d96a733e31f19. Los archivos fueron leídos de vuelta y la rama coincide con el commit de código.
 - Smoke aislado de la lógica de ventanas y snapshots: correcto. Pytest/CI no ejecutados; los estados de commit consultados estaban vacíos. No se declara PASS de la suite.
-- Registro de ejecución en docs/briefs/2026-11-21_CONTROL_COLA.md, commit 25eb1d8b9711a4cd06025a858c2fb10c68c979de.
+- Registro de ejecución en docs/briefs/2026-11-21_CONTROL_COLA.md, commit actual cb6a141440a191de4f1b47705e9abda04846f810.
+- Relectura CAPCOT del corte: 24 storyboards entre lote 5–7, backlog 18–20, proyectos 21–22 y Bao; los 24 estados individuales de Grok consultados devolvieron 404. Se conservaron QA existentes sin repetirlos y no se promovió contenido.
+- El renderer scripts/capas_datos.py ahora admite mapas celestes RA/Dec sin convertirlos a coordenadas terrestres. Commit de código fcab046d00056f7b8c7dbf10c879aa20e9565651; cinco pruebas nuevas en tests/test_capas_datos.py, commit d36c1305b11f4be7d6be23f01025ed5e3bf98533. Smoke aislado de los bounds pasó; no se ejecutó pytest/CI ni se generó medio.
+- En Bao, la afirmación de 47 días se vinculó a la fuente primaria Nature (SRC-001); el registro del 24 de diciembre permanece respaldado por NASA (SRC-002). Commit de metadatos e125839a63564f45745c66589d0e673fe024f9be. El proyecto sigue en borrador, sin QA independiente y sin estado Grok confirmado.
+
 - data/*.json, cola, estados Grok, workflows, medios y publicaciones no fueron modificados. No se promovió ni despachó contenido.
 - La política de horarios de feature conserva corte 2026-11-09, mientras main tiene corte 2026-11-16. El script señala el corte anterior y no copia datos entre ramas.
