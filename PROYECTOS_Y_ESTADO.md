@@ -551,7 +551,7 @@ La orden de corridas nuevas sigue pendiente: F007 actual es un ensayo del mismo 
 
 ## Corte operativo — 2026-11-21
 
-- CAPCOT: radar del día actualizado por el investigador, commit `0516a346538a61f5a0ecd960c980fb1b64d8459c`; control de cola ampliado y releído, commit `1cd186e5e1bef7dcdfa425d6375f1996f44e258a`. No se crearon storyboards ni se promovió/redispatchó contenido.
+- CAPCOT: radar del día actualizado por el investigador, commit `0516a346538a61f5a0ecd960c980fb1b64d8459c`; control de cola ampliado y releído, último commit `49db1df246b241e431683f7eb501911dcae72ec9` (actualiza la adenda previa `1cd186e5e1bef7dcdfa425d6375f1996f44e258a`). No se crearon storyboards ni se promovió/redispatchó contenido.
 - Motor U6: no se ejecutaron corridas nuevas ni se escribieron archivos. Se conserva la autoridad `alterno/cameo-pesos` / `main=SOLO_CONSULTA`; la discrepancia de visibilidad pública frente a documentación privada se registra en [CONTINUIDAD_CHATGPT.md](CONTINUIDAD_CHATGPT.md). No se publicaron detalles operativos adicionales en U6.
 - GitHub: se revalidaron 1 instalación/11 repositorios para `marcojpad-hash` y 0/0 para `marcosabines-hash`. Los ocho repositorios adicionales permanecen en solo lectura. Las discrepancias de visibilidad verificadas y los límites de escritura quedan en el addendum de continuidad del 21-nov.
 - Migración: el handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue PENDIENTE, sin acuse de segunda sesión ni verificación del emisor.
