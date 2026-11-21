@@ -389,3 +389,17 @@ La orden de corridas nuevas sigue pendiente: F007 actual es un ensayo del mismo 
 ### Migración
 - `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` existe y continúa `PENDIENTE`: no contiene acuse del destinatario ni verificación del emisor. La migración permanece INCOMPLETA.
 - No se escribieron datos operativos U6 en repositorios cuya visibilidad pública contradice su documentación de privacidad. No se cambiaron permisos, secretos, ramas ni archivos canónicos.
+
+
+## Revalidación de instalaciones GitHub y visibilidad — 2026-11-21
+
+- Cuenta `marcojpad-hash`: una instalación conectada y 11 repositorios visibles. La segunda cuenta conectada, `marcosabines-hash`, devuelve cero instalaciones y cero repositorios. La consulta de la página siguiente no devolvió repositorios adicionales.
+- Repositorios dentro del alcance operativo: `ChatGPT-migracion`, `capcot-capsulas-imaginantes` y `motor-u6-storage`.
+- Repositorios adicionales, clasificados como **DESCUBIERTO_ADICIONAL** y consultados solo en metadatos/documentación: `orquestador-central`, `memoria-compartida`, `agente-cero-costo`, `baterias-tokens`, `baterias-memoria`, `red-teaming-safety-u6`, `microserie-heredera-sadtalker` y `microserie-heredera-voces`. No se modificó ninguno.
+- Discrepancias de visibilidad verificadas:
+  - `ChatGPT-migracion` aparece **public** en GitHub, mientras `memoria-compartida/hechos/proyectos.md` lo registra como privado.
+  - `motor-u6-storage` aparece **public**, mientras su `README.md` lo describe como privado.
+  - `baterias-tokens` y `baterias-memoria` aparecen **public**, mientras sus respectivos `README.md` los describen como privados.
+  - `orquestador-central` aparece **public**, mientras `BOT_DOT_AUTONOMIA.md` lo describe como privado; el README de ese repositorio no declara privacidad, por lo que también hay inconsistencia documental.
+  - `red-teaming-safety-u6` aparece **private**; los dos repositorios de microserie aparecen **public** y sus README los presentan como públicos.
+- No se cambiaron permisos, instalaciones ni secretos. Se evita escribir datos operativos sensibles en los repositorios con expectativa documental de privacidad hasta que el propietario resuelva las discrepancias.
