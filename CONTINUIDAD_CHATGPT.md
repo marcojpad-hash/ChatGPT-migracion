@@ -361,3 +361,31 @@ La orden de corridas nuevas sigue pendiente: F007 actual es un ensayo del mismo 
 - Motor U6: auditoría solo lectura; sin corridas nuevas, sin abrir custodia y sin cambios en main. La visibilidad pública contradice la declaración de privacidad del README; no se escribió en U6.
 - Migración: `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue sin acuse verificable de segunda sesión. La migración no está completa.
 - Automatizaciones: investigador CAPCOT completado el 20-nov; auditor pendiente de su ventana de las 15:00; operador run 8 continúa `in_progress`, sin `completed_at`. Dot nativo sin conexión ejecutable verificada.
+
+
+## Addendum de continuidad y visibilidad — 2026-11-21
+
+### GitHub y repositorios
+- Reconsulta de instalaciones: `marcojpad-hash` tiene 1 instalación y 11 repositorios visibles; `marcosabines-hash` devuelve 0 instalaciones y 0 repositorios visibles, sin error.
+- Repositorios visibles: `motor-u6-storage`, `capcot-capsulas-imaginantes`, `ChatGPT-migracion`, `orquestador-central`, `red-teaming-safety-u6`, `agente-cero-costo`, `baterias-tokens`, `baterias-memoria`, `memoria-compartida`, `microserie-heredera-sadtalker` y `microserie-heredera-voces`.
+- Los ocho fuera del alcance directo siguen clasificados `DESCUBIERTO_ADICIONAL` y en solo lectura: `orquestador-central`, `red-teaming-safety-u6`, `agente-cero-costo`, `baterias-tokens`, `baterias-memoria`, `memoria-compartida`, `microserie-heredera-sadtalker` y `microserie-heredera-voces`.
+
+### Discrepancias de visibilidad
+- La API de GitHub devuelve `visibility=public` para `motor-u6-storage`, `orquestador-central`, `baterias-tokens` y `baterias-memoria`.
+- Sus documentos consultados describen esos repositorios como privados. Se registra la discrepancia; no se cambiaron permisos y no se escribieron datos operativos en ellos.
+- `ChatGPT-migracion` también es público, pero su README no declara que deba ser privado. `memoria-compartida` es público; sus documentos consultados prohíben secretos y datos sensibles, pero no establecen que el repositorio deba ser privado. No se infiere una discrepancia adicional en esos dos casos.
+- CAPCOT permanece público como repositorio de trabajo. Esta sesión solo actualizó su control de cola en la rama autorizada.
+
+### CAPCOT — continuidad verificada
+- El investigador terminó el 21-nov a las 08:05 CDMX y actualizó el radar existente en commit `0516a346538a61f5a0ecd960c980fb1b64d8459c`.
+- El control de cola del 21-nov recibió una adenda de auditoría y fue releído en la rama `feature/capcot-video-discovery-continuity`, commit `1cd186e5e1bef7dcdfa425d6375f1996f44e258a`.
+- No se crearon storyboards, no se promovió contenido y no se disparó el workflow de Grok.
+
+### Estado de automatizaciones al corte
+- Investigador CAPCOT: `COMPLETED`, run `af77913a-0968-8327-805d-189e7bf883d4`.
+- Auditor CAPCOT: último run `FAILED`, run `08b1bde6-cd98-8329-a43d-ec5f2a37b8e9`; siguiente ventana registrada 21-nov 15:00 CDMX.
+- Operador único: run `1e1b3e7c-5ebc-832b-a236-1cd63c5376e7` seguía `IN_PROGRESS` al corte de esta actualización; no se atribuye estado terminal.
+
+### Migración
+- `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` existe y continúa `PENDIENTE`: no contiene acuse del destinatario ni verificación del emisor. La migración permanece INCOMPLETA.
+- No se escribieron datos operativos U6 en repositorios cuya visibilidad pública contradice su documentación de privacidad. No se cambiaron permisos, secretos, ramas ni archivos canónicos.
