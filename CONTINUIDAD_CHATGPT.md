@@ -416,3 +416,15 @@ La orden de corridas nuevas sigue pendiente: F007 actual es un ensayo del mismo 
 
 - data/*.json, cola, estados Grok, workflows, medios y publicaciones no fueron modificados. No se promovió ni despachó contenido.
 - La política de horarios de feature conserva corte 2026-11-09, mientras main tiene corte 2026-11-16. El script señala el corte anterior y no copia datos entre ramas.
+ 
+
+## Continuidad operativa — 22-nov-2026
+
+Registro de ejecución: `reportes/2026-11-22_OPERACION_AUTONOMA.md` (commit `94d2e121eac89514fd2456bdd7d16b3c9e40887b`).
+
+- CAPCOT feature quedó en HEAD `bbc05765b8c566c8335600bd8aa87d5fd7a1500e`. El borrador de genética de estatura tiene DOI Crossref y coordenadas institucionales verificados, metadatos alineados con la plantilla y comprobación estructural manual previa a QA sin errores. Sigue sin narrative_qa independiente, sin cola y no despachable.
+- CAPCOT main es autoridad de ocupación: 52 publicaciones y 39 registros de rotación; los snapshots feature están desfasados. El alcance actual de auditoría es 26 proyectos. PR #3 y PR #15 siguen sin integrar; los checks de main no se atribuyen a feature.
+- U6: la gate actual sí calcula Z90 y comprueba límites temporales, pero el guardián del runner sigue siendo optativo y no bloquea `NO_CONFIGURADO`; la acumulación semántica de evidencia no está demostrada. No existe ruta entry-only y F007 sigue sin fuentes primarias ni custodia independiente. CI 60/60 no equivale a corrida del motor.
+- Se detectó que la auditoría automática de Actions empuja snapshots a U6 main, contradiciendo `main=SOLO_CONSULTA`; no se alteró el workflow.
+- `ChatGPT-migracion` es público y su README no lo declara privado. `motor-u6-storage` y `orquestador-central` sí presentan discrepancia entre visibilidad pública y documentación de privacidad; no se escribió en ellos. Repositorios adicionales siguen en solo lectura.
+- Issue #465 se consultó sin comentario; no había acuse de cierre debido en este corte.
