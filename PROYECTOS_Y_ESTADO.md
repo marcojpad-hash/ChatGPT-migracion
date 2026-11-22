@@ -556,3 +556,21 @@ La orden de corridas nuevas sigue pendiente: F007 actual es un ensayo del mismo 
 - GitHub: se revalidaron 1 instalación/11 repositorios para `marcojpad-hash` y 0/0 para `marcosabines-hash`. Los ocho repositorios adicionales permanecen en solo lectura. Las discrepancias de visibilidad verificadas y los límites de escritura quedan en el addendum de continuidad del 21-nov.
 - Migración: el handoff `bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue PENDIENTE, sin acuse de segunda sesión ni verificación del emisor.
 - Automatizaciones al corte: investigador COMPLETED; auditor último run FAILED, siguiente ventana 21-nov 15:00 CDMX; operador seguía IN_PROGRESS, sin estado terminal. No atribuirle cierre antes de la consulta final.
+
+
+## Actualización verificada — 22-nov-2026
+
+### CAPCOT
+- Estado de rama: `feature/capcot-video-discovery-continuity`, HEAD `bbc05765b8c566c8335600bd8aa87d5fd7a1500e`.
+- Proyecto `2026-11-22_genes-estatura-etapas`: DOI `10.1038/s41467-026-79465-x` verificado en Crossref; mapa institucional con coordenadas contrastadas; 231 palabras, 8 escenas, 84 s incluyendo cortinilla de 6 s; prompt_base exacto de catálogo y voz edge-tts alineados. No tiene narrative_qa independiente ni estado Grok; permanece `BORRADOR_EN_PROYECTOS` / `NOT_DISPATCHABLE`.
+- Radar y control actualizados. Main tiene 52 registros de publicaciones y 39 de rotación; feature conserva snapshots 22/27. Inventario de auditoría actual: 26 proyectos.
+- PR #3 sigue OPEN/DRAFT/dirty; PR #15 sigue sin CI de su head y con hallazgos Semgrep. No se promovió ningún paquete.
+
+### Motor U6
+- Rama activa `alterno/cameo-pesos`, HEAD `78658535f103d33f30b4814d6cbb0f682af0ac79`; main solo consulta.
+- Gate Z90 calcula el corte final y verifica los extremos/orden temporal, pero el guardián del runner es optativo y no bloquea `NO_CONFIGURADO`. Falta prueba de acumulación semántica de evidencia.
+- `fabrica.py` no ofrece preparación entry-only; no se ejecutó. F007 conserva 8 sujetos/16 cortes con fuentes secundarias y sin custodia independiente; no hubo nuevas corridas.
+- CI runner: 60 pruebas aprobadas; sin evidencia de ejecución/calibración del motor.
+- Auditoría automática de Actions escribió snapshots en main, en conflicto con el contrato de rama; no se corrigió ni se revirtió.
+
+Registro completo: `reportes/2026-11-22_OPERACION_AUTONOMA.md`.
