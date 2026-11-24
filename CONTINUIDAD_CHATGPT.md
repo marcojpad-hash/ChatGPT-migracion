@@ -428,3 +428,7 @@ Registro de ejecución: `reportes/2026-11-22_OPERACION_AUTONOMA.md` (commit `94d
 - Se detectó que la auditoría automática de Actions empuja snapshots a U6 main, contradiciendo `main=SOLO_CONSULTA`; no se alteró el workflow.
 - `ChatGPT-migracion` es público y su README no lo declara privado. `motor-u6-storage` y `orquestador-central` sí presentan discrepancia entre visibilidad pública y documentación de privacidad; no se escribió en ellos. Repositorios adicionales siguen en solo lectura.
 - Issue #465 se consultó sin comentario; no había acuse de cierre debido en este corte.
+
+
+## 2026-11-24 — inventario de visibilidad GitHub
+Se consultaron ambas cuentas conectadas y las instalaciones visibles. `marcojpad-hash` devuelve 11 repositorios; `marcosabines-hash` no devuelve instalación ni repositorios. Se registraron cinco discrepancias entre la matriz de privacidad y GitHub (repositorios clasificados privados que aparecen públicos). No se cambiaron permisos ni se escribieron datos operativos en esos repositorios. Inventario y clasificación: [reportes/2026-11-24_VISIBILIDAD_REPOSITORIOS.md](reportes/2026-11-24_VISIBILIDAD_REPOSITORIOS.md).
