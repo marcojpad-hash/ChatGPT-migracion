@@ -432,3 +432,6 @@ Registro de ejecución: `reportes/2026-11-22_OPERACION_AUTONOMA.md` (commit `94d
 
 ## 2026-11-24 — inventario de visibilidad GitHub
 Se consultaron ambas cuentas conectadas y las instalaciones visibles. `marcojpad-hash` devuelve 11 repositorios; `marcosabines-hash` no devuelve instalación ni repositorios. Se registraron cinco discrepancias entre la matriz de privacidad y GitHub (repositorios clasificados privados que aparecen públicos). No se cambiaron permisos ni se escribieron datos operativos en esos repositorios. Inventario y clasificación: [reportes/2026-11-24_VISIBILIDAD_REPOSITORIOS.md](reportes/2026-11-24_VISIBILIDAD_REPOSITORIOS.md).
+
+
+Nota de vigencia: el resumen U6 del corte 22-nov-2026 quedó desactualizado respecto de la rama activa. No se replica aquí detalle operativo de U6 mientras la discrepancia de privacidad siga abierta; para ese proyecto prevalece el contrato de la rama autorizada y su registro de CI, consultados en solo lectura.
