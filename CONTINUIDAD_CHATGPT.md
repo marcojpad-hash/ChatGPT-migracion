@@ -459,3 +459,12 @@ Nota de vigencia: el resumen U6 del corte 22-nov-2026 quedó desactualizado resp
 - Se confirmó que los marcadores de buzón Grok están en `pending`, no son acuses; la discrepancia entre selector plano del workflow y carpetas anidadas del procesador sigue vigente. No se promovió ni redispatchó contenido.
 - La declaración Lean/Mathlib del 21-nov y la ficha de Clay se conservaron como candidato de investigación, sin storyboard ni afirmación de premio concedido.
 - Bitácora leída de vuelta: [CAPCOT revalidación 20H](reportes/2026-11-24_CAPCOT_REVALIDACION_20H.md).
+
+
+## Operador único — continuidad verificada, 2026-11-24 22:00 CDMX
+
+- Se reconsultaron las dos conexiones GitHub: `marcosabines-hash` devolvió 0 instalaciones/0 repositorios; `marcojpad-hash` devolvió 1 instalación y 11 repositorios. La lista y visibilidad quedaron registradas en [OPERADOR_UNICO_22H](reportes/2026-11-24_OPERADOR_UNICO_22H.md).
+- CAPCOT: radar y control de cola actualizados en la rama de trabajo. No se creó storyboard ni se promovió cola; la programación y producción preexistentes en main permanecen protegidas contra redispatch.
+- U6: no hubo corridas nuevas. La reconciliación de independencia de muestra y el estado de candidatos/custodia permanecen en la rama activa de U6; no se replican detalles operativos en este repositorio público.
+- Discrepancia de privacidad: seis repositorios documentados como privados aparecen públicos en GitHub. No se cambiaron permisos ni se copiaron secretos/datos sensibles.
+- No se modificaron repositorios adicionales ni se tocaron motores canónicos, pesos o datos JSON.
