@@ -435,3 +435,10 @@ Se consultaron ambas cuentas conectadas y las instalaciones visibles. `marcojpad
 
 
 Nota de vigencia: el resumen U6 del corte 22-nov-2026 quedó desactualizado respecto de la rama activa. No se replica aquí detalle operativo de U6 mientras la discrepancia de privacidad siga abierta; para ese proyecto prevalece el contrato de la rama autorizada y su registro de CI, consultados en solo lectura.
+
+
+## 2026-11-24 18:00 CDMX — continuidad CAPCOT
+- Se registró la revisión de cola, slots, workflow, fuentes RSS y PRs en [reportes/2026-11-24_CAPCOT_OPERADOR_18H.md](reportes/2026-11-24_CAPCOT_OPERADOR_18H.md).
+- No hubo promoción ni redispatch: el paquete del 24 nov en `main` ya tiene programación previa y medios referenciados no verificados en el árbol; el estado Grok individual no existe (404).
+- El PR #15 quedó identificado como obsoleto frente al validador vigente de la rama de trabajo; no se portó código redundante.
+- Los detalles operativos de Motor U6 no se copian a este repositorio mientras siga abierta la discrepancia de visibilidad/privacidad.
