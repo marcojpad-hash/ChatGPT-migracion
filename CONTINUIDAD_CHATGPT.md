@@ -450,3 +450,12 @@ Nota de vigencia: el resumen U6 del corte 22-nov-2026 quedó desactualizado resp
 - Se revalidaron fichas primarias APS y Frontiers. Crossref REST y DOI resolver no fueron accesibles; los DOI correspondientes permanecen pendientes de resolución y no se elevan por inferencia.
 - No hubo slot libre, storyboard nuevo, promoción, redispatch ni generación de medios.
 - Bitácora: [CAPCOT revalidación 20H](reportes/2026-11-24_CAPCOT_REVALIDACION_20H.md).
+
+ 
+## 2026-11-24 20:10 CDMX — revalidación CAPCOT
+- Main avanzó a `7df97a20`; el único archivo cambiado desde el corte anterior es `data/endscreens_rotacion.json`. No cambió la ocupación de proyectos/cola/programación.
+- El trabajador programado de main terminó SUCCESS con `[trabajador] sin trabajo en cola.`; no acredita procesamiento de feature. Gitleaks pasó y Semgrep volvió a fallar con 37 hallazgos bloqueantes, sin artifact SARIF.
+- Revisión completa de los diez RSS científicos y Trends RSS: XML/RSS rechazados por tipo de contenido, 404 o URL no accesible. Google Trends HTML México sí abrió (197 tendencias; top 25 sin señal científica admisible).
+- Se confirmó que los marcadores de buzón Grok están en `pending`, no son acuses; la discrepancia entre selector plano del workflow y carpetas anidadas del procesador sigue vigente. No se promovió ni redispatchó contenido.
+- La declaración Lean/Mathlib del 21-nov y la ficha de Clay se conservaron como candidato de investigación, sin storyboard ni afirmación de premio concedido.
+- Bitácora leída de vuelta: [CAPCOT revalidación 20H](reportes/2026-11-24_CAPCOT_REVALIDACION_20H.md).
