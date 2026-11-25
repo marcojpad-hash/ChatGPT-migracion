@@ -587,3 +587,12 @@ Registro completo: `reportes/2026-11-22_OPERACION_AUTONOMA.md`.
 - El 24-nov continúa sin cupo autorizado y sin storyboard nuevo en la rama de trabajo. No hubo promoción ni redispatch del paquete preexistente de `main`.
 - RSS/Google Trends se reintentaron; el respaldo HTML de Trends muestra 197 tendencias y ninguna señal admisible entre los primeros 25 términos. APS y Frontiers tienen fichas primarias accesibles, pero Crossref/resolvedor no fue accesible y los DOI pendientes no se marcan verificados.
 - Bitácora: [CAPCOT revalidación 20H](reportes/2026-11-24_CAPCOT_REVALIDACION_20H.md).
+
+ 
+### CAPCOT — actualización de Actions y fuentes, 24-nov-2026 20:10 CDMX
+- Main HEAD `7df97a20`; el commit posterior al corte previo solo cambió `data/endscreens_rotacion.json`. No hay cambios nuevos en proyectos, cola, programación o publicaciones.
+- El trabajador de cola programado en main terminó SUCCESS, pero el log dice `[trabajador] sin trabajo en cola.`; no es ejecución de feature. Gitleaks SUCCESS; Semgrep FALLÓ con 37 hallazgos bloqueantes y sin artifact SARIF.
+- Los diez feeds RSS científicos y Google Trends RSS fueron reintentados; el lector rechazó los XML/RSS o no pudo acceder a ellos. Google Trends HTML México mostró 197 tendencias, sin señal científica admisible entre las primeras 25.
+- Los marcadores Grok en main permanecen `pending`, no prueban recepción. No hay estado individual Grok para el paquete preexistente de 17:15; no se redispatchó.
+- Lean/Mathlib (21-nov) y Clay se verificaron como fuentes oficiales para un candidato de matemática formal. Sin storyboard, selección ni cambio de calendario.
+- Registro: [CAPCOT revalidación 20H](reportes/2026-11-24_CAPCOT_REVALIDACION_20H.md).
