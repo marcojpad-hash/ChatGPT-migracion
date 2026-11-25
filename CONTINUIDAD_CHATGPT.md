@@ -442,3 +442,11 @@ Nota de vigencia: el resumen U6 del corte 22-nov-2026 quedó desactualizado resp
 - No hubo promoción ni redispatch: el paquete del 24 nov en `main` ya tiene programación previa y medios referenciados no verificados en el árbol; el estado Grok individual no existe (404).
 - El PR #15 quedó identificado como obsoleto frente al validador vigente de la rama de trabajo; no se portó código redundante.
 - Los detalles operativos de Motor U6 no se copian a este repositorio mientras siga abierta la discrepancia de visibilidad/privacidad.
+
+ 
+## 2026-11-24 20:00 CDMX — revalidación CAPCOT
+- Se verificó que `main` no tuvo cambios de proyectos, cola, salidas, publicaciones ni programación desde el corte anterior; la comparación solo muestra actualización de endscreens y reporte del orquestador.
+- Se reintentaron Google Trends RSS, NASA RSS y ScienceDaily RSS; el lector devolvió los errores exactos registrados en el nuevo reporte. La vista HTML oficial de Google Trends México mostró 197 tendencias; los primeros 25 términos no aportan un candidato admisible para la línea editorial.
+- Se revalidaron fichas primarias APS y Frontiers. Crossref REST y DOI resolver no fueron accesibles; los DOI correspondientes permanecen pendientes de resolución y no se elevan por inferencia.
+- No hubo slot libre, storyboard nuevo, promoción, redispatch ni generación de medios.
+- Bitácora: [CAPCOT revalidación 20H](reportes/2026-11-24_CAPCOT_REVALIDACION_20H.md).
