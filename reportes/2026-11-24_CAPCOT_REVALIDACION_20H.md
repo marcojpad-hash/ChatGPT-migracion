@@ -3,13 +3,13 @@
 ## Alcance y fuentes de verdad
 
 - Rama de trabajo CAPCOT: `feature/capcot-video-discovery-continuity`, HEAD observado `962178fbf7400638b61ddd1dbde4c3cff23419ff`.
-- `main` consultada en solo lectura, HEAD `7acd845aba9949311c6c34ce49895eaa290b5431`.
+- `main` consultada en solo lectura, HEAD `7df97a20c8924401b663b91b9393487a42034601` (revalidado a las 20:03 CDMX).
 - Se relevaron de nuevo el radar y el control de cola del día, la programación de `main`, las fuentes de ingesta y el estado de los PR abiertos.
 - La auditoría independiente de cola del 24-nov terminó antes de este corte y su resultado quedó leído de vuelta en `docs/briefs/2026-11-24_CONTROL_COLA.md`. No se repitió QA narrativo ya registrado.
 
 ## Cambios de main desde el corte de auditoría anterior
 
-La comparación de `main` desde `6bce6166d424a8a793a81e1f44cbc71031c88462` hasta `7acd845aba9949311c6c34ce49895eaa290b5431` devuelve cuatro commits y dos archivos modificados:
+La comparación de `main` desde `6bce6166d424a8a793a81e1f44cbc71031c88462` hasta `7acd845aba9949311c6c34ce49895eaa290b5431` devolvió cuatro commits y dos archivos. Después, el commit `7df97a20c8924401b663b91b9393487a42034601` (20:03 CDMX) modificó únicamente `data/endscreens_rotacion.json`:
 
 - `data/endscreens_rotacion.json`
 - `tools/orquestador/reporte.md`
@@ -54,3 +54,51 @@ Los candidatos existentes permanecen en el radar con sus estados diferenciados. 
 - **VERIFICADO:** comparación de ramas, lectura de vuelta del control vigente, vista HTML de Trends, fichas editoriales primarias APS y Frontiers.
 - **PENDIENTE:** acceso a RSS por un lector compatible, resolución Crossref/DOI de los candidatos marcados, recepción Grok individual y liberación de un slot real.
 - **NO EJECUTADO:** validador Python local, generación de storyboard, promoción y cualquier producción audiovisual.
+
+
+## Revalidación posterior — 24 de noviembre, 20:03–20:10 CDMX
+
+### Main, cola e historial
+
+- El nuevo commit de main `7df97a20` solo cambia `data/endscreens_rotacion.json`. Añade el corte `snapshot_2026-11-24_20` y una propuesta marcada `pendiente_studio`; no cambia proyectos, programación, publicaciones ni cola.
+- El registro `data/publicaciones.json` contiene tres entradas con fecha 24-nov. El archivo de alineación del día documenta además dos publicaciones a las 07:00, cinco Shorts programados sin MP4 local y una publicación ya programada a las 17:00. Dos elementos compiten por las 17:00; el paquete de magnetismo de las 17:15 aparece aparte en `programacion.json`. El inventario del corte anterior suma nueve elementos previstos/publicados. No se redistribuye ni cancela ninguno.
+- No hay archivo separado `historial_youtube` en el árbol actual; la evidencia disponible está en `data/publicaciones.json`, `data/tt_fb_alineacion_2026-11-24.json` y snapshots de rotación.
+- Los dos marcadores de `handoffs/grok_inbox/` en main tienen `status=pending`. Son marcadores de buzón, no acuses de Grok. No existe estado individual `cola/estado/` para el paquete preexistente de 17:15.
+- La ejecución programada del trabajador de cola en main, run [45530346824](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45530346824), terminó SUCCESS pero el log exacto fue `[trabajador] sin trabajo en cola.`. Es una ejecución de main y no acredita procesamiento de la rama feature.
+- La acción `capcot-grok-dispatch.yml` continúa limitada a JSON planos `cola/entrada/*.json`; el selector usa `find -maxdepth 1`. El procesador `scripts/procesar_cola.py` sí acepta carpetas anidadas con `storyboard.json`. La discrepancia de profundidad sigue sin corregirse. El workflow usa el secreto `GROK_WEBHOOK_URL`; el último diagnóstico disponible ya lo identificó como ausente. No se consultaron ni expusieron valores de secretos.
+
+### Seguridad y Actions
+
+- En el nuevo commit de main, Gitleaks terminó SUCCESS (run [45530165821](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45530165821)).
+- Semgrep volvió a FALLAR con **37 hallazgos bloqueantes** (run [45530165792](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/actions/runs/45530165792)); el job escaneó 1,253 archivos con 361 reglas. No se generó artifact SARIF porque el paso de carga quedó omitido. No se modificó main ni se reintentó el workflow.
+
+### RSS: errores del reintento completo
+
+El lector web no pudo consumir los XML/RSS. Errores exactos de este corte:
+
+| Fuente | Error |
+|---|---|
+| ScienceDaily ciencia | `400 Unsupported content-type: application/xml` |
+| ScienceDaily salud | `400 Unsupported content-type: application/xml` |
+| ScienceDaily espacio | `400 Unsupported content-type: application/xml` |
+| Phys.org | `400 Unsupported content-type: text/xml` |
+| NASA | `400 Unsupported content-type: application/rss+xml` |
+| ESA Space Science | `404 Not Found` |
+| Nature RSS | `400 Unsupported content-type: application/rss+xml` |
+| EurekAlert | `URL ... is not accessible via this tool` |
+| SINC | `URL ... is not accessible via this tool` |
+| UNAM Global | `400 Unsupported content-type: application/rss+xml` |
+| Google Trends RSS México | `URL ... is not accessible via this tool` |
+
+La vista HTML oficial de [Google Trends México](https://trends.google.com/trending?geo=MX) sigue disponible como respaldo: muestra 197 tendencias de 24 horas; los primeros 25 términos no aportan un candidato científico/natural admisible. El corte previo conserva además los errores DNS exactos del runtime.
+
+### Candidato oficial adicional
+
+- La declaración conjunta de [Lean FRO y Mathlib](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/) está accesible y fechada el 21-nov-2026. La comunidad declara haber verificado formalmente el enunciado y la prueba en Lean, con compilación y comprobadores independientes.
+- La ficha de [Clay Mathematics Institute](https://www.claymath.org/millennium/riemann-hypothesis/) continúa mostrando la hipótesis como problema activo y mantiene publicadas sus reglas de premio. El ángulo correcto es la verificación formal comunicada por Lean/Mathlib; no afirmar premio concedido ni cambio de estado por Clay.
+- Es un candidato de investigación para slot futuro, no un storyboard ni una selección.
+
+## Cierre de este corte
+
+- **VERIFICADO:** HEAD actualizado de main, diff de un solo archivo, worker sin trabajo en cola, Gitleaks SUCCESS, Semgrep con 37 hallazgos, 10 feeds RSS, Trends HTML, fichas oficiales Lean/Clay y estado pendiente de los marcadores de buzón.
+- **NO EJECUTADO:** workflows manuales, promoción, redispatch, validador Python local, producción audiovisual y cambios en main/data/secretos.
