@@ -574,3 +574,8 @@ La orden de corridas nuevas sigue pendiente: F007 actual es un ensayo del mismo 
 - Auditoría automática de Actions escribió snapshots en main, en conflicto con el contrato de rama; no se corrigió ni se revirtió.
 
 Registro completo: `reportes/2026-11-22_OPERACION_AUTONOMA.md`.
+
+
+### CAPCOT — corte 2026-11-24 18:00 CDMX
+- Estado de cola, slot 17:15 de `main`, auditoría de Cuásares, RSS, validador y PR #15: ver [reportes/2026-11-24_CAPCOT_OPERADOR_18H.md](reportes/2026-11-24_CAPCOT_OPERADOR_18H.md).
+- No se generaron medios ni se promovieron storyboards. No se redispatchó el paquete preexistente de `main`.
