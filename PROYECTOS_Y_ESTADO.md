@@ -579,3 +579,11 @@ Registro completo: `reportes/2026-11-22_OPERACION_AUTONOMA.md`.
 ### CAPCOT — corte 2026-11-24 18:00 CDMX
 - Estado de cola, slot 17:15 de `main`, auditoría de Cuásares, RSS, validador y PR #15: ver [reportes/2026-11-24_CAPCOT_OPERADOR_18H.md](reportes/2026-11-24_CAPCOT_OPERADOR_18H.md).
 - No se generaron medios ni se promovieron storyboards. No se redispatchó el paquete preexistente de `main`.
+
+ 
+### CAPCOT — corte 2026-11-24 20:00 CDMX
+- La comparación de `main` posterior al corte de las 14:00 solo encuentra cambios en `data/endscreens_rotacion.json` y `tools/orquestador/reporte.md`; no cambia proyectos, cola, salidas, publicaciones ni programación.
+- El control vigente conserva 90 storyboards en la rama de trabajo, 32 con QA narrativo registrado y 40 sin QA; el lote 5–7 nov mantiene 2 PASS y 10 FAIL. No se repitieron PASS válidos.
+- El 24-nov continúa sin cupo autorizado y sin storyboard nuevo en la rama de trabajo. No hubo promoción ni redispatch del paquete preexistente de `main`.
+- RSS/Google Trends se reintentaron; el respaldo HTML de Trends muestra 197 tendencias y ninguna señal admisible entre los primeros 25 términos. APS y Frontiers tienen fichas primarias accesibles, pero Crossref/resolvedor no fue accesible y los DOI pendientes no se marcan verificados.
+- Bitácora: [CAPCOT revalidación 20H](reportes/2026-11-24_CAPCOT_REVALIDACION_20H.md).
