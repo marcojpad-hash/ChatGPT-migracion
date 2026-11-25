@@ -596,3 +596,11 @@ Registro completo: `reportes/2026-11-22_OPERACION_AUTONOMA.md`.
 - Los marcadores Grok en main permanecen `pending`, no prueban recepción. No hay estado individual Grok para el paquete preexistente de 17:15; no se redispatchó.
 - Lean/Mathlib (21-nov) y Clay se verificaron como fuentes oficiales para un candidato de matemática formal. Sin storyboard, selección ni cambio de calendario.
 - Registro: [CAPCOT revalidación 20H](reportes/2026-11-24_CAPCOT_REVALIDACION_20H.md).
+
+
+## Estado operativo — 2026-11-24 22:00 CDMX
+
+- **CAPCOT:** investigación documental actualizada con cinco candidatos; DOI/resolvedor pendiente y sin slot libre. Auditoría de main identifica producción/programación preexistente y medios no verificables; no redispatchar ni duplicar. Control: [2026-11-24_CONTROL_COLA_22H.md](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-24_CONTROL_COLA_22H.md).
+- **Motor U6:** sin corridas nuevas; la compuerta restante es la confirmación de unicidad y entrega de custodia independiente. La reconciliación de métricas y el dossier de candidatos están documentados en la rama activa de U6, no replicados aquí por la discrepancia de visibilidad pública.
+- **Continuidad/repositorios:** una conexión GitHub no devuelve instalaciones; la otra devuelve una instalación con 11 repositorios. Ocho repositorios adicionales permanecen en solo lectura. La discrepancia de privacidad sigue sin resolver; no cambiar permisos.
+- Bitácora: [OPERADOR_UNICO_22H.md](reportes/2026-11-24_OPERADOR_UNICO_22H.md).
