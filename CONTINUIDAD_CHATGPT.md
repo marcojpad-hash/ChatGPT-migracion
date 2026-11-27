@@ -468,3 +468,11 @@ Nota de vigencia: el resumen U6 del corte 22-nov-2026 quedó desactualizado resp
 - U6: no hubo corridas nuevas. La reconciliación de independencia de muestra y el estado de candidatos/custodia permanecen en la rama activa de U6; no se replican detalles operativos en este repositorio público.
 - Discrepancia de privacidad: seis repositorios documentados como privados aparecen públicos en GitHub. No se cambiaron permisos ni se copiaron secretos/datos sensibles.
 - No se modificaron repositorios adicionales ni se tocaron motores canónicos, pesos o datos JSON.
+
+
+## Operador único — actualización CAPCOT, 2026-11-27 14:04 CDMX
+
+- La rama `feature/capcot-video-discovery-continuity` recibió una revalidación del paquete `2026-11-27_bacterias-vuelta-oxigeno` observado en `main` solo lectura. El slot 17:00 CDMX tiene programación preexistente (`publish_at=2026-11-27T23:00:00Z`), por lo que no se redispatcha ni se asigna un paquete paralelo. La entrada anidada contiene un `storyboard.json` literal `PLACEHOLDER`, el estado Grok individual devuelve 404 y no se encontró el MP4 en las rutas verificadas.
+- El DOI del artículo primario de Nature Physics resuelve a la página editorial; Crossref REST no fue accesible en esta ejecución. No se declaró verificación Crossref.
+- Control de cola actualizado y releído en [CAPCOT CONTROL_COLA 27-nov](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-27_CONTROL_COLA.md). Commit final: `28e0ca2d20286e748d5c450b01a15401ca295393`; blob leído de vuelta: `c7369daaf36c4ea9c151cf3c19952c38550e5de8`.
+- No se modificaron CAPCOT/main, `data/*.json`, estados Grok, medios, secretos ni decisiones editoriales. Los detalles operativos del Motor U7 no se replican aquí mientras siga abierta la discrepancia de privacidad; su repositorio continúa siendo la fuente de verdad.
