@@ -604,3 +604,10 @@ Registro completo: `reportes/2026-11-22_OPERACION_AUTONOMA.md`.
 - **Motor U6:** sin corridas nuevas; la compuerta restante es la confirmación de unicidad y entrega de custodia independiente. La reconciliación de métricas y el dossier de candidatos están documentados en la rama activa de U6, no replicados aquí por la discrepancia de visibilidad pública.
 - **Continuidad/repositorios:** una conexión GitHub no devuelve instalaciones; la otra devuelve una instalación con 11 repositorios. Ocho repositorios adicionales permanecen en solo lectura. La discrepancia de privacidad sigue sin resolver; no cambiar permisos.
 - Bitácora: [OPERADOR_UNICO_22H.md](reportes/2026-11-24_OPERADOR_UNICO_22H.md).
+
+
+## CAPCOT — revalidación 2026-11-27 14:04 CDMX
+
+- El control de cola de la rama `feature/capcot-video-discovery-continuity` fue actualizado y releído: [CONTROL_COLA 27-nov](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-27_CONTROL_COLA.md), commit final `28e0ca2d20286e748d5c450b01a15401ca295393`.
+- Se detectó en `main` el paquete `2026-11-27_bacterias-vuelta-oxigeno`, con programación preexistente a 17:00 CDMX. No redispatchar ni crear otro paquete en esa ventana. La entrada anidada contiene `PLACEHOLDER`, falta el estado Grok individual y el MP4 no está verificado en el árbol. El proyecto queda `NOT_DISPATCHABLE`.
+- No se modificaron CAPCOT/main, `data/*.json`, programación, cola/estado, medios, secretos ni decisiones editoriales. El detalle técnico está en el control de cola; no duplicar sus hallazgos en otros repositorios.
