@@ -487,3 +487,12 @@ Nota de vigencia: el resumen U6 del corte 22-nov-2026 quedó desactualizado resp
 - El workflow Grok selecciona JSON planos de primer nivel, mientras procesar_cola.py también acepta storyboard.json anidado; no se modificó el workflow ni se forzó handoff. El validador real no se ejecutó: el intento de sparse clone falló con DNS (Could not resolve host: github.com). No se atribuye PASS estructural ni DOI.
 - Sin storyboard, handoff, medios, programación ni publicación nuevos. No se modificaron data/*.json, cola, estados Grok, secretos ni permisos.
 - Esta continuidad registra únicamente hechos CAPCOT ya públicos. Los detalles operativos de U7 no se replican aquí mientras siga abierta la discrepancia de visibilidad/privacidad del repositorio Motor U7.
+
+
+## Operador único — preproducción CAPCOT 2026-11-27
+
+- Se revalidó el radar para el slot 2026-11-28 23:30 y se sustituyó el candidato fuera de ventana por el estudio primario sobre partículas de desgaste de neumáticos y oscurecimiento de la criosfera, publicado en Nature Climate Change el 27-nov-2026. DOI del artículo: 10.1038/s41558-026-02800-z; verificación Crossref pendiente. El registro Zenodo 23299235 contiene source data de figuras 1–3 y fue abierto correctamente.
+- Storyboard textual creado en CAPCOT feature: proyectos/2026-11-28_llantas-hielo-albedo/storyboard.json. Commit final fea121c6ef2412f4385ef92f83cdb796c55ce9c6. Lectura de vuelta: 7 escenas, 225 palabras, 84 s incluyendo cortinilla de 6 s, estilo stencil_banksy, mapa global con bounds válidos y capa de dato de fusión. Estado BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION; SRC-001 PENDIENTE, SRC-002 VERIFICADO_RESOLVEDOR; approved_assets=[]; render NOT_GENERATED; narrative_qa ausente.
+- Radar actualizado: commit 507ab3a049ee050816e47b5db9d7cf2fe3d2b7e7. Control de cola actualizado: commit 9c15f7d4f5364d6825cc3c51e0d6610e9f5801de. Se registraron los errores de lectura de RSS, el respaldo HTML oficial de Google Trends, el mismatch de profundidad del selector Grok y el fallo de DNS al intentar ejecutar el validador local.
+- No se creó entrada de cola, no se tocó cola/estado, no se disparó workflow, no se generaron medios, no se publicó ni programó. No se modificaron data/*.json, main, secretos ni permisos.
+- Los detalles operativos de U7 no se replican en esta continuidad mientras permanezca abierta la discrepancia entre la visibilidad pública del repositorio Motor U7 y su documentación de privacidad.
