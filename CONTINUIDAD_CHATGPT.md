@@ -503,3 +503,12 @@ Nota de vigencia: el resumen U6 del corte 22-nov-2026 quedó desactualizado resp
 - El borrador 2026-11-28_llantas-hielo-albedo permanece exclusivamente en proyectos/. Lectura de cola/estado/<project_id>.json devolvió 404 NOT_FOUND; estado: RECEPCION_GROK_NO_CONFIRMADA. Clasificación NOT_DISPATCHABLE porque no existe JSON plano en cola/entrada; el workflow selecciona solo archivos de primer nivel.
 - cola/bloqueados y salidas no contienen el project_id; publicaciones/ no existe y data/publicaciones.json main no contiene el proyecto. No se detectó procesamiento previo. No hay medios declarados.
 - Radar actualizado con esta evidencia: commit 6ce91389c2bdaa3c159c64ebb734ff0516777eb3. Control de cola actualizado: commit dc62fd82a340b225ce2af618481052f3ab6a02b7. No se creó cola ni se tocó estado Grok.
+
+
+## CAPCOT — cierre final del borrador 2026-11-28
+
+- Storyboard final: proyectos/2026-11-28_llantas-hielo-albedo/storyboard.json, commit fea121c6ef2412f4385ef92f83cdb796c55ce9c6. Lectura de vuelta: 7 escenas, 225 palabras, 84 s, 5 palabras en el título, estilo stencil_banksy; mapa global y capa de dato. Estado BORRADOR_EN_PROYECTOS_NO_APTO_PARA_PROMOCION; DOI Nature PENDIENTE; dataset Zenodo URL verificada; approved_assets=[]; render NOT_GENERATED; narrative_qa ausente.
+- Handoff: cola/estado/<project_id>.json devolvió 404; RECEPCION_GROK_NO_CONFIRMADA. Clasificación NOT_DISPATCHABLE: solo existe en proyectos/, sin JSON plano en cola/entrada; no hay salida ni publicación previa detectada. No se creó cola ni se disparó workflow.
+- Radar final commit 5e537e91f0bf4eadd25b21c5c5eadf9067da01a8; control de cola final commit f3c8d19b31ddad5a4247873ef3fd7eacacbc9b49. Incluyen errores exactos de RSS, respaldo HTML de Trends, mismatch de selector y evidencia de estado Grok.
+- CodeQL automático del commit del storyboard: run 46115595793 SUCCESS. Runs de documentación 46115611009 y 46115666229 seguían in_progress al último chequeo; CodeQL no sustituye validador estructural ni DOI/Crossref.
+- El validador estructural real no se ejecutó por error de DNS al clonar (Could not resolve host: github.com). No se atribuye PASS estructural ni DOI; no hay promoción.
