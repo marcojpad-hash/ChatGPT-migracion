@@ -477,3 +477,13 @@ Nota de vigencia: el resumen U6 del corte 22-nov-2026 quedó desactualizado resp
 - Control de cola actualizado y releído en [CAPCOT CONTROL_COLA 27-nov](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-27_CONTROL_COLA.md). Commit final tras cierre de slots: `c84179480a19916884eda7d87e6c551563355d50`; blob leído de vuelta: `213b83faab3501ac34373856839779e3bb48b125`.
 - PR #15 sigue abierto: Semgrep #45310165026 falló con 26 hallazgos bloqueantes y no ejecutó pruebas unitarias. PR #13 no acredita lectura en frío solo de narración; PR #14 sigue sin revisión independiente posterior a la corrección.
 - No se modificaron CAPCOT/main, `data/*.json`, estados Grok, medios, secretos ni decisiones editoriales. Los detalles operativos del Motor U7 no se replican aquí mientras siga abierta la discrepancia de privacidad; su repositorio continúa siendo la fuente de verdad.
+
+
+## Operador único — cierre CAPCOT 2026-11-27
+
+- CAPCOT, rama feature/capcot-video-discovery-continuity: se actualizó el radar 2026-11-28 y el control de cola 2026-11-27. Commits: 02fd05bb4159bd51dede533e7ae295b48dcd4d15 (radar) y 95b125bd9051c554392ec6f0f8eec82bd469855a (control de cola; incluye la revalidación de Actions y el selector).
+- El candidato de tucán sigue PENDING_MAP + PENDING_CROSSREF. El texto primario recuperado confirma ocho individuos cautivos y que RT01 se usó para el ensamblaje, pero no asigna esa muestra a ninguno de los tres zoológicos citados; no se inventaron coordenadas ni se creó storyboard.
+- Actions main: push 46110301482 SUCCESS; Gitleaks 46110301445 SUCCESS; Semgrep 46110301476 FAILURE con 37 hallazgos bloqueantes en 1,283 archivos/361 reglas. El detalle individual no quedó en el log descargado; 37 archivos >1 MB fueron excluidos. Main solo cambió data/endscreens_rotacion.json.
+- El workflow Grok selecciona JSON planos de primer nivel, mientras procesar_cola.py también acepta storyboard.json anidado; no se modificó el workflow ni se forzó handoff. El validador real no se ejecutó: el intento de sparse clone falló con DNS (Could not resolve host: github.com). No se atribuye PASS estructural ni DOI.
+- Sin storyboard, handoff, medios, programación ni publicación nuevos. No se modificaron data/*.json, cola, estados Grok, secretos ni permisos.
+- Esta continuidad registra únicamente hechos CAPCOT ya públicos. Los detalles operativos de U7 no se replican aquí mientras siga abierta la discrepancia de visibilidad/privacidad del repositorio Motor U7.
