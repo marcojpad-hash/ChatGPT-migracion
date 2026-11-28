@@ -496,3 +496,10 @@ Nota de vigencia: el resumen U6 del corte 22-nov-2026 quedó desactualizado resp
 - Radar actualizado: commit 507ab3a049ee050816e47b5db9d7cf2fe3d2b7e7. Control de cola actualizado: commit 9c15f7d4f5364d6825cc3c51e0d6610e9f5801de. Se registraron los errores de lectura de RSS, el respaldo HTML oficial de Google Trends, el mismatch de profundidad del selector Grok y el fallo de DNS al intentar ejecutar el validador local.
 - No se creó entrada de cola, no se tocó cola/estado, no se disparó workflow, no se generaron medios, no se publicó ni programó. No se modificaron data/*.json, main, secretos ni permisos.
 - Los detalles operativos de U7 no se replican en esta continuidad mientras permanezca abierta la discrepancia entre la visibilidad pública del repositorio Motor U7 y su documentación de privacidad.
+
+
+## CAPCOT — handoff check 2026-11-27
+
+- El borrador 2026-11-28_llantas-hielo-albedo permanece exclusivamente en proyectos/. Lectura de cola/estado/<project_id>.json devolvió 404 NOT_FOUND; estado: RECEPCION_GROK_NO_CONFIRMADA. Clasificación NOT_DISPATCHABLE porque no existe JSON plano en cola/entrada; el workflow selecciona solo archivos de primer nivel.
+- cola/bloqueados y salidas no contienen el project_id; publicaciones/ no existe y data/publicaciones.json main no contiene el proyecto. No se detectó procesamiento previo. No hay medios declarados.
+- Radar actualizado con esta evidencia: commit 6ce91389c2bdaa3c159c64ebb734ff0516777eb3. Control de cola actualizado: commit dc62fd82a340b225ce2af618481052f3ab6a02b7. No se creó cola ni se tocó estado Grok.
